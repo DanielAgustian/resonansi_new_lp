@@ -1,0 +1,29 @@
+.header{
+    background-color: #3C78D8;
+}
+
+.footer{
+    background-color: #3C78D8;
+}
+
+/* banner */
+.banner-hero{
+    background: linear-gradient(70deg, #3C78D8, #85b4ff, #3C78D8);
+    min-height: 390px;
+}
+
+.banner-hero .title{
+    color: white;
+    font-weight: 600;
+}
+
+.banner-hero .desc{
+    color: white;
+    margin-bottom: 0px;
+}
+
+.mySwiper .slide{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
