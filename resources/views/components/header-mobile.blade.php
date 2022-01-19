@@ -4,13 +4,13 @@
 
 			<!--begin::Logo-->
 			<a href="index.html">
-				<img alt="Logo" src="assets/media/logos/logo-letter-1.png" class="logo-default max-h-30px" />
+				<img alt="Logo" src="{{asset('images/logo-resonansi-putih.png')}}" class="logo-default max-h-50px" />
 			</a>
 
 			<!--end::Logo-->
 
 			<!--begin::Toolbar-->
-			<div class="d-flex align-items-center">
+			{{-- <div class="d-flex align-items-center">
 				<button class="btn p-0 burger-icon burger-icon-left ml-4" id="kt_header_mobile_toggle">
 					<span></span>
 				</button>
@@ -29,7 +29,7 @@
 						<!--end::Svg Icon-->
 					</span>
 				</button>
-			</div>
+			</div> --}}
 
 			<!--end::Toolbar-->
 		</div>

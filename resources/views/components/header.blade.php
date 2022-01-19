@@ -1,6 +1,8 @@
 <!--begin::Header-->
 <div id="kt_header" class="header header-fixed">
-
+    <div class="btn-wa">
+        <i class="fab fa-whatsapp"></i>
+    </div>
     <!--begin::Container-->
     <div class="container d-flex align-items-stretch justify-content-between">
 
@@ -10,8 +12,8 @@
             <!--begin::Header Logo-->
             <div class="header-logo">
                 <a href="index.html">
-                    <img alt="Logo" src="assets/media/logos/logo-letter-9.png" class="logo-default max-h-40px" />
-                    <img alt="Logo" src="assets/media/logos/logo-letter-1.png" class="logo-sticky max-h-40px" />
+                    <img alt="Logo" src="{{asset('images/logo-resonansi-putih.png')}}" class="logo-default max-h-80px" />
+                    <img alt="Logo" src="{{asset('images/logo-resonansi.png')}}" class="logo-sticky max-h-60px" />
                 </a>
             </div>
 
@@ -25,7 +27,7 @@
                     class="header-menu header-menu-left header-menu-mobile header-menu-layout-default">
 
                     <!--begin::Header Nav-->
-                    <ul class="menu-nav">
+                    {{-- <ul class="menu-nav">
                         <li class="menu-item menu-item-open menu-item-here menu-item-rel "
                             >
                             <a href="javascript:;" class="menu-link ">
@@ -43,7 +45,7 @@
                             
                         </li>
                        
-                    </ul>
+                    </ul> --}}
 
                     <!--end::Header Nav-->
                 </div>

@@ -1,29 +1,242 @@
-.header{
-    background-color: #3C78D8;
+.header {
+    background-color: #3c78d8;
 }
 
-.footer{
-    background-color: #3C78D8;
+.footer {
+    background-color: #3c78d8;
 }
 
+.header-mobile {
+    background-color: #3c78d8;
+}
+.content {
+    background-color: #f4f8ff;
+    padding-bottom: 0px !important;
+}
 /* banner */
-.banner-hero{
-    background: linear-gradient(70deg, #3C78D8, #85b4ff, #3C78D8);
+.banner-hero {
+    background: linear-gradient(70deg, #3c78d8, #85b4ff, #3c78d8);
     min-height: 390px;
 }
 
-.banner-hero .title{
+.banner-hero .title {
     color: white;
     font-weight: 600;
 }
 
-.banner-hero .desc{
+.banner-hero .desc {
     color: white;
     margin-bottom: 0px;
 }
-
-.mySwiper .slide{
+.mySwiper {
+    height: 100%;
+}
+.mySwiper .slide {
     height: 100%;
     width: 100%;
     background-color: white;
+}
+.img-banner {
+    height: 265px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.mySwiper .swiper-button-next:after,
+.mySwiper .swiper-button-prev:after {
+    font-size: 25px !important;
+}
+
+.mySwiper .swiper-button-next,
+.mySwiper .swiper-button-prev {
+    background: #3c78d8;
+    border-radius: 50%;
+    width: 45px !important;
+    height: 45px !important;
+    color: white !important;
+}
+
+.sim-div-blue {
+    width: 100%;
+    height: 100%;
+    background-color: #3c78d8;
+    border-radius: 5px;
+}
+.sim-div-blue p {
+    color: white;
+    font-weight: 600;
+    margin: 0px;
+    font-size: 16px;
+}
+
+.sim-div-white {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 2px solid #3c78d8;
+    border-radius: 5px;
+}
+.sim-div-white p {
+    color: #3c78d8;
+    font-weight: 600;
+    margin: 0px;
+    font-size: 16px;
+}
+
+.img-section-1 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.divider {
+    height: 70px;
+}
+
+.title-part {
+    color: black;
+    font-weight: 600;
+}
+.section-2 {
+    background: linear-gradient(-70deg, #3c78d8, #66a1ff, #3c78d8);
+}
+.title-part-white {
+    color: white;
+    font-weight: 600;
+}
+.title-part span {
+    color: #3c78d8;
+}
+
+.layanan.card{
+    border-radius: 15px;
+    border: 3px solid #5596ff;
+    
+}
+.layanan .header-card{
+    padding: 10px 5px;
+    border-bottom: 3px solid #00000040;
+}
+.layanan .title{
+    color: #3c78d8;
+}
+.layanan .body-card{
+    padding: 10px 5px;
+    height: 100%;
+}
+.btn-blue{
+    background-color: #3c78d8;
+    color: white;
+    font-weight: 600;
+}
+.blue-text{
+    color: #3c78d8;
+    text-align: center;
+    
+}
+.inner-pad{
+    height: 20px;
+}
+.img-client{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.section-4 {
+    background: linear-gradient(120deg, #3c78d8,#769fe0, #3a83f8, #66a1ff, #3c78d8);
+}
+
+.img-logo-testi{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.testi-details{
+    font-weight: 500;
+    color: white;
+}
+
+.testi-box{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    
+}
+.testi-box .limiter{
+    width: 500px;
+}
+.swiperTestimoni .swiper-button-next,
+.swiperTestimoni .swiper-button-prev {
+    background: white;
+    border-radius: 50%;
+    width: 45px !important;
+    height: 45px !important;
+    color: #3c78d8 !important;
+}
+.swiperTestimoni .swiper-button-next:after,
+.swiperTestimoni .swiper-button-prev:after {
+    font-size: 25px !important;
+}
+
+.img-form{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section-form .card{
+    border: 2px solid #3c78d8a8;
+}
+
+.section-form .form-control{
+    border: 1px solid #3c78d881;
+    height: 38px;
+}
+
+.section-form .form-error{
+    font-size: 11px;
+    color: red;
+    margin-bottom: 15px;
+}
+.body-card li{
+    margin-left: -10px;
+}
+.btn-blue-bordered{
+    border: 1px solid white;
+    background-color: #3c78d8;
+    color: white;
+    font-weight: 600;
+}
+.btn-white-cus{
+    background-color: white;
+    color: #3c78d8;
+    font-weight: 600;
+}
+.btn-wa{
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-wa > *{
+    color: white;
+    font-size: 45px;
+}
+@media screen and (max-width: 450px) {
+    .banner-hero{
+        padding: 30px 0px;
+    }
+    .img-banner{
+        margin-top: 15px;
+    }
+    .img-mbl-form{
+        margin-bottom: 20px;
+    }
 }
