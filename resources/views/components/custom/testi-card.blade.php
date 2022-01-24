@@ -8,9 +8,9 @@
             </div>
             
             <h1 style="color: white; font-size:36px " class="text-left">"</h1>
-            <h6 class="testi-details text-center">
+            <h4 class="testi-details text-center">
                 {{$details}}
-            </h6>
+            </h4>
             <h1 style="color: white; font-size:36px " class="text-right">"</h1>
 
         </div>

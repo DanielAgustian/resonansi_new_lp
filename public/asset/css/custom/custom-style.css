@@ -13,6 +13,9 @@
     background-color: #f4f8ff;
     padding-bottom: 0px !important;
 }
+#logo img{
+    height: 75px !important;
+}
 /* banner */
 .banner-hero {
     background: linear-gradient(70deg, #3c78d8, #85b4ff, #3c78d8);
@@ -37,7 +40,7 @@
     background-color: white;
 }
 .img-banner {
-    height: 265px;
+    height: 320px;
     width: 100%;
     object-fit: cover;
     border-radius: 15px;
@@ -62,11 +65,11 @@
     background-color: #3c78d8;
     border-radius: 5px;
 }
-.sim-div-blue p {
+.sim-div-blue h4 {
     color: white;
     font-weight: 600;
     margin: 0px;
-    font-size: 16px;
+    
 }
 
 .sim-div-white {
@@ -76,11 +79,11 @@
     border: 2px solid #3c78d8;
     border-radius: 5px;
 }
-.sim-div-white p {
+.sim-div-white h4 {
     color: #3c78d8;
     font-weight: 600;
     margin: 0px;
-    font-size: 16px;
+    
 }
 
 .img-section-1 {
@@ -92,7 +95,9 @@
 .divider {
     height: 70px;
 }
-
+.divider-sect{
+    height: 70px;
+}
 .title-part {
     color: black;
     font-weight: 600;
@@ -101,13 +106,18 @@
     background: linear-gradient(-70deg, #3c78d8, #66a1ff, #3c78d8);
 }
 .title-part-white {
-    color: white;
+    color: white !important;
     font-weight: 600;
 }
 .title-part span {
     color: #3c78d8;
 }
-
+.white-title.heading-block::after{
+    border-top: 2px solid white;
+}
+.blue-title.heading-block::after{
+    border-top: 2px solid #3c78d8;
+}
 .layanan.card{
     border-radius: 15px;
     border: 3px solid #5596ff;
@@ -132,7 +142,7 @@
 .blue-text{
     color: #3c78d8;
     text-align: center;
-    
+    margin-bottom: 20px;
 }
 .inner-pad{
     height: 20px;
@@ -200,7 +210,7 @@
     margin-bottom: 15px;
 }
 .body-card li{
-    margin-left: -10px;
+    margin-left: 30px;
 }
 .btn-blue-bordered{
     border: 1px solid white;

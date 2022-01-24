@@ -3,7 +3,7 @@
         <div class="col-6 mt-2">
             <div class="sim-div-white">
                 <div class="d-flex align-items-center justify-content-center h-100 p-3">
-                    <p class="text-center">{{$title1}}</p>
+                    <h4 class="text-center">{{$title1}}</h4>
                 </div>
             </div>
         </div>
@@ -18,7 +18,7 @@
         <div class="col-6 mt-2">
             <div class="sim-div-blue">
                 <div class="d-flex align-items-center justify-content-center h-100 p-3">
-                    <p class="text-center">{{$title2}}</p>
+                    <h4 class="text-center">{{$title2}}</h4>
                 </div>
             </div>
         </div>
