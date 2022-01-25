@@ -98,42 +98,42 @@
                         @endslot
 
                         @slot('img1')
-                            http://simpleicon.com/wp-content/uploads/landing-page.png
+                            {{ asset('images/landing-page.png') }}
                         @endslot
                         @slot('img2')
-                            http://simpleicon.com/wp-content/uploads/social_media_icon_3.png
+                            {{ asset('images/social-media.png') }}
                         @endslot
                     @endcomponent
                     @component('components.custom.section-1-div')
 
                         @slot('title1')
-                            Landing Page Website
+                            SEM (Search Engine Marketing)
                         @endslot
                         @slot('title2')
-                            Social Media Strategy
+                            SEO (Search Engine Optimization)
                         @endslot
 
                         @slot('img1')
-                            http://simpleicon.com/wp-content/uploads/landing-page.png
+                            {{ asset('images/digital-marketing.png') }}
                         @endslot
                         @slot('img2')
-                            http://simpleicon.com/wp-content/uploads/social_media_icon_3.png
+                            {{ asset('images/seo.png') }}
                         @endslot
                     @endcomponent
                     @component('components.custom.section-1-div')
 
                         @slot('title1')
-                            Landing Page Website
+                            Content Creator
                         @endslot
                         @slot('title2')
-                            Social Media Strategy
+                            Marketplace Ads Optimization
                         @endslot
 
                         @slot('img1')
-                            http://simpleicon.com/wp-content/uploads/landing-page.png
+                            {{ asset('images/content-creator.png') }}
                         @endslot
                         @slot('img2')
-                            http://simpleicon.com/wp-content/uploads/social_media_icon_3.png
+                            {{ asset('images/ads-opt.png') }}
                         @endslot
                     @endcomponent
 
@@ -155,14 +155,14 @@
                                 Paket A
                             @endslot
                             @slot('details')
-                                <ul>
+                              
                                     <li>Loremoiahfasfsaf</li>
                                     <li>jioughfjvadsav</li>
                                     <li>lhajvn dsajk</li>
                                     <li>ahxbdmnsadjvuu</li>
                                     <li>hjkhb fmeo8ui</li>
                                     <li>jrj3q90qf3l;ecj90qefkm fihqoefnqklq faicashcas chfuoh3nqef9u90evnd</li>
-                                </ul>
+                                
                             @endslot
                             @slot('harga')
                                 Rp 100.000,00
@@ -173,7 +173,7 @@
                                 Paket B
                             @endslot
                             @slot('details')
-                                <ul>
+                                
                                     <li>Loremoiahfasfsaf</li>
                                     <li>jioughfjvadsav</li>
                                     <li>lhajvn dsajk</li>
@@ -184,7 +184,7 @@
                                     <li>ahxbdmnsadjvuu</li>
                                     <li>hjkhb fmeo8ui</li>
                                     <li>jrj3q90qf3l;ecj90qefkm fihqoefnqklq faicashcas chfuoh3nqef9u90evnd</li>
-                                </ul>
+                                
                             @endslot
                             @slot('harga')
                                 Rp 100.000,00
@@ -195,14 +195,14 @@
                                 Paket C
                             @endslot
                             @slot('details')
-                                <ul>
+                                
                                     <li>Loremoiahfasfsaf</li>
                                     <li>jioughfjvadsav</li>
                                     <li>lhajvn dsajk</li>
                                     <li>ahxbdmnsadjvuu</li>
                                     <li>hjkhb fmeo8ui</li>
                                     <li>jrj3q90qf3l;ecj90qefkm fihqoefnqklq faicashcas chfuoh3nqef9u90evnd</li>
-                                </ul>
+                                
                             @endslot
                             @slot('harga')
                                 Rp 100.000,00
@@ -221,33 +221,33 @@
                     </div>
                     <div class="row justify-content-center mt-7">
                         <div class="col-lg-3 col-md-4 col-6">
-                            <img src=" https://www.larutanpenyegar.com/po-content/themes/cap-badak/images/logo.jpg" alt=""
-                                class="img-client">
+                            <img src=" https://logodix.com/logo/2003820.jpg" alt=""
+                                class="img-client shadow rounded">
                             <h6 class="blue-text">Cv. Blabla</h6>
                         </div>
                         <div class="col-lg-3 col-md-4 col-6">
-                            <img src=" https://www.larutanpenyegar.com/po-content/themes/cap-badak/images/logo.jpg" alt=""
-                                class="img-client">
+                            <img src=" https://logodix.com/logo/2003820.jpg" alt=""
+                                class="img-client shadow rounded">
                             <h6 class="blue-text">Cv. Blabla</h6>
                         </div>
                         <div class="col-lg-3 col-md-4 col-6">
-                            <img src=" https://www.larutanpenyegar.com/po-content/themes/cap-badak/images/logo.jpg" alt=""
-                                class="img-client">
+                            <img src=" https://logodix.com/logo/2003820.jpg" alt=""
+                                class="img-client shadow rounded">
                             <h6 class="blue-text">Cv. Blabla</h6>
                         </div>
                         <div class="col-lg-3 col-md-4 col-6">
-                            <img src=" https://www.larutanpenyegar.com/po-content/themes/cap-badak/images/logo.jpg" alt=""
-                                class="img-client">
+                            <img src=" https://logodix.com/logo/2003820.jpg" alt=""
+                                class="img-client shadow rounded">
                             <h6 class="blue-text">Cv. Blabla</h6>
                         </div>
                         <div class="col-lg-3 col-md-4 col-6">
-                            <img src=" https://www.larutanpenyegar.com/po-content/themes/cap-badak/images/logo.jpg" alt=""
-                                class="img-client">
+                            <img src=" https://logodix.com/logo/2003820.jpg" alt=""
+                                class="img-client shadow rounded">
                             <h6 class="blue-text">Cv. Blabla</h6>
                         </div>
                         <div class="col-lg-3 col-md-4 col-6">
-                            <img src=" https://www.larutanpenyegar.com/po-content/themes/cap-badak/images/logo.jpg" alt=""
-                                class="img-client">
+                            <img src=" https://logodix.com/logo/2003820.jpg" alt=""
+                                class="img-client shadow rounded">
                             <h6 class="blue-text">Cv. Blabla</h6>
                         </div>
                     </div>
@@ -269,7 +269,7 @@
 
                             @component('components.custom.testi-card')
                                 @slot('img')
-                                    https://www.larutanpenyegar.com/po-content/themes/cap-badak/images/logo.jpg
+                                    https://logodix.com/logo/2003820.jpg
                                 @endslot
                                 @slot('details')
                                     Terimakasih untuk para team Resonansi
@@ -279,7 +279,7 @@
                             @endcomponent
                             @component('components.custom.testi-card')
                                 @slot('img')
-                                    https://www.larutanpenyegar.com/po-content/themes/cap-badak/images/logo.jpg
+                                    https://logodix.com/logo/2003820.jpg
                                 @endslot
                                 @slot('details')
                                     Terimakasih untuk para team Resonansi
@@ -289,7 +289,7 @@
                             @endcomponent
                             @component('components.custom.testi-card')
                                 @slot('img')
-                                    https://www.larutanpenyegar.com/po-content/themes/cap-badak/images/logo.jpg
+                                    https://logodix.com/logo/2003820.jpg
                                 @endslot
                                 @slot('details')
                                     Terimakasih untuk para team Resonansi
@@ -318,13 +318,73 @@
                             <img src="{{ asset('images/calendar.png') }}" alt="" class="img-form rounded">
                         </div>
                         <div class="col-md-6 my-auto">
-                            <div class="card">
+                            <div class="card bg-white shadow-lg border-0">
+                                <div class="card-body p-4">
+                                    <div class="form-widget" data-loader="button" data-alert-type="inline">
+
+                                        <div class="form-result"></div>
+
+                                        <form class="row mb-0" id="landing-enquiry" action="include/form.php" method="post" enctype="multipart/form-data">
+                                            <div class="form-process"></div>
+                                            <div class="col-12 form-group mb-2">
+                                                <label>Name:</label>
+                                                <input type="text" name="name" id="landing-enquiry-name" class="form-control form-control-lg required" value="" placeholder="John Doe">
+                                            </div>
+                                            <div class="col-12 form-group mb-2">
+                                                <label>Email:</label>
+                                                <input type="email" name="email" id="landing-enquiry-email" class="form-control form-control-lg required" value="" placeholder="user@company.com">
+                                            </div>
+                                            <div class="col-12 form-group mb-2">
+                                                <label>Phone:</label><br>
+                                                <div class="input-group input-group-lg">
+                                                    <select class="form-select required" name="landing-enquiry-idd" id="landing-enquiry-idd" style="max-width: 100px;">
+                                                        {{-- <option value="+1">+1</option>
+                                                        <option value="+44">+44</option>
+                                                        <option value="+66">+66</option> --}}
+                                                        <option value="+62" selected>+62</option>
+                                                        {{-- <option value="+61">+61</option>
+                                                        <option value="+852">+852</option>
+                                                        <option value="+65">+61</option>
+                                                        <option value="+33">+61</option>
+                                                        <option value="+49">+49</option> --}}
+                                                    </select>
+                                                    <input type="number" name="phone" id="landing-enquiry-phone" class="form-control form-control-lg required" value="" placeholder="">
+                                                </div>
+                                            </div>
+                                            {{-- <div class="col-12 form-group mb-4">
+                                                <label>Message:</label>
+                                                <textarea name="landing-enquiry-additional-requirements" id="landing-enquiry-additional-requirements" class="form-control form-control-lg" cols="30" rows="5" placeholder="Please let us know how we can help you..."></textarea>
+                                            </div> --}}
+                                            <div class="col-12 form-group mb-2">
+                                                <label>Nama Perusahaan</label>
+                                                <input type="text" name="company" id="landing-enquiry-company" class="form-control form-control-lg required" value="" placeholder="date">
+                                            </div>
+                                            <div class="col-12 form-group mb-2">
+                                                <label>Tanggal</label>
+                                                <input type="date" name="date" id="landing-enquiry-date" class="form-control form-control-lg required" value="" placeholder="date">
+                                            </div>
+                                            <div class="col-12 form-group mb-2">
+                                                <label>Waktu</label>
+                                                <input type="time" name="time" id="landing-enquiry-time" class="form-control form-control-lg required" value="" placeholder="date">
+                                            </div>
+                                            <div class="col-12 d-none">
+                                                <input type="text" id="landing-enquiry-botcheck" name="landing-enquiry-botcheck" value="" />
+                                            </div>
+                                            <div class="col-12">
+                                                <button type="submit" name="landing-enquiry-submit" class="btn w-100 text-white bg-color rounded-3 py-3 fw-semibold text-uppercase mt-2">Book Now!</button>
+                                            </div>
+
+                                            <input type="hidden" name="prefix" value="landing-enquiry-">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            {{-- <div class="card">
                                 <div class="card-body">
                                     <h5 class="text-center title-part mb-4">
                                         Yuk Bertemu dengan <span>Account Executive</span> Kami!
                                     </h5>
                                     <form action="">
-                                        <input type="text" name="name" class="form-control" placeholder="Nama" required>
                                         <div class="form-error" id="error_name"></div>
                                         <input type="text" name="email" class="form-control" placeholder="Email" required>
                                         <div class="form-error" id="error_email"></div>
@@ -347,7 +407,7 @@
                                         </div>
                                     </form>
                                 </div>
-                            </div>
+                            </div> --}}
 
                         </div>
                     </div>
@@ -394,6 +454,23 @@
             autoplay: {
                 delay: 2500,
             },
+        });
+    </script>
+     <script>
+        $('.btn-pricing').click(function() {
+            $('html, body').animate({
+                scrollTop: ($(".section-2").offset().top)-20
+            }, 1500);
+        });
+        $('.btn-order').click(function() {
+            $('html, body').animate({
+                scrollTop: ($(".section-form").offset().top)-20
+            }, 1500);
+        });
+        $('.btn-client').click(function() {
+            $('html, body').animate({
+                scrollTop: ($(".section-3").offset().top)-20
+            }, 1500);
         });
     </script>
 @endsection
