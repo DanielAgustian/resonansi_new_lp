@@ -5,7 +5,9 @@
 .footer {
     background-color: #3c78d8;
 }
-
+#header.transparent-header.full-header #header-wrap{
+    border-bottom: none ;
+}
 .header-mobile {
     background-color: #3c78d8;
 }
@@ -87,8 +89,8 @@
 }
 
 .img-section-1 {
-    width: 100%;
-    height: 160px;
+    width: 88%;
+    height: 145px;
     object-fit: cover;
 }
 label{
@@ -254,5 +256,10 @@ label{
     }
     .img-mbl-form{
         margin-bottom: 20px;
+    }
+    .slider-element{
+        min-height: auto !important;
+        padding-bottom: 30px;
+        padding-top: 30px;
     }
 }

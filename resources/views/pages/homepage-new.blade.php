@@ -28,12 +28,12 @@
 
                         <div class="col-lg-1 col-0"></div>
 
-                        <div class="col-lg-5 col-md-6">
+                        <div class="col-lg-5 col-md-6 mt-md-0 mt-3">
                             {{-- <div class="slide-imgs">
                             <img src="demos/landing/images/hero/1-2.png" alt="Image" class="card-img">
                             <img src="demos/landing/images/hero/1-1.png" alt="Image" class="iphone-img">
                         </div> --}}
-                            <div class="swiper mySwiper">
+                            <div class="swiper mySwiper ">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         {{-- <img src="{{ asset('images/emas.png') }}" alt="" class="img-slide"> --}}
@@ -155,14 +155,16 @@
                                 Paket A
                             @endslot
                             @slot('details')
-                              
-                                    <li>Loremoiahfasfsaf</li>
-                                    <li>jioughfjvadsav</li>
-                                    <li>lhajvn dsajk</li>
-                                    <li>ahxbdmnsadjvuu</li>
-                                    <li>hjkhb fmeo8ui</li>
-                                    <li>jrj3q90qf3l;ecj90qefkm fihqoefnqklq faicashcas chfuoh3nqef9u90evnd</li>
-                                
+
+                                <li>Google Search Campaign
+                                </li>
+                                <li>Up to 15 Keywords</li>
+                                <li> Up to 5 Professional Ads</li>
+                                <li>Campaign Tracking</li>
+                                <li>Online Support / Phone</li>
+                                <li>Monitoring and Maintenance</li>
+                                <li>Account Management and Optimization 1x a Month</li>
+                                <li>Report Once A Month</li>
                             @endslot
                             @slot('harga')
                                 Rp 100.000,00
@@ -173,18 +175,14 @@
                                 Paket B
                             @endslot
                             @slot('details')
-                                
-                                    <li>Loremoiahfasfsaf</li>
-                                    <li>jioughfjvadsav</li>
-                                    <li>lhajvn dsajk</li>
-                                    <li>ahxbdmnsadjvuu</li>
-                                    <li>hjkhb fmeo8ui</li>
-                                    <li>jrj3q90qf3l;ecj90qefkm fihqoefnqklq faicashcas chfuoh3nqef9u90evnd</li>
-                                    <li>lhajvn dsajk</li>
-                                    <li>ahxbdmnsadjvuu</li>
-                                    <li>hjkhb fmeo8ui</li>
-                                    <li>jrj3q90qf3l;ecj90qefkm fihqoefnqklq faicashcas chfuoh3nqef9u90evnd</li>
-                                
+                                <li>Google Search</li>
+                                <li>Up to 45 Keywords</li>
+                                <li>Up to 15 Professional Ads</li>
+                                <li>Campaign Tracking</li>
+                                <li>Online Support / Phone</li>
+                                <li>Monitoring and Maintenance</li>
+                                <li>lAccount Management and Optimization 4x a Month</li>
+                                <li>Report Weekly</li>
                             @endslot
                             @slot('harga')
                                 Rp 100.000,00
@@ -195,14 +193,16 @@
                                 Paket C
                             @endslot
                             @slot('details')
-                                
-                                    <li>Loremoiahfasfsaf</li>
-                                    <li>jioughfjvadsav</li>
-                                    <li>lhajvn dsajk</li>
-                                    <li>ahxbdmnsadjvuu</li>
-                                    <li>hjkhb fmeo8ui</li>
-                                    <li>jrj3q90qf3l;ecj90qefkm fihqoefnqklq faicashcas chfuoh3nqef9u90evnd</li>
-                                
+
+                                <li>Google Search</li>
+                                <li>Up to 30 Keywords</li>
+                                <li>Up to 10 Professional Ads</li>
+                                <li>Campaign Tracking</li>
+                                <li>Online Support / Phone</li>
+                                <li>Monitoring and Maintenance</li>
+                                <li>lAccount Management and Optimization 2x a Month</li>
+                                <li>Report  Bi-Weekly</li>
+
                             @endslot
                             @slot('harga')
                                 Rp 100.000,00
@@ -221,33 +221,27 @@
                     </div>
                     <div class="row justify-content-center mt-7">
                         <div class="col-lg-3 col-md-4 col-6">
-                            <img src=" https://logodix.com/logo/2003820.jpg" alt=""
-                                class="img-client shadow rounded">
+                            <img src=" https://logodix.com/logo/2003820.jpg" alt="" class="img-client shadow rounded">
                             <h6 class="blue-text">Cv. Blabla</h6>
                         </div>
                         <div class="col-lg-3 col-md-4 col-6">
-                            <img src=" https://logodix.com/logo/2003820.jpg" alt=""
-                                class="img-client shadow rounded">
+                            <img src=" https://logodix.com/logo/2003820.jpg" alt="" class="img-client shadow rounded">
                             <h6 class="blue-text">Cv. Blabla</h6>
                         </div>
                         <div class="col-lg-3 col-md-4 col-6">
-                            <img src=" https://logodix.com/logo/2003820.jpg" alt=""
-                                class="img-client shadow rounded">
+                            <img src=" https://logodix.com/logo/2003820.jpg" alt="" class="img-client shadow rounded">
                             <h6 class="blue-text">Cv. Blabla</h6>
                         </div>
                         <div class="col-lg-3 col-md-4 col-6">
-                            <img src=" https://logodix.com/logo/2003820.jpg" alt=""
-                                class="img-client shadow rounded">
+                            <img src=" https://logodix.com/logo/2003820.jpg" alt="" class="img-client shadow rounded">
                             <h6 class="blue-text">Cv. Blabla</h6>
                         </div>
                         <div class="col-lg-3 col-md-4 col-6">
-                            <img src=" https://logodix.com/logo/2003820.jpg" alt=""
-                                class="img-client shadow rounded">
+                            <img src=" https://logodix.com/logo/2003820.jpg" alt="" class="img-client shadow rounded">
                             <h6 class="blue-text">Cv. Blabla</h6>
                         </div>
                         <div class="col-lg-3 col-md-4 col-6">
-                            <img src=" https://logodix.com/logo/2003820.jpg" alt=""
-                                class="img-client shadow rounded">
+                            <img src=" https://logodix.com/logo/2003820.jpg" alt="" class="img-client shadow rounded">
                             <h6 class="blue-text">Cv. Blabla</h6>
                         </div>
                     </div>
@@ -310,7 +304,8 @@
             <section class="section-form">
                 <div class="container">
                     <div class="blue-title mx-auto center mt-4 bottommargin heading-block" style="max-width: 640px;">
-                        <h3 class="nott title-part text-center"><span>Berminat untuk Diskusi dengan Account Executive Kami?</span> </h3>
+                        <h3 class="nott title-part text-center"><span>Berminat untuk Diskusi dengan Account Executive
+                                Kami?</span> </h3>
                         {{-- <p class="lead fw-normal font-primary mb-5"></p> --}}
                     </div>
                     <div class="row">
@@ -324,20 +319,26 @@
 
                                         <div class="form-result"></div>
 
-                                        <form class="row mb-0" id="landing-enquiry" action="include/form.php" method="post" enctype="multipart/form-data">
+                                        <form class="row mb-0" id="landing-enquiry" action="include/form.php"
+                                            method="post" enctype="multipart/form-data">
                                             <div class="form-process"></div>
                                             <div class="col-12 form-group mb-2">
                                                 <label>Name:</label>
-                                                <input type="text" name="name" id="landing-enquiry-name" class="form-control form-control-lg required" value="" placeholder="John Doe">
+                                                <input type="text" name="name" id="landing-enquiry-name"
+                                                    class="form-control form-control-lg required" value=""
+                                                    placeholder="John Doe">
                                             </div>
                                             <div class="col-12 form-group mb-2">
                                                 <label>Email:</label>
-                                                <input type="email" name="email" id="landing-enquiry-email" class="form-control form-control-lg required" value="" placeholder="user@company.com">
+                                                <input type="email" name="email" id="landing-enquiry-email"
+                                                    class="form-control form-control-lg required" value=""
+                                                    placeholder="user@company.com">
                                             </div>
                                             <div class="col-12 form-group mb-2">
                                                 <label>Phone:</label><br>
                                                 <div class="input-group input-group-lg">
-                                                    <select class="form-select required" name="landing-enquiry-idd" id="landing-enquiry-idd" style="max-width: 100px;">
+                                                    <select class="form-select required" name="landing-enquiry-idd"
+                                                        id="landing-enquiry-idd" style="max-width: 100px;">
                                                         {{-- <option value="+1">+1</option>
                                                         <option value="+44">+44</option>
                                                         <option value="+66">+66</option> --}}
@@ -348,7 +349,9 @@
                                                         <option value="+33">+61</option>
                                                         <option value="+49">+49</option> --}}
                                                     </select>
-                                                    <input type="number" name="phone" id="landing-enquiry-phone" class="form-control form-control-lg required" value="" placeholder="">
+                                                    <input type="number" name="phone" id="landing-enquiry-phone"
+                                                        class="form-control form-control-lg required" value=""
+                                                        placeholder="">
                                                 </div>
                                             </div>
                                             {{-- <div class="col-12 form-group mb-4">
@@ -357,21 +360,30 @@
                                             </div> --}}
                                             <div class="col-12 form-group mb-2">
                                                 <label>Nama Perusahaan</label>
-                                                <input type="text" name="company" id="landing-enquiry-company" class="form-control form-control-lg required" value="" placeholder="date">
+                                                <input type="text" name="company" id="landing-enquiry-company"
+                                                    class="form-control form-control-lg required" value=""
+                                                    placeholder="date">
                                             </div>
                                             <div class="col-12 form-group mb-2">
                                                 <label>Tanggal</label>
-                                                <input type="date" name="date" id="landing-enquiry-date" class="form-control form-control-lg required" value="" placeholder="date">
+                                                <input type="date" name="date" id="landing-enquiry-date"
+                                                    class="form-control form-control-lg required" value=""
+                                                    placeholder="date">
                                             </div>
                                             <div class="col-12 form-group mb-2">
                                                 <label>Waktu</label>
-                                                <input type="time" name="time" id="landing-enquiry-time" class="form-control form-control-lg required" value="" placeholder="date">
+                                                <input type="time" name="time" id="landing-enquiry-time"
+                                                    class="form-control form-control-lg required" value=""
+                                                    placeholder="date">
                                             </div>
                                             <div class="col-12 d-none">
-                                                <input type="text" id="landing-enquiry-botcheck" name="landing-enquiry-botcheck" value="" />
+                                                <input type="text" id="landing-enquiry-botcheck"
+                                                    name="landing-enquiry-botcheck" value="" />
                                             </div>
                                             <div class="col-12">
-                                                <button type="submit" name="landing-enquiry-submit" class="btn w-100 text-white bg-color rounded-3 py-3 fw-semibold text-uppercase mt-2">Book Now!</button>
+                                                <button type="submit" name="landing-enquiry-submit"
+                                                    class="btn w-100 text-white bg-color rounded-3 py-3 fw-semibold text-uppercase mt-2">Book
+                                                    Now!</button>
                                             </div>
 
                                             <input type="hidden" name="prefix" value="landing-enquiry-">
@@ -414,7 +426,7 @@
                 </div>
             </section>
             <div class="divider-sect"></div>
-           
+
 
         </div>
 
@@ -456,20 +468,20 @@
             },
         });
     </script>
-     <script>
+    <script>
         $('.btn-pricing').click(function() {
             $('html, body').animate({
-                scrollTop: ($(".section-2").offset().top)-20
+                scrollTop: ($(".section-2").offset().top) - 20
             }, 1500);
         });
         $('.btn-order').click(function() {
             $('html, body').animate({
-                scrollTop: ($(".section-form").offset().top)-20
+                scrollTop: ($(".section-form").offset().top) - 20
             }, 1500);
         });
         $('.btn-client').click(function() {
             $('html, body').animate({
-                scrollTop: ($(".section-3").offset().top)-20
+                scrollTop: ($(".section-3").offset().top) - 20
             }, 1500);
         });
     </script>

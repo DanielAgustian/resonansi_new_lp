@@ -8,12 +8,18 @@
             </div>
         </div>
         <div class="col-6 mt-2">
-            <img src="{{$img1}}"
-                alt="" class="img-section-1">
+            <div class="d-flex justify-content-center align-items-center w-100 h-100">
+                <img src="{{$img1}}"
+                alt="{{$title1}}" class="img-section-1">
+            </div>
+            
         </div>
         <div class="col-6 mt-2">
-            <img src="{{$img2}}"
-                alt="" class="img-section-1">
+            <div class="d-flex justify-content-center align-items-center w-100 h-100">
+                <img src="{{$img2}}"
+                alt="{{$title2}}" class="img-section-1">
+            </div>
+            
         </div>
         <div class="col-6 mt-2">
             <div class="sim-div-blue">
