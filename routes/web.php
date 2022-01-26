@@ -17,5 +17,5 @@ use App\Http\Controllers\LandingController;
 
 //Route::get('/induk-produk', [ProductController::class, 'indukProduk'])->name('indukProduk');
 
-Route::get('/', [LandingController::class, 'homepage'])->name('homepage');
-Route::get('/new', [LandingController::class, 'homepage2'])->name('homepage2');
+Route::get('/previous-version', [LandingController::class, 'homepage'])->name('homepage');
+Route::get('/', [LandingController::class, 'homepage2'])->name('homepage2');
