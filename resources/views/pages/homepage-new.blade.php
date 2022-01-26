@@ -82,11 +82,101 @@
 
             <div class="container">
                 <div class="mx-auto center mt-4 bottommargin heading-block" style="max-width: 640px;">
+                    <h5 class="text-uppercase ls1 text-muted mb-3">Layanan Kami</h5>
                     <h3 class="nott mb-5">Jasa Layanan Apa Saja Yang Disediakan Oleh Resonansi?</h3>
-                    {{-- <p class="lead fw-normal font-primary mb-5"></p> --}}
+                    <p class="lead fw-normal font-primary mb-5">Membantu Website Anda untuk Menjadi Nomor 1 di Google.
+                        Meningkatkan jumlah pengunjung anda secara pasti. Meningkatkan efisiensi iklan anda.</p>
                 </div>
+                <div class="features-items mx-auto" style="max-width: 1000px;">
+                    <div class="row justify-content-around">
+                        @component('components.custom.layanan-div-1')
+                            @slot('pic')
+                                {{ asset('images/landing-page.png') }}
 
-                <div class="row mt-7">
+                            @endslot
+                            @slot('title')
+                                Landing Page Website
+                            @endslot
+                            @slot('details')
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat.
+                            @endslot
+                        @endcomponent
+                        @component('components.custom.layanan-div-1')
+                            @slot('pic')
+                                {{ asset('images/social-media.png') }}
+
+                            @endslot
+                            @slot('title')
+                                Social Media Service
+                            @endslot
+                            @slot('details')
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat.
+                            @endslot
+                        @endcomponent
+                        @component('components.custom.layanan-div-1')
+                            @slot('pic')
+
+                                {{ asset('images/digital-marketing.png') }}
+                            @endslot
+                            @slot('title')
+                                SEM (Search Engine Marketing)
+                            @endslot
+                            @slot('details')
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat.
+                            @endslot
+                        @endcomponent
+                        @component('components.custom.layanan-div-1')
+                            @slot('pic')
+
+                                {{ asset('images/seo.png') }}
+                            @endslot
+                            @slot('title')
+                                SEO (Search Engine Optimization)
+                            @endslot
+                            @slot('details')
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat.
+                            @endslot
+                        @endcomponent
+                        @component('components.custom.layanan-div-1')
+                            @slot('pic')
+
+                                {{ asset('images/content-creator.png') }}
+                            @endslot
+                            @slot('title')
+                                Content Creator
+                            @endslot
+                            @slot('details')
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat.
+                            @endslot
+                        @endcomponent
+                        @component('components.custom.layanan-div-1')
+                            @slot('pic')
+
+                                {{ asset('images/opt.png') }}
+                            @endslot
+                            @slot('title')
+                                Marketplace Ads Optimization
+                            @endslot
+                            @slot('details')
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat.
+                            @endslot
+                        @endcomponent
+                    </div>
+
+                </div>
+                {{-- <div class="row mt-7">
 
                     @component('components.custom.section-1-div')
 
@@ -137,133 +227,203 @@
                         @endslot
                     @endcomponent
 
-                </div>
+                </div> --}}
             </div>
             <div class="clear"></div>
             <div class="divider-sect"></div>
             <section class="section-2" style="background-image: url('{{ asset('images/bg-hero.svg') }}');">
                 <div class="container">
                     <div class="inner-pad"></div>
-                    <div class="white-title mx-auto center mt-4 bottommargin heading-block" style="max-width: 640px;">
-                        <h3 class="nott title-part-white text-center">Layanan Apa Saja Yang Disediakan Resonansi?</h3>
-                        {{-- <p class="lead fw-normal font-primary mb-5"></p> --}}
+                    {{-- <div class="white-title mx-auto center mt-4 bottommargin heading-block" style="max-width: 640px;">
+                        <h3 class="nott title-part-white text-center"></h3>
+                        <p class="lead fw-normal font-primary mb-5"></p>
+                    </div> --}}
+                    <div class="row mt-4">
+                        <div class="col-lg-3 col-md-12">
+                            <div class="heading-block border-bottom-0 bottommargin-sm">
+                                <i class="icon-credit h1"></i>
+                                <h2 class="nott title-part-white " style="font-size: 36px;">Layanan Apa Saja Yang Disediakan
+                                    Resonansi?</h2>
+                            </div>
+                            <div class="fw-normal lead" style="color: rgb(221, 221, 221)">Terdapat beberapa paket layanan
+                                yang dapat anda pilih untuk membantu website anda.</div>
+
+                            <p class="text-white-50 mt-lg-6 mt-3  ">Selama periode 2 bulan, anda akan mendapatkan beberapa
+                                keuntungan
+                                yang tertera pada <a href="#" class="text-white"><u>Terms and Conditions</u></a>.</p>
+                        </div>
+                        <div class="col-lg-9 col-12">
+                            <div class="row justify-content-around">
+                                @component('components.custom.layanan-card')
+                                    @slot('title')
+                                        Paket A
+                                    @endslot
+                                    @slot('details')
+
+                                        <p class="list-data"><i class="fas fa-check-circle"></i> Google Search
+                                        </p>
+                                        <p class="list-data"><i class="fas fa-check-circle"></i> Up to 15 Keywords
+                                        </p>
+                                        <p class="list-data"><i class="fas fa-check-circle"></i> Up to 5 Professional Ads
+                                        </p>
+                                        <p class="list-data"><i class="fas fa-check-circle"></i> Campaign Tracking
+                                        </p>
+                                        <p class="list-data"><i class="fas fa-check-circle"></i> Online Support / Phone
+                                        </p>
+                                        <p class="list-data"><i class="fas fa-check-circle"></i> Monitoring and Maintenance
+                                        </p>
+                                        <p class="list-data"><i class="fas fa-check-circle"></i> Account Management and
+                                            Optimization 1x a Month
+                                        </p>
+                                        <p class="list-data"><i class="fas fa-check-circle"></i> Report Once A Month
+                                        </p>
+
+                                    @endslot
+                                    @slot('harga')
+                                        Rp 100.000,00
+                                    @endslot
+                                @endcomponent
+                                @component('components.custom.layanan-card')
+                                    @slot('title')
+                                        Paket B
+                                    @endslot
+                                    @slot('details')
+                                        <p class="list-data"><i class="fas fa-check-circle"></i> Google Search
+                                        </p>
+                                        <p class="list-data"><i class="fas fa-check-circle"></i> Up to 45 Keywords
+                                        </p>
+                                        <p class="list-data"><i class="fas fa-check-circle"></i> Up to 25 Professional Ads
+                                        </p>
+                                        <p class="list-data"><i class="fas fa-check-circle"></i> Campaign Tracking
+                                        </p>
+                                        <p class="list-data"><i class="fas fa-check-circle"></i> Online Support / Phone
+                                        </p>
+                                        <p class="list-data"><i class="fas fa-check-circle"></i> Monitoring and Maintenance
+                                        </p>
+                                        <p class="list-data"><i class="fas fa-check-circle"></i> Account Management and
+                                            Optimization Weekly
+                                        </p>
+                                        <p class="list-data"><i class="fas fa-check-circle"></i> Report Weekly
+                                        </p>
+                                    @endslot
+                                    @slot('harga')
+                                        Rp 100.000,00
+                                    @endslot
+                                @endcomponent
+                                @component('components.custom.layanan-card')
+                                    @slot('title')
+                                        Paket C
+                                    @endslot
+                                    @slot('details')
+
+                                        <p class="list-data"><i class="fas fa-check-circle"></i> Google Search
+                                        </p>
+                                        <p class="list-data"><i class="fas fa-check-circle"></i> Up to 30 Keywords
+                                        </p>
+                                        <p class="list-data"><i class="fas fa-check-circle"></i> Up to 15 Professional Ads
+                                        </p>
+                                        <p class="list-data"><i class="fas fa-check-circle"></i> Campaign Tracking
+                                        </p>
+                                        <p class="list-data"><i class="fas fa-check-circle"></i> Online Support / Phone
+                                        </p>
+                                        <p class="list-data"><i class="fas fa-check-circle"></i> Monitoring and Maintenance
+                                        </p>
+                                        <p class="list-data"><i class="fas fa-check-circle"></i> Account Management and
+                                            Optimization Weekly
+                                        </p>
+                                        <p class="list-data"><i class="fas fa-check-circle"></i> Report Bi-Weekly
+                                        </p>
+                                    @endslot
+                                    @slot('harga')
+                                        Rp 100.000,00
+                                    @endslot
+                                @endcomponent
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="row justify-content-around">
-                        @component('components.custom.layanan-card')
-                            @slot('title')
-                                Paket A
-                            @endslot
-                            @slot('details')
-
-                                <li>Google Search Campaign
-                                </li>
-                                <li>Up to 15 Keywords</li>
-                                <li> Up to 5 Professional Ads</li>
-                                <li>Campaign Tracking</li>
-                                <li>Online Support / Phone</li>
-                                <li>Monitoring and Maintenance</li>
-                                <li>Account Management and Optimization 1x a Month</li>
-                                <li>Report Once A Month</li>
-                            @endslot
-                            @slot('harga')
-                                Rp 100.000,00
-                            @endslot
-                        @endcomponent
-                        @component('components.custom.layanan-card')
-                            @slot('title')
-                                Paket B
-                            @endslot
-                            @slot('details')
-                                <li>Google Search</li>
-                                <li>Up to 45 Keywords</li>
-                                <li>Up to 15 Professional Ads</li>
-                                <li>Campaign Tracking</li>
-                                <li>Online Support / Phone</li>
-                                <li>Monitoring and Maintenance</li>
-                                <li>lAccount Management and Optimization 4x a Month</li>
-                                <li>Report Weekly</li>
-                            @endslot
-                            @slot('harga')
-                                Rp 100.000,00
-                            @endslot
-                        @endcomponent
-                        @component('components.custom.layanan-card')
-                            @slot('title')
-                                Paket C
-                            @endslot
-                            @slot('details')
-
-                                <li>Google Search</li>
-                                <li>Up to 30 Keywords</li>
-                                <li>Up to 10 Professional Ads</li>
-                                <li>Campaign Tracking</li>
-                                <li>Online Support / Phone</li>
-                                <li>Monitoring and Maintenance</li>
-                                <li>lAccount Management and Optimization 2x a Month</li>
-                                <li>Report  Bi-Weekly</li>
-
-                            @endslot
-                            @slot('harga')
-                                Rp 100.000,00
-                            @endslot
-                        @endcomponent
-                    </div>
                     <div class="inner-pad"></div>
                 </div>
             </section>
             <div class="divider-sect"></div>
             <section class="section-3">
-                <div class="container">
-                    <div class="blue-title mx-auto center mt-4 bottommargin heading-block" style="max-width: 640px;">
-                        <h3 class="nott title-part text-center"><span>Siapa Saja Klien Kami?</span> </h3>
-                        {{-- <p class="lead fw-normal font-primary mb-5"></p> --}}
-                    </div>
-                    <div class="row justify-content-center mt-7">
-                        <div class="col-lg-3 col-md-4 col-6">
-                            <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png" alt="" class="img-client shadow rounded">
-                            <h6 class="blue-text">Cv. Blabla</h6>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-6">
-                            <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png" alt="" class="img-client shadow rounded">
-                            <h6 class="blue-text">Cv. Blabla</h6>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-6">
-                            <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png" alt="" class="img-client shadow rounded">
-                            <h6 class="blue-text">Cv. Blabla</h6>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-6">
-                            <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png" alt="" class="img-client shadow rounded">
-                            <h6 class="blue-text">Cv. Blabla</h6>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-6">
-                            <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png" alt="" class="img-client shadow rounded">
-                            <h6 class="blue-text">Cv. Blabla</h6>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-6">
-                            <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png" alt="" class="img-client shadow rounded">
-                            <h6 class="blue-text">Cv. Blabla</h6>
-                        </div>
-                    </div>
+                {{-- <div class="container"> --}}
+                <div class="blue-title mx-auto center mt-4 bottommargin heading-block" style="max-width: 640px;">
+                    <h3 class="nott title-part text-center"><span>Siapa Saja Klien Kami?</span> </h3>
+                    <p class="lead fw-normal font-primary mb-5 mt-3">Banyak klien sudah puas dengan servis kami. Apakah
+                        anda akan menjadi salah satunya?</p>
+
                 </div>
+                <div class="row align-items-stretch align-content-stretch g-0 topmargin">
+
+                    <div class="col-md-6 order-md-2 mb-lg-0 mb-md-0 mb-3"
+                        style="background: url('{{ asset('images/handphone.jpg') }}') center center / cover; min-height: 350px">
+                    </div>
+
+                    <div class="col-md-6 bg-white dark order-md-1">
+                        <div class="section-features">
+                            <div class="row justify-content-center mt-7">
+                                <div class="col-lg-4 col-6">
+                                    <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png"
+                                        alt="" class="img-client shadow rounded">
+                                    <h6 class="blue-text">Cv. Blabla</h6>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png"
+                                        alt="" class="img-client shadow rounded">
+                                    <h6 class="blue-text">Cv. Blabla</h6>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png"
+                                        alt="" class="img-client shadow rounded">
+                                    <h6 class="blue-text">Cv. Blabla</h6>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png"
+                                        alt="" class="img-client shadow rounded">
+                                    <h6 class="blue-text">Cv. Blabla</h6>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png"
+                                        alt="" class="img-client shadow rounded">
+                                    <h6 class="blue-text">Cv. Blabla</h6>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png"
+                                        alt="" class="img-client shadow rounded">
+                                    <h6 class="blue-text">Cv. Blabla</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature-pc"></div>
+                    </div>
+                    
+                </div>
+
+                {{-- </div> --}}
             </section>
-            <div class="divider-sect"></div>
-            <section class="section-4" style="background-image: url('{{ asset('images/bg-hero.svg') }}');">
+            {{-- <div class="divider-sect"></div> --}}
+            {{-- <section class="section-4" style="background-image: url('{{ asset('images/bg-hero.svg') }}');">
+                
+            </section> --}}
+
+            <section class="section-form"
+                style="background-image: linear-gradient(to bottom, #3D80E4 0%, #0a4bab 80%, #FFF 80%);">
                 <div class="inner-pad"></div>
 
                 <div class="container">
-                    <div class="white-title mx-auto center mt-4 bottommargin heading-block" style="max-width: 640px;">
+                    {{-- <div class="white-title mx-auto center mt-4 bottommargin heading-block" style="max-width: 640px;">
                         <h3 class="nott title-part-white text-center">Apa Kata Mereka Tentang Resonansi?</h3>
-                        {{-- <p class="lead fw-normal font-primary mb-5"></p> --}}
-                    </div>
-
+                        <p class="lead fw-normal font-primary mb-5"></p>
+                    </div> --}}
+                    <div class="mt-4"></div>
                     <div class="swiper swiperTestimoni">
                         <div class="swiper-wrapper">
 
 
                             @component('components.custom.testi-card')
                                 @slot('img')
-                                https://akcdn.detik.net.id/community/media/visual/2019/02/19/42393387-9c5c-4be4-97b8-49260708719e.jpeg?w=750&q=90
+                                    https://akcdn.detik.net.id/community/media/visual/2019/02/19/42393387-9c5c-4be4-97b8-49260708719e.jpeg?w=750&q=90
                                 @endslot
                                 @slot('details')
                                     Terimakasih untuk para team Resonansi
@@ -273,7 +433,7 @@
                             @endcomponent
                             @component('components.custom.testi-card')
                                 @slot('img')
-                                https://akcdn.detik.net.id/community/media/visual/2019/02/19/42393387-9c5c-4be4-97b8-49260708719e.jpeg?w=750&q=90
+                                    https://akcdn.detik.net.id/community/media/visual/2019/02/19/42393387-9c5c-4be4-97b8-49260708719e.jpeg?w=750&q=90
                                 @endslot
                                 @slot('details')
                                     Terimakasih untuk para team Resonansi
@@ -283,7 +443,7 @@
                             @endcomponent
                             @component('components.custom.testi-card')
                                 @slot('img')
-                                https://akcdn.detik.net.id/community/media/visual/2019/02/19/42393387-9c5c-4be4-97b8-49260708719e.jpeg?w=750&q=90
+                                    https://akcdn.detik.net.id/community/media/visual/2019/02/19/42393387-9c5c-4be4-97b8-49260708719e.jpeg?w=750&q=90
                                 @endslot
                                 @slot('details')
                                     Terimakasih untuk para team Resonansi
@@ -298,16 +458,15 @@
                     </div>
                 </div>
 
-                <div class="inner-pad"></div>
-            </section>
-            <div class="divider-sect"></div>
-            <section class="section-form">
+                
+                <div class="divider" ></div>
                 <div class="container">
-                    <div class="blue-title mx-auto center mt-4 bottommargin heading-block" style="max-width: 640px;">
-                        <h3 class="nott title-part text-center"><span>Berminat untuk Diskusi dengan Account Executive
-                                Kami?</span> </h3>
-                        {{-- <p class="lead fw-normal font-primary mb-5"></p> --}}
-                    </div>
+
+                    <h2 class="nott title-part-white fw-bold mb-2 text-center">Berminat untuk Diskusi dengan <br> Account
+                        Executive
+                        Kami? </h2>
+                    <p class="text-white font-primary mb-5  lead text-center">Yuk Diskusi Asik dengan Account Executive
+                        Resonansi <br> supaya tambah ngerti!</p>
                     <div class="row">
                         <div class="col-md-6 img-mbl-form">
                             <img src="{{ asset('images/calendar.png') }}" alt="" class="img-form rounded">
