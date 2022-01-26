@@ -6,29 +6,32 @@
         <div class="slider-inner flex-column">
 
             <div class="vertical-middle">
-                <div class="container mb-2">
+                <div class="container mb-3">
                     <div class="row align-items-lg-center g-0">
 
                         <div class="col-lg-6 col-md-6">
-                            <h2 class="display-6 fw-bold text-white">Mengapa Bisnis Anda Perlu <br>Bergabung dengan Resonansi
-                            </h2>
-                            <p class="lead mb-4 fw-normal">Kami adalah perusahaan yang bergerak di bidang
-                                teknologi informasi dan digital strategi yang akan
-                                membantu meningkatkan penjualan produk dan brand
-                                anda, sehingga akan beresonansi bersama-sama
-                                dengan customer anda</p>
-                            <div class="d-flex mt-7">
-                                <button class="btn btn-blue-bordered  btn-client" style="margin-right: 15px">Our
-                                    Client</button>
-
-                                <button class="btn btn-white-cus btn-pricing">Pricing</button>
+                            <div style="margin-right: 20px">
+                                <h2 class="display-6 fw-bold text-white">Mengapa Bisnis Anda Perlu <br>Bergabung dengan Resonansi
+                                </h2>
+                                <p class="lead mb-4 fw-normal">Kami adalah perusahaan yang bergerak di bidang
+                                    teknologi informasi dan digital strategi yang akan
+                                    membantu meningkatkan penjualan produk dan brand
+                                    anda, sehingga akan beresonansi bersama-sama
+                                    dengan customer anda</p>
+                                <div class="d-flex mt-7">
+                                    <button class="btn btn-blue-bordered  btn-client bigger" style="margin-right: 15px">Our
+                                        Client</button>
+    
+                                    <button class="btn btn-white-cus btn-pricing bigger">Pricing</button>
+                                </div>
                             </div>
+                            
 
                         </div>
 
-                        <div class="col-lg-1 col-0"></div>
+                        {{-- <div class="col-lg-1 col-0"></div> --}}
 
-                        <div class="col-lg-5 col-md-6 mt-md-0 mt-3">
+                        <div class="col-lg-6 col-md-6 mt-md-0 mt-3">
                             {{-- <div class="slide-imgs">
                             <img src="demos/landing/images/hero/1-2.png" alt="Image" class="card-img">
                             <img src="demos/landing/images/hero/1-1.png" alt="Image" class="iphone-img">
@@ -69,7 +72,9 @@
                     </div>
                 </div>
             </div>
-
+            <div class="section-clients">
+                
+            </div>
 
 
         </div>

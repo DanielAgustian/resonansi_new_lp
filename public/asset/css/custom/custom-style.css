@@ -42,7 +42,7 @@
     background-color: white;
 }
 .img-banner {
-    height: 320px;
+    height: 360px;
     width: 100%;
     object-fit: cover;
     border-radius: 15px;
@@ -179,6 +179,16 @@ label{
 }
 .divider::after, .divider::before{
     background-color: #ffffff47;
+}
+.section-clients{
+    border-bottom: none !important;
+}
+.btn.bigger{
+    min-width: 160px;
+    max-width: 100%;
+    font-size: 18px;
+    padding: 14px 20px;
+
 }
 .testi-details{
     font-weight: 500;

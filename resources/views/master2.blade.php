@@ -25,7 +25,7 @@
 	<link rel="stylesheet" href="{{asset('asset/css/custom/landing.css')}}" type="text/css" />
 	<link rel="stylesheet" href="{{asset('asset/css/custom/fonts.css')}}" type="text/css" />
 
-	<link rel="stylesheet" href="{{asset('asset/css/custom/custom-style.css')	}}?v=1.0.1" type="text/css">
+	<link rel="stylesheet" href="{{asset('asset/css/custom/custom-style.css')	}}?v=1.0.1.1" type="text/css">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	
 	<link rel="stylesheet" href="{{asset('asset/css/colors.php?color=3D80E4')}}" type="text/css" />
