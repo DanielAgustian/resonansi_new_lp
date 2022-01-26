@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="{{ asset('asset/css/swiper.css') }}" type="text/css" />
 
 	<link rel="stylesheet" href="{{asset('asset/css/dark.css')}}" type="text/css" />
-	<link rel="stylesheet" href="{{asset('asset/css/font-icons.css')}}" type="text/css" />
+	{{-- <link rel="stylesheet" href="{{asset('asset/css/font-icons.css')}}" type="text/css" /> --}}
 	<link rel="stylesheet" href="{{asset('asset/css/animate.css')}}" type="text/css" />
 	<link rel="stylesheet" href="{{asset('asset/css/magnific-popup.css')}}" type="text/css" />
 
@@ -91,7 +91,9 @@
 			</div>
 			<div class="header-wrap-clone"></div>
 		</header><!-- #header end -->
-
+		<div class="btn-wa">
+			<i class="fab fa-whatsapp"></i>
+		</div>
 		<!-- Slider
 		============================================= -->
 		@yield('banner')
@@ -129,7 +131,7 @@
 
 	<!-- Go To Top
 	============================================= -->
-	<div id="gotoTop" class="icon-angle-up"></div>
+	{{-- <div id="gotoTop" class="icon-angle-up"></div> --}}
 
 	<!-- JavaScripts
 	============================================= -->
