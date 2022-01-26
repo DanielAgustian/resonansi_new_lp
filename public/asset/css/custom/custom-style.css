@@ -315,4 +315,10 @@ label{
         padding-bottom: 30px;
         padding-top: 30px;
     }
+    .section-clients{
+        display: none;
+    }
+    .img-banner{
+        height: 280px;
+    }
 }

@@ -86,7 +86,7 @@
         <div class="content-wrap pb-0">
 
             <div class="container">
-                <div class="mx-auto center mt-4 bottommargin heading-block" style="max-width: 640px;">
+                <div class="mx-auto center mt-0 bottommargin heading-block" style="max-width: 640px;">
                     <h5 class="text-uppercase ls1 text-muted mb-3">Layanan Kami</h5>
                     <h3 class="nott mb-5">Jasa Layanan Apa Saja Yang Disediakan Oleh Resonansi?</h3>
                     <p class="lead fw-normal font-primary mb-5">Membantu Website Anda untuk Menjadi Nomor 1 di Google.
