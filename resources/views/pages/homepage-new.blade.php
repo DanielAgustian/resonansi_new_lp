@@ -221,27 +221,27 @@
                     </div>
                     <div class="row justify-content-center mt-7">
                         <div class="col-lg-3 col-md-4 col-6">
-                            <img src=" https://logodix.com/logo/2003820.jpg" alt="" class="img-client shadow rounded">
+                            <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png" alt="" class="img-client shadow rounded">
                             <h6 class="blue-text">Cv. Blabla</h6>
                         </div>
                         <div class="col-lg-3 col-md-4 col-6">
-                            <img src=" https://logodix.com/logo/2003820.jpg" alt="" class="img-client shadow rounded">
+                            <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png" alt="" class="img-client shadow rounded">
                             <h6 class="blue-text">Cv. Blabla</h6>
                         </div>
                         <div class="col-lg-3 col-md-4 col-6">
-                            <img src=" https://logodix.com/logo/2003820.jpg" alt="" class="img-client shadow rounded">
+                            <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png" alt="" class="img-client shadow rounded">
                             <h6 class="blue-text">Cv. Blabla</h6>
                         </div>
                         <div class="col-lg-3 col-md-4 col-6">
-                            <img src=" https://logodix.com/logo/2003820.jpg" alt="" class="img-client shadow rounded">
+                            <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png" alt="" class="img-client shadow rounded">
                             <h6 class="blue-text">Cv. Blabla</h6>
                         </div>
                         <div class="col-lg-3 col-md-4 col-6">
-                            <img src=" https://logodix.com/logo/2003820.jpg" alt="" class="img-client shadow rounded">
+                            <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png" alt="" class="img-client shadow rounded">
                             <h6 class="blue-text">Cv. Blabla</h6>
                         </div>
                         <div class="col-lg-3 col-md-4 col-6">
-                            <img src=" https://logodix.com/logo/2003820.jpg" alt="" class="img-client shadow rounded">
+                            <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png" alt="" class="img-client shadow rounded">
                             <h6 class="blue-text">Cv. Blabla</h6>
                         </div>
                     </div>
@@ -263,7 +263,7 @@
 
                             @component('components.custom.testi-card')
                                 @slot('img')
-                                    https://logodix.com/logo/2003820.jpg
+                                https://akcdn.detik.net.id/community/media/visual/2019/02/19/42393387-9c5c-4be4-97b8-49260708719e.jpeg?w=750&q=90
                                 @endslot
                                 @slot('details')
                                     Terimakasih untuk para team Resonansi
@@ -273,7 +273,7 @@
                             @endcomponent
                             @component('components.custom.testi-card')
                                 @slot('img')
-                                    https://logodix.com/logo/2003820.jpg
+                                https://akcdn.detik.net.id/community/media/visual/2019/02/19/42393387-9c5c-4be4-97b8-49260708719e.jpeg?w=750&q=90
                                 @endslot
                                 @slot('details')
                                     Terimakasih untuk para team Resonansi
@@ -283,7 +283,7 @@
                             @endcomponent
                             @component('components.custom.testi-card')
                                 @slot('img')
-                                    https://logodix.com/logo/2003820.jpg
+                                https://akcdn.detik.net.id/community/media/visual/2019/02/19/42393387-9c5c-4be4-97b8-49260708719e.jpeg?w=750&q=90
                                 @endslot
                                 @slot('details')
                                     Terimakasih untuk para team Resonansi
@@ -464,7 +464,7 @@
             mousewheel: true,
             keyboard: true,
             autoplay: {
-                delay: 2500,
+                delay: 10000,
             },
         });
     </script>
