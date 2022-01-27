@@ -13,4 +13,7 @@ class LandingController extends Controller
     public function homepage2(){
         return view('pages.homepage-new');
     }
+    public function landing(){
+        return view('pages.landing');
+    }
 }

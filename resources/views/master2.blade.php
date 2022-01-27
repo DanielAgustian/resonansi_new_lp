@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
 <head>
-
+	<title>Resonansi Landing Page</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="author" content="Yokesen Teknologi Indonesia" />
 	<link rel="shortcut icon" href="{{asset('images/favicon/favicon.ico')}}">
@@ -33,7 +33,7 @@
 
 	<!-- Document Title
 	============================================= -->
-	<title>Resonansi Landing Page</title>
+	
 
 
 </head>
@@ -58,33 +58,24 @@
 							<a href="demo-landing.html" class="retina-logo" data-dark-logo="{{asset('images/logo-resonansi.png')}}"><img src="{{asset('images/logo-resonansi.png')}}" alt="Canvas Logo"></a>
 						</div><!-- #logo end -->
 
-						<div id="primary-menu-trigger">
+						<div id="primary-menu-trigger " class="{{set_none_navbar('landing')}}">
 							<svg class="svg-trigger" viewBox="0 0 100 100"><path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path><path d="m 30,50 h 40"></path><path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path></svg>
 						</div>
 
 						<!-- Primary Navigation
 						============================================= -->
-						{{-- <nav class="primary-menu not-dark with-arrows">
+						<nav class="primary-menu not-dark with-arrows">
 
-							<ul class="me-0 border-0 menu-container">
-								<li class="menu-item"><a class="menu-link" href="demo-landing.html"><div>Home</div></a></li>
-								<li class="menu-item"><a class="menu-link" href="demo-landing-features.html"><div>Features</div></a>
-									<ul class="sub-menu-container">
-										<li class="menu-item"><a class="menu-link" href="demo-landing-features.html"><div><i class="icon-line-box"></i>Products</div></a></li>
-										<li class="menu-item"><a class="menu-link" href="demo-landing-features.html"><div><i class="icon-line-download"></i>Downloads</div></a></li>
-										<li class="menu-item"><a class="menu-link" href="demo-landing-features.html"><div><i class="icon-line-help"></i>Support</div></a></li>
-										<li class="menu-item"><a class="menu-link" href="demo-landing-features.html"><div><i class="icon-line-paper"></i>Documentaion</div></a></li>
-										<li class="menu-item"><a class="menu-link" href="demo-landing-features.html"><div><i class="icon-line-play"></i>Tutorials</div></a></li>
-										<li class="menu-item"><a class="menu-link" href="demo-landing-features.html"><div><i class="icon-line-flag"></i>Solutions</div></a></li>
-										<li class="menu-item"><a class="menu-link" href="demo-landing-features.html"><div><i class="icon-line-search"></i>FAQs</div></a></li>
-									</ul>
-								</li>
-								<li class="menu-item"><a class="menu-link" href="demo-landing-about.html"><div>About</div></a></li>
+							<ul class="me-0 border-0 menu-container {{set_none_navbar('landing')}}">
+								
+								<li class="menu-item"><a class="menu-link" href="demo-landing-about.html"><div>About Us</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="demo-landing-about.html"><div>Services</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="demo-landing-about.html"><div>Blogs</div></a></li>
 								<li class="menu-item"><a class="menu-link" href="demo-landing-pricing.html"><div>Pricing</div></a></li>
 								<li class="menu-item"><a class="menu-link" href="demo-landing-contact.html"><div>Contact</div></a></li>
 							</ul>
 
-						</nav><!-- #primary-menu end --> --}}
+						</nav><!-- #primary-menu end -->
 
 					</div>
 				</div>
@@ -106,10 +97,58 @@
 
 		<!-- Footer
 		============================================= -->
-		<footer id="footer" class="bg-white border-0">
+		<footer id="footer" class="bg-color dark border-0">
 
 		
+			<div class="container {{set_none_navbar('landing')}}">
+				<div class="footer-widgets-wrap pt-3 pb-1">
 
+					<div class="row mx-auto">
+
+						<div class="col-md-8">
+							<div class="row">
+								<div class="col-md-4 col-6">
+									<div class="widget widget_links">
+
+										<h4 class="ls0 ls0">Pages</h4>
+
+										<ul>
+											<li><a href="#">About Us</a></li>
+											<li><a href="#">Our Services</a></li>
+											<li><a href="#">Blog</a></li>
+											<li><a href="#">Pricing</a></li>
+											<li><a href="#">Contact Us</a></li>
+										</ul>
+
+									</div>
+								</div>
+								
+							</div>
+							
+							
+						</div>
+
+						<div class="col-md-4 mt-4 mt-md-0">
+							<div class="widget">
+
+								<h4 class="ls0 ls0 text-center mb-2">Resonansi by Yokesen</h4>
+
+								<article class="entry">
+									<div class="entry-image mb-3">
+										<a href="{{route('homepage2')}}"><img src="{{asset('images/logo-resonansi-putih.png')}}" alt="Resonansi"></a>
+									</div>
+									<div class="entry-title title-xs">
+										<h5 class="mb-2 text-center fw-light"><a href="demos/news/news-single.html">Elevate Your Brand, Change Your Dream</a></h5>
+									</div>
+									
+								</article>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
 			<div id="copyrights" class="bg-color dark py-2">
 				<div class="container">
 

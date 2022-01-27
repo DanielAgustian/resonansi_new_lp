@@ -5,7 +5,7 @@
         </div>
         <div class="fbox-content">
             <h2 class="h4 fw-bold mb-4 text-center">{{$title}}</h2>
-            <div class="lead fw-normal text-black-50">{{$details}} </div>
+            <div class="lead fw-normal text-black-50 text-justify" style="text-align: justify;">{{$details}} </div>
         </div>
     </div>
 </div>
