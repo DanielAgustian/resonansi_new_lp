@@ -54,8 +54,8 @@
 						<!-- Logo
 						============================================= -->
 						<div id="logo" class="border-end-0">
-							<a href="demo-landing.html" class="standard-logo" data-dark-logo="{{asset('images/logo-resonansi-putih.png')}}"><img src="{{asset('images/logo-resonansi-putih.png')}}" alt="Canvas Logo"></a>
-							<a href="demo-landing.html" class="retina-logo" data-dark-logo="{{asset('images/logo-resonansi.png')}}"><img src="{{asset('images/logo-resonansi.png')}}" alt="Canvas Logo"></a>
+							<a href="{{route('homepage2')}}" class="standard-logo" data-dark-logo="{{asset('images/logo-resonansi-putih.png')}}"><img src="{{asset('images/logo-resonansi-putih.png')}}" alt="Canvas Logo"></a>
+							<a href="{{route('homepage2')}}" class="retina-logo" data-dark-logo="{{asset('images/logo-resonansi.png')}}"><img src="{{asset('images/logo-resonansi.png')}}" alt="Canvas Logo"></a>
 						</div><!-- #logo end -->
 
 						<div id="primary-menu-trigger" class="{{set_none_navbar('landing')}} primary-menu-trigger">
