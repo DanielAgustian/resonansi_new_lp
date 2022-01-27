@@ -320,6 +320,9 @@ label{
 .dark .widget_links li a{
     margin-left: -10px;
 }
+.primary-menu-trigger{
+    display: none;
+}
 @media screen and (max-width:900px) {
     .menu-link{
         color: #444;
@@ -329,6 +332,9 @@ label{
     }
     #logo img{
         height: 60px !important;
+    }
+    .primary-menu-trigger{
+        display: block;
     }
 }
 @media screen and (max-width: 450px) {
