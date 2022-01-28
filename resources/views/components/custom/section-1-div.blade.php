@@ -3,7 +3,7 @@
         <div class="col-6 mt-2">
             <div class="sim-div-white">
                 <div class="d-flex align-items-center justify-content-center h-100 p-3">
-                    <h4 class="text-center">{{$title1}}</h4>
+                    <a href="{{route('homepage2')}}#layanan-section"><h4 class="text-center" >{{$title1}}</h4></a>
                 </div>
             </div>
         </div>
@@ -24,7 +24,7 @@
         <div class="col-6 mt-2">
             <div class="sim-div-blue">
                 <div class="d-flex align-items-center justify-content-center h-100 p-3">
-                    <h4 class="text-center">{{$title2}}</h4>
+                   <a href="{{route('homepage2')}}#layanan-section"><h4 class="text-center">{{$title2}}</h4></a> 
                 </div>
             </div>
         </div>
