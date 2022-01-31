@@ -64,7 +64,7 @@
             </div>
         </section>
         <div class="divider"></div>
-        <section class="section-1">
+        {{-- <section class="section-1">
             <div class="container">
                 <h2 class="title-part text-center">Jasa Layanan Apa Saja Yang Disediakan Oleh <span>Resonansi</span> ?
                 </h2>
@@ -122,7 +122,7 @@
 
                 </div>
             </div>
-        </section>
+        </section> --}}
         <div class="divider"></div>
         <section class="section-2">
             <div class="container">

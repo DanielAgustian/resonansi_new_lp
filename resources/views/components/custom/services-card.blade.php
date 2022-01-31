@@ -13,12 +13,18 @@
 
 <div class="col-lg-12 col-md-12" id="{{$id}}">
     <div class="feature-box custom-icon fbox-plain" >
-        <div class="fbox-icon">
-            <img src="{{$pic}}" alt="" class="">
+        <div class="d-flex justify-content-center">
+            <div class="fbox-icon">
+                <img src="{{$pic}}" alt="" class="">
+            </div>
         </div>
+        
         <div class="fbox-content">
             <h3>{{$title}}</h3>
-            <p>{{$details}}</p>
+            <div class="detail-service">
+                {{$details}}
+            </div>
+            
         </div>
     </div>
     <div class="line line-sm"></div>

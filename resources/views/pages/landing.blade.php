@@ -121,6 +121,12 @@
                             @slot('img2')
                                 {{ asset('images/social-media.png') }}
                             @endslot
+                            @slot('route1')
+                                service-landing
+                            @endslot
+                            @slot('route2')
+                                service-social-media
+                            @endslot
                         @endcomponent
                         @component('components.custom.section-1-div')
 
@@ -137,6 +143,12 @@
                             @slot('img2')
                                 {{ asset('images/seo.png') }}
                             @endslot
+                            @slot('route1')
+                                service-sem
+                            @endslot
+                            @slot('route2')
+                                service-seo
+                            @endslot
                         @endcomponent
                         @component('components.custom.section-1-div')
 
@@ -152,6 +164,12 @@
                             @endslot
                             @slot('img2')
                                 {{ asset('images/opt.png') }}
+                            @endslot
+                            @slot('route1')
+                                service-content
+                            @endslot
+                            @slot('route2')
+                                service-opt
                             @endslot
                         @endcomponent
 

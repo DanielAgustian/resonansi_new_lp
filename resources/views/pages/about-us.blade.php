@@ -32,11 +32,11 @@
                     <img src="{{asset('images/logo-resonansi.png')}}" alt="Logo" class="logo-about">
                 </div>
 
-                <div class="col-md-7">
-                    <h3 class="lead fw-normal">Professionally scale superior vortals and proactive relationships. Progressively network multidisciplinary supply chains vis-a-vis standardized leadership skills. Assertively maximize efficient mindshare via cross-media technologies. Dynamically create viral products for innovative metrics. Continually.</h3>
+                <div class="col-md-7 my-auto">
+                    <h3 class="lead fw-normal"> <strong>Resonansi</strong>  by Yokesen adalah perusahaan yang bergerak di bidang teknologi informasi dan digital strategi yang akan membantu meningkatkan penjualan produk dan brand anda, sehingga akan beresonansi bersama-sama dengan customer anda</h3>
                     {{-- <div class="line my-5 border-width-5 border-f5"></div> --}}
 
-                    <h3 class="lead fw-normal">Seamlessly redefine client-focused customer service with extensive infomediaries. Monotonectally brand unique expertise after diverse imperatives. Intrinsicly formulate client-based solutions without excellent imperatives. Globally empower go forward paradigms before effective relationships. Professionally.</h3>
+                    <h3 class="lead fw-normal"></h3>
                     {{-- <div class="line my-5 border-width-5 border-f5"></div> --}}
 
                 </div>
@@ -59,62 +59,62 @@
         
         <div class="container topmargin-lg bottommargin-lg">
             <div class="mx-auto text-center mt-4 bottommargin heading-block" style="max-width: 640px;">
-                <h5 class="text-uppercase ls1 text-muted mb-3">Filosofi Resonansi</h5>
+                <h5 class="text-uppercase ls1 text-muted mb-3">Prinsip Resonansi</h5>
                 <h2 class="nott mb-4">Teknologi Terbaik untuk Website Anda</h2>
                 <p class="lead fw-normal font-primary mb-5"></p>
             </div>
-
             <div class="features-items mx-auto" style="max-width: 1000px;">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 bottommargin-lg">
+                        <div class="feature-box media-box">
+                            <div class="d-flex justify-content-center">
+                                <div class="fbox-icon about-icon">
+                                    <img src="{{asset('images/idea.png')}}" alt="">
+                                </div>
+                            </div>
+                            
+                            <div class="fbox-content">
+                                <h2 class="h4 fw-bold mb-4 text-center">Filosofi Resonansi</h2>
+                                <div class="lead fw-normal text-black-50 text-center">Seperti sebuah garpu tala ketika bergetar, dapat memberikan getaran yang sama kepada garpu tala yang memiliki frekuensi yang sama.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                   
+                </div>
                 <div class="row justify-content-around">
                     <div class="col-md-5 bottommargin-lg">
                         <div class="feature-box media-box">
-                            <div class="fbox-icon">
-                                <i class="icon-line2-pointer text-primary"></i>
+                            <div class="d-flex justify-content-center">
+                                <div class="fbox-icon about-icon">
+                                    <img src="{{asset('images/eye.png')}}" alt="">
+                                   
+                                </div>
                             </div>
+                            
                             <div class="fbox-content">
-                                <h2 class="h4 fw-bold mb-4">Melakukan 100% untuk Anda</h2>
-                                <div class="lead fw-normal text-black-50">Appropriately reconceptualize timely convergence through resource maximizing collaboration and idea-sharing. Globally coordinate cross-platform products via interoperable models.</div>
+                                <h2 class="h4 fw-bold mb-4 text-center">Visi resonansi</h2>
+                                <div class="lead fw-normal text-black-50 text-center">Menjadi digital strategi yang dapat meningkatkan Return on Digital Investment</div>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-5 bottommargin-lg">
                         <div class="feature-box media-box">
-                            <div class="fbox-icon">
-                                <i class="icon-line2-credit-card text-danger"></i>
+                            <div class="d-flex justify-content-center">
+                                <div class="fbox-icon about-icon">
+                                    <img src="{{asset('images/target.png')}}" alt="">
+                                </div>
                             </div>
+                            
                             <div class="fbox-content">
-                                <h2 class="h4 fw-bold mb-4">Tidak meminta bayaran lebih</h2>
-                                <div class="lead fw-normal text-black-50"> Rapidiously actualize wireless benefits before resource-leveling quality vectors. Dramatically innovate progressive convergence without tactical schemas. Competently unleash distributed users whereas.</div>
+                                <h2 class="h4 fw-bold mb-4 text-center ">Misi resonansi</h2>
+                                <div class="lead fw-normal text-black-50 text-center"> Membantu sebuah brand agar dapat satu frekuensi yang sama dengan apa yang sedang diperbincangan masyarakat, agar masyarakat atau konsumen dari brand dapat paham tentang produk milik brand.</div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row justify-content-around">
-                    <div class="col-md-5 bottommargin-lg">
-                        <div class="feature-box media-box">
-                            <div class="fbox-icon">
-                                <i class="icon-line2-shield text-warning"></i>
-                            </div>
-                            <div class="fbox-content">
-                                <h2 class="h4 fw-bold mb-4">Terpercaya dan Merahasiakan</h2>
-                                <div class="lead fw-normal text-black-50">Appropriately redefine market positioning leadership skills whereas client-based "outside the box" thinking. Monotonectally engage next-generation leadership skills without one-to-one testing procedures.</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-5 bottommargin-lg">
-                        <div class="feature-box media-box">
-                            <div class="fbox-icon">
-                                <i class="icon-line2-notebook text-info"></i>
-                            </div>
-                            <div class="fbox-content">
-                                <h2 class="h4 fw-bold mb-4">Tidak Ada yang Mustahil</h2>
-                                <div class="lead fw-normal text-black-50">Compellingly evisculate impactful e-services for extensible resources. Interactively grow timely e-commerce rather than optimal expertise. Uniquely optimize impactful experiences rather than cooperative.</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
 
         </div>

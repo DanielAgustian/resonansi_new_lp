@@ -98,8 +98,14 @@
                                 <li class="menu-item"><a class="menu-link" href="{{route('homepage2')}}#section-form">
                                         <div>Contact</div>
                                     </a></li>
+                                <li class="menu-item dropdown mb-lg-0 mb-1">
+                                    <select name="language" class="form-control" >
+                                        <option value="id">ID <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg" alt="" style="width: 40px; height: 25px"></option>
+                                        <option value="en">EN <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="" style="width: 40px; height: 25px"></option>
+                                    </select>
+                                </li>
                             </ul>
-
+                            
                         </nav><!-- #primary-menu end -->
 
                     </div>

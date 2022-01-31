@@ -105,6 +105,9 @@
                 <div class="features-items mx-auto" style="max-width: 1000px;">
                     <div class="row justify-content-around">
                         @component('components.custom.layanan-div-1')
+                            @slot('route')
+                                service-landing
+                            @endslot
                             @slot('pic')
                                 {{ asset('images/landing-page.png') }}
 
@@ -113,26 +116,31 @@
                                 Landing Page Website
                             @endslot
                             @slot('details')
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                aliquip ex ea commodo consequat.
+                                Landing page adalah sebuah halaman khusus yang menjadi tujuan user dan berisi informasi lebih detail
+                                dan spesifik tentang suatu produk, layanan, penawaran, dan sebagainya, untuk keperluan marketing
+                                atau campaign tertentu
                             @endslot
                         @endcomponent
                         @component('components.custom.layanan-div-1')
+                            @slot('route')
+                                service-social-media
+                            @endslot
                             @slot('pic')
                                 {{ asset('images/social-media.png') }}
 
                             @endslot
                             @slot('title')
-                                Social Media Service
+                                Social Media Marketing
                             @endslot
                             @slot('details')
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                aliquip ex ea commodo consequat.
+                                Bentuk pemasaran digital yang menggunakan media sosial dan situs web jaringan untuk mempromosikan
+                                suatu produk atau jasa layanan dari organisasi maupun perusahaan melalui cara berbayar dan organik.
                             @endslot
                         @endcomponent
                         @component('components.custom.layanan-div-1')
+                            @slot('route')
+                                service-sem
+                            @endslot
                             @slot('pic')
 
                                 {{ asset('images/digital-marketing.png') }}
@@ -141,12 +149,14 @@
                                 SEM (Search Engine Marketing)
                             @endslot
                             @slot('details')
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                aliquip ex ea commodo consequat.
+                                SEM atau Search Engine Marketing adalah sebuah aktivitas marketing menggunakan iklan berbayar yang
+                                akan muncul pada mesin pencarian atau search engine seperti Google
                             @endslot
                         @endcomponent
                         @component('components.custom.layanan-div-1')
+                            @slot('route')
+                                service-seo
+                            @endslot
                             @slot('pic')
 
                                 {{ asset('images/seo.png') }}
@@ -155,12 +165,16 @@
                                 SEO (Search Engine Optimization)
                             @endslot
                             @slot('details')
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                aliquip ex ea commodo consequat.
+                                SEO atau Search Engine Optimization adalah sebuah teknik optimasi website yang bertujuan untuk bisa
+                                mendapatkan ranking teratas di mesin pencari Google. Dengan mendapatkan peringkat terbaik dari hasil
+                                mesin pencarian maka potensi untuk mendapatkan banyak traffic secara organik juga akan semakin
+                                besar.
                             @endslot
                         @endcomponent
                         @component('components.custom.layanan-div-1')
+                            @slot('route')
+                                service-content
+                            @endslot
                             @slot('pic')
 
                                 {{ asset('images/content-creator.png') }}
@@ -169,12 +183,19 @@
                                 Content Creator
                             @endslot
                             @slot('details')
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                aliquip ex ea commodo consequat.
+                                Content Creator adalah seseorang yang memiliki tanggung jawab pada setiap informasi yang mereka
+                                sebarkan di media sosial.
+                                <br>
+                                Dengan keahlian yang dimiliki oleh seorang content creator, mereka mampu membantu kamu dalam
+                                menjalankan strategi pemasaran dengan baik. Karena, konten yang berkualitas dan juga tepat sasaran
+                                akan lebih mudah untuk memasarkan suatu produk barang maupun jasa.
+
                             @endslot
                         @endcomponent
                         @component('components.custom.layanan-div-1')
+                            @slot('route')
+                                service-opt
+                            @endslot
                             @slot('pic')
 
                                 {{ asset('images/opt.png') }}
@@ -183,9 +204,10 @@
                                 Marketplace Ads Optimization
                             @endslot
                             @slot('details')
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                aliquip ex ea commodo consequat.
+                                Marketplace Ads Optimization adalah teknik optimasi berbayar yang dilakukan untuk sebuah toko pada
+                                marketplace tertentu agar supaya ketika calon pembeli mulai mengetikkan nama suatu produk yang
+                                mereka inginkan, maka produk jualan dari toko kamu yang akan muncul di urutan pencarian teratas.
+
                             @endslot
                         @endcomponent
                     </div>
@@ -246,13 +268,13 @@
             </div>
             <div class="clear"></div>
             <div class="divider-sect"></div>
-            <section class="section-2" style="background-image: url('{{ asset('images/bg-hero.svg') }}');">
+            {{-- <section class="section-2" style="background-image: url('{{ asset('images/bg-hero.svg') }}');">
                 <div class="container">
                     <div class="inner-pad"></div>
                     {{-- <div class="white-title mx-auto center mt-4 bottommargin heading-block" style="max-width: 640px;">
                         <h3 class="nott title-part-white text-center"></h3>
                         <p class="lead fw-normal font-primary mb-5"></p>
-                    </div> --}}
+                    
                     <div class="row mt-4">
                         <div class="col-lg-3 col-md-12">
                             <div class="heading-block border-bottom-0 bottommargin-sm">
@@ -295,7 +317,7 @@
 
                                     @endslot
                                     @slot('harga')
-                                        Rp 100.000,00
+                                        
                                     @endslot
                                 @endcomponent
                                 @component('components.custom.layanan-card')
@@ -322,7 +344,7 @@
                                         </p>
                                     @endslot
                                     @slot('harga')
-                                        Rp 100.000,00
+                                        
                                     @endslot
                                 @endcomponent
                                 @component('components.custom.layanan-card')
@@ -350,7 +372,7 @@
                                         </p>
                                     @endslot
                                     @slot('harga')
-                                        Rp 100.000,00
+                                        
                                     @endslot
                                 @endcomponent
                             </div>
@@ -360,7 +382,7 @@
                     <div class="inner-pad"></div>
                 </div>
             </section>
-            <div class="divider-sect"></div>
+            <div class="divider-sect"></div> --}}
             <section class="section-3">
                 {{-- <div class="container"> --}}
                 <div class="blue-title mx-auto center mt-4 bottommargin heading-block" style="max-width: 640px;">
@@ -540,8 +562,8 @@
                                             </div>
                                             <div class="col-12 form-group mb-2">
                                                 <label>Paket</label>
-                                                <select class="form-select form-control form-control-lg required" name="landing-enquiry-paket"
-                                                    id="landing-enquiry-paket" >
+                                                <select class="form-select form-control form-control-lg required"
+                                                    name="landing-enquiry-paket" id="landing-enquiry-paket">
                                                     <option value="paket-1" selected>Paket 1</option>
                                                     <option value="paket-2">Paket 2</option>
                                                 </select>
