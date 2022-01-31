@@ -20,8 +20,8 @@
                                     anda, sehingga akan beresonansi bersama-sama
                                     dengan customer anda</p>
                                 <div class="d-flex mt-7">
-                                    <button class="btn btn-blue-bordered  btn-client bigger" style="margin-right: 15px">Our
-                                        Client</button>
+                                    <button class="btn btn-blue-bordered  btn-order bigger" style="margin-right: 15px">Order
+                                        Now</button>
 
                                     <button class="btn btn-white-cus btn-pricing bigger">Pricing</button>
                                 </div>
@@ -42,19 +42,28 @@
                                     <div class="swiper-slide">
                                         {{-- <img src="{{ asset('images/emas.png') }}" alt="" class="img-slide"> --}}
                                         <div class="d-flex align-items-center h-100">
-                                            <img src="https://www.gallerysystems.com/wp-content/uploads/crafting-your-digital-strategy-1.png"
+                                            <img src="http://amigomarketingservices.com/wp-content/uploads/2019/02/Our-Services-Social-Media-Marketing-768x480.jpg"
                                                 alt="" class="img-banner">
 
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="d-flex align-items-center h-100">
-                                            <img src="https://www.gallerysystems.com/wp-content/uploads/crafting-your-digital-strategy-1.png"
+                                            <img src="https://i0.wp.com/rumahkomunikasi.com/wp-content/uploads/2021/08/seoimage.jpg"
                                                 alt="" class="img-banner">
 
                                         </div>
 
                                     </div>
+                                    <div class="swiper-slide">
+                                        <div class="d-flex align-items-center h-100">
+                                            <img src="https://buzzup.id/wp-content/uploads/2021/09/Search-Engine-Marketing-adalah.png"
+                                                alt="" class="img-banner">
+
+                                        </div>
+
+                                    </div>
+
                                     <div class="swiper-slide">
                                         <div class="d-flex align-items-center h-100">
                                             <img src="https://www.gallerysystems.com/wp-content/uploads/crafting-your-digital-strategy-1.png"
@@ -94,94 +103,7 @@
                         Meningkatkan jumlah pengunjung anda secara pasti. Meningkatkan efisiensi iklan anda.</p> --}}
                 </div>
                 <div class="features-items mx-auto" style="max-width: 1000px;">
-                    {{-- <div class="row justify-content-around">
-                        @component('components.custom.layanan-div-1')
-                            @slot('pic')
-                                {{ asset('images/landing-page.png') }}
 
-                            @endslot
-                            @slot('title')
-                                Landing Page Website
-                            @endslot
-                            @slot('details')
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                aliquip ex ea commodo consequat.
-                            @endslot
-                        @endcomponent
-                        @component('components.custom.layanan-div-1')
-                            @slot('pic')
-                                {{ asset('images/social-media.png') }}
-
-                            @endslot
-                            @slot('title')
-                                Social Media Service
-                            @endslot
-                            @slot('details')
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                aliquip ex ea commodo consequat.
-                            @endslot
-                        @endcomponent
-                        @component('components.custom.layanan-div-1')
-                            @slot('pic')
-
-                                {{ asset('images/digital-marketing.png') }}
-                            @endslot
-                            @slot('title')
-                                SEM (Search Engine Marketing)
-                            @endslot
-                            @slot('details')
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                aliquip ex ea commodo consequat.
-                            @endslot
-                        @endcomponent
-                        @component('components.custom.layanan-div-1')
-                            @slot('pic')
-
-                                {{ asset('images/seo.png') }}
-                            @endslot
-                            @slot('title')
-                                SEO (Search Engine Optimization)
-                            @endslot
-                            @slot('details')
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                aliquip ex ea commodo consequat.
-                            @endslot
-                        @endcomponent
-                        @component('components.custom.layanan-div-1')
-                            @slot('pic')
-
-                                {{ asset('images/content-creator.png') }}
-                            @endslot
-                            @slot('title')
-                                Content Creator
-                            @endslot
-                            @slot('details')
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                aliquip ex ea commodo consequat.
-                            @endslot
-                        @endcomponent
-                        @component('components.custom.layanan-div-1')
-                            @slot('pic')
-
-                                {{ asset('images/opt.png') }}
-                            @endslot
-                            @slot('title')
-                                Marketplace Ads Optimization
-                            @endslot
-                            @slot('details')
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                aliquip ex ea commodo consequat.
-                            @endslot
-                        @endcomponent
-                    </div>
-
-                </div> --}}
                     <div class="row mt-7">
 
                         @component('components.custom.section-1-div')
@@ -234,6 +156,9 @@
                         @endcomponent
 
                     </div>
+                    <div class="d-flex justify-content-center mt-5">
+                        <button class="btn btn-white-alt btn-order bigger">Order Now</button>
+                    </div>
                 </div>
             </div>
             <div class="clear"></div>
@@ -253,7 +178,8 @@
                                     Disediakan
                                     Resonansi?</h2>
                             </div>
-                            <div class="fw-normal lead text-center" style="color: rgb(221, 221, 221)">Terdapat beberapa paket
+                            <div class="fw-normal lead text-center" style="color: rgb(221, 221, 221)">Terdapat beberapa
+                                paket
                                 layanan
                                 yang dapat anda pilih untuk membantu website anda.</div>
 
@@ -266,6 +192,9 @@
                         <div class="col-lg-12 col-12">
                             <div class="row justify-content-around">
                                 @component('components.custom.layanan-card-alt')
+                                    @slot('id')
+                                        1
+                                    @endslot
                                     @slot('title')
                                         Paket A
                                     @endslot
@@ -295,6 +224,9 @@
                                     @endslot
                                 @endcomponent
                                 @component('components.custom.layanan-card-alt')
+                                    @slot('id')
+                                        2
+                                    @endslot
                                     @slot('title')
                                         Paket B
                                     @endslot
@@ -322,6 +254,9 @@
                                     @endslot
                                 @endcomponent
                                 @component('components.custom.layanan-card-alt')
+                                    @slot('id')
+                                        3
+                                    @endslot
                                     @slot('title')
                                         Paket C
                                     @endslot
@@ -406,6 +341,9 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="d-flex justify-content-center mt-5">
+                            <button class="btn btn-blue-bordered btn-order bigger">Order Now</button>
+                        </div>
                         <div class="feature-pc"></div>
                     </div>
 
@@ -471,7 +409,7 @@
 
 
                 <div class="divider"></div>
-                <div class="container">
+                <div class="container" id="section-form">
 
                     <h2 class="nott title-part-white fw-bold mb-2 text-center">Berminat untuk Diskusi dengan <br>
                         Account
@@ -534,6 +472,17 @@
                                                 <input type="text" name="company" id="landing-enquiry-company"
                                                     class="form-control form-control-lg required" value=""
                                                     placeholder="date">
+                                            </div>
+                                            <div class="col-12 form-group mb-2">
+                                                <label>Paket</label>
+                                                <select class="form-select form-control form-control-lg required"
+                                                    name="landing-enquiry-paket" id="landing-enquiry-paket">
+                                                    <option value="paket-1" selected>Paket 1</option>
+                                                    <option value="paket-2">Paket 2</option>
+                                                    <option value="paket-3">Paket 3</option>
+
+                                                </select>
+
                                             </div>
                                             <div class="col-12 form-group mb-2">
                                                 <label>Tanggal</label>
@@ -647,8 +596,15 @@
         });
         $('.btn-order').click(function() {
             $('html, body').animate({
-                scrollTop: ($(".section-form").offset().top) - 20
+                scrollTop: ($("#section-form").offset().top) - 20
             }, 1500);
+
+            if ($(this).data('type') !== undefined) {
+              
+                let type = $(this).data('type');
+                $('#landing-enquiry-paket option:selected').removeAttr('selected');
+                $('#landing-enquiry-paket option[value="paket-'+type+'"]').attr('selected', 'selected');
+            }
         });
         $('.btn-client').click(function() {
             $('html, body').animate({

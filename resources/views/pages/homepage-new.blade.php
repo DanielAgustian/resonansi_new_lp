@@ -11,7 +11,8 @@
 
                         <div class="col-lg-6 col-md-6">
                             <div style="margin-right: 20px">
-                                <h2 class="display-6 fw-bold text-white">Mengapa Bisnis Anda Perlu <br>Bergabung dengan Resonansi
+                                <h2 class="display-6 fw-bold text-white">Mengapa Bisnis Anda Perlu <br>Bergabung dengan
+                                    Resonansi
                                 </h2>
                                 <p class="lead mb-4 fw-normal">Kami adalah perusahaan yang bergerak di bidang
                                     teknologi informasi dan digital strategi yang akan
@@ -21,11 +22,11 @@
                                 <div class="d-flex mt-7">
                                     <button class="btn btn-blue-bordered  btn-client bigger" style="margin-right: 15px">Our
                                         Client</button>
-    
+
                                     <button class="btn btn-white-cus btn-pricing bigger">Pricing</button>
                                 </div>
                             </div>
-                            
+
 
                         </div>
 
@@ -41,19 +42,28 @@
                                     <div class="swiper-slide">
                                         {{-- <img src="{{ asset('images/emas.png') }}" alt="" class="img-slide"> --}}
                                         <div class="d-flex align-items-center h-100">
-                                            <img src="https://www.gallerysystems.com/wp-content/uploads/crafting-your-digital-strategy-1.png"
+                                            <img src="http://amigomarketingservices.com/wp-content/uploads/2019/02/Our-Services-Social-Media-Marketing-768x480.jpg"
                                                 alt="" class="img-banner">
 
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="d-flex align-items-center h-100">
-                                            <img src="https://www.gallerysystems.com/wp-content/uploads/crafting-your-digital-strategy-1.png"
+                                            <img src="https://i0.wp.com/rumahkomunikasi.com/wp-content/uploads/2021/08/seoimage.jpg"
                                                 alt="" class="img-banner">
 
                                         </div>
 
                                     </div>
+                                    <div class="swiper-slide">
+                                        <div class="d-flex align-items-center h-100">
+                                            <img src="https://buzzup.id/wp-content/uploads/2021/09/Search-Engine-Marketing-adalah.png"
+                                                alt="" class="img-banner">
+
+                                        </div>
+
+                                    </div>
+
                                     <div class="swiper-slide">
                                         <div class="d-flex align-items-center h-100">
                                             <img src="https://www.gallerysystems.com/wp-content/uploads/crafting-your-digital-strategy-1.png"
@@ -73,7 +83,7 @@
                 </div>
             </div>
             <div class="section-clients">
-                
+
             </div>
 
 
@@ -86,7 +96,7 @@
         <div class="content-wrap pb-0">
 
             <div class="container">
-                <div class="mx-auto center mt-0 bottommargin heading-block" style="max-width: 640px;" >
+                <div class="mx-auto center mt-0 bottommargin heading-block" style="max-width: 640px;">
                     <h5 class="text-uppercase ls1 text-muted mb-3" id="layanan-section">Layanan Kami</h5>
                     <h3 class="nott mb-5">Jasa Layanan Apa Saja Yang Disediakan Oleh Resonansi?</h3>
                     <p class="lead fw-normal font-primary mb-5">Membantu Website Anda untuk Menjadi Nomor 1 di Google.
@@ -402,7 +412,7 @@
                         </div>
                         <div class="feature-pc"></div>
                     </div>
-                    
+
                 </div>
 
                 {{-- </div> --}}
@@ -463,9 +473,9 @@
                     </div>
                 </div>
 
-                
-                <div class="divider" ></div>
-                <div class="container">
+
+                <div class="divider"></div>
+                <div class="container" id="section-form">
 
                     <h2 class="nott title-part-white fw-bold mb-2 text-center">Berminat untuk Diskusi dengan <br> Account
                         Executive
@@ -527,6 +537,15 @@
                                                 <input type="text" name="company" id="landing-enquiry-company"
                                                     class="form-control form-control-lg required" value=""
                                                     placeholder="date">
+                                            </div>
+                                            <div class="col-12 form-group mb-2">
+                                                <label>Paket</label>
+                                                <select class="form-select form-control form-control-lg required" name="landing-enquiry-paket"
+                                                    id="landing-enquiry-paket" >
+                                                    <option value="paket-1" selected>Paket 1</option>
+                                                    <option value="paket-2">Paket 2</option>
+                                                </select>
+
                                             </div>
                                             <div class="col-12 form-group mb-2">
                                                 <label>Tanggal</label>
@@ -640,7 +659,7 @@
         });
         $('.btn-order').click(function() {
             $('html, body').animate({
-                scrollTop: ($(".section-form").offset().top) - 20
+                scrollTop: ($("#section-form").offset().top) - 20
             }, 1500);
         });
         $('.btn-client').click(function() {

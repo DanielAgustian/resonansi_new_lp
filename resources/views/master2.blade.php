@@ -83,19 +83,19 @@
 
                             <ul class="me-0 border-0 menu-container {{ set_none_navbar('landing') }}">
 
-                                <li class="menu-item"><a class="menu-link" href="demo-landing-about.html">
+                                <li class="menu-item"><a class="menu-link" href="{{route('aboutPage')}}">
                                         <div>About Us</div>
                                     </a></li>
-                                <li class="menu-item"><a class="menu-link" href="demo-landing-about.html">
+                                <li class="menu-item"><a class="menu-link" href="{{route('servicePage')}}">
                                         <div>Services</div>
                                     </a></li>
-                                <li class="menu-item"><a class="menu-link" href="demo-landing-about.html">
+                                {{-- <li class="menu-item"><a class="menu-link" href="demo-landing-about.html">
                                         <div>Blogs</div>
-                                    </a></li>
-                                <li class="menu-item"><a class="menu-link" href="demo-landing-pricing.html">
+                                    </a></li> --}}
+                                <li class="menu-item"><a class="menu-link" href="{{route('pricingPage')}}">
                                         <div>Pricing</div>
                                     </a></li>
-                                <li class="menu-item"><a class="menu-link" href="demo-landing-contact.html">
+                                <li class="menu-item"><a class="menu-link" href="{{route('homepage2')}}#section-form">
                                         <div>Contact</div>
                                     </a></li>
                             </ul>

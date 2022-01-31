@@ -33,14 +33,14 @@
                                 <div class="swiper-slide">
                                     {{-- <img src="{{ asset('images/emas.png') }}" alt="" class="img-slide"> --}}
                                     <div class="d-flex align-items-center h-100">
-                                        <img src="https://www.gallerysystems.com/wp-content/uploads/crafting-your-digital-strategy-1.png"
+                                        <img src=""
                                             alt="" class="img-banner">
 
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="d-flex align-items-center h-100">
-                                        <img src="https://www.gallerysystems.com/wp-content/uploads/crafting-your-digital-strategy-1.png"
+                                        <img src=""
                                             alt="" class="img-banner">
 
                                     </div>
@@ -338,7 +338,7 @@
                 mousewheel: true,
                 keyboard: true,
                 autoplay: {
-                    delay: 2000,
+                    delay: 25000,
                 },
             });
         </script>
