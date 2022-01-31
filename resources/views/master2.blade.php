@@ -89,9 +89,9 @@
                                 <li class="menu-item"><a class="menu-link" href="{{route('servicePage')}}">
                                         <div>Services</div>
                                     </a></li>
-                                {{-- <li class="menu-item"><a class="menu-link" href="demo-landing-about.html">
+                                <li class="menu-item"><a class="menu-link" href="demo-landing-about.html">
                                         <div>Blogs</div>
-                                    </a></li> --}}
+                                    </a></li>
                                 <li class="menu-item"><a class="menu-link" href="{{route('pricingPage')}}">
                                         <div>Pricing</div>
                                     </a></li>
