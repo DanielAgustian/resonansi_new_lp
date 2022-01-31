@@ -11,14 +11,13 @@
 
                         <div class="col-lg-6 col-md-6">
                             <div style="margin-right: 20px">
-                                <h2 class="display-6 fw-bold text-white">Mengapa Bisnis Anda Perlu <br>Bergabung dengan
-                                    Resonansi
-                                </h2>
-                                <p class="lead mb-4 fw-normal">Kami adalah perusahaan yang bergerak di bidang
-                                    teknologi informasi dan digital strategi yang akan
-                                    membantu meningkatkan penjualan produk dan brand
-                                    anda, sehingga akan beresonansi bersama-sama
-                                    dengan customer anda</p>
+                                <h4 class="display-6 fw-bold text-white">Sebuah garpu tala 
+                                    memberikan getaran yang sama kepada garpu tala dengan frekuensi yang sama
+                                </h4>
+                                <p class="lead mb-4 fw-normal">Resonansi ada untuk membantu sebuah brand agar dapat satu
+                                    frekuensi yang sama, dengan apa yang sedang diperbincangan setiap saat oleh masyarakat,
+                                    untuk membantu masyarakat atau konsumen dari brand untuk paham tentang produk milik
+                                    brand</p>
                                 <div class="d-flex mt-7">
                                     <button class="btn btn-blue-bordered  btn-client bigger" style="margin-right: 15px">Our
                                         Client</button>
@@ -42,8 +41,8 @@
                                     <div class="swiper-slide">
                                         {{-- <img src="{{ asset('images/emas.png') }}" alt="" class="img-slide"> --}}
                                         <div class="d-flex align-items-center h-100">
-                                            <img src="{{asset('images/soc-med-banner.png')}}"
-                                                alt="" class="img-banner">
+                                            <img src="{{ asset('images/soc-med-banner.png') }}" alt=""
+                                                class="img-banner">
 
                                         </div>
                                     </div>
