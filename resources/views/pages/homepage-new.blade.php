@@ -99,7 +99,8 @@
                 <div class="mx-auto center mt-0 bottommargin heading-block" style="max-width: 640px;">
                     <h5 class="text-uppercase ls1 text-muted mb-3" id="layanan-section">Layanan Kami</h5>
                     <h3 class="nott mb-5">Jasa Layanan Apa Saja Yang Disediakan Oleh Resonansi?</h3>
-                    <p class="lead fw-normal font-primary mb-5">Seperti sebuah garpu tala ketika bergetar, dapat memberikan getaran yang sama kepada garpu tala yang memiliki frekuensi yang sama</p>
+                    <p class="lead fw-normal font-primary mb-5">Membantu Website Anda untuk Menjadi Nomor 1 di Google.
+                        Meningkatkan jumlah pengunjung anda secara pasti. Meningkatkan efisiensi iklan anda.</p>
                 </div>
                 <div class="features-items mx-auto" style="max-width: 1000px;">
                     <div class="row justify-content-around">
@@ -386,7 +387,8 @@
                 {{-- <div class="container"> --}}
                 <div class="blue-title mx-auto center mt-4 bottommargin heading-block" style="max-width: 640px;">
                     <h3 class="nott title-part text-center"><span>Siapa Saja Klien Kami?</span> </h3>
-                    <p class="lead fw-normal font-primary mb-5 mt-3">Resonansi ada untuk membantu sebuah brand agar dapat satu frekuensi yang sama, dengan apa yang sedang diperbincangan setiap saat oleh masyarakat, untuk membantu masyarakat atau konsumen dari brand untuk paham tentang produk milik brand.</p>
+                    <p class="lead fw-normal font-primary mb-5 mt-3">Banyak klien sudah puas dengan servis kami. Apakah
+                        anda akan menjadi salah satunya?</p>
 
                 </div>
                 <div class="row align-items-stretch align-content-stretch g-0 topmargin">

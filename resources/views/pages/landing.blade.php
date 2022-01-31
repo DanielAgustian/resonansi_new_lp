@@ -42,7 +42,7 @@
                                     <div class="swiper-slide">
                                         {{-- <img src="{{ asset('images/emas.png') }}" alt="" class="img-slide"> --}}
                                         <div class="d-flex align-items-center h-100">
-                                            <img src="http://amigomarketingservices.com/wp-content/uploads/2019/02/Our-Services-Social-Media-Marketing-768x480.jpg"
+                                            <img src="{{asset('images/soc-med-banner.png')}}"
                                                 alt="" class="img-banner">
 
                                         </div>
