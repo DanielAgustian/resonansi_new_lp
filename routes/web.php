@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,9 @@ Route::get('/', function () {
 //Route::get('/induk-produk', [ProductController::class, 'indukProduk'])->name('indukProduk');
 
 Route::get('/', [LandingController::class, 'homepage'])->name('homepage');
+
+//
+// user detail
+Route::get('admin/leads/{id}', [UserController::class, 'userDetail'])->name('userDetail');
+
+
