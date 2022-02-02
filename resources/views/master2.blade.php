@@ -2,7 +2,7 @@
 <html dir="ltr" lang="en-US">
 
 <head>
-    <title>Resonansi Landing Page</title>
+    <title>Resonansi @yield('page')</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="author" content="Yokesen Teknologi Indonesia" />
     <link rel="shortcut icon" href="{{ asset('images/favicon/favicon.ico') }}">
@@ -89,8 +89,8 @@
                                 <li class="menu-item"><a class="menu-link" href="{{route('servicePage')}}">
                                         <div>Services</div>
                                     </a></li>
-                                <li class="menu-item"><a class="menu-link" href="demo-landing-about.html">
-                                        <div>Blogs</div>
+                                <li class="menu-item"><a class="menu-link" href="#">
+                                        <div>Blog</div>
                                     </a></li>
                                 <li class="menu-item"><a class="menu-link" href="{{route('pricingPage')}}">
                                         <div>Pricing</div>
@@ -144,8 +144,8 @@
                                         <h4 class="ls0 ls0">Pages</h4>
 
                                         <ul>
-                                            <li><a href="#">About Us</a></li>
-                                            <li><a href="#">Our Services</a></li>
+                                            <li><a href="{{route('aboutPage')}}">About Us</a></li>
+                                            <li><a href="{{route('servicePage')}}">Our Services</a></li>
                                             <li><a href="#">Blog</a></li>
 
                                         </ul>
@@ -159,8 +159,8 @@
 
                                         <ul>
 
-                                            <li><a href="#">Pricing</a></li>
-                                            <li><a href="#">Contact Us</a></li>
+                                            <li><a href="{{route('pricingPage')}}">Pricing</a></li>
+                                            <li><a href="{{route('homepage2')}}#section-form">Contact Us</a></li>
                                         </ul>
 
                                     </div>
@@ -176,7 +176,7 @@
                         <div class="col-md-4 mt-4 mt-md-0">
                             <div class="widget">
 
-                                <h4 class="ls0 ls0 text-center mb-4">Resonansi by Yokesen</h4>
+                                <h4 class="ls0 ls0 text-center mb-4">Resonansi from Yokesen</h4>
 
                                 <article class="entry">
                                     {{-- <div class="entry-image mb-3">

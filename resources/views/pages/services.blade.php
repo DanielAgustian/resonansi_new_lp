@@ -1,5 +1,7 @@
 @extends('master2')
-
+@section('page')
+    | Services
+@endsection
 @section('banner')
     <section id="slider" class="slider-element dark min-vh-25 min-vh-md-50 include-header py-5"
         style="background-image: url('{{ asset('images/bg-hero.svg') }}');">
@@ -37,6 +39,9 @@
 
                             <div class="row my-5 justify-content-center">
                                 @component('components.custom.services-card')
+                                    @slot('type')
+                                        landing-website
+                                    @endslot
                                     @slot('id')
                                         service-landing
                                     @endslot
@@ -86,6 +91,9 @@
 
                                 @endcomponent
                                 @component('components.custom.services-card')
+                                    @slot('type')
+                                        social-media-marketing
+                                    @endslot
                                     @slot('id')
                                         service-social-media
                                     @endslot
@@ -159,6 +167,9 @@
                                     @endslot
                                 @endcomponent
                                 @component('components.custom.services-card')
+                                    @slot('type')
+                                        search-engine-marketing
+                                    @endslot
                                     @slot('id')
                                         service-sem
                                     @endslot
@@ -203,6 +214,9 @@
                                     @endslot
                                 @endcomponent
                                 @component('components.custom.services-card')
+                                    @slot('type')
+                                        search-engine-optimization
+                                    @endslot
                                     @slot('id')
                                         service-seo
                                     @endslot
@@ -260,6 +274,9 @@
                                     @endslot
                                 @endcomponent
                                 @component('components.custom.services-card')
+                                    @slot('type')
+                                        content-creator
+                                    @endslot
                                     @slot('id')
                                         service-content
                                     @endslot
@@ -320,6 +337,9 @@
                                     @endslot
                                 @endcomponent
                                 @component('components.custom.services-card')
+                                    @slot('type')
+                                        marketplace-ads-optimization
+                                    @endslot
                                     @slot('id')
                                         service-opt
                                     @endslot
@@ -363,27 +383,155 @@
                 </div>
             </div>
 
-            <div class="section m-0 bg-color dotted-bg"
-                style="background-image: linear-gradient(to bottom, #3D80E4 0%, #0a4bab 50%, #FFF 50%);">
+            <section class="section-form"
+                style="background-image: linear-gradient(to bottom, #3D80E4 0%, #0a4bab 80%, #FFF 80%);">
+                <div class="inner-pad"></div>
 
-                <div class="container clearfix">
-                    <div class="row mx-auto justify-content-center shadow-lg py-5 my-5 text-center rounded-3 bg-white"
-                        style="max-width: 940px; ">
-                        <div class="col-md-8">
-                            <div class="card border-0 bg-transparent">
-                                <div class="card-body">
-                                    <h3 class="display-4 fw-bold">Start your journey right now</h3>
-                                    <p class="text-black-50">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                        Voluptate sequi natus autem non temporibus aperiam, nesciunt iusto, perspiciatis.
-                                    </p>
-                                    <a href="{{ route('homepage2') }}#section-form" class="btn btn-lg btn-dark">Klik
-                                        Disini!</a>
+
+
+
+                <div class="container" id="section-form">
+
+                    <h2 class="nott title-part-white fw-bold mb-2 text-center">Berminat untuk Diskusi dengan <br> Account
+                        Executive
+                        Kami? </h2>
+                    <p class="text-white font-primary mb-5  lead text-center">Yuk Diskusi Asik dengan Account Executive
+                        Resonansi <br> supaya tambah ngerti!</p>
+                    <div class="row">
+                        <div class="col-md-6 img-mbl-form">
+                            <img src="{{ asset('images/calendar.png') }}" alt="" class="img-form rounded">
+                        </div>
+                        <div class="col-md-6 my-auto">
+                            <div class="card bg-white shadow-lg border-0">
+                                <div class="card-body p-4">
+                                    <div class="form-widget" data-loader="button" data-alert-type="inline">
+
+                                        <div class="form-result"></div>
+
+                                        <form class="row mb-0" id="landing-enquiry" action="include/form.php"
+                                            method="post" enctype="multipart/form-data">
+                                            <div class="form-process"></div>
+                                            <div class="col-12 form-group mb-2">
+                                                <label>Name:</label>
+                                                <input type="text" name="name" id="landing-enquiry-name"
+                                                    class="form-control form-control-lg required" value=""
+                                                    placeholder="John Doe">
+                                            </div>
+                                            <div class="col-12 form-group mb-2">
+                                                <label>Email:</label>
+                                                <input type="email" name="email" id="landing-enquiry-email"
+                                                    class="form-control form-control-lg required" value=""
+                                                    placeholder="user@company.com">
+                                            </div>
+                                            <div class="col-12 form-group mb-2">
+                                                <label>Phone:</label><br>
+                                                <div class="input-group input-group-lg">
+                                                    <select class="form-select required" name="landing-enquiry-idd"
+                                                        id="landing-enquiry-idd" style="max-width: 100px;">
+                                                        {{-- <option value="+1">+1</option>
+                                                        <option value="+44">+44</option>
+                                                        <option value="+66">+66</option> --}}
+                                                        <option value="+62" selected>+62</option>
+                                                        {{-- <option value="+61">+61</option>
+                                                        <option value="+852">+852</option>
+                                                        <option value="+65">+61</option>
+                                                        <option value="+33">+61</option>
+                                                        <option value="+49">+49</option> --}}
+                                                    </select>
+                                                    <input type="number" name="phone" id="landing-enquiry-phone"
+                                                        class="form-control form-control-lg required" value=""
+                                                        placeholder="">
+                                                </div>
+                                            </div>
+                                            {{-- <div class="col-12 form-group mb-4">
+                                                <label>Message:</label>
+                                                <textarea name="landing-enquiry-additional-requirements" id="landing-enquiry-additional-requirements" class="form-control form-control-lg" cols="30" rows="5" placeholder="Please let us know how we can help you..."></textarea>
+                                            </div> --}}
+                                            <div class="col-12 form-group mb-2">
+                                                <label>Nama Perusahaan</label>
+                                                <input type="text" name="company" id="landing-enquiry-company"
+                                                    class="form-control form-control-lg required" value=""
+                                                    placeholder="date">
+                                            </div>
+                                            <div class="col-12 form-group mb-2">
+                                                <label>Paket</label>
+                                                <select class="form-select form-control form-control-lg required"
+                                                    name="landing-enquiry-paket" id="landing-enquiry-paket">
+                                                    <option value="paket-1" selected>Paket 1</option>
+                                                    <option value="paket-2">Paket 2</option>
+                                                    <option value="paket-3">Paket 3</option>
+                                                    <option value="landing-website">Landing Website</option>
+                                                    <option value="social-media-marketing">Social Media Marketing</option>
+                                                    <option value="search-engine-marketing">SEM/Search Engine Marketing</option>
+                                                    <option value="search-engine-optimization">SEO/Search Engine Optimization</option>
+                                                    
+                                                    <option value="content-creator">Content Creator</option>
+                                                    <option value="marketplace-ads-optimization">Marketplace Ads Optimization</option>
+
+                                                </select>
+
+                                            </div>
+                                            <div class="col-12 form-group mb-2">
+                                                <label>Tanggal</label>
+                                                <input type="date" name="date" id="landing-enquiry-date"
+                                                    class="form-control form-control-lg required" value=""
+                                                    placeholder="date">
+                                            </div>
+                                            <div class="col-12 form-group mb-2">
+                                                <label>Waktu</label>
+                                                <input type="time" name="time" id="landing-enquiry-time"
+                                                    class="form-control form-control-lg required" value=""
+                                                    placeholder="date">
+                                            </div>
+                                            <div class="col-12 d-none">
+                                                <input type="text" id="landing-enquiry-botcheck"
+                                                    name="landing-enquiry-botcheck" value="" />
+                                            </div>
+                                            <div class="col-12">
+                                                <button type="submit" name="landing-enquiry-submit"
+                                                    class="btn w-100 text-white bg-color rounded-3 py-3 fw-semibold text-uppercase mt-2">Book
+                                                    Now!</button>
+                                            </div>
+
+                                            <input type="hidden" name="prefix" value="landing-enquiry-">
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
+                            {{-- <div class="card">
+                                <div class="card-body">
+                                    <h5 class="text-center title-part mb-4">
+                                        Yuk Bertemu dengan <span>Account Executive</span> Kami!
+                                    </h5>
+                                    <form action="">
+                                        <div class="form-error" id="error_name"></div>
+                                        <input type="text" name="email" class="form-control" placeholder="Email" required>
+                                        <div class="form-error" id="error_email"></div>
+                                        <input type="number" name="whatsapp" class="form-control"
+                                            placeholder="Nomor Handphone" required>
+                                        <div class="form-error" id="error_whatsapp"></div>
+                                        <input type="text" name="company" class="form-control"
+                                            placeholder="Nama Perusahaan" required>
+                                        <div class="form-error" id="error_company"></div>
+                                        <input type="date" name="date" class="form-control"
+                                            placeholder="Tanggal Bertemu" required>
+                                        <div class="form-error" id="error_date"></div>
+                                        <input type="time" name="time" class="form-control"
+                                            placeholder="Jam Bertemu" required>
+                                        <div class="form-error" id="error_time"></div>
+                                        <div class="d-flex justify-content-center mt-7">
+                                            <button class="btn btn-blue">
+                                                Book Now!
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div> --}}
+
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
         </div>
 
@@ -391,5 +539,18 @@
 @endsection
 
 @section('js')
+<script>
+    $('.btn-order').click(function() {
+        $('html, body').animate({
+            scrollTop: ($("#section-form").offset().top) - 20
+        }, 1500);
 
+        if ($(this).data('type') !== undefined) {
+
+            let type = $(this).data('type');
+            $('#landing-enquiry-paket option:selected').removeAttr('selected');
+            $('#landing-enquiry-paket option[value="' + type + '"]').attr('selected', 'selected');
+        }
+    });
+</script>
 @endsection

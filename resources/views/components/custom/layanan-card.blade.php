@@ -40,7 +40,7 @@
             <li><i class="icon-check-circle color"></i>No Hidden Charges</li> --}}
                 {{-- </ul> --}}
             </div>
-            <button class="btn w-100 text-white bg-color  btn-order rounded-3 p-3 fw-semibold text-uppercase mt-4">Order Now</button>
+            <button class="btn w-100 text-white bg-color  btn-order rounded-3 p-3 fw-semibold text-uppercase mt-4" data-type="{{$id}}"> Order Now</button>
         </div>
 
         

@@ -1,5 +1,7 @@
 @extends('master2')
-
+@section('page')
+    | About Us
+@endsection
 @section('banner')
 <section id="slider" class="slider-element dark min-vh-25 min-vh-md-50 include-header py-5" style="background-image: url('{{ asset('images/bg-hero.svg') }}');">
     <div class="slider-inner">
@@ -10,7 +12,7 @@
 
                     <div class="col-lg-6 col-md-6">
                         <h2 class="display-3 fw-bold text-white mb-2">About Us</h2>
-                        <p class="lead mb-0 fw-normal">Teknologi Terbaik untuk Meningkatkan Kualtas Website Anda</p>
+                        <p class="lead mb-0 fw-normal">Teknologi Terbaik untuk Meningkatkan Bisnis Anda</p>
                     </div>
 
                 </div>
@@ -33,7 +35,7 @@
                 </div>
 
                 <div class="col-md-7 my-auto">
-                    <h3 class="lead fw-normal"> <strong>Resonansi</strong>  by Yokesen adalah perusahaan yang bergerak di bidang teknologi informasi dan digital strategi yang akan membantu meningkatkan penjualan produk dan brand anda, sehingga akan beresonansi bersama-sama dengan customer anda</h3>
+                    <h3 class="lead fw-normal"> <strong>Resonansi</strong> adalah perusahaan yang bergerak di bidang teknologi informasi dan digital strategi yang akan membantu meningkatkan penjualan produk dan brand anda, sehingga akan beresonansi bersama-sama dengan customer anda</h3>
                     {{-- <div class="line my-5 border-width-5 border-f5"></div> --}}
 
                     <h3 class="lead fw-normal">Resonansi ada untuk membantu sebuah brand agar dapat satu frekuensi yang sama, dengan apa yang sedang diperbincangan setiap saat oleh masyarakat, untuk membantu masyarakat atau konsumen dari brand untuk paham tentang produk milik brand.</h3>
@@ -60,7 +62,7 @@
         <div class="container topmargin-lg bottommargin-lg">
             <div class="mx-auto text-center mt-4 bottommargin heading-block" style="max-width: 640px;">
                 <h5 class="text-uppercase ls1 text-muted mb-3">Prinsip Resonansi</h5>
-                <h2 class="nott mb-4">Teknologi Terbaik untuk Website Anda</h2>
+                <h2 class="nott mb-4">Teknologi Terbaik untuk Bisnis Anda</h2>
                 <p class="lead fw-normal font-primary mb-5"></p>
             </div>
             <div class="features-items mx-auto" style="max-width: 1000px;">

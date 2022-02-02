@@ -1,5 +1,7 @@
 @extends('master2')
-
+@section('page')
+    | Digital Marketing
+@endsection
 @section('banner')
     <section id="slider" class="slider-element dark min-vh-100 include-header"
         style="background-image: url('{{ asset('images/bg-hero.svg') }}');">

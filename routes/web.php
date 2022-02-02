@@ -22,5 +22,6 @@ Route::get('/', [LandingController::class, 'homepage2'])->name('homepage2');
 Route::get('/about-us', [LandingController::class, 'aboutPage'])->name('aboutPage');
 Route::get('/pricing', [LandingController::class, 'pricingPage'])->name('pricingPage');
 Route::get('/services', [LandingController::class, 'servicePage'])->name('servicePage');
+Route::get('/contact-us', [LandingController::class, 'contactPage'])->name('contactPage');
 
 Route::get('/digital-marketing', [LandingController::class, 'landing'])->name('landing');

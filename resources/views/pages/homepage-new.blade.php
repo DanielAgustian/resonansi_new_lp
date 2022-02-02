@@ -1,5 +1,7 @@
 @extends('master2')
-
+@section('page')
+    | Home
+@endsection
 @section('banner')
     <section id="slider" class="slider-element dark min-vh-100 include-header"
         style="background-image: url('{{ asset('images/bg-hero.svg') }}');">
@@ -11,8 +13,7 @@
 
                         <div class="col-lg-6 col-md-6">
                             <div style="margin-right: 20px">
-                                <h4 class="display-6 fw-bold text-white">Sebuah garpu tala 
-                                    memberikan getaran yang sama kepada garpu tala dengan frekuensi yang sama
+                                <h4 class="display-7 fw-bold text-white">Seperti sebuah garpu tala ketika bergetar, dapat memberikan getaran yang sama kepada garpu tala yang memiliki frekuensi yang sama.
                                 </h4>
                                 <p class="lead mb-4 fw-normal">Resonansi ada untuk membantu sebuah brand agar dapat satu
                                     frekuensi yang sama, dengan apa yang sedang diperbincangan setiap saat oleh masyarakat,
@@ -22,7 +23,7 @@
                                     <button class="btn btn-blue-bordered  btn-client bigger" style="margin-right: 15px">Our
                                         Client</button>
 
-                                    <button class="btn btn-white-cus btn-pricing bigger">Pricing</button>
+                                    <a href="{{route('pricingPage')}}" class="btn btn-white-cus bigger">Pricing</a>
                                 </div>
                             </div>
 

@@ -422,7 +422,15 @@ label{
     text-align: justify;
     color: rgb(78, 78, 78);
 }
-
+.display-7{
+     font-size: calc(1.325rem + 1.35vw);
+}
+@media screen and (min-width:1200px) {
+    .display-7{
+        font-size: 2rem;
+    }
+    
+}
 @media screen  and ( max-width: 450px ){
     .services-page .feature-box{
         display: block;
@@ -432,4 +440,23 @@ label{
         margin-bottom: 10px;
         text-align: center;
     }
+}
+
+/* Contact Us */
+
+.map-contact-us{
+    height: 100%;
+    width: 100%;
+    min-height: 250px;
+}
+.section-form textarea.form-control{
+    height: auto !important;
+}
+
+.svg-trigger path{
+    stroke: #3c78d8 !important;
+}
+.svg-trigger{
+    width: 38px;
+    height: 38px;
 }

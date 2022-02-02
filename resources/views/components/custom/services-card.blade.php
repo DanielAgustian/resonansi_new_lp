@@ -24,7 +24,8 @@
             <div class="detail-service">
                 {{$details}}
             </div>
-            
+            <button class="btn btn-blue-bordered  btn-order bigger my-4" style="margin-right: 15px" data-type="{{$type}}">Order Now</button>
+
         </div>
     </div>
     <div class="line line-sm"></div>

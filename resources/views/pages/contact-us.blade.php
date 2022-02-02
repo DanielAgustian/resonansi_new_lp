@@ -1,0 +1,255 @@
+@extends('master2')
+@section('page')
+    | Contact Us
+@endsection
+@section('banner')
+    <section id="slider" class="slider-element dark min-vh-25 min-vh-md-50 include-header py-5"
+        style="background-image: url('{{ asset('images/bg-hero.svg') }}');">
+        <div class="slider-inner">
+
+            <div class="vertical-middle text-center">
+                <div class="container">
+                    <div class="row align-items-center justify-content-center">
+
+                        <div class="col-lg-6 col-md-6">
+                            <h2 class="display-3 fw-bold text-white mb-2">Contact Us</h2>
+                            <p class="lead mb-0 fw-normal">Penasaran? Hubungi Kami!</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- #slider end -->
+
+@endsection
+
+@section('content')
+    <section id="content">
+        <div class="content-wrap">
+
+            <div class="section bg-transparent mt-0">
+                <div class="container">
+                    <div class="row justify-content-between col-mb-50">
+                        <div class="col-lg-5">
+                            <div class="text-nowrap dotted-bg dotted-bg-dark">
+                                <h2 class="nott mb-3 display-3 fw-bold">Resonansi</h2>
+                                <p class="fw-normal text-black-50">Seperti sebuah garpu tala ketika bergetar, <br> dapat
+                                    memberikan getaran yang sama <br> kepada garpu tala yang memiliki frekuensi yang sama.</p>
+                            </div>
+
+                            <div class="clear"></div>
+
+                            <div class="my-5">
+                                <address>
+                                    <strong>Office:</strong><br>
+                                    Ruko Crystal Lane 8 no. 18 Lt. 3<br>
+                                    Kel. Pakualam, Kec. Serpong Utara,<br>
+                                    Banten 15320
+
+
+                                </address>
+                                <abbr title="Phone Number"><strong>Phone:</strong></abbr> (+62) 88290592631<br>
+                                <abbr title="Email Address"><strong>Email:</strong></abbr> contact@yokesen.com
+                            </div>
+
+                            <div class="d-flex mt-4">
+                                {{-- <a href="#" class="social-icon si-colored si-facebook" title="Facebook">
+                                    <i class="icon-facebook"></i>
+                                    <i class="icon-facebook"></i>
+                                </a>
+
+                                <a href="#" class="social-icon si-colored si-instagram" title="Instagram">
+                                    <i class="icon-instagram"></i>
+                                    <i class="icon-instagram"></i>
+                                </a>
+
+                                <a href="#" class="social-icon si-colored si-twitter" title="Twitter">
+                                    <i class="icon-twitter"></i>
+                                    <i class="icon-twitter"></i>
+                                </a>
+
+                                <a href="#" class="social-icon si-colored si-appstore" title="Apple">
+                                    <i class="icon-apple"></i>
+                                    <i class="icon-apple"></i>
+                                </a>
+
+                                <a href="#" class="social-icon si-colored si-android" title="Android">
+                                    <i class="icon-android"></i>
+                                    <i class="icon-android"></i>
+                                </a> --}}
+
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            {{-- <img src="https://source.unsplash.com/wawEfYdpkag" alt="Office Image"> --}}
+                            <iframe class="map-contact-us"
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3966.1919140211608!2d106.651433!3d-6.2384177!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fbf1aabef151%3A0xfc821b869de7efd2!2sResonansi%20by%20yokesen!5e0!3m2!1sen!2sid!4v1643784210197!5m2!1sen!2sid"
+                                style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="section-form"
+                style="background-image: linear-gradient(to bottom, #3D80E4 0%, #0a4bab 80%, #FFF 80%);">
+                <div class="inner-pad"></div>
+
+
+
+
+                <div class="container" id="section-form">
+
+                    <h2 class="nott title-part-white fw-bold mb-2 text-center">Berminat untuk Diskusi dengan <br>
+
+                        Kami? </h2>
+                    <p class="text-white font-primary mb-5  lead text-center">Yuk Tanya Ke Kami dengan Form Berikut!</p>
+                    <div class="row justify-content-center">
+                        {{-- <div class="col-md-6 img-mbl-form">
+                            <img src="{{ asset('images/calendar.png') }}" alt="" class="img-form rounded">
+                        </div> --}}
+                        <div class="col-md-8 my-auto">
+                            <div class="card bg-white shadow-lg border-0">
+                                <div class="card-body p-md-5 p-4">
+                                    <div class="form-widget" data-loader="button" data-alert-type="inline">
+
+                                        <div class="form-result"></div>
+
+                                        <form class="row mb-0" id="landing-enquiry" action="include/form.php"
+                                            method="post" enctype="multipart/form-data">
+                                            <div class="form-process"></div>
+                                            <div class="col-12 form-group mb-4">
+                                                <label>Name:</label>
+                                                <input type="text" name="name" id="landing-enquiry-name"
+                                                    class="form-control form-control-lg required" value=""
+                                                    placeholder="John Doe">
+                                            </div>
+                                            <div class="col-12 form-group mb-4">
+                                                <label>Email:</label>
+                                                <input type="email" name="email" id="landing-enquiry-email"
+                                                    class="form-control form-control-lg required" value=""
+                                                    placeholder="user@company.com">
+                                            </div>
+                                            <div class="col-12 form-group mb-4">
+                                                <label>Phone:</label><br>
+                                                <div class="input-group input-group-lg">
+                                                    <select class="form-select required" name="landing-enquiry-idd"
+                                                        id="landing-enquiry-idd" style="max-width: 100px;">
+                                                        {{-- <option value="+1">+1</option>
+                                                        <option value="+44">+44</option>
+                                                        <option value="+66">+66</option> --}}
+                                                        <option value="+62" selected>+62</option>
+                                                        {{-- <option value="+61">+61</option>
+                                                        <option value="+852">+852</option>
+                                                        <option value="+65">+61</option>
+                                                        <option value="+33">+61</option>
+                                                        <option value="+49">+49</option> --}}
+                                                    </select>
+                                                    <input type="number" name="phone" id="landing-enquiry-phone"
+                                                        class="form-control form-control-lg required" value=""
+                                                        placeholder="">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 form-group mb-4">
+                                                <label>Nama Perusahaan</label>
+                                                <input type="text" name="company" id="landing-enquiry-company"
+                                                    class="form-control form-control-lg required" value=""
+                                                    placeholder="date">
+                                            </div>
+                                            <div class="col-12 form-group mb-4">
+                                                <label>Message:</label>
+                                                <textarea name="landing-enquiry-additional-requirements"
+                                                    id="landing-enquiry-additional-requirements"
+                                                    class="form-control form-control-lg" cols="30" rows="5"
+                                                    placeholder="Please let us know how we can help you..."></textarea>
+                                            </div>
+                                            {{-- <div class="col-12 form-group mb-4">
+                                                <label>Paket</label>
+                                                <select class="form-select form-control form-control-lg required"
+                                                    name="landing-enquiry-paket" id="landing-enquiry-paket">
+                                                    <option value="paket-1" selected>Paket 1</option>
+                                                    <option value="paket-2">Paket 2</option>
+                                                    <option value="paket-3">Paket 3</option>
+                                                    <option value="landing-website">Landing Website</option>
+                                                    <option value="social-media-marketing">Social Media Marketing</option>
+                                                    <option value="search-engine-marketing">SEM/Search Engine Marketing</option>
+                                                    <option value="search-engine-optimization">SEO/Search Engine Optimization</option>
+                                                    
+                                                    <option value="content-creator">Content Creator</option>
+                                                    <option value="marketplace-ads-optimization">Marketplace Ads Optimization</option>
+
+                                                </select>
+
+                                            </div> --}}
+                                            {{-- <div class="col-12 form-group mb-4">
+                                                <label>Tanggal</label>
+                                                <input type="date" name="date" id="landing-enquiry-date"
+                                                    class="form-control form-control-lg required" value=""
+                                                    placeholder="date">
+                                            </div>
+                                            <div class="col-12 form-group mb-4">
+                                                <label>Waktu</label>
+                                                <input type="time" name="time" id="landing-enquiry-time"
+                                                    class="form-control form-control-lg required" value=""
+                                                    placeholder="date">
+                                            </div> --}}
+
+                                            <div class="col-12 d-none">
+                                                <input type="text" id="landing-enquiry-botcheck"
+                                                    name="landing-enquiry-botcheck" value="" />
+                                            </div>
+                                            <div class="col-12">
+                                                <button type="submit" name="landing-enquiry-submit"
+                                                    class="btn w-100 text-white bg-color rounded-3 py-3 fw-semibold text-uppercase mt-2">Message
+                                                    Now</button>
+                                            </div>
+
+                                            {{-- <input type="hidden" name="prefix" value="landing-enquiry-"> --}}
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            {{-- <div class="card">
+                                <div class="card-body">
+                                    <h5 class="text-center title-part mb-4">
+                                        Yuk Bertemu dengan <span>Account Executive</span> Kami!
+                                    </h5>
+                                    <form action="">
+                                        <div class="form-error" id="error_name"></div>
+                                        <input type="text" name="email" class="form-control" placeholder="Email" required>
+                                        <div class="form-error" id="error_email"></div>
+                                        <input type="number" name="whatsapp" class="form-control"
+                                            placeholder="Nomor Handphone" required>
+                                        <div class="form-error" id="error_whatsapp"></div>
+                                        <input type="text" name="company" class="form-control"
+                                            placeholder="Nama Perusahaan" required>
+                                        <div class="form-error" id="error_company"></div>
+                                        <input type="date" name="date" class="form-control"
+                                            placeholder="Tanggal Bertemu" required>
+                                        <div class="form-error" id="error_date"></div>
+                                        <input type="time" name="time" class="form-control"
+                                            placeholder="Jam Bertemu" required>
+                                        <div class="form-error" id="error_time"></div>
+                                        <div class="d-flex justify-content-center mt-7">
+                                            <button class="btn btn-blue">
+                                                Book Now!
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div> --}}
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </section>
+@endsection
+
+@section('js')
+
+@endsection
