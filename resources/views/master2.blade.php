@@ -95,7 +95,7 @@
                                 <li class="menu-item"><a class="menu-link" href="{{route('pricingPage')}}">
                                         <div>Pricing</div>
                                     </a></li>
-                                <li class="menu-item"><a class="menu-link" href="{{route('homepage2')}}#section-form">
+                                <li class="menu-item"><a class="menu-link" href="{{route('contactPage')}}">
                                         <div>Contact</div>
                                     </a></li>
                                 <li class="menu-item dropdown mb-lg-0 mb-1">
@@ -160,7 +160,7 @@
                                         <ul>
 
                                             <li><a href="{{route('pricingPage')}}">Pricing</a></li>
-                                            <li><a href="{{route('homepage2')}}#section-form">Contact Us</a></li>
+                                            <li><a href="{{route('contactPage')}}">Contact Us</a></li>
                                         </ul>
 
                                     </div>
