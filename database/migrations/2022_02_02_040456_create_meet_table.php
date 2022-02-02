@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateActivitiesTable extends Migration
+class CreateMeetTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,11 @@ class CreateActivitiesTable extends Migration
      */
     public function up()
     {
-        Schema::create('activities', function (Blueprint $table) {
+        Schema::create('meet', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('client_id');
-            $table->bigInteger('admin_id');
-            $table->longText('activity')->nullable();
-            $table->date('next_fu')->nullable();
+            $table->date('tgl');
+            $table->string('jam')->nullable();
             $table->timestamps();
         });
     }
@@ -30,6 +29,6 @@ class CreateActivitiesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('activities');
+        Schema::dropIfExists('meet');
     }
 }

@@ -15,7 +15,7 @@
 
                 <ul class="list-group list-group-unbordered">
                     <li class="list-group-item">
-                        <b>Name</b> <a class="pull-right">{{ $user->nama ? ucwords($user->nama) : '-' }}</a>
+                        <b>Name</b> <a class="pull-right">{{ $user->name ? ucwords($user->name) : '-' }}</a>
                     </li>
                     <li class="list-group-item">
                         <b>Username</b> <a class="pull-right">{{ $user->username ? $user->username : '-' }}</a>
