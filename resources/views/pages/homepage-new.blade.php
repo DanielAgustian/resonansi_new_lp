@@ -3,17 +3,18 @@
     | Home
 @endsection
 @section('banner')
-<section id="slider" class="slider-element dark min-vh-100 include-header"
-    style="background-image: url('{{ asset('images/bg-hero.svg') }}');">
-    <div class="slider-inner flex-column">
+    <section id="slider" class="slider-element dark min-vh-100 include-header"
+        style="background-image: url('{{ asset('images/bg-hero.svg') }}');">
+        <div class="slider-inner flex-column">
 
-        <div class="vertical-middle">
-            <div class="container mb-3">
-                <div class="row align-items-lg-center g-0">
+            <div class="vertical-middle">
+                <div class="container mb-3">
+                    <div class="row align-items-lg-center g-0">
 
                         <div class="col-lg-6 col-md-6">
                             <div style="margin-right: 20px">
-                                <h4 class="display-7 fw-bold text-white">Seperti sebuah garpu tala ketika bergetar, dapat memberikan getaran yang sama kepada garpu tala yang memiliki frekuensi yang sama.
+                                <h4 class="display-7 fw-bold text-white">Seperti sebuah garpu tala ketika bergetar, dapat
+                                    memberikan getaran yang sama kepada garpu tala yang memiliki frekuensi yang sama.
                                 </h4>
                                 <p class="lead mb-4 fw-normal">Resonansi ada untuk membantu sebuah brand agar dapat satu
                                     frekuensi yang sama, dengan apa yang sedang diperbincangan setiap saat oleh masyarakat,
@@ -23,197 +24,198 @@
                                     <button class="btn btn-blue-bordered  btn-client bigger" style="margin-right: 15px">Our
                                         Client</button>
 
-                                    <a href="{{route('pricingPage')}}" class="btn btn-white-cus bigger">Pricing</a>
+                                    <a href="{{ route('pricingPage') }}" class="btn btn-white-cus bigger">Pricing</a>
                                 </div>
                             </div>
                         </div>
 
 
-                    </div>
 
-                    {{-- <div class="col-lg-1 col-0"></div> --}}
 
-                    <div class="col-lg-6 col-md-6 mt-md-0 mt-3">
-                        {{-- <div class="slide-imgs">
+                        {{-- <div class="col-lg-1 col-0"></div> --}}
+
+                        <div class="col-lg-6 col-md-6 mt-md-0 mt-3">
+                            {{-- <div class="slide-imgs">
                             <img src="demos/landing/images/hero/1-2.png" alt="Image" class="card-img">
                             <img src="demos/landing/images/hero/1-1.png" alt="Image" class="iphone-img">
                         </div> --}}
-                        <div class="swiper mySwiper ">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    {{-- <img src="{{ asset('images/emas.png') }}" alt="" class="img-slide"> --}}
-                                    <div class="d-flex align-items-center h-100">
-                                        <img src="{{ asset('images/soc-med-banner.png') }}" alt="" class="img-banner">
+                            <div class="swiper mySwiper ">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        {{-- <img src="{{ asset('images/emas.png') }}" alt="" class="img-slide"> --}}
+                                        <div class="d-flex align-items-center h-100">
+                                            <img src="{{ asset('images/soc-med-banner.png') }}" alt=""
+                                                class="img-banner">
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="d-flex align-items-center h-100">
+                                            <img src="https://i0.wp.com/rumahkomunikasi.com/wp-content/uploads/2021/08/seoimage.jpg"
+                                                alt="" class="img-banner">
+
+                                        </div>
 
                                     </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="d-flex align-items-center h-100">
-                                        <img src="https://i0.wp.com/rumahkomunikasi.com/wp-content/uploads/2021/08/seoimage.jpg"
-                                            alt="" class="img-banner">
+                                    <div class="swiper-slide">
+                                        <div class="d-flex align-items-center h-100">
+                                            <img src="https://buzzup.id/wp-content/uploads/2021/09/Search-Engine-Marketing-adalah.png"
+                                                alt="" class="img-banner">
+
+                                        </div>
 
                                     </div>
 
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="d-flex align-items-center h-100">
-                                        <img src="https://buzzup.id/wp-content/uploads/2021/09/Search-Engine-Marketing-adalah.png"
-                                            alt="" class="img-banner">
+                                    <div class="swiper-slide">
+                                        <div class="d-flex align-items-center h-100">
+                                            <img src="https://www.gallerysystems.com/wp-content/uploads/crafting-your-digital-strategy-1.png"
+                                                alt="" class="img-banner">
 
+                                        </div>
                                     </div>
 
                                 </div>
-
-                                <div class="swiper-slide">
-                                    <div class="d-flex align-items-center h-100">
-                                        <img src="https://www.gallerysystems.com/wp-content/uploads/crafting-your-digital-strategy-1.png"
-                                            alt="" class="img-banner">
-
-                                    </div>
-                                </div>
-
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
                             </div>
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-pagination"></div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="section-clients">
+            <div class="section-clients">
+
+            </div>
+
 
         </div>
-
-
-    </div>
-</section>
+    </section>
 @endsection
 
 @section('content')
-<section id="content">
-    <div class="content-wrap pb-0">
+    <section id="content">
+        <div class="content-wrap pb-0">
 
-        <div class="container">
-            <div class="mx-auto center mt-0 bottommargin heading-block" style="max-width: 640px;">
-                <h5 class="text-uppercase ls1 text-muted mb-3" id="layanan-section">Layanan Kami</h5>
-                <h3 class="nott mb-5">Jasa Layanan Apa Saja Yang Disediakan Oleh Resonansi?</h3>
-                <p class="lead fw-normal font-primary mb-5">Membantu Website Anda untuk Menjadi Nomor 1 di Google.
-                    Meningkatkan jumlah pengunjung anda secara pasti. Meningkatkan efisiensi iklan anda.</p>
-            </div>
-            <div class="features-items mx-auto" style="max-width: 1000px;">
-                <div class="row justify-content-around">
-                    @component('components.custom.layanan-div-1')
-                    @slot('route')
-                    service-landing
-                    @endslot
-                    @slot('pic')
-                    {{ asset('images/landing-page.png') }}
-
-                    @endslot
-                    @slot('title')
-                    Landing Page Website
-                    @endslot
-                    @slot('details')
-                    Landing page adalah sebuah halaman khusus yang menjadi tujuan user dan berisi informasi lebih detail
-                    dan spesifik tentang suatu produk, layanan, penawaran, dan sebagainya, untuk keperluan marketing
-                    atau campaign tertentu
-                    @endslot
-                    @endcomponent
-                    @component('components.custom.layanan-div-1')
-                    @slot('route')
-                    service-social-media
-                    @endslot
-                    @slot('pic')
-                    {{ asset('images/social-media.png') }}
-
-                    @endslot
-                    @slot('title')
-                    Social Media Marketing
-                    @endslot
-                    @slot('details')
-                    Bentuk pemasaran digital yang menggunakan media sosial dan situs web jaringan untuk mempromosikan
-                    suatu produk atau jasa layanan dari organisasi maupun perusahaan melalui cara berbayar dan organik.
-                    @endslot
-                    @endcomponent
-                    @component('components.custom.layanan-div-1')
-                    @slot('route')
-                    service-sem
-                    @endslot
-                    @slot('pic')
-
-                    {{ asset('images/digital-marketing.png') }}
-                    @endslot
-                    @slot('title')
-                    SEM (Search Engine Marketing)
-                    @endslot
-                    @slot('details')
-                    SEM atau Search Engine Marketing adalah sebuah aktivitas marketing menggunakan iklan berbayar yang
-                    akan muncul pada mesin pencarian atau search engine seperti Google
-                    @endslot
-                    @endcomponent
-                    @component('components.custom.layanan-div-1')
-                    @slot('route')
-                    service-seo
-                    @endslot
-                    @slot('pic')
-
-                    {{ asset('images/seo.png') }}
-                    @endslot
-                    @slot('title')
-                    SEO (Search Engine Optimization)
-                    @endslot
-                    @slot('details')
-                    SEO atau Search Engine Optimization adalah sebuah teknik optimasi website yang bertujuan untuk bisa
-                    mendapatkan ranking teratas di mesin pencari Google. Dengan mendapatkan peringkat terbaik dari hasil
-                    mesin pencarian maka potensi untuk mendapatkan banyak traffic secara organik juga akan semakin
-                    besar.
-                    @endslot
-                    @endcomponent
-                    @component('components.custom.layanan-div-1')
-                    @slot('route')
-                    service-content
-                    @endslot
-                    @slot('pic')
-
-                    {{ asset('images/content-creator.png') }}
-                    @endslot
-                    @slot('title')
-                    Content Creator
-                    @endslot
-                    @slot('details')
-                    Content Creator adalah seseorang yang memiliki tanggung jawab pada setiap informasi yang mereka
-                    sebarkan di media sosial.
-                    <br>
-                    Dengan keahlian yang dimiliki oleh seorang content creator, mereka mampu membantu kamu dalam
-                    menjalankan strategi pemasaran dengan baik. Karena, konten yang berkualitas dan juga tepat sasaran
-                    akan lebih mudah untuk memasarkan suatu produk barang maupun jasa.
-
-                    @endslot
-                    @endcomponent
-                    @component('components.custom.layanan-div-1')
-                    @slot('route')
-                    service-opt
-                    @endslot
-                    @slot('pic')
-
-                    {{ asset('images/opt.png') }}
-                    @endslot
-                    @slot('title')
-                    Marketplace Ads Optimization
-                    @endslot
-                    @slot('details')
-                    Marketplace Ads Optimization adalah teknik optimasi berbayar yang dilakukan untuk sebuah toko pada
-                    marketplace tertentu agar supaya ketika calon pembeli mulai mengetikkan nama suatu produk yang
-                    mereka inginkan, maka produk jualan dari toko kamu yang akan muncul di urutan pencarian teratas.
-
-                    @endslot
-                    @endcomponent
+            <div class="container">
+                <div class="mx-auto center mt-0 bottommargin heading-block" style="max-width: 640px;">
+                    <h5 class="text-uppercase ls1 text-muted mb-3" id="layanan-section">Layanan Kami</h5>
+                    <h3 class="nott mb-5">Jasa Layanan Apa Saja Yang Disediakan Oleh Resonansi?</h3>
+                    <p class="lead fw-normal font-primary mb-5">Membantu Website Anda untuk Menjadi Nomor 1 di Google.
+                        Meningkatkan jumlah pengunjung anda secara pasti. Meningkatkan efisiensi iklan anda.</p>
                 </div>
+                <div class="features-items mx-auto" style="max-width: 1000px;">
+                    <div class="row justify-content-around">
+                        @component('components.custom.layanan-div-1')
+                            @slot('route')
+                                service-landing
+                            @endslot
+                            @slot('pic')
+                                {{ asset('images/landing-page.png') }}
 
-            </div>
-            {{-- <div class="row mt-7">
+                            @endslot
+                            @slot('title')
+                                Landing Page Website
+                            @endslot
+                            @slot('details')
+                                Landing page adalah sebuah halaman khusus yang menjadi tujuan user dan berisi informasi lebih detail
+                                dan spesifik tentang suatu produk, layanan, penawaran, dan sebagainya, untuk keperluan marketing
+                                atau campaign tertentu
+                            @endslot
+                        @endcomponent
+                        @component('components.custom.layanan-div-1')
+                            @slot('route')
+                                service-social-media
+                            @endslot
+                            @slot('pic')
+                                {{ asset('images/social-media.png') }}
+
+                            @endslot
+                            @slot('title')
+                                Social Media Marketing
+                            @endslot
+                            @slot('details')
+                                Bentuk pemasaran digital yang menggunakan media sosial dan situs web jaringan untuk mempromosikan
+                                suatu produk atau jasa layanan dari organisasi maupun perusahaan melalui cara berbayar dan organik.
+                            @endslot
+                        @endcomponent
+                        @component('components.custom.layanan-div-1')
+                            @slot('route')
+                                service-sem
+                            @endslot
+                            @slot('pic')
+
+                                {{ asset('images/digital-marketing.png') }}
+                            @endslot
+                            @slot('title')
+                                SEM (Search Engine Marketing)
+                            @endslot
+                            @slot('details')
+                                SEM atau Search Engine Marketing adalah sebuah aktivitas marketing menggunakan iklan berbayar yang
+                                akan muncul pada mesin pencarian atau search engine seperti Google
+                            @endslot
+                        @endcomponent
+                        @component('components.custom.layanan-div-1')
+                            @slot('route')
+                                service-seo
+                            @endslot
+                            @slot('pic')
+
+                                {{ asset('images/seo.png') }}
+                            @endslot
+                            @slot('title')
+                                SEO (Search Engine Optimization)
+                            @endslot
+                            @slot('details')
+                                SEO atau Search Engine Optimization adalah sebuah teknik optimasi website yang bertujuan untuk bisa
+                                mendapatkan ranking teratas di mesin pencari Google. Dengan mendapatkan peringkat terbaik dari hasil
+                                mesin pencarian maka potensi untuk mendapatkan banyak traffic secara organik juga akan semakin
+                                besar.
+                            @endslot
+                        @endcomponent
+                        @component('components.custom.layanan-div-1')
+                            @slot('route')
+                                service-content
+                            @endslot
+                            @slot('pic')
+
+                                {{ asset('images/content-creator.png') }}
+                            @endslot
+                            @slot('title')
+                                Content Creator
+                            @endslot
+                            @slot('details')
+                                Content Creator adalah seseorang yang memiliki tanggung jawab pada setiap informasi yang mereka
+                                sebarkan di media sosial.
+                                <br>
+                                Dengan keahlian yang dimiliki oleh seorang content creator, mereka mampu membantu kamu dalam
+                                menjalankan strategi pemasaran dengan baik. Karena, konten yang berkualitas dan juga tepat sasaran
+                                akan lebih mudah untuk memasarkan suatu produk barang maupun jasa.
+
+                            @endslot
+                        @endcomponent
+                        @component('components.custom.layanan-div-1')
+                            @slot('route')
+                                service-opt
+                            @endslot
+                            @slot('pic')
+
+                                {{ asset('images/opt.png') }}
+                            @endslot
+                            @slot('title')
+                                Marketplace Ads Optimization
+                            @endslot
+                            @slot('details')
+                                Marketplace Ads Optimization adalah teknik optimasi berbayar yang dilakukan untuk sebuah toko pada
+                                marketplace tertentu agar supaya ketika calon pembeli mulai mengetikkan nama suatu produk yang
+                                mereka inginkan, maka produk jualan dari toko kamu yang akan muncul di urutan pencarian teratas.
+
+                            @endslot
+                        @endcomponent
+                    </div>
+
+                </div>
+                {{-- <div class="row mt-7">
 
                 @component('components.custom.section-1-div')
 
@@ -265,10 +267,10 @@
                 @endcomponent
 
             </div> --}}
-        </div>
-        <div class="clear"></div>
-        <div class="divider-sect"></div>
-        {{-- <section class="section-2" style="background-image: url('{{ asset('images/bg-hero.svg') }}');">
+            </div>
+            <div class="clear"></div>
+            <div class="divider-sect"></div>
+            {{-- <section class="section-2" style="background-image: url('{{ asset('images/bg-hero.svg') }}');">
             <div class="container">
                 <div class="inner-pad"></div>
                 {{-- <div class="white-title mx-auto center mt-4 bottommargin heading-block" style="max-width: 640px;">
@@ -386,8 +388,8 @@
                 </div>
         </section>
         <div class="divider-sect"></div> --}}
-        <section class="section-3">
-            {{-- <div class="container"> --}}
+            <section class="section-3">
+                {{-- <div class="container"> --}}
                 <div class="blue-title mx-auto center mt-4 bottommargin heading-block" style="max-width: 640px;">
                     <h3 class="nott title-part text-center"><span>Siapa Saja Klien Kami?</span> </h3>
                     <p class="lead fw-normal font-primary mb-5 mt-3">Banyak klien sudah puas dengan servis kami. Apakah
@@ -440,171 +442,171 @@
 
                 </div>
 
-                {{--
-            </div> --}}
-        </section>
-        {{-- <div class="divider-sect"></div> --}}
-        {{-- <section class="section-4" style="background-image: url('{{ asset('images/bg-hero.svg') }}');">
+                {{-- </div> --}}
+            </section>
+            {{-- <div class="divider-sect"></div> --}}
+            {{-- <section class="section-4" style="background-image: url('{{ asset('images/bg-hero.svg') }}');">
 
         </section> --}}
 
-        <section class="section-form"
-            style="background-image: linear-gradient(to bottom, #3D80E4 0%, #0a4bab 80%, #FFF 80%);">
-            <div class="inner-pad"></div>
+            <section class="section-form"
+                style="background-image: linear-gradient(to bottom, #3D80E4 0%, #0a4bab 80%, #FFF 80%);">
+                <div class="inner-pad"></div>
 
-            <div class="container">
-                {{-- <div class="white-title mx-auto center mt-4 bottommargin heading-block" style="max-width: 640px;">
+                <div class="container">
+                    {{-- <div class="white-title mx-auto center mt-4 bottommargin heading-block" style="max-width: 640px;">
                     <h3 class="nott title-part-white text-center">Apa Kata Mereka Tentang Resonansi?</h3>
                     <p class="lead fw-normal font-primary mb-5"></p>
                 </div> --}}
-                <div class="mt-4"></div>
-                <div class="swiper swiperTestimoni">
-                    <div class="swiper-wrapper">
+                    <div class="mt-4"></div>
+                    <div class="swiper swiperTestimoni">
+                        <div class="swiper-wrapper">
 
 
-                        @component('components.custom.testi-card')
-                        @slot('img')
-                        https://akcdn.detik.net.id/community/media/visual/2019/02/19/42393387-9c5c-4be4-97b8-49260708719e.jpeg?w=750&q=90
-                        @endslot
-                        @slot('details')
-                        Terimakasih untuk para team Resonansi
-                        yang telah membantu dalam
-                        mengembangkan binis di perusahaan kami
-                        @endslot
-                        @endcomponent
-                        @component('components.custom.testi-card')
-                        @slot('img')
-                        https://akcdn.detik.net.id/community/media/visual/2019/02/19/42393387-9c5c-4be4-97b8-49260708719e.jpeg?w=750&q=90
-                        @endslot
-                        @slot('details')
-                        Terimakasih untuk para team Resonansi
-                        yang telah membantu dalam
-                        mengembangkan binis di perusahaan kami
-                        @endslot
-                        @endcomponent
-                        @component('components.custom.testi-card')
-                        @slot('img')
-                        https://akcdn.detik.net.id/community/media/visual/2019/02/19/42393387-9c5c-4be4-97b8-49260708719e.jpeg?w=750&q=90
-                        @endslot
-                        @slot('details')
-                        Terimakasih untuk para team Resonansi
-                        yang telah membantu dalam
-                        mengembangkan binis di perusahaan kami
-                        @endslot
-                        @endcomponent
+                            @component('components.custom.testi-card')
+                                @slot('img')
+                                    https://akcdn.detik.net.id/community/media/visual/2019/02/19/42393387-9c5c-4be4-97b8-49260708719e.jpeg?w=750&q=90
+                                @endslot
+                                @slot('details')
+                                    Terimakasih untuk para team Resonansi
+                                    yang telah membantu dalam
+                                    mengembangkan binis di perusahaan kami
+                                @endslot
+                            @endcomponent
+                            @component('components.custom.testi-card')
+                                @slot('img')
+                                    https://akcdn.detik.net.id/community/media/visual/2019/02/19/42393387-9c5c-4be4-97b8-49260708719e.jpeg?w=750&q=90
+                                @endslot
+                                @slot('details')
+                                    Terimakasih untuk para team Resonansi
+                                    yang telah membantu dalam
+                                    mengembangkan binis di perusahaan kami
+                                @endslot
+                            @endcomponent
+                            @component('components.custom.testi-card')
+                                @slot('img')
+                                    https://akcdn.detik.net.id/community/media/visual/2019/02/19/42393387-9c5c-4be4-97b8-49260708719e.jpeg?w=750&q=90
+                                @endslot
+                                @slot('details')
+                                    Terimakasih untuk para team Resonansi
+                                    yang telah membantu dalam
+                                    mengembangkan binis di perusahaan kami
+                                @endslot
+                            @endcomponent
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
                 </div>
-            </div>
 
 
-            <div class="divider"></div>
-            <div class="container" id="section-form">
+                <div class="divider"></div>
+                <div class="container" id="section-form">
 
-                <h2 class="nott title-part-white fw-bold mb-2 text-center">Berminat untuk Diskusi dengan <br> Account
-                    Executive
-                    Kami? </h2>
-                <p class="text-white font-primary mb-5  lead text-center">Yuk Diskusi Asik dengan Account Executive
-                    Resonansi <br> supaya tambah ngerti!</p>
-                <div class="row">
-                    <div class="col-md-6 img-mbl-form">
-                        <img src="{{ asset('images/calendar.png') }}" alt="" class="img-form rounded">
-                    </div>
-                    <div class="col-md-6 my-auto">
-                        <div class="card bg-white shadow-lg border-0">
-                            <div class="card-body p-4">
-                                <div class="form-widget" data-loader="button" data-alert-type="inline">
+                    <h2 class="nott title-part-white fw-bold mb-2 text-center">Berminat untuk Diskusi dengan <br> Account
+                        Executive
+                        Kami? </h2>
+                    <p class="text-white font-primary mb-5  lead text-center">Yuk Diskusi Asik dengan Account Executive
+                        Resonansi <br> supaya tambah ngerti!</p>
+                    <div class="row">
+                        <div class="col-md-6 img-mbl-form">
+                            <img src="{{ asset('images/calendar.png') }}" alt="" class="img-form rounded">
+                        </div>
+                        <div class="col-md-6 my-auto">
+                            <div class="card bg-white shadow-lg border-0">
+                                <div class="card-body p-4">
+                                    <div class="form-widget" data-loader="button" data-alert-type="inline">
 
-                                    <div class="form-result"></div>
+                                        <div class="form-result"></div>
 
-                                    <form class="row mb-0" id="landing-enquiry" action="{{ route('meet-create') }}"
-                                        method="POST" enctype="multipart/form-data">
-                                        @csrf
-                                        <div class="form-process"></div>
-                                        <div class="col-12 form-group mb-2">
-                                            <label>Name:</label>
-                                            <input type="text" name="name" id="landing-enquiry-name"
-                                                class="form-control form-control-lg required" value=""
-                                                placeholder="John Doe">
-                                        </div>
-                                        <div class="col-12 form-group mb-2">
-                                            <label>Email:</label>
-                                            <input type="email" name="email" id="landing-enquiry-email"
-                                                class="form-control form-control-lg required" value=""
-                                                placeholder="user@company.com">
-                                        </div>
-                                        <div class="col-12 form-group mb-2">
-                                            <label>Phone:</label><br>
-                                            <div class="input-group input-group-lg">
-                                                <select class="form-select required" name="landing-enquiry-idd"
-                                                    id="landing-enquiry-idd" style="max-width: 100px;">
-                                                    {{-- <option value="+1">+1</option>
+                                        <form class="row mb-0" id="landing-enquiry"
+                                            action="{{ route('meet-create') }}" method="POST"
+                                            enctype="multipart/form-data">
+                                            @csrf
+                                            <div class="form-process"></div>
+                                            <div class="col-12 form-group mb-2">
+                                                <label>Name:</label>
+                                                <input type="text" name="name" id="landing-enquiry-name"
+                                                    class="form-control form-control-lg required" value=""
+                                                    placeholder="John Doe">
+                                            </div>
+                                            <div class="col-12 form-group mb-2">
+                                                <label>Email:</label>
+                                                <input type="email" name="email" id="landing-enquiry-email"
+                                                    class="form-control form-control-lg required" value=""
+                                                    placeholder="user@company.com">
+                                            </div>
+                                            <div class="col-12 form-group mb-2">
+                                                <label>Phone:</label><br>
+                                                <div class="input-group input-group-lg">
+                                                    <select class="form-select required" name="landing-enquiry-idd"
+                                                        id="landing-enquiry-idd" style="max-width: 100px;">
+                                                        {{-- <option value="+1">+1</option>
                                                     <option value="+44">+44</option>
                                                     <option value="+66">+66</option> --}}
-                                                    <option value="+62" selected>+62</option>
-                                                    {{-- <option value="+61">+61</option>
+                                                        <option value="+62" selected>+62</option>
+                                                        {{-- <option value="+61">+61</option>
                                                     <option value="+852">+852</option>
                                                     <option value="+65">+61</option>
                                                     <option value="+33">+61</option>
                                                     <option value="+49">+49</option> --}}
-                                                </select>
-                                                <input type="number" name="phone" id="landing-enquiry-phone"
-                                                    class="form-control form-control-lg required" value=""
-                                                    placeholder="">
+                                                    </select>
+                                                    <input type="number" name="phone" id="landing-enquiry-phone"
+                                                        class="form-control form-control-lg required" value=""
+                                                        placeholder="">
+                                                </div>
                                             </div>
-                                        </div>
-                                        {{-- <div class="col-12 form-group mb-4">
+                                            {{-- <div class="col-12 form-group mb-4">
                                             <label>Message:</label>
                                             <textarea name="landing-enquiry-additional-requirements"
                                                 id="landing-enquiry-additional-requirements"
                                                 class="form-control form-control-lg" cols="30" rows="5"
                                                 placeholder="Please let us know how we can help you..."></textarea>
                                         </div> --}}
-                                        <div class="col-12 form-group mb-2">
-                                            <label>Nama Perusahaan</label>
-                                            <input type="text" name="company" id="landing-enquiry-company"
-                                                class="form-control form-control-lg required" value=""
-                                                placeholder="date">
-                                        </div>
-                                        <div class="col-12 form-group mb-2">
-                                            <label>Paket</label>
-                                            <select class="form-select form-control form-control-lg required"
-                                                name="landing_enquiry_paket" id="landing-enquiry-paket">
-                                                <option value="paket-1" selected>Paket 1</option>
-                                                <option value="paket-2">Paket 2</option>
-                                            </select>
+                                            <div class="col-12 form-group mb-2">
+                                                <label>Nama Perusahaan</label>
+                                                <input type="text" name="company" id="landing-enquiry-company"
+                                                    class="form-control form-control-lg required" value=""
+                                                    placeholder="date">
+                                            </div>
+                                            <div class="col-12 form-group mb-2">
+                                                <label>Paket</label>
+                                                <select class="form-select form-control form-control-lg required"
+                                                    name="landing_enquiry_paket" id="landing-enquiry-paket">
+                                                    <option value="paket-1" selected>Paket 1</option>
+                                                    <option value="paket-2">Paket 2</option>
+                                                </select>
 
-                                        </div>
-                                        <div class="col-12 form-group mb-2">
-                                            <label>Tanggal</label>
-                                            <input type="date" name="date" id="landing-enquiry-date"
-                                                class="form-control form-control-lg required" value=""
-                                                placeholder="date">
-                                        </div>
-                                        <div class="col-12 form-group mb-2">
-                                            <label>Waktu</label>
-                                            <input type="time" name="time" id="landing-enquiry-time"
-                                                class="form-control form-control-lg required" value=""
-                                                placeholder="date">
-                                        </div>
-                                        <div class="col-12 d-none">
-                                            <input type="text" id="landing-enquiry-botcheck"
-                                                name="landing-enquiry-botcheck" value="" />
-                                        </div>
-                                        <div class="col-12">
-                                            <button type="submit" name="landing-enquiry-submit"
-                                                class="btn w-100 text-white bg-color rounded-3 py-3 fw-semibold text-uppercase mt-2">Book
-                                                Now!</button>
-                                        </div>
+                                            </div>
+                                            <div class="col-12 form-group mb-2">
+                                                <label>Tanggal</label>
+                                                <input type="date" name="date" id="landing-enquiry-date"
+                                                    class="form-control form-control-lg required" value=""
+                                                    placeholder="date">
+                                            </div>
+                                            <div class="col-12 form-group mb-2">
+                                                <label>Waktu</label>
+                                                <input type="time" name="time" id="landing-enquiry-time"
+                                                    class="form-control form-control-lg required" value=""
+                                                    placeholder="date">
+                                            </div>
+                                            <div class="col-12 d-none">
+                                                <input type="text" id="landing-enquiry-botcheck"
+                                                    name="landing-enquiry-botcheck" value="" />
+                                            </div>
+                                            <div class="col-12">
+                                                <button type="submit" name="landing-enquiry-submit"
+                                                    class="btn w-100 text-white bg-color rounded-3 py-3 fw-semibold text-uppercase mt-2">Book
+                                                    Now!</button>
+                                            </div>
 
-                                        <input type="hidden" name="prefix" value="landing-enquiry-">
-                                    </form>
+                                            <input type="hidden" name="prefix" value="landing-enquiry-">
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        {{-- <div class="card">
+                            {{-- <div class="card">
                             <div class="card-body">
                                 <h5 class="text-center title-part mb-4">
                                     Yuk Bertemu dengan <span>Account Executive</span> Kami!
@@ -634,21 +636,21 @@
                             </div>
                         </div> --}}
 
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <div class="divider-sect"></div>
+            </section>
+            <div class="divider-sect"></div>
 
 
-    </div>
+        </div>
 
-</section>
+    </section>
 @endsection
 @section('js')
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script>
-    var swiper = new Swiper(".mySwiper", {
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
             cssMode: true,
             navigation: {
                 nextEl: ".swiper-button-next",
@@ -663,9 +665,9 @@
                 delay: 15000,
             },
         });
-</script>
-<script>
-    var swiper = new Swiper(".swiperTestimoni", {
+    </script>
+    <script>
+        var swiper = new Swiper(".swiperTestimoni", {
             cssMode: true,
             navigation: {
                 nextEl: ".swiper-button-next",
@@ -680,9 +682,9 @@
                 delay: 10000,
             },
         });
-</script>
-<script>
-    $('.btn-pricing').click(function() {
+    </script>
+    <script>
+        $('.btn-pricing').click(function() {
             $('html, body').animate({
                 scrollTop: ($(".section-2").offset().top) - 20
             }, 1500);
@@ -697,5 +699,5 @@
                 scrollTop: ($(".section-3").offset().top) - 20
             }, 1500);
         });
-</script>
+    </script>
 @endsection
