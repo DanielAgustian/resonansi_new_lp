@@ -491,7 +491,7 @@
                                                 <label>Nama Perusahaan</label>
                                                 <input type="text" name="company" id="landing-enquiry-company"
                                                     class="form-control form-control-lg required" value=""
-                                                    placeholder="date">
+                                                    placeholder="Company name">
                                             </div>
                                             <div class="col-12 form-group mb-2">
                                                 <label>Paket</label>
@@ -500,6 +500,13 @@
                                                     <option value="paket-1" selected>Paket 1</option>
                                                     <option value="paket-2">Paket 2</option>
                                                     <option value="paket-3">Paket 3</option>
+                                                    <option value="landing-website">Landing Website</option>
+                                                    <option value="social-media-marketing">Social Media Marketing</option>
+                                                    <option value="search-engine-marketing">SEM/Search Engine Marketing</option>
+                                                    <option value="search-engine-optimization">SEO/Search Engine Optimization</option>
+                                                    
+                                                    <option value="content-creator">Content Creator</option>
+                                                    <option value="marketplace-ads-optimization">Marketplace Ads Optimization</option>
 
                                                 </select>
 

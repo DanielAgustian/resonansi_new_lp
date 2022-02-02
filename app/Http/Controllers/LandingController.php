@@ -28,4 +28,8 @@ class LandingController extends Controller
     public function contactPage(){
         return view('pages.contact-us');
     }
+    public function blogsPage(){
+        return redirect()->back();
+        // return view('pages.blogs');
+    }
 }

@@ -89,7 +89,7 @@
                                 <li class="menu-item"><a class="menu-link" href="{{route('servicePage')}}">
                                         <div>Services</div>
                                     </a></li>
-                                <li class="menu-item"><a class="menu-link" href="#">
+                                <li class="menu-item"><a class="menu-link" href="{{route('blogsPage')}}">
                                         <div>Blog</div>
                                     </a></li>
                                 <li class="menu-item"><a class="menu-link" href="{{route('pricingPage')}}">
@@ -146,7 +146,7 @@
                                         <ul>
                                             <li><a href="{{route('aboutPage')}}">About Us</a></li>
                                             <li><a href="{{route('servicePage')}}">Our Services</a></li>
-                                            <li><a href="#">Blog</a></li>
+                                            <li><a href="{{route('blogsPage')}}">Blog</a></li>
 
                                         </ul>
 

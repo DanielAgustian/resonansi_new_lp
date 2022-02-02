@@ -451,7 +451,7 @@
                                                 <label>Nama Perusahaan</label>
                                                 <input type="text" name="company" id="landing-enquiry-company"
                                                     class="form-control form-control-lg required" value=""
-                                                    placeholder="date">
+                                                    placeholder="Company Name">
                                             </div>
                                             <div class="col-12 form-group mb-2">
                                                 <label>Paket</label>
@@ -475,13 +475,13 @@
                                                 <label>Tanggal</label>
                                                 <input type="date" name="date" id="landing-enquiry-date"
                                                     class="form-control form-control-lg required" value=""
-                                                    placeholder="date">
+                                                    placeholder="dd/mm/yy">
                                             </div>
                                             <div class="col-12 form-group mb-2">
                                                 <label>Waktu</label>
                                                 <input type="time" name="time" id="landing-enquiry-time"
                                                     class="form-control form-control-lg required" value=""
-                                                    placeholder="date">
+                                                    placeholder="HH:mm am/pm">
                                             </div>
                                             <div class="col-12 d-none">
                                                 <input type="text" id="landing-enquiry-botcheck"

@@ -51,7 +51,7 @@
 
                                 </address>
                                 <abbr title="Phone Number"><strong>Phone:</strong></abbr> (+62) 88290592631<br>
-                                <abbr title="Email Address"><strong>Email:</strong></abbr> contact@yokesen.com
+                                <abbr title="Email Address"><strong>Email:</strong></abbr> contact@resonansi.co.id
                             </div>
 
                             <div class="d-flex mt-4">
@@ -156,7 +156,7 @@
                                                 <label>Nama Perusahaan</label>
                                                 <input type="text" name="company" id="landing-enquiry-company"
                                                     class="form-control form-control-lg required" value=""
-                                                    placeholder="date">
+                                                    placeholder="Company Name">
                                             </div>
                                             <div class="col-12 form-group mb-4">
                                                 <label>Message:</label>

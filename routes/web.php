@@ -42,5 +42,6 @@ Route::get('/about-us', [LandingController::class, 'aboutPage'])->name('aboutPag
 Route::get('/pricing', [LandingController::class, 'pricingPage'])->name('pricingPage');
 Route::get('/services', [LandingController::class, 'servicePage'])->name('servicePage');
 Route::get('/contact-us', [LandingController::class, 'contactPage'])->name('contactPage');
+Route::get('/blogs', [LandingController::class, 'blogsPage'])->name('blogsPage');
 
 Route::get('/digital-marketing', [LandingController::class, 'landing'])->name('landing');
