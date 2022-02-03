@@ -10,7 +10,7 @@ use Jenssegers\Agent\Agent;
 class MeetController extends Controller
 {
     public function create(Request $request){
-        // dd($request->all());
+        // dd($request->all(), $request->g_recaptcha_response);
         date_default_timezone_set("Asia/Bangkok");
         $agent = new Agent();
 
@@ -22,6 +22,7 @@ class MeetController extends Controller
             $screen = "Desktop";
         }
         //dd($request);
+
         $data = [
             'name' => $request->name,
             'email' => $request->email,
@@ -47,5 +48,34 @@ class MeetController extends Controller
         ]);
 
         return redirect()->back()->with('successMsg', 'Success');
+    }
+
+    public function makeContactUs(Request $request){
+        date_default_timezone_set("Asia/Bangkok");
+        $agent = new Agent();
+
+        if ($agent->isPhone()) {
+            $screen = "Phone";
+        } elseif ($agent->isTablet()) {
+            $screen = "Tablet";
+        } elseif ($agent->isDesktop()) {
+            $screen = "Desktop";
+        }
+        $data = [
+            'name' => $request->name,
+            'email' => $request->email,
+            'phone' => $request->phone,
+            'status' => 'contact',
+            'ip_address' => \Request::ip(),
+            'device' => $agent->device(),
+            'platform' => $agent->platform(),
+            'screen' => $screen,
+            'version_platform' => $agent->version($agent->platform()),
+            'browser' => $agent->browser(),
+            'version_browser' =>  $agent->version($agent->browser()),
+            'languages' => $agent->languages()[0],
+            'created_at' =>  Carbon::now(),
+        ];
+        
     }
 }

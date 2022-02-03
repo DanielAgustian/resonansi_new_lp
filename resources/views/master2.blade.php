@@ -6,7 +6,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="author" content="Yokesen Teknologi Indonesia" />
     <link rel="shortcut icon" href="{{ asset('images/favicon/favicon.ico') }}">
-    
+
 
     <!--begin::Fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
@@ -178,7 +178,7 @@
                         </div>
                         {{-- <div class="col-md-4">
 							<h4 class="ls0 ls0 text-center mb-2">Resonansi by Yokesen</h4>
-							
+
 						</div> --}}
                         <div class="col-md-4 mt-4 mt-md-0">
                             <div class="widget">
@@ -275,6 +275,85 @@
         </script>
     @endif
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        $('.form-services').on('submit', function(e){
+
+          let errorEmail = false;
+          let errorName = false;
+          let errorPhone = false;
+          let errorCompany = false;
+          let errorDate = false;
+          let errorTime = false;
+
+          let email = $('input[name="email"]').val() ?? "";
+          let name = $('input[name="name"]').val() ;
+          let phone = $('input[name="phone"]').val();
+          let company = $('input[name="company"]').val();
+          let date = $('input[name="date"]').val();
+          let time = $('input[name="time"]').val();
+          var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+          if (!email.match(mailformat) ) {
+            console.log("wrong email");
+            errorEmail = true;
+            $('#err-email').text('Email Tidak Valid');
+
+          }else{
+            $('#err-email').text('');
+          }
+
+          if (name.length < 2) {
+            console.log("name empty");
+            errorName = true;
+            $('#err-name').text('Nama tidak valid');
+          }else{
+            $('#err-name').text('');
+          }
+          if (phone.length < 9 ) {
+            console.log("phone error");
+            errorPhone = true;
+            $('#err-phone').text('Nomor Kamu Tidak Valid');
+          }else{
+            $('#err-phone').text('');
+          }
+
+          if (company.length< 3) {
+            console.log("company error");
+            errorCompany = true;
+            $('#err-company').text('Nama Perusahaan Tidak Valid');
+          }else{
+            $('#err-company').text('');
+          }
+
+          if (date.length< 5) {
+            console.log("date empty");
+            errorDate = true;
+            $('#err-date').text('Tanggal Bertemu Tidak valid');
+          }else{
+            $('#err-date').text('');
+          }
+
+          if (time.length< 4) {
+            console.log("Time empty");
+            errorTime = true;
+            $('#err-time').text('Waktu Bertemu Tidak Valid');
+          }else{
+            $('#err-time').text('');
+          }
+
+
+          if(errorName || errorEmail || errorPhone ||errorCompany || errorDate || errorTime){
+            console.log("ONE OF THEM IS EMPTY/WRONG");
+            e.preventDefault();
+          }
+        })
+
+    </script>
+    <script type="text/javascript">
+        function recaptchaCallback(){
+            $('#btn-sub').removeAttr('disabled');
+        }
+    </script>
     @yield('js')
 </body>
 

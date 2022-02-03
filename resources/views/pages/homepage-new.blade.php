@@ -42,7 +42,7 @@
                             {{-- <div class="swiper mySwiper ">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                       
+
                                         <div class="d-flex align-items-center h-100">
                                             <img src="{{ asset('images/soc-med-banner.png') }}" alt=""
                                                 class="img-banner">
@@ -384,7 +384,7 @@
         </section>
         <div class="divider-sect"></div> --}}
             {{-- <section class="section-3">
-                
+
                 <div class="blue-title mx-auto center mt-4 bottommargin heading-block" style="max-width: 640px;">
                     <h3 class="nott title-part text-center"><span>Siapa Saja Klien Kami?</span> </h3>
                     <p class="lead fw-normal font-primary mb-5 mt-3">Banyak klien sudah puas dengan servis kami. Apakah
@@ -437,7 +437,7 @@
 
                 </div>
 
-             
+
             </section> --}}
             {{-- <div class="divider-sect"></div> --}}
             {{-- <section class="section-4" style="background-image: url('{{ asset('images/bg-hero.svg') }}');">
@@ -507,7 +507,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             {{-- <a href="#"
                                 class="btn text-white bg-color rounded-3 px-4 py-3 fw-semibold text-uppercase shadow-sm">Learn
                                 More <i class="icon-line-arrow-right ms-1"></i></a> --}}
@@ -586,7 +586,7 @@
 
                                         <div class="form-result"></div>
 
-                                        <form class="row mb-0" id="form-enq" action="{{ route('meet-create') }}"
+                                        <form class="row mb-0 form-services" id="form-enq" action="{{ route('meet-create') }}"
                                             method="POST" enctype="multipart/form-data">
                                             @csrf
                                             <div class="form-process"></div>
@@ -595,12 +595,18 @@
                                                 <input type="text" name="name" id="landing-enquiry-name"
                                                     class="form-control form-control-lg required" value=""
                                                     placeholder="John Doe" required>
+                                                  <div style="color: red; font-size:11px" id="err-name">
+
+                                                  </div>
                                             </div>
                                             <div class="col-12 form-group mb-2">
                                                 <label>Email:</label>
                                                 <input type="email" name="email" id="landing-enquiry-email"
                                                     class="form-control form-control-lg required" value=""
                                                     placeholder="user@company.com" required>
+                                                    <div style="color: red; font-size:11px" id="err-email">
+
+                                                    </div>
                                             </div>
                                             <div class="col-12 form-group mb-2">
                                                 <label>Phone:</label><br>
@@ -621,19 +627,25 @@
                                                         class="form-control form-control-lg required" value=""
                                                         placeholder="" required>
                                                 </div>
+                                                <div style="color: red; font-size:11px" id="err-phone">
+
+                                                </div>
                                             </div>
-                                            {{-- <div class="col-12 form-group mb-4">
+                                            <!-- {{-- <div class="col-12 form-group mb-4">
                                             <label>Message:</label>
                                             <textarea name="landing-enquiry-additional-requirements"
                                                 id="landing-enquiry-additional-requirements"
                                                 class="form-control form-control-lg" cols="30" rows="5"
                                                 placeholder="Please let us know how we can help you..."></textarea>
-                                        </div> --}}
+                                        </div> --}} -->
                                             <div class="col-12 form-group mb-2">
                                                 <label>Nama Perusahaan</label>
                                                 <input type="text" name="company" id="landing-enquiry-company"
                                                     class="form-control form-control-lg required" value=""
                                                     placeholder="Company Name" required>
+                                                <div style="color: red; font-size:11px" id="err-company">
+
+                                                </div>
                                             </div>
                                             <div class="col-12 form-group mb-2">
                                                 <label>Paket</label>
@@ -660,21 +672,28 @@
                                                 <input type="date" name="date" id="landing-enquiry-date"
                                                     class="form-control form-control-lg required" value=""
                                                     placeholder="date" required>
+                                                <div style="color: red; font-size:11px" id="err-date">
+
+                                                </div>
                                             </div>
                                             <div class="col-12 form-group mb-2">
                                                 <label>Waktu</label>
                                                 <input type="time" name="time" id="landing-enquiry-time"
                                                     class="form-control form-control-lg required" value=""
                                                     placeholder="time" required>
+                                                <div style="color: red; font-size:11px" id="err-time">
+
+                                                </div>
                                             </div>
                                             <div class="col-12 d-none">
                                                 <input type="text" id="landing-enquiry-botcheck"
                                                     name="landing-enquiry-botcheck" value="" />
+
                                             </div>
-                                            <div class="g-recaptcha" data-sitekey="6LdLM1UeAAAAANIPJEOY3Bo_7bysZ5pSdgMMkyc5"></div>
+                                            <div class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="6LdLM1UeAAAAANIPJEOY3Bo_7bysZ5pSdgMMkyc5"></div>
 
                                             <div class="col-12">
-                                                <button type="button" name="" id="btn-sub"
+                                                <button disabled  name="" id="btn-sub"
                                                     class="btn w-100 text-white bg-color rounded-3 py-3 fw-semibold text-uppercase mt-2">Book
                                                     Now!</button>
                                             </div>
@@ -684,7 +703,7 @@
                                     </div>
                                 </div>
                             </div>
-                            {{-- <div class="card">
+                            <!-- {{-- <div class="card">
                             <div class="card-body">
                                 <h5 class="text-center title-part mb-4">
                                     Yuk Bertemu dengan <span>Account Executive</span> Kami!
@@ -712,7 +731,7 @@
                                     </div>
                                 </form>
                             </div>
-                        </div> --}}
+                        </div> --}} -->
 
                         </div>
                     </div>
@@ -780,9 +799,83 @@
             }, 1500);
         });
     </script>
-    <script>
-        $('#btn-sub').click(function() {
-            $('#form-enq').submit();
+
+    <!-- <script>
+        $('.form-services').on('submit', function(e){
+
+          let errorEmail = false;
+          let errorName = false;
+          let errorPhone = false;
+          let errorCompany = false;
+          let errorDate = false;
+          let errorTime = false;
+
+          let email = $('input[name="email"]').val() ?? "";
+          let name = $('input[name="name"]').val() ;
+          let phone = $('input[name="phone"]').val();
+          let company = $('input[name="company"]').val();
+          let date = $('input[name="date"]').val();
+          let time = $('input[name="time"]').val();
+          var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+          if (!email.match(mailformat) ) {
+            console.log("wrong email");
+            errorEmail = true;
+            $('#err-email').text('Email Tidak Valid');
+
+          }else{
+            $('#err-email').text('');
+          }
+
+          if (name.length < 2) {
+            console.log("name empty");
+            errorName = true;
+            $('#err-name').text('Nama tidak valid');
+          }else{
+            $('#err-name').text('');
+          }
+          if (phone.length < 9 ) {
+            console.log("phone error");
+            errorPhone = true;
+            $('#err-phone').text('Nomor Kamu Tidak Valid');
+          }else{
+            $('#err-phone').text('');
+          }
+
+          if (company.length< 3) {
+            console.log("company error");
+            errorCompany = true;
+            $('#err-company').text('Nama Perusahaan Tidak Valid');
+          }else{
+            $('#err-company').text('');
+          }
+
+          if (date.length< 5) {
+            console.log("date empty");
+            errorDate = true;
+            $('#err-date').text('Tanggal Bertemu Tidak valid');
+          }else{
+            $('#err-date').text('');
+          }
+
+          if (time.length< 4) {
+            console.log("Time empty");
+            errorTime = true;
+            $('#err-time').text('Waktu Bertemu Tidak Valid');
+          }else{
+            $('#err-time').text('');
+          }
+
+
+          if(errorName || errorEmail || errorPhone ||errorCompany || errorDate || errorTime){
+            console.log("ONE OF THEM IS EMPTY/WRONG");
+            e.preventDefault();
+          }else{
+
+          }
         })
-    </script>
+
+    </script> -->
+    
+    script
 @endsection
