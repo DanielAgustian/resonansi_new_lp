@@ -30,7 +30,7 @@
 
             <div class="row mt-5 col-mb-30">
                 <div class="col-md-5 text-center">
-                    <h3 class="nott mb-5 display-4 fw-bold font-primary">What is Resonansi?</h3>
+                    {{-- <h3 class="nott mb-5 display-4 fw-bold font-primary">What is Resonansi?</h3> --}}
                     <img src="{{asset('images/logo-resonansi.png')}}" alt="Logo" class="logo-about">
                 </div>
 

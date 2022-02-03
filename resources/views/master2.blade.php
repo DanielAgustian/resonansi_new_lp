@@ -181,7 +181,7 @@
                         <div class="col-md-4 mt-4 mt-md-0">
                             <div class="widget">
 
-                                <h4 class="ls0 ls0 text-center mb-4">Resonansi from Yokesen</h4>
+                                <h4 class="ls0 ls0 text-center mb-4 nott">Resonansi from Yokesen</h4>
 
                                 <article class="entry">
                                     {{-- <div class="entry-image mb-3">
