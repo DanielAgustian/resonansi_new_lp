@@ -513,9 +513,9 @@ window.scwEvents = window.scwEvents || {};
 
 			if( $headerWrap.length > 0 ) {
 				if( $('.header-wrap-clone').length < 1 ) {
-					$headerWrap.after('<div class="header-wrap-clone"></div>');
+					//$headerWrap.after('<div class="header-wrap-clone"></div>');
 				}
-				$headerWrapClone = $('.header-wrap-clone');
+				//$headerWrapClone = $('.header-wrap-clone');
 			}
 
 			if( $pagemenu.length > 0 ) {

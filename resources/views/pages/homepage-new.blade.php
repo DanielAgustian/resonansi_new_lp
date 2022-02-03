@@ -529,13 +529,13 @@
                                                 <label>Name:</label>
                                                 <input type="text" name="name" id="landing-enquiry-name"
                                                     class="form-control form-control-lg required" value=""
-                                                    placeholder="John Doe">
+                                                    placeholder="John Doe" required>
                                             </div>
                                             <div class="col-12 form-group mb-2">
                                                 <label>Email:</label>
                                                 <input type="email" name="email" id="landing-enquiry-email"
                                                     class="form-control form-control-lg required" value=""
-                                                    placeholder="user@company.com">
+                                                    placeholder="user@company.com" required>
                                             </div>
                                             <div class="col-12 form-group mb-2">
                                                 <label>Phone:</label><br>
@@ -554,7 +554,7 @@
                                                     </select>
                                                     <input type="number" name="phone" id="landing-enquiry-phone"
                                                         class="form-control form-control-lg required" value=""
-                                                        placeholder="">
+                                                        placeholder="" required>
                                                 </div>
                                             </div>
                                             {{-- <div class="col-12 form-group mb-4">
@@ -568,7 +568,7 @@
                                                 <label>Nama Perusahaan</label>
                                                 <input type="text" name="company" id="landing-enquiry-company"
                                                     class="form-control form-control-lg required" value=""
-                                                    placeholder="Company Name">
+                                                    placeholder="Company Name" required>
                                             </div>
                                             <div class="col-12 form-group mb-2">
                                                 <label>Paket</label>
@@ -591,13 +591,13 @@
                                                 <label>Tanggal</label>
                                                 <input type="date" name="date" id="landing-enquiry-date"
                                                     class="form-control form-control-lg required" value=""
-                                                    placeholder="date">
+                                                    placeholder="date" required>
                                             </div>
                                             <div class="col-12 form-group mb-2">
                                                 <label>Waktu</label>
                                                 <input type="time" name="time" id="landing-enquiry-time"
                                                     class="form-control form-control-lg required" value=""
-                                                    placeholder="time">
+                                                    placeholder="time" required>
                                             </div>
                                             <div class="col-12 d-none">
                                                 <input type="text" id="landing-enquiry-botcheck"

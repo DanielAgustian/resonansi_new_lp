@@ -116,7 +116,7 @@
                     </div>
                 </div>
             </div>
-            <div class="header-wrap-clone"></div>
+            {{-- <div class="header-wrap-clone" style="height: 100px"></div> --}}
         </header><!-- #header end -->
         <div class="btn-wa" data-toggle="tooltip" title="Kami siap membantu Anda">
             <i class="fab fa-whatsapp"></i>
