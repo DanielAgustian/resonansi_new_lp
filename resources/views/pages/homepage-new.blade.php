@@ -32,17 +32,17 @@
 
 
 
-                        {{-- <div class="col-lg-1 col-0"></div> --}}
+                        <div class="col-lg-1 col-0"></div>
 
-                        <div class="col-lg-6 col-md-6 mt-md-0 mt-3">
-                            {{-- <div class="slide-imgs">
-                            <img src="demos/landing/images/hero/1-2.png" alt="Image" class="card-img">
-                            <img src="demos/landing/images/hero/1-1.png" alt="Image" class="iphone-img">
-                        </div> --}}
-                            <div class="swiper mySwiper ">
+                        <div class="col-lg-5 col-md-6 mt-md-0 mt-3">
+                            <div class="slide-imgs">
+                                {{-- <img src="{{asset('images/1-2.png')}}" alt="Image" class="card-img"> --}}
+                                <img src="{{ asset('images/1-1.png') }}" alt="Image" class="iphone-img">
+                            </div>
+                            {{-- <div class="swiper mySwiper ">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        {{-- <img src="{{ asset('images/emas.png') }}" alt="" class="img-slide"> --}}
+                                       
                                         <div class="d-flex align-items-center h-100">
                                             <img src="{{ asset('images/soc-med-banner.png') }}" alt=""
                                                 class="img-banner">
@@ -78,7 +78,7 @@
                                 <div class="swiper-button-next"></div>
                                 <div class="swiper-button-prev"></div>
                                 <div class="swiper-pagination"></div>
-                            </div>
+                            </div> --}}
                         </div>
 
                     </div>
@@ -168,9 +168,7 @@
                             @endslot
                             @slot('details')
                                 SEO atau Search Engine Optimization adalah sebuah teknik optimasi website yang bertujuan untuk bisa
-                                mendapatkan ranking teratas di mesin pencari Google. Dengan mendapatkan peringkat terbaik dari hasil
-                                mesin pencarian maka potensi untuk mendapatkan banyak traffic secara organik juga akan semakin
-                                besar.
+                                mendapatkan ranking teratas di mesin pencari Google.
                             @endslot
                         @endcomponent
                         @component('components.custom.layanan-div-1')
@@ -187,10 +185,8 @@
                             @slot('details')
                                 Content Creator adalah seseorang yang memiliki tanggung jawab pada setiap informasi yang mereka
                                 sebarkan di media sosial.
-                                <br>
-                                Dengan keahlian yang dimiliki oleh seorang content creator, mereka mampu membantu kamu dalam
-                                menjalankan strategi pemasaran dengan baik. Karena, konten yang berkualitas dan juga tepat sasaran
-                                akan lebih mudah untuk memasarkan suatu produk barang maupun jasa.
+
+
 
                             @endslot
                         @endcomponent
@@ -207,8 +203,7 @@
                             @endslot
                             @slot('details')
                                 Marketplace Ads Optimization adalah teknik optimasi berbayar yang dilakukan untuk sebuah toko pada
-                                marketplace tertentu agar supaya ketika calon pembeli mulai mengetikkan nama suatu produk yang
-                                mereka inginkan, maka produk jualan dari toko kamu yang akan muncul di urutan pencarian teratas.
+                                marketplace tertentu
 
                             @endslot
                         @endcomponent
@@ -388,8 +383,8 @@
                 </div>
         </section>
         <div class="divider-sect"></div> --}}
-            <section class="section-3">
-                {{-- <div class="container"> --}}
+            {{-- <section class="section-3">
+                
                 <div class="blue-title mx-auto center mt-4 bottommargin heading-block" style="max-width: 640px;">
                     <h3 class="nott title-part text-center"><span>Siapa Saja Klien Kami?</span> </h3>
                     <p class="lead fw-normal font-primary mb-5 mt-3">Banyak klien sudah puas dengan servis kami. Apakah
@@ -442,13 +437,84 @@
 
                 </div>
 
-                {{-- </div> --}}
-            </section>
+             
+            </section> --}}
             {{-- <div class="divider-sect"></div> --}}
             {{-- <section class="section-4" style="background-image: url('{{ asset('images/bg-hero.svg') }}');">
 
         </section> --}}
+            <div class="section bg-transparent">
+                <div class="container">
+                    <div class="row ">
 
+                        <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+                            <img src="{{ asset('images/2.jpg') }}" alt="Image">
+                        </div>
+
+                        <div class="col-md-6 offset-lg-1">
+                            <div class="heading-block border-bottom-0 mb-4">
+                                <i class="icon-line-paper h1 color"></i>
+                                <h3 class="nott ls0">Siapa Saja Klien Kami?</h3>
+                            </div>
+                            <p class="fw-normal lead">Banyak klien sudah puas dengan servis kami. Apakah
+                                anda akan menjadi salah satunya?</p>
+
+                            <div class="clear"></div>
+
+                            <ul class="skills mt-2 mb-5">
+                                <li data-percent="80">
+                                    <span>Tingkat Kepuasan Klien</span>
+                                    <div class="progress">
+                                        <div class="progress-percent">
+                                            <div class="counter counter-inherit counter-instant"><span data-from="0"
+                                                    data-to="80" data-refresh-interval="20" data-speed="1500"></span>%
+                                                Puas</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="section-features">
+                                <div class="row justify-content-center mt-7">
+                                    <div class="col-lg-4 col-6">
+                                        <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png"
+                                            alt="" class="img-client shadow rounded">
+                                        <h6 class="blue-text">Cv. Blabla</h6>
+                                    </div>
+                                    <div class="col-lg-4 col-6">
+                                        <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png"
+                                            alt="" class="img-client shadow rounded">
+                                        <h6 class="blue-text">Cv. Blabla</h6>
+                                    </div>
+                                    <div class="col-lg-4 col-6">
+                                        <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png"
+                                            alt="" class="img-client shadow rounded">
+                                        <h6 class="blue-text">Cv. Blabla</h6>
+                                    </div>
+                                    <div class="col-lg-4 col-6">
+                                        <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png"
+                                            alt="" class="img-client shadow rounded">
+                                        <h6 class="blue-text">Cv. Blabla</h6>
+                                    </div>
+                                    <div class="col-lg-4 col-6">
+                                        <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png"
+                                            alt="" class="img-client shadow rounded">
+                                        <h6 class="blue-text">Cv. Blabla</h6>
+                                    </div>
+                                    <div class="col-lg-4 col-6">
+                                        <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png"
+                                            alt="" class="img-client shadow rounded">
+                                        <h6 class="blue-text">Cv. Blabla</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            {{-- <a href="#"
+                                class="btn text-white bg-color rounded-3 px-4 py-3 fw-semibold text-uppercase shadow-sm">Learn
+                                More <i class="icon-line-arrow-right ms-1"></i></a> --}}
+                        </div>
+                    </div>
+                </div>
+            </div>
             <section class="section-form"
                 style="background-image: linear-gradient(to bottom, #3D80E4 0%, #0a4bab 80%, #FFF 80%);">
                 <div class="inner-pad"></div>
@@ -516,13 +582,12 @@
                         <div class="col-md-6 my-auto">
                             <div class="card bg-white shadow-lg border-0">
                                 <div class="card-body p-4">
-                                    <div >
+                                    <div>
 
                                         <div class="form-result"></div>
 
-                                        <form class="row mb-0" id="form-enq"
-                                            action="{{ route('meet-create') }}" method="POST"
-                                            enctype="multipart/form-data">
+                                        <form class="row mb-0" id="form-enq" action="{{ route('meet-create') }}"
+                                            method="POST" enctype="multipart/form-data">
                                             @csrf
                                             <div class="form-process"></div>
                                             <div class="col-12 form-group mb-2">
@@ -579,11 +644,14 @@
                                                     <option value="paket-3">Paket 3</option>
                                                     <option value="landing-website">Landing Website</option>
                                                     <option value="social-media-marketing">Social Media Marketing</option>
-                                                    <option value="search-engine-marketing">SEM/Search Engine Marketing</option>
-                                                    <option value="search-engine-optimization">SEO/Search Engine Optimization</option>
-                                                    
+                                                    <option value="search-engine-marketing">SEM/Search Engine Marketing
+                                                    </option>
+                                                    <option value="search-engine-optimization">SEO/Search Engine
+                                                        Optimization</option>
+
                                                     <option value="content-creator">Content Creator</option>
-                                                    <option value="marketplace-ads-optimization">Marketplace Ads Optimization</option>
+                                                    <option value="marketplace-ads-optimization">Marketplace Ads
+                                                        Optimization</option>
                                                 </select>
 
                                             </div>
@@ -603,6 +671,8 @@
                                                 <input type="text" id="landing-enquiry-botcheck"
                                                     name="landing-enquiry-botcheck" value="" />
                                             </div>
+                                            <div class="g-recaptcha" data-sitekey="6LdLM1UeAAAAANIPJEOY3Bo_7bysZ5pSdgMMkyc5"></div>
+
                                             <div class="col-12">
                                                 <button type="button" name="" id="btn-sub"
                                                     class="btn w-100 text-white bg-color rounded-3 py-3 fw-semibold text-uppercase mt-2">Book
@@ -711,7 +781,7 @@
         });
     </script>
     <script>
-        $('#btn-sub').click(function(){
+        $('#btn-sub').click(function() {
             $('#form-enq').submit();
         })
     </script>

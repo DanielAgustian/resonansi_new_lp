@@ -35,7 +35,7 @@
                 </div>
 
                 <div class="col-md-7 my-auto">
-                    <h3 class="lead fw-normal"> <strong>Resonansi</strong> adalah perusahaan yang bergerak di bidang teknologi informasi dan digital strategi yang akan membantu meningkatkan penjualan produk dan brand anda, sehingga akan beresonansi bersama-sama dengan customer anda</h3>
+                    {{-- <h3 class="lead fw-normal"> <strong>Resonansi</strong> adalah perusahaan yang bergerak di bidang teknologi informasi dan digital strategi yang akan membantu meningkatkan penjualan produk dan brand anda, sehingga akan beresonansi bersama-sama dengan customer anda</h3> --}}
                     {{-- <div class="line my-5 border-width-5 border-f5"></div> --}}
 
                     <h3 class="lead fw-normal">Resonansi ada untuk membantu sebuah brand agar dapat satu frekuensi yang sama, dengan apa yang sedang diperbincangan setiap saat oleh masyarakat, untuk membantu masyarakat atau konsumen dari brand untuk paham tentang produk milik brand.</h3>

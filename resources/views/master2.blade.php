@@ -6,6 +6,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="author" content="Yokesen Teknologi Indonesia" />
     <link rel="shortcut icon" href="{{ asset('images/favicon/favicon.ico') }}">
+    
 
     <!--begin::Fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
@@ -166,6 +167,7 @@
 
                                             <li><a href="{{ route('pricingPage') }}">Pricing</a></li>
                                             <li><a href="{{ route('contactPage') }}">Contact Us</a></li>
+                                            <li><a >Karir</a> </li>
                                         </ul>
 
                                     </div>
@@ -272,6 +274,7 @@
             );
         </script>
     @endif
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     @yield('js')
 </body>
 
