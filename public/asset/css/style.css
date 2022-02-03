@@ -3147,13 +3147,13 @@ html[xmlns] .slider-wrap {
 
 #header {
 	position: relative;
-	background-color: #FFF;
-	border-bottom: 1px solid #F5F5F5;
+	/* background-color: #FFF; */
+	/* border-bottom: 1px solid #F5F5F5; */
 }
 
 #header-wrap {
 	position: relative;
-	background-color: #FFF;
+	/* background-color: #FFF; */
 	width: 100%;
 }
 

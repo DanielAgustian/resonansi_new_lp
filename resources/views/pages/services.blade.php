@@ -351,8 +351,14 @@
                                         Marketplace Ads Optimization
                                     @endslot
                                     @slot('details')
-                                        <p>Marketplace Ads Optimization adalah teknik optimasi berbayar yang dilakukan untuk sebuah toko pada marketplace tertentu agar supaya ketika calon pembeli mulai mengetikkan nama suatu produk yang mereka inginkan, maka produk jualan dari toko kamu yang akan muncul di urutan pencarian teratas. </p>
-                                        <p>Cara kerjanya mirip dengan mesin pencari google, dimana pengguna perlu mengetikkan kata kunci atau keyword di kolom pencarian yang sesuai dengan dengan produk tertentu, maka sistem marketplace akan menampilkan sejumlah rekomendasi produk yang dicari calon pembeli sesuai kata kunci yang diketikkan.</p>
+                                        <p>Marketplace Ads Optimization adalah teknik optimasi berbayar yang dilakukan untuk sebuah
+                                            toko pada marketplace tertentu agar supaya ketika calon pembeli mulai mengetikkan nama
+                                            suatu produk yang mereka inginkan, maka produk jualan dari toko kamu yang akan muncul di
+                                            urutan pencarian teratas. </p>
+                                        <p>Cara kerjanya mirip dengan mesin pencari google, dimana pengguna perlu mengetikkan kata
+                                            kunci atau keyword di kolom pencarian yang sesuai dengan dengan produk tertentu, maka
+                                            sistem marketplace akan menampilkan sejumlah rekomendasi produk yang dicari calon
+                                            pembeli sesuai kata kunci yang diketikkan.</p>
                                     @endslot
                                 @endcomponent
                                 {{-- <div class="col-md-9">
@@ -404,12 +410,13 @@
                         <div class="col-md-6 my-auto">
                             <div class="card bg-white shadow-lg border-0">
                                 <div class="card-body p-4">
-                                    <div class="form-widget" data-loader="button" data-alert-type="inline">
+                                    <div>
 
                                         <div class="form-result"></div>
 
-                                        <form class="row mb-0" id="landing-enquiry" action="include/form.php"
-                                            method="post" enctype="multipart/form-data">
+                                        <form class="row mb-0" id="landing-enquiry"
+                                            action="{{ route('meet-create') }}" method="POST"
+                                            enctype="multipart/form-data">
                                             <div class="form-process"></div>
                                             <div class="col-12 form-group mb-2">
                                                 <label>Name:</label>
@@ -462,11 +469,14 @@
                                                     <option value="paket-3">Paket 3</option>
                                                     <option value="landing-website">Landing Website</option>
                                                     <option value="social-media-marketing">Social Media Marketing</option>
-                                                    <option value="search-engine-marketing">SEM/Search Engine Marketing</option>
-                                                    <option value="search-engine-optimization">SEO/Search Engine Optimization</option>
-                                                    
+                                                    <option value="search-engine-marketing">SEM/Search Engine Marketing
+                                                    </option>
+                                                    <option value="search-engine-optimization">SEO/Search Engine
+                                                        Optimization</option>
+
                                                     <option value="content-creator">Content Creator</option>
-                                                    <option value="marketplace-ads-optimization">Marketplace Ads Optimization</option>
+                                                    <option value="marketplace-ads-optimization">Marketplace Ads
+                                                        Optimization</option>
 
                                                 </select>
 
@@ -539,18 +549,18 @@
 @endsection
 
 @section('js')
-<script>
-    $('.btn-order').click(function() {
-        $('html, body').animate({
-            scrollTop: ($("#section-form").offset().top) - 20
-        }, 1500);
+    <script>
+        $('.btn-order').click(function() {
+            $('html, body').animate({
+                scrollTop: ($("#section-form").offset().top) - 20
+            }, 1500);
 
-        if ($(this).data('type') !== undefined) {
+            if ($(this).data('type') !== undefined) {
 
-            let type = $(this).data('type');
-            $('#landing-enquiry-paket option:selected').removeAttr('selected');
-            $('#landing-enquiry-paket option[value="' + type + '"]').attr('selected', 'selected');
-        }
-    });
-</script>
+                let type = $(this).data('type');
+                $('#landing-enquiry-paket option:selected').removeAttr('selected');
+                $('#landing-enquiry-paket option[value="' + type + '"]').attr('selected', 'selected');
+            }
+        });
+    </script>
 @endsection

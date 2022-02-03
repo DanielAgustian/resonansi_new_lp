@@ -112,11 +112,11 @@
                         <div class="col-md-8 my-auto">
                             <div class="card bg-white shadow-lg border-0">
                                 <div class="card-body p-md-5 p-4">
-                                    <div class="form-widget" data-loader="button" data-alert-type="inline">
+                                    <div >
 
                                         <div class="form-result"></div>
 
-                                        <form class="row mb-0" id="landing-enquiry" action="include/form.php"
+                                        <form class="row mb-0" id="landing-enquiry" 
                                             method="post" enctype="multipart/form-data">
                                             <div class="form-process"></div>
                                             <div class="col-12 form-group mb-4">

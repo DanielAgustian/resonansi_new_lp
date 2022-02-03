@@ -21,7 +21,7 @@ class MeetController extends Controller
         } elseif ($agent->isDesktop()) {
             $screen = "Desktop";
         }
-
+        //dd($request);
         $data = [
             'name' => $request->name,
             'email' => $request->email,
@@ -46,6 +46,6 @@ class MeetController extends Controller
             'paket' => $request->landing_enquiry_paket
         ]);
 
-        return redirect()->back();
+        return redirect()->back()->with('successMsg', 'Success');
     }
 }

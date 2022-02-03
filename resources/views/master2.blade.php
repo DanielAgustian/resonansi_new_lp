@@ -49,7 +49,8 @@
 
         <!-- Header
   ============================================= -->
-        <header id="header" class="transparent-header full-header dark no-sticky" data-responsive-class="not-dark">
+        <header id="header" class="transparent-header full-header  no-sticky"
+            style="background-color:transparent !important">
             <div id="header-wrap">
                 <div class="container">
                     <div class="header-row">
@@ -83,29 +84,33 @@
 
                             <ul class="me-0 border-0 menu-container {{ set_none_navbar('landing') }}">
 
-                                <li class="menu-item"><a class="menu-link" href="{{route('aboutPage')}}">
+                                <li class="menu-item"><a class="menu-link" href="{{ route('aboutPage') }}">
                                         <div>About Us</div>
                                     </a></li>
-                                <li class="menu-item"><a class="menu-link" href="{{route('servicePage')}}">
+                                <li class="menu-item"><a class="menu-link" href="{{ route('servicePage') }}">
                                         <div>Services</div>
                                     </a></li>
-                                <li class="menu-item"><a class="menu-link" href="{{route('blogsPage')}}">
+                                <li class="menu-item"><a class="menu-link" href="{{ route('blogsPage') }}">
                                         <div>Blog</div>
                                     </a></li>
-                                <li class="menu-item"><a class="menu-link" href="{{route('pricingPage')}}">
+                                <li class="menu-item"><a class="menu-link" href="{{ route('pricingPage') }}">
                                         <div>Pricing</div>
                                     </a></li>
-                                <li class="menu-item"><a class="menu-link" href="{{route('contactPage')}}">
+                                <li class="menu-item"><a class="menu-link" href="{{ route('contactPage') }}">
                                         <div>Contact</div>
                                     </a></li>
                                 <li class="menu-item dropdown mb-lg-0 mb-1">
-                                    <select name="language" class="form-control" >
-                                        <option value="id">ID <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg" alt="" style="width: 40px; height: 25px"></option>
-                                        <option value="en">EN <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="" style="width: 40px; height: 25px"></option>
+                                    <select name="language" class="form-control">
+                                        <option value="id">ID <img
+                                                src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg"
+                                                alt="" style="width: 40px; height: 25px"></option>
+                                        <option value="en">EN <img
+                                                src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg"
+                                                alt="" style="width: 40px; height: 25px"></option>
                                     </select>
                                 </li>
                             </ul>
-                            
+
                         </nav><!-- #primary-menu end -->
 
                     </div>
@@ -144,9 +149,9 @@
                                         <h4 class="ls0 ls0">Pages</h4>
 
                                         <ul>
-                                            <li><a href="{{route('aboutPage')}}">About Us</a></li>
-                                            <li><a href="{{route('servicePage')}}">Our Services</a></li>
-                                            <li><a href="{{route('blogsPage')}}">Blog</a></li>
+                                            <li><a href="{{ route('aboutPage') }}">About Us</a></li>
+                                            <li><a href="{{ route('servicePage') }}">Our Services</a></li>
+                                            <li><a href="{{ route('blogsPage') }}">Blog</a></li>
 
                                         </ul>
 
@@ -159,8 +164,8 @@
 
                                         <ul>
 
-                                            <li><a href="{{route('pricingPage')}}">Pricing</a></li>
-                                            <li><a href="{{route('contactPage')}}">Contact Us</a></li>
+                                            <li><a href="{{ route('pricingPage') }}">Pricing</a></li>
+                                            <li><a href="{{ route('contactPage') }}">Contact Us</a></li>
                                         </ul>
 
                                     </div>
@@ -230,7 +235,7 @@
     <!-- Footer Scripts
  ============================================= -->
     <script src="{{ asset('asset/js/functions.js') }}"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.10/dist/sweetalert2.all.min.js"></script>
     <script>
         jQuery(window).on('pluginCarouselReady', function() {
             setTimeout(function() {
@@ -257,6 +262,16 @@
             )
         })
     </script>
+    @if (Session::has('successMsg'))
+        <script>
+            console.log('success');
+            Swal.fire(
+                'Success!',
+                'Janji sudah terdaftar!',
+                'success'
+            );
+        </script>
+    @endif
     @yield('js')
 </body>
 

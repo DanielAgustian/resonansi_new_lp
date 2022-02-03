@@ -249,12 +249,12 @@
                         <div class="col-md-6 my-auto">
                             <div class="card bg-white shadow-lg border-0">
                                 <div class="card-body p-4">
-                                    <div class="form-widget" data-loader="button" data-alert-type="inline">
+                                    <div>
 
                                         <div class="form-result"></div>
 
-                                        <form class="row mb-0" id="landing-enquiry" action="include/form.php"
-                                            method="post" enctype="multipart/form-data">
+                                        <form class="row mb-0" id="landing-enquiry"  action="{{ route('meet-create') }}" method="POST"
+                                            enctype="multipart/form-data">
                                             <div class="form-process"></div>
                                             <div class="col-12 form-group mb-2">
                                                 <label>Name:</label>
@@ -307,11 +307,14 @@
                                                     <option value="paket-3">Paket 3</option>
                                                     <option value="landing-website">Landing Website</option>
                                                     <option value="social-media-marketing">Social Media Marketing</option>
-                                                    <option value="search-engine-marketing">SEM/Search Engine Marketing</option>
-                                                    <option value="search-engine-optimization">SEO/Search Engine Optimization</option>
-                                                    
+                                                    <option value="search-engine-marketing">SEM/Search Engine Marketing
+                                                    </option>
+                                                    <option value="search-engine-optimization">SEO/Search Engine
+                                                        Optimization</option>
+
                                                     <option value="content-creator">Content Creator</option>
-                                                    <option value="marketplace-ads-optimization">Marketplace Ads Optimization</option>
+                                                    <option value="marketplace-ads-optimization">Marketplace Ads
+                                                        Optimization</option>
                                                 </select>
 
                                             </div>

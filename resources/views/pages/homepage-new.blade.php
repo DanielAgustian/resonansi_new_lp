@@ -516,11 +516,11 @@
                         <div class="col-md-6 my-auto">
                             <div class="card bg-white shadow-lg border-0">
                                 <div class="card-body p-4">
-                                    <div class="form-widget" data-loader="button" data-alert-type="inline">
+                                    <div >
 
                                         <div class="form-result"></div>
 
-                                        <form class="row mb-0" id="landing-enquiry"
+                                        <form class="row mb-0" id="form-enq"
                                             action="{{ route('meet-create') }}" method="POST"
                                             enctype="multipart/form-data">
                                             @csrf
@@ -604,7 +604,7 @@
                                                     name="landing-enquiry-botcheck" value="" />
                                             </div>
                                             <div class="col-12">
-                                                <button type="submit" name="landing-enquiry-submit"
+                                                <button type="button" name="" id="btn-sub"
                                                     class="btn w-100 text-white bg-color rounded-3 py-3 fw-semibold text-uppercase mt-2">Book
                                                     Now!</button>
                                             </div>
@@ -660,6 +660,7 @@
     <script>
         var swiper = new Swiper(".mySwiper", {
             cssMode: true,
+            loop: true,
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
@@ -677,6 +678,7 @@
     <script>
         var swiper = new Swiper(".swiperTestimoni", {
             cssMode: true,
+            loop: true,
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
@@ -707,5 +709,10 @@
                 scrollTop: ($(".section-3").offset().top) - 20
             }, 1500);
         });
+    </script>
+    <script>
+        $('#btn-sub').click(function(){
+            $('#form-enq').submit();
+        })
     </script>
 @endsection
