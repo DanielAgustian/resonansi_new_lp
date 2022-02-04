@@ -37,7 +37,7 @@
                         <div class="col-lg-5 col-md-6 mt-md-0 mt-3">
                             <div class="slide-imgs">
                                 {{-- <img src="{{asset('images/1-2.png')}}" alt="Image" class="card-img"> --}}
-                                <img src="{{ asset('images/1-1.png') }}" alt="Image" class="iphone-img">
+                                <img src="{{ asset('images/hp_banner.png') }}" alt="Image" class="iphone-img">
                             </div>
                             {{-- <div class="swiper mySwiper ">
                                 <div class="swiper-wrapper">
@@ -383,66 +383,66 @@
                 </div>
         </section>
         <div class="divider-sect"></div> --}}
-            {{-- <section class="section-3">
+        <!--    {{-- <section class="section-3">-->
 
-                <div class="blue-title mx-auto center mt-4 bottommargin heading-block" style="max-width: 640px;">
-                    <h3 class="nott title-part text-center"><span>Siapa Saja Klien Kami?</span> </h3>
-                    <p class="lead fw-normal font-primary mb-5 mt-3">Banyak klien sudah puas dengan servis kami. Apakah
-                        anda akan menjadi salah satunya?</p>
+        <!--        <div class="blue-title mx-auto center mt-4 bottommargin heading-block" style="max-width: 640px;">-->
+        <!--            <h3 class="nott title-part text-center"><span>Siapa Saja Klien Kami?</span> </h3>-->
+        <!--            <p class="lead fw-normal font-primary mb-5 mt-3">Banyak klien sudah puas dengan servis kami. Apakah-->
+        <!--                anda akan menjadi salah satunya?</p>-->
 
-                </div>
-                <div class="row align-items-stretch align-content-stretch g-0 topmargin">
+        <!--        </div>-->
+        <!--        <div class="row align-items-stretch align-content-stretch g-0 topmargin">-->
 
-                    <div class="col-md-6 order-md-2 mb-lg-0 mb-md-0 mb-3"
-                        style="background: url('{{ asset('images/handphone.jpg') }}') center center / cover; min-height: 350px">
-                    </div>
+        <!--            <div class="col-md-6 order-md-2 mb-lg-0 mb-md-0 mb-3"-->
+        <!--                style="background: url('{{ asset('images/handphone.jpg') }}') center center / cover; min-height: 350px">-->
+        <!--            </div>-->
 
-                    <div class="col-md-6 bg-white dark order-md-1">
-                        <div class="section-features">
-                            <div class="row justify-content-center mt-7">
-                                <div class="col-lg-4 col-6">
-                                    <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png"
-                                        alt="" class="img-client shadow rounded">
-                                    <h6 class="blue-text">Cv. Blabla</h6>
-                                </div>
-                                <div class="col-lg-4 col-6">
-                                    <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png"
-                                        alt="" class="img-client shadow rounded">
-                                    <h6 class="blue-text">Cv. Blabla</h6>
-                                </div>
-                                <div class="col-lg-4 col-6">
-                                    <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png"
-                                        alt="" class="img-client shadow rounded">
-                                    <h6 class="blue-text">Cv. Blabla</h6>
-                                </div>
-                                <div class="col-lg-4 col-6">
-                                    <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png"
-                                        alt="" class="img-client shadow rounded">
-                                    <h6 class="blue-text">Cv. Blabla</h6>
-                                </div>
-                                <div class="col-lg-4 col-6">
-                                    <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png"
-                                        alt="" class="img-client shadow rounded">
-                                    <h6 class="blue-text">Cv. Blabla</h6>
-                                </div>
-                                <div class="col-lg-4 col-6">
-                                    <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png"
-                                        alt="" class="img-client shadow rounded">
-                                    <h6 class="blue-text">Cv. Blabla</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="feature-pc"></div>
-                    </div>
+        <!--            <div class="col-md-6 bg-white dark order-md-1">-->
+        <!--                <div class="section-features">-->
+        <!--                    <div class="row justify-content-center mt-7">-->
+        <!--                        <div class="col-lg-4 col-6">-->
+        <!--                            <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png"-->
+        <!--                                alt="" class="img-client shadow rounded">-->
+        <!--                            <h6 class="blue-text">Cv. Blabla</h6>-->
+        <!--                        </div>-->
+        <!--                        <div class="col-lg-4 col-6">-->
+        <!--                            <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png"-->
+        <!--                                alt="" class="img-client shadow rounded">-->
+        <!--                            <h6 class="blue-text">Cv. Blabla</h6>-->
+        <!--                        </div>-->
+        <!--                        <div class="col-lg-4 col-6">-->
+        <!--                            <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png"-->
+        <!--                                alt="" class="img-client shadow rounded">-->
+        <!--                            <h6 class="blue-text">Cv. Blabla</h6>-->
+        <!--                        </div>-->
+        <!--                        <div class="col-lg-4 col-6">-->
+        <!--                            <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png"-->
+        <!--                                alt="" class="img-client shadow rounded">-->
+        <!--                            <h6 class="blue-text">Cv. Blabla</h6>-->
+        <!--                        </div>-->
+        <!--                        <div class="col-lg-4 col-6">-->
+        <!--                            <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png"-->
+        <!--                                alt="" class="img-client shadow rounded">-->
+        <!--                            <h6 class="blue-text">Cv. Blabla</h6>-->
+        <!--                        </div>-->
+        <!--                        <div class="col-lg-4 col-6">-->
+        <!--                            <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png"-->
+        <!--                                alt="" class="img-client shadow rounded">-->
+        <!--                            <h6 class="blue-text">Cv. Blabla</h6>-->
+        <!--                        </div>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--                <div class="feature-pc"></div>-->
+        <!--            </div>-->
 
-                </div>
+        <!--        </div>-->
 
 
-            </section> --}}
-            {{-- <div class="divider-sect"></div> --}}
-            {{-- <section class="section-4" style="background-image: url('{{ asset('images/bg-hero.svg') }}');">
+        <!--    </section> --}}-->
+        <!--    {{-- <div class="divider-sect"></div> --}}-->
+        <!--    {{-- <section class="section-4" style="background-image: url('{{ asset('images/bg-hero.svg') }}');">-->
 
-        </section> --}}
+        <!--</section> --}}-->
             <div class="section bg-transparent">
                 <div class="container">
                     <div class="row ">
