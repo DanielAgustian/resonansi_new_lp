@@ -32,20 +32,20 @@
 
                         </div>
 
-                        {{-- <div class="col-lg-1 col-0"></div> --}}
+                        <div class="col-lg-1 col-0"></div>
 
-                        <div class="col-lg-6 col-md-6 mt-md-0 mt-3">
-                            {{-- <div class="slide-imgs">
-                            <img src="demos/landing/images/hero/1-2.png" alt="Image" class="card-img">
-                            <img src="demos/landing/images/hero/1-1.png" alt="Image" class="iphone-img">
-                        </div> --}}
-                            <div class="swiper mySwiper ">
+                        <div class="col-lg-5 col-md-6 mt-md-0 mt-3">
+                            <div class="slide-imgs">
+                                {{-- <img src="{{asset('images/1-2.png')}}" alt="Image" class="card-img"> --}}
+                                <img src="{{ asset('images/hp_banner.png') }}" alt="Image" class="iphone-img">
+                            </div>
+                            <!-- {{-- <div class="swiper mySwiper ">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        {{-- <img src="{{ asset('images/emas.png') }}" alt="" class="img-slide"> --}}
+
                                         <div class="d-flex align-items-center h-100">
-                                            <img src="{{asset('images/soc-med-banner.png')}}"
-                                                alt="" class="img-banner">
+                                            <img src="{{ asset('images/soc-med-banner.png') }}" alt=""
+                                                class="img-banner">
 
                                         </div>
                                     </div>
@@ -78,7 +78,10 @@
                                 <div class="swiper-button-next"></div>
                                 <div class="swiper-button-prev"></div>
                                 <div class="swiper-pagination"></div>
-                            </div>
+                            </div> --}} -->
+                        </div>
+
+
                         </div>
 
                     </div>
