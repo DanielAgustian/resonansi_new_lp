@@ -5,7 +5,7 @@
 	use DB;
 	use CRUDBooster;
 
-	class AdminJadwalMeetController extends \crocodicstudio\crudbooster\controllers\CBController {
+	class AdminContactUsMessageController extends \crocodicstudio\crudbooster\controllers\CBController {
 
 	    public function cbInit() {
 
@@ -25,33 +25,29 @@
 			$this->button_filter = true;
 			$this->button_import = false;
 			$this->button_export = false;
-			$this->table = "meet";
+			$this->table = "contact";
 			# END CONFIGURATION DO NOT REMOVE THIS LINE
 
 			# START COLUMNS DO NOT REMOVE THIS LINE
 			$this->col = [];
 			$this->col[] = ["label"=>"Client Id","name"=>"client_id","join"=>"client,name"];
-			$this->col[] = ["label"=>"Tgl","name"=>"tgl"];
-			$this->col[] = ["label"=>"Jam","name"=>"jam"];
-			$this->col[] = ["label"=>"Paket","name"=>"paket"];
 			$this->col[] = ["label"=>"email","name"=>"client_id","join"=>"client,email"];
-			$this->col[] = ["label"=>"status","name"=>"client_id","join"=>"client,status"];
+			$this->col[] = ["label"=>"Phone Number","name"=>"client_id","join"=>"client,phone"];
+			$this->col[] = ["label"=>"Company Name","name"=>"client_id","join"=>"client,company"];
+			$this->col[] = ["label"=>"Message","name"=>"message"];
+			$this->col[] = ["label"=>"Created At","name"=>"created_at"];
 			# END COLUMNS DO NOT REMOVE THIS LINE
 
 			# START FORM DO NOT REMOVE THIS LINE
 			$this->form = [];
 			$this->form[] = ['label'=>'Client Id','name'=>'client_id','type'=>'select2','validation'=>'required|min:1|max:255','width'=>'col-sm-10','datatable'=>'client,name'];
-			$this->form[] = ['label'=>'Tgl','name'=>'tgl','type'=>'date','validation'=>'required|date','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Jam','name'=>'jam','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Paket','name'=>'paket','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Message','name'=>'message','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
 			# END FORM DO NOT REMOVE THIS LINE
 
 			# OLD START FORM
 			//$this->form = [];
 			//$this->form[] = ["label"=>"Client Id","name"=>"client_id","type"=>"select2","required"=>TRUE,"validation"=>"required|min:1|max:255","datatable"=>"client,name"];
-			//$this->form[] = ["label"=>"Tgl","name"=>"tgl","type"=>"date","required"=>TRUE,"validation"=>"required|date"];
-			//$this->form[] = ["label"=>"Jam","name"=>"jam","type"=>"text","required"=>TRUE,"validation"=>"required|min:1|max:255"];
-			//$this->form[] = ["label"=>"Paket","name"=>"paket","type"=>"text","required"=>TRUE,"validation"=>"required|min:1|max:255"];
+			//$this->form[] = ["label"=>"Message","name"=>"message","type"=>"text","required"=>TRUE,"validation"=>"required|min:1|max:255"];
 			# OLD END FORM
 
 			/* 

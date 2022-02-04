@@ -448,7 +448,7 @@
                     <div class="row ">
 
                         <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
-                            <img src="{{ asset('images/2.jpg') }}" alt="Image">
+                            <img src="{{ asset('images/hp_section.png') }}" alt="Image">
                         </div>
 
                         <div class="col-md-6 offset-lg-1">
@@ -876,6 +876,6 @@
         })
 
     </script> -->
-    
+
     script
 @endsection

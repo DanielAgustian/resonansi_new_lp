@@ -116,39 +116,50 @@
 
                                         <div class="form-result"></div>
 
-                                        <form class="row mb-0" id="landing-enquiry" 
+                                        <form class="row mb-0 form-contact" id="landing-enquiry" action="{{route('makeContactUs')}}"
                                             method="post" enctype="multipart/form-data">
+                                            @csrf
                                             <div class="form-process"></div>
                                             <div class="col-12 form-group mb-4">
                                                 <label>Name:</label>
                                                 <input type="text" name="name" id="landing-enquiry-name"
                                                     class="form-control form-control-lg required" value=""
-                                                    placeholder="John Doe">
+                                                    placeholder="John Doe" required>
+                                                    <div style="color: red; font-size:11px" id="err-name">
+
+                                                    </div>
                                             </div>
                                             <div class="col-12 form-group mb-4">
                                                 <label>Email:</label>
                                                 <input type="email" name="email" id="landing-enquiry-email"
                                                     class="form-control form-control-lg required" value=""
-                                                    placeholder="user@company.com">
+                                                    placeholder="user@company.com" required>
+                                                    <div style="color: red; font-size:11px" id="err-email">
+
+                                                    </div>
                                             </div>
                                             <div class="col-12 form-group mb-4">
                                                 <label>Phone:</label><br>
                                                 <div class="input-group input-group-lg">
-                                                    <select class="form-select required" name="landing-enquiry-idd"
+                                                    <select class="form-select required" name="phone_front"
                                                         id="landing-enquiry-idd" style="max-width: 100px;">
-                                                        {{-- <option value="+1">+1</option>
+                                                        <!-- {{-- <option value="+1">+1</option>
                                                         <option value="+44">+44</option>
-                                                        <option value="+66">+66</option> --}}
+                                                        <option value="+66">+66</option> --}} -->
                                                         <option value="+62" selected>+62</option>
-                                                        {{-- <option value="+61">+61</option>
+                                                        <!-- {{-- <option value="+61">+61</option>
                                                         <option value="+852">+852</option>
                                                         <option value="+65">+61</option>
                                                         <option value="+33">+61</option>
-                                                        <option value="+49">+49</option> --}}
+                                                        <option value="+49">+49</option> --}} -->
                                                     </select>
                                                     <input type="number" name="phone" id="landing-enquiry-phone"
                                                         class="form-control form-control-lg required" value=""
-                                                        placeholder="">
+                                                        placeholder="" required>
+
+                                                </div>
+                                                <div style="color: red; font-size:11px" id="err-phone">
+
                                                 </div>
                                             </div>
 
@@ -156,16 +167,22 @@
                                                 <label>Nama Perusahaan</label>
                                                 <input type="text" name="company" id="landing-enquiry-company"
                                                     class="form-control form-control-lg required" value=""
-                                                    placeholder="Company Name">
+                                                    placeholder="Company Name" required>
+                                                    <div style="color: red; font-size:11px" id="err-company">
+
+                                                    </div>
                                             </div>
                                             <div class="col-12 form-group mb-4">
                                                 <label>Message:</label>
-                                                <textarea name="landing-enquiry-additional-requirements"
+                                                <textarea name="message"
                                                     id="landing-enquiry-additional-requirements"
                                                     class="form-control form-control-lg" cols="30" rows="5"
-                                                    placeholder="Please let us know how we can help you..."></textarea>
+                                                    placeholder="Please let us know how we can help you..." required></textarea>
+                                                    <div style="color: red; font-size:11px" id="err-msg">
+
+                                                    </div>
                                             </div>
-                                            {{-- <div class="col-12 form-group mb-4">
+                                            <!-- {{-- <div class="col-12 form-group mb-4">
                                                 <label>Paket</label>
                                                 <select class="form-select form-control form-control-lg required"
                                                     name="landing-enquiry-paket" id="landing-enquiry-paket">
@@ -176,14 +193,14 @@
                                                     <option value="social-media-marketing">Social Media Marketing</option>
                                                     <option value="search-engine-marketing">SEM/Search Engine Marketing</option>
                                                     <option value="search-engine-optimization">SEO/Search Engine Optimization</option>
-                                                    
+
                                                     <option value="content-creator">Content Creator</option>
                                                     <option value="marketplace-ads-optimization">Marketplace Ads Optimization</option>
 
                                                 </select>
 
-                                            </div> --}}
-                                            {{-- <div class="col-12 form-group mb-4">
+                                            </div> --}} -->
+                                            <!-- {{-- <div class="col-12 form-group mb-4">
                                                 <label>Tanggal</label>
                                                 <input type="date" name="date" id="landing-enquiry-date"
                                                     class="form-control form-control-lg required" value=""
@@ -194,7 +211,7 @@
                                                 <input type="time" name="time" id="landing-enquiry-time"
                                                     class="form-control form-control-lg required" value=""
                                                     placeholder="date">
-                                            </div> --}}
+                                            </div> --}} -->
 
                                             <div class="col-12 d-none">
                                                 <input type="text" id="landing-enquiry-botcheck"
@@ -211,7 +228,7 @@
                                     </div>
                                 </div>
                             </div>
-                            {{-- <div class="card">
+                            <!-- {{-- <div class="card">
                                 <div class="card-body">
                                     <h5 class="text-center title-part mb-4">
                                         Yuk Bertemu dengan <span>Account Executive</span> Kami!
@@ -239,7 +256,7 @@
                                         </div>
                                     </form>
                                 </div>
-                            </div> --}}
+                            </div> --}} -->
 
                         </div>
                     </div>
@@ -251,5 +268,80 @@
 @endsection
 
 @section('js')
+  @if(Session::has('successContact'))
+    <script type="text/javascript">
+    Swal.fire(
+        'Success!',
+        'Pesan telah terkirim!',
+        'success'
+    );
+    </script>
+  @endif
+  <script>
+      $('.form-contact').on('submit', function(e){
 
+        let errorEmail = false;
+        let errorName = false;
+        let errorPhone = false;
+        let errorCompany = false;
+        let errorMsg = false;
+
+        let email = $('input[name="email"]').val() ?? "";
+        let name = $('input[name="name"]').val() ;
+        let phone = $('input[name="phone"]').val();
+        let company = $('input[name="company"]').val();
+        let message = $('textarea[name="message"]').val();
+
+        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+        if (!email.match(mailformat) ) {
+          console.log("wrong email");
+          errorEmail = true;
+          $('#err-email').text('Email Tidak Valid');
+
+        }else{
+          $('#err-email').text('');
+        }
+
+        if (name.length < 2) {
+          console.log("name empty");
+          errorName = true;
+          $('#err-name').text('Nama tidak valid');
+        }else{
+          $('#err-name').text('');
+        }
+        if (phone.length < 9 ) {
+          console.log("phone error");
+          errorPhone = true;
+          $('#err-phone').text('Nomor Kamu Tidak Valid');
+        }else{
+          $('#err-phone').text('');
+        }
+
+        if (company.length< 3) {
+          console.log("company error");
+          errorCompany = true;
+          $('#err-company').text('Nama Perusahaan Tidak Valid');
+        }else{
+          $('#err-company').text('');
+        }
+
+        if (message.length< 3) {
+          console.log("date empty");
+          errorDate = true;
+          $('#err-msg').text('Tanggal Bertemu Tidak valid');
+        }else{
+          $('#err-msg').text('');
+        }
+
+
+
+
+        if(errorName || errorEmail || errorPhone ||errorCompany || errorMsg){
+          console.log("ONE OF THEM IS EMPTY/WRONG");
+          e.preventDefault();
+        }
+      })
+
+  </script>
 @endsection
