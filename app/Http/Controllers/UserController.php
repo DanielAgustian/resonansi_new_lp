@@ -29,7 +29,7 @@ class UserController extends Controller
         $user = DB::table('client')->where('id', $id)->update($data);
 
         if ($request->status == 'lead') {
-            return redirect()->route('userLeadDetail', [$id]);
+            return redirect()->route('userDetail', [$id]);
         } else if ($request->status == 'contact') {
             return redirect()->route('userContactDetail', [$id]);
         } else if ($request->status == 'potential') {
