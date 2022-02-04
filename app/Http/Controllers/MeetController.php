@@ -10,10 +10,13 @@ use Jenssegers\Agent\Agent;
 class MeetController extends Controller
 {
     public function create(Request $request){
-        // dd($request->all(), $request->g_recaptcha_response);
+        // dd($request->all(), $request->input('g-recaptcha-response'));
+        $capcha = $request->input('g-recaptcha-response');
         date_default_timezone_set("Asia/Bangkok");
         $agent = new Agent();
-
+        if ($capcha == null) {
+          return redirect()->back()->with('errorCapcha', 'errorCapcha');
+        }
         if ($agent->isPhone()) {
             $screen = "Phone";
         } elseif ($agent->isTablet()) {
@@ -26,8 +29,9 @@ class MeetController extends Controller
         $data = [
             'name' => $request->name,
             'email' => $request->email,
-            'phone' => $request->phone,
+            'phone' => $request->input('landing-enquiry-idd').$request->phone,
             'status' => 'lead',
+            'company'=> $request->company,
             'ip_address' => \Request::ip(),
             'device' => $agent->device(),
             'platform' => $agent->platform(),
@@ -51,6 +55,7 @@ class MeetController extends Controller
     }
 
     public function makeContactUs(Request $request){
+        // dd($request->all());
         date_default_timezone_set("Asia/Bangkok");
         $agent = new Agent();
 
@@ -64,7 +69,8 @@ class MeetController extends Controller
         $data = [
             'name' => $request->name,
             'email' => $request->email,
-            'phone' => $request->phone,
+            'phone' => $request->phone_front.$request->phone,
+            'company'=> $request->company,
             'status' => 'contact',
             'ip_address' => \Request::ip(),
             'device' => $agent->device(),
@@ -76,6 +82,13 @@ class MeetController extends Controller
             'languages' => $agent->languages()[0],
             'created_at' =>  Carbon::now(),
         ];
-        
+        $userId = DB::table('client')->insertGetId($data);
+        $insertContact = DB::table('contact')->insertGetId([
+          'client_id' => $userId,
+          'message' => $request->message,
+          'created_at'=> Carbon::now()
+
+        ]);
+        return redirect()->back()->with('successContact', 'Success');
     }
 }

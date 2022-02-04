@@ -10,6 +10,7 @@ return array(
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Http\\Controllers\\AdminCmsUsersController' => $baseDir . '/app/Http/Controllers/AdminCmsUsersController.php',
     'App\\Http\\Controllers\\AdminContactsController' => $baseDir . '/app/Http/Controllers/AdminContactsController.php',
+    'App\\Http\\Controllers\\AdminJadwalMeetController' => $baseDir . '/app/Http/Controllers/AdminJadwalMeetController.php',
     'App\\Http\\Controllers\\AdminLeadsController' => $baseDir . '/app/Http/Controllers/AdminLeadsController.php',
     'App\\Http\\Controllers\\AdminLosesController' => $baseDir . '/app/Http/Controllers/AdminLosesController.php',
     'App\\Http\\Controllers\\AdminPotentialsController' => $baseDir . '/app/Http/Controllers/AdminPotentialsController.php',

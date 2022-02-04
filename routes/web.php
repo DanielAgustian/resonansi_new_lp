@@ -33,6 +33,7 @@ Route::get('admin/loses/{id}', [UserController::class, 'userDetail'])->name('use
 
 // form Request
 Route::post('meet/create', [MeetController::class, 'create'])->name('meet-create');
+Route::post('contact/create', [MeetController::class, 'makeContactUs'])->name('makeContactUs');
 
 
 
