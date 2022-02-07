@@ -32,10 +32,10 @@
                 <div class="container clearfix services-page">
                     <div class="row">
                         <div class="col-lg-12 mb-5">
-                            <h2 class="fw-bold h2 mb-4 text-center">Dipercaya lebih dari <span>100</span> klien</h2>
+                            <h2 class="fw-bold h2 mb-4 text-center">Dipercaya  <span>Semua</span> Klien Kami</h2>
                             <p class="fw-normal mb-2 h6 text-muted text-center  ">Mengevolusi cara meningkatkan kualitas
-                                website anda.
-                                Mengubah persepsi klien dan kustomer terhadap website anda secara radikal.</p>
+                                brand anda.
+                                Mengubah persepsi klien dan kustomer terhadap bisnis anda secara radikal.</p>
 
                             <div class="row my-5 justify-content-center">
                                 @component('components.custom.services-card')
@@ -115,7 +115,7 @@
                                         {{-- <p> Pemasaran melalui social media melibatkan aktivitas seperti membangun kehadiran di
                                             jejaring social, menyebarkan kesadaran dan tingkat kepercayaan sebuah merek, melibatkan
                                             prospek dan pelanggan melalui konten, mengarahkan lalu lintas kunjungan ke situs
-                                            website, dan sebagainya. 
+                                            website, dan sebagainya.
                                         </p> --}}
                                         <p>Marketer social media menggunakan platform media sosial untuk bisa menemukan dan
                                             menjangkau pelanggan maupun calon pelanggan, dimana secara tidak langsung akan
@@ -288,7 +288,7 @@
                                     @endslot
                                     @slot('details')
                                         <p>Content Creator adalah seseorang yang memiliki tanggung jawab pada setiap informasi yang
-                                            mereka sebarkan di media sosial. 
+                                            mereka sebarkan di media sosial.
                                             {{-- Berdasarkan definisi tersebut, content creator umumnya
                                             mempunyai target penonton atau audiensnya masing-masing.  --}}
                                         </p>
@@ -297,7 +297,7 @@
                                             atau TikTok, biasanya mereka juga menggunakan blog, infografik, dan juga sebuah ebook
                                             untuk bisa menyebarkan seluruh kontennya</p> --}}
                                         <p>Dengan keahlian yang dimiliki oleh seorang content creator, mereka mampu membantu kamu
-                                            dalam menjalankan strategi pemasaran dengan baik. 
+                                            dalam menjalankan strategi pemasaran dengan baik.
                                         </p>
                                         <p>Terdapat beberapa alasan kenapa kamu memerlukan content creator untuk keperluan strategi
                                             pemasaran bisnismu, berikut ini adalah penjelasannya: </p>
@@ -405,7 +405,8 @@
                         Resonansi <br> supaya tambah ngerti!</p>
                     <div class="row">
                         <div class="col-md-6 img-mbl-form">
-                            <img src="{{ asset('images/calendar.png') }}" alt="" class="img-form rounded">
+                            <!-- <img src="{{ asset('images/calendar.png') }}" alt="" class="img-form rounded"> -->
+                            <iframe src="https://calendar.google.com/calendar/embed?src=uon0rocne2ndmlcp14vl2jl5v0%40group.calendar.google.com&ctz=Asia%2FJakarta" style="border: 0"  frameborder="0" scrolling="no" class="iframe-calendar"></iframe>
                         </div>
                         <div class="col-md-6 my-auto">
                             <div class="card bg-white shadow-lg border-0">

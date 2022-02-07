@@ -37,7 +37,7 @@
                         <div class="col-lg-5 col-md-6 mt-md-0 mt-3">
                             <div class="slide-imgs">
                                 {{-- <img src="{{asset('images/1-2.png')}}" alt="Image" class="card-img"> --}}
-                                <img src="{{ asset('images/hp_banner.png') }}" alt="Image" class="iphone-img">
+                                <img src="{{ asset('images/hp_banner_2.png') }}" alt="Image" class="iphone-img">
                             </div>
                             {{-- <div class="swiper mySwiper ">
                                 <div class="swiper-wrapper">
@@ -476,35 +476,35 @@
                             <div class="section-features">
                                 <div class="row justify-content-center mt-7">
                                     <div class="col-lg-4 col-6">
-                                        <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png"
+                                        <img src="{{asset('images/klien/kopgron.png')}}"
                                             alt="" class="img-client shadow rounded">
-                                        <h6 class="blue-text">Cv. Blabla</h6>
+                                        <h6 class="blue-text">Kopi Grontol</h6>
                                     </div>
                                     <div class="col-lg-4 col-6">
-                                        <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png"
+                                        <img src="{{asset('images/klien/sweet_monsta.png')}}"
                                             alt="" class="img-client shadow rounded">
-                                        <h6 class="blue-text">Cv. Blabla</h6>
+                                        <h6 class="blue-text">Sweet Monsta</h6>
                                     </div>
                                     <div class="col-lg-4 col-6">
-                                        <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png"
+                                        <img src="{{asset('images/klien/warung_52.png')}}"
                                             alt="" class="img-client shadow rounded">
-                                        <h6 class="blue-text">Cv. Blabla</h6>
+                                        <h6 class="blue-text">Warung Makan 52</h6>
                                     </div>
                                     <div class="col-lg-4 col-6">
-                                        <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png"
+                                        <img src="{{asset('images/klien/WGM.png')}}"
                                             alt="" class="img-client shadow rounded">
-                                        <h6 class="blue-text">Cv. Blabla</h6>
+                                        <h6 class="blue-text">Warisan Gajah Mada</h6>
                                     </div>
                                     <div class="col-lg-4 col-6">
+                                        <img src="{{asset('images/klien/WHW.png')}}"
+                                            alt="" class="img-client shadow rounded">
+                                        <h6 class="blue-text">Warisan Hayam Wuruk</h6>
+                                    </div>
+                                    <!-- <div class="col-lg-4 col-6">
                                         <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png"
                                             alt="" class="img-client shadow rounded">
                                         <h6 class="blue-text">Cv. Blabla</h6>
-                                    </div>
-                                    <div class="col-lg-4 col-6">
-                                        <img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png"
-                                            alt="" class="img-client shadow rounded">
-                                        <h6 class="blue-text">Cv. Blabla</h6>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
 
@@ -577,7 +577,8 @@
                         Resonansi <br> supaya tambah ngerti!</p>
                     <div class="row">
                         <div class="col-md-6 img-mbl-form">
-                            <img src="{{ asset('images/calendar.png') }}" alt="" class="img-form rounded">
+                            <!-- <img src="{{ asset('images/calendar.png') }}" alt="" class="img-form rounded"> -->
+                            <iframe src="https://calendar.google.com/calendar/embed?src=uon0rocne2ndmlcp14vl2jl5v0%40group.calendar.google.com&ctz=Asia%2FJakarta" style="border: 0"  frameborder="0" scrolling="no" class="iframe-calendar"></iframe>
                         </div>
                         <div class="col-md-6 my-auto">
                             <div class="card bg-white shadow-lg border-0">

@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="{{ asset('asset/css/custom/landing.css') }}" type="text/css" />
     <link rel="stylesheet" href="{{ asset('asset/css/custom/fonts.css') }}" type="text/css" />
 
-    <link rel="stylesheet" href="{{ asset('asset/css/custom/custom-style.css') }}?v=1.0.4" type="text/css">
+    <link rel="stylesheet" href="{{ asset('asset/css/custom/custom-style.css') }}?v=1.0.4.1" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="stylesheet" href="{{ asset('asset/css/colors.php?color=3D80E4') }}" type="text/css" />
@@ -96,6 +96,9 @@
                                     </a></li>
                                 <li class="menu-item"><a class="menu-link" href="{{ route('pricingPage') }}">
                                         <div>Pricing</div>
+                                    </a></li>
+                                <li class="menu-item"><a class="menu-link" href="{{ route('karirPage') }}">
+                                        <div>Karir</div>
                                     </a></li>
                                 <li class="menu-item"><a class="menu-link" href="{{ route('contactPage') }}">
                                         <div>Contact</div>
@@ -167,7 +170,7 @@
 
                                             <li><a href="{{ route('pricingPage') }}">Pricing</a></li>
                                             <li><a href="{{ route('contactPage') }}">Contact Us</a></li>
-                                            <li><a >Karir</a> </li>
+                                            <li><a href="{{route('karirPage')}}" >Karir</a> </li>
                                         </ul>
 
                                     </div>

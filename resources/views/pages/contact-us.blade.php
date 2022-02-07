@@ -106,9 +106,9 @@
                         Kami? </h2>
                     <p class="text-white font-primary mb-5  lead text-center">Yuk Tanya Ke Kami dengan Form Berikut!</p>
                     <div class="row justify-content-center">
-                        {{-- <div class="col-md-6 img-mbl-form">
+                        <!-- {{-- <div class="col-md-6 img-mbl-form">
                             <img src="{{ asset('images/calendar.png') }}" alt="" class="img-form rounded">
-                        </div> --}}
+                        </div> --}} -->
                         <div class="col-md-8 my-auto">
                             <div class="card bg-white shadow-lg border-0">
                                 <div class="card-body p-md-5 p-4">

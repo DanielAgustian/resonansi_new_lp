@@ -6,11 +6,23 @@ use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Jenssegers\Agent\Agent;
+use Spatie\GoogleCalendar\Event;
 
 class MeetController extends Controller
 {
     public function create(Request $request){
-        // dd($request->all(), $request->input('g-recaptcha-response'));
+
+        $dateTimeString = $request->date." ".$request->time.":00";
+        $dueDateTime = Carbon::createFromFormat('Y-m-d H:i:s', $dateTimeString, 'Asia/Jakarta');
+        // dd($request->all());
+        $event = new Event;
+        // FOR ADD EVENT IN GOOGLE CALENDAR
+        $event->name = 'Request Bertemu AE oleh '.$request->name;
+        $event->description = 'Hubungi untuk contact langsung:'.$request->input('landing-enquiry-idd').$request->phone ;
+        $event->startDateTime = $dueDateTime;
+        $event->endDateTime = $dueDateTime->addHour(2);
+        $event->save();
+
         $capcha = $request->input('g-recaptcha-response');
         date_default_timezone_set("Asia/Bangkok");
         $agent = new Agent();
@@ -42,6 +54,7 @@ class MeetController extends Controller
             'languages' => $agent->languages()[0],
             'created_at' =>  Carbon::now(),
         ];
+
 
         $userId = DB::table('client')->insertGetId($data);
         $insertMeet= DB::table('meet')->insertGetId([

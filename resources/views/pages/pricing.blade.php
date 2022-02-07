@@ -244,7 +244,8 @@
                         Resonansi <br> supaya tambah ngerti!</p>
                     <div class="row">
                         <div class="col-md-6 img-mbl-form">
-                            <img src="{{ asset('images/calendar.png') }}" alt="" class="img-form rounded">
+                            <!-- <img src="{{ asset('images/calendar.png') }}" alt="" class="img-form rounded"> -->
+                            <iframe src="https://calendar.google.com/calendar/embed?src=uon0rocne2ndmlcp14vl2jl5v0%40group.calendar.google.com&ctz=Asia%2FJakarta" style="border: 0"  frameborder="0" scrolling="no" class="iframe-calendar"></iframe>
                         </div>
                         <div class="col-md-6 my-auto">
                             <div class="card bg-white shadow-lg border-0">

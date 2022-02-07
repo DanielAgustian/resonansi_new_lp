@@ -37,7 +37,7 @@
                         <div class="col-lg-5 col-md-6 mt-md-0 mt-3">
                             <div class="slide-imgs">
                                 {{-- <img src="{{asset('images/1-2.png')}}" alt="Image" class="card-img"> --}}
-                                <img src="{{ asset('images/hp_banner.png') }}" alt="Image" class="iphone-img">
+                                <img src="{{ asset('images/hp_banner_2.png') }}" alt="Image" class="iphone-img">
                             </div>
                             <!-- {{-- <div class="swiper mySwiper ">
                                 <div class="swiper-wrapper">
@@ -442,7 +442,8 @@
                         Resonansi <br> supaya tambah ngerti!</p>
                     <div class="row">
                         <div class="col-md-6 img-mbl-form">
-                            <img src="{{ asset('images/calendar.png') }}" alt="" class="img-form rounded">
+                            <!-- <img src="{{ asset('images/calendar.png') }}" alt="" class="img-form rounded"> -->
+                            <iframe src="https://calendar.google.com/calendar/embed?src=uon0rocne2ndmlcp14vl2jl5v0%40group.calendar.google.com&ctz=Asia%2FJakarta" style="border: 0"  frameborder="0" scrolling="no" class="iframe-calendar"></iframe>
                         </div>
                         <div class="col-md-6 my-auto">
                             <div class="card bg-white shadow-lg border-0">
