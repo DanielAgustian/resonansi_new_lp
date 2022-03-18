@@ -365,7 +365,7 @@
                 <div class="container">
                     <div class="mx-auto" style="max-width: 1200px; padding: 120px 0 50px;">
                         <div class="d-flex justify-content-center align-items-center mb-4 dark">
-                            <h3 class="mb-0">What Our Users Say:</h3>
+                            <h3 class="mb-0">Testimoni Pengguna</h3>
 
                         </div>
                         {{-- <div class="row row-eq-height justify-content-center">

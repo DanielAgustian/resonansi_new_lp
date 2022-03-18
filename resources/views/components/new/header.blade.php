@@ -80,9 +80,9 @@
 
                   <!-- Primary Navigation
       ============================================= -->
-                  <nav class="primary-menu with-arrows not-dark">
+                  <nav class="primary-menu with-arrows not-dark {{set_none_navbar('marketplacePageV2')}}">
 
-                      <ul class="menu-container">
+                      <ul class="menu-container ">
                           <li class="menu-item current"><a class="menu-link" href="{{ route('aboutPage') }}">
                                   <div>About Us</div>
                               </a></li>
