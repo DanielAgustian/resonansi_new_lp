@@ -6,6 +6,7 @@ use App\Http\Controllers\MeetController;
 use App\Http\Controllers\ProcessController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\LabController;
+use App\Http\Controllers\NewLPController;
 
 /*
 |--------------------------------------------------------------------------
@@ -62,3 +63,7 @@ Route::get('/get-future-event', [MeetController::class, 'getFutureEvent'])->name
 // LAB
 Route::get('/lab/lab', [LabController::class, 'labPage'])->name('labPage');
 Route::post('/lab/meet', [LabController::class, 'create'])->name('postMeet');
+
+
+// NEW LANDING PAGE
+Route::get('/v2/marketplace-optimization', [NewLPController::class, 'marketplacePageV2'])->name('marketplacePageV2');
