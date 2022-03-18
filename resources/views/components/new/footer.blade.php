@@ -27,7 +27,7 @@
                  <div class="col-lg-3 col-md-2 col-6">
                      <div class="widget clearfix">
 
-                         
+                        
                         <h4 class="ls0 mb-3 nott" style="height: 25px"> </h4>
 
                         <ul  class="list-unstyled iconlist ms-0">
@@ -56,7 +56,7 @@
                  </div>
                  <div class="col-lg-4 col-md-4 text-md-end">
                      <div class="widget clearfix">
-
+                        <img src="{{ asset('images/logo-resonansi-v2.png') }}" alt="" class="img-footer mb-3 mt-md-0 mt-4">
                          <h4 class="ls0 mb-4 nott">Resonansi from Yokesen</h4>
 
                          <div>

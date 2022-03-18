@@ -19,7 +19,7 @@
                     <div class="col-lg-6 order-lg-1 order-2 mt-lg-0 mt-4">
 
 
-                        <h2 class="text-white fw-bold mb-3">Punya Online Shop Tapi Sepi?
+                        <h2 class="text-white fw-bold mb-3">Punya Online Shop Tapi Sepi? <br>
                             Mau Naikin Omset Tapi Belum Faham Sistem di Marketplace?
                         </h2>
                         <p class="text-white fw-normal mb-0">“Tenang bersama resonansi, kami akan terus tingkatkan
