@@ -6,7 +6,7 @@
 
 
 .header-size-sm #header-wrap #logo img {
-    height: 70px;
+    height: 65px !important;
 }
 
 .banner-element{
@@ -117,7 +117,24 @@ form .form-control, form .form-select{
     width: 45px;
     height: 45px;;
 }
-
+.btn-wa{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 55px;
+    height: 55px;
+    background-color: #25D366;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    border: none  !important;
+    z-index: 100;
+}
+.btn-wa i{
+    font-size: 38px;
+    color: white;
+}
 @media screen and (max-width: 996px) {
     .banner-element{
         height:90vh;

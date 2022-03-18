@@ -35,7 +35,7 @@
 
     <link rel="stylesheet" href="{{ asset('asset/css/rehaul/fonts.css') }}" type="text/css" />
     <link rel="stylesheet" href="{{ asset('asset/css/rehaul/movers.css') }}" type="text/css" />
-    <link rel="stylesheet" href="{{ asset('asset/css/rehaul/new-style.css') }}?v=1.0.0" type="text/css" />
+    <link rel="stylesheet" href="{{ asset('asset/css/rehaul/new-style.css') }}?v=1.0.1" type="text/css" />
     <!-- / -->
     @yield('css')
 
@@ -83,7 +83,9 @@
 </head>
 
 <body class="stretched">
-
+    <button class="btn-wa">
+        <i class="fab fa-whatsapp"></i>
+    </button>
     <!-- Document Wrapper
  ============================================= -->
     <div id="wrapper" class="clearfix">
