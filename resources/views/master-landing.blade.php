@@ -83,7 +83,7 @@
 </head>
 
 <body class="stretched">
-    <button class="btn-wa">
+    <button class="btn-wa" data-toggle="tooltip" title="Kami siap membantu Anda">
         <i class="fab fa-whatsapp"></i>
     </button>
     <!-- Document Wrapper
@@ -152,11 +152,7 @@
             }, 1000);
         });
     </script>
-    <script>
-        $(document).ready(function() {
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script>
+    
     <script>
         $('.btn-wa').on('click', function() {
             var y = Math.random();
@@ -326,6 +322,11 @@
         function recaptchaCallback() {
             $('#btn-sub').removeAttr('disabled');
         }
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
     </script>
     @yield('js')
 </body>
