@@ -5,6 +5,10 @@
 }
 
 
+.header-size-sm #header-wrap #logo img {
+    height: 70px;
+}
+
 .banner-element{
     height: 100vh;
 }
