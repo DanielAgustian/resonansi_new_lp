@@ -29,29 +29,51 @@
     <link rel="stylesheet" href="{{ asset('asset/css/custom/landing.css') }}" type="text/css" />
     <link rel="stylesheet" href="{{ asset('asset/css/custom/fonts.css') }}" type="text/css" />
 
-    <link rel="stylesheet" href="{{ asset('asset/css/custom/custom-style.css') }}?v=1.0.4.1" type="text/css">
+    <link rel="stylesheet" href="{{ asset('asset/css/custom/custom-style.css') }}?v=1.0.5.8" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="stylesheet" href="{{ asset('asset/css/colors.php?color=3D80E4') }}" type="text/css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
+    @yield('css')
     <!-- Document Title
  ============================================= -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-220121536-1"></script>
+      <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
+          gtag('config', 'UA-220121536-1');
+      </script>
+     <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '472961517746793');
+        fbq('track', 'PageView');
+
+
+    </script>
 
 
 </head>
 
 <body class="stretched">
-
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=472961517746793&ev=PageView&noscript=1"/></noscript>
     <!-- Document Wrapper
  ============================================= -->
     <div id="wrapper" class="clearfix">
 
         <!-- Header
   ============================================= -->
-        <header id="header" class="transparent-header full-header  no-sticky"
-            style="background-color:transparent !important">
+        <header id="header" class="transparent-header full-header  sticky"
+            >
             <div id="header-wrap">
                 <div class="container">
                     <div class="header-row">
@@ -60,11 +82,15 @@
       ============================================= -->
                         <div id="logo" class="border-end-0">
                             <a href="{{ route('homepage2') }}" class="standard-logo"
-                                data-dark-logo="{{ asset('images/logo-resonansi-putih.png') }}"><img
+                                data-dark-logo="{{ asset('images/logo-resonansi.png') }}"><img
                                     src="{{ asset('images/logo-resonansi-putih.png') }}" alt="Canvas Logo"></a>
                             <a href="{{ route('homepage2') }}" class="retina-logo"
                                 data-dark-logo="{{ asset('images/logo-resonansi.png') }}"><img
-                                    src="{{ asset('images/logo-resonansi.png') }}" alt="Canvas Logo"></a>
+                                    src="{{ asset('images/logo-resonansi-putih.png') }}" alt="Canvas Logo" class="d-lg-flex d-none">
+                                    <img src="{{asset('images/logo-resonansi.png')}}" alt="Resonansi" class="d-lg-none d-flex">
+
+                                  </a>
+
                         </div><!-- #logo end -->
 
                         <div id="primary-menu-trigger" class="{{ set_none_navbar('landing') }} primary-menu-trigger">
@@ -83,7 +109,7 @@
       ============================================= -->
                         <nav class="primary-menu not-dark with-arrows">
 
-                            <ul class="me-0 border-0 menu-container {{ set_none_navbar('landing') }}">
+                            <ul class="me-0 border-0 menu-container {{ set_none_navbar('landing') }} {{set_none_navbar('marketplacePage')}} {{set_none_navbar('socmedPage')}} {{set_none_navbar('conversionPage')}} {{set_none_navbar('landingPPage')}} {{set_none_navbar('warehousePage')}}">
 
                                 <li class="menu-item"><a class="menu-link" href="{{ route('aboutPage') }}">
                                         <div>About Us</div>
@@ -91,14 +117,15 @@
                                 <li class="menu-item"><a class="menu-link" href="{{ route('servicePage') }}">
                                         <div>Services</div>
                                     </a></li>
-                                <li class="menu-item"><a class="menu-link" href="{{ route('blogsPage') }}">
-                                        <div>Blog</div>
-                                    </a></li>
+
                                 <li class="menu-item"><a class="menu-link" href="{{ route('pricingPage') }}">
                                         <div>Pricing</div>
                                     </a></li>
+                                <li class="menu-item"><a class="menu-link" href="{{ route('blogsPage') }}">
+                                        <div>Blog</div>
+                                    </a></li>
                                 <li class="menu-item"><a class="menu-link" href="{{ route('karirPage') }}">
-                                        <div>Karir</div>
+                                        <div>Career</div>
                                     </a></li>
                                 <li class="menu-item"><a class="menu-link" href="{{ route('contactPage') }}">
                                         <div>Contact</div>
@@ -170,7 +197,7 @@
 
                                             <li><a href="{{ route('pricingPage') }}">Pricing</a></li>
                                             <li><a href="{{ route('contactPage') }}">Contact Us</a></li>
-                                            <li><a href="{{route('karirPage')}}" >Karir</a> </li>
+                                            <li><a href="{{route('karirPage')}}" >Career</a> </li>
                                         </ul>
 
                                     </div>
@@ -192,7 +219,7 @@
                                     {{-- <div class="entry-image mb-3">
 										<a href="{{route('homepage2')}}"><img src="{{asset('images/logo-resonansi-putih.png')}}" alt="Resonansi"></a>
 									</div> --}}
-                                    <p class="text-center">Ruko Crystal Lane 8 no. 18 Lt. 3
+                                    <p class="text-center">Ruko Crystal 8 no. 18 Lantai 3
                                         <br>Kel. Pakualam, Kec. Serpong Utara,
                                         <br>Banten 15320
                                     </p>
@@ -225,7 +252,9 @@
             </div>
 
         </footer><!-- #footer end -->
+        <div class="data-blok">
 
+        </div>
     </div><!-- #wrapper end -->
 
     <!-- Go To Top
@@ -241,6 +270,28 @@
  ============================================= -->
     <script src="{{ asset('asset/js/functions.js') }}?v=1.0.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.10/dist/sweetalert2.all.min.js"></script>
+    <!-- <script type="text/javascript">
+
+      $(function(){
+        console.log("Begin");
+
+        $.ajax({
+            type: "GET",
+            url: "{{ route('getFutureEvent') }}",
+
+            success: function(result) {
+                console.log("Success");
+
+            },
+            error: function(xhr) {
+                //Do Something to handle error
+                console.log(xhr.responseText);
+
+
+            }
+        });
+      });
+    </script> -->
     <script>
         jQuery(window).on('pluginCarouselReady', function() {
             setTimeout(function() {
@@ -261,9 +312,9 @@
             } else {
                 y = 1
             }
-            let wa = [6281388886435, 6281313002582]
+            let wa = [6287784397649, 6287784397649]
             window.open(
-                `https://wa.me/${wa[y]}?text=Halo%2C%20aku%20mau%20bertanya%20tentang%20servis%20di%20Yokesen`
+                `https://wa.me/${wa[y]}?text=Halo%2C%20aku%20mau%20bertanya%20tentang%20Layanan%20di%20Resonansi`
             )
         })
     </script>
@@ -272,8 +323,81 @@
             console.log('success');
             Swal.fire(
                 'Success!',
-                'Janji sudah terdaftar!',
+                'Account executive kami akan menghubungi Anda maksimal satu hari sebelum jadwal diskusi, terima kasih!',
                 'success'
+            );
+        </script>
+        <script type="text/javascript">
+
+          $(function(){
+            console.log("Begin");
+
+            $.ajax({
+                type: "GET",
+                url: "{{ route('getFutureEvent') }}",
+
+                success: function(result) {
+                    console.log("Success");
+                    // alert("Success");
+                },
+                error: function(xhr) {
+                    //Do Something to handle error
+                    console.log(xhr.responseText);
+
+
+                }
+            });
+          });
+        </script>
+    @endif
+
+    @if (Session::has('fullBooked'))
+        <script>
+
+            Swal.fire(
+                'Gagal',
+                'Jadwal sudah penuh pada hari tersebut! Silahkan pilih hari dan jam lain!',
+                'error'
+            );
+        </script>
+    @endif
+    @if (Session::has('errorBeforeDate'))
+        <script>
+
+            Swal.fire(
+                'Gagal',
+                'Kamu tidak bisa memilih jadwal diskusi sebelum hari ini!',
+                'error'
+            );
+        </script>
+    @endif
+    @if (Session::has('holidayError'))
+        <script>
+
+            Swal.fire(
+                'Gagal',
+                'Account Executive tidak menerima jadwal diskusi pada hari Sabtu dan Minggu.',
+                'error'
+            );
+        </script>
+    @endif
+    @if (Session::has('fullBookedjam'))
+        <script>
+
+            Swal.fire(
+                'Gagal',
+                'Jadwal sudah terisi pada jam tersebut! Silahkan pilih jam lain!',
+                'error'
+            );
+        </script>
+    @endif
+    @if (Session::has('errorCapcha'))
+        <script>
+
+            Swal.fire(
+                'Gagal',
+                'Capcha kamu kosong!',
+                'error'
             );
         </script>
     @endif

@@ -1,0 +1,19 @@
+.img-landing-service{
+  width: 100%;
+  object-fit: contain;
+  max-height: 270px
+}
+.list-feature{
+  margin-left: 20px
+}
+@media screen and (max-width: 850px) {
+  .img-landing-service{
+    max-height: 235px
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .list-feature{
+    margin-left: 20px
+  }
+}

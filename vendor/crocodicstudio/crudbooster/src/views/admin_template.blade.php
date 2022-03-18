@@ -26,7 +26,7 @@
     @endif
 
     <link rel='stylesheet' href='{{asset("vendor/crudbooster/assets/css/main.css") }}'/>
-
+    @yield('cssinline')
     <!-- load css -->
     <style type="text/css">
         @if($style_css)
@@ -81,6 +81,9 @@
 
         #table_dashboard.table-bordered, #table_dashboard.table-bordered thead tr th, #table_dashboard.table-bordered tbody tr td {
             border: 1px solid #bbbbbb !important;
+        }
+        .skin-blue-light .sidebar-menu>li:hover>a, .skin-blue-light .sidebar-menu>li.active>a{
+          color: #25D366 !important
         }
     </style>
 
@@ -220,7 +223,7 @@
 </script>
 
 @stack('bottom')
-
+@yield('js')
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
       Both of these plugins are recommended to enhance the
       user experience -->

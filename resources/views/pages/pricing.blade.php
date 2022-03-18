@@ -45,28 +45,125 @@
                             <div class="fw-normal lead" style="color: rgb(71, 71, 71)">Terdapat beberapa paket layanan
                                 yang dapat anda pilih untuk membantu website anda.</div>
 
-                            <p class="text-black-50 mt-lg-6 mt-3  ">Selama periode 2 bulan, anda akan mendapatkan beberapa
-                                keuntungan
-                                yang tertera pada <a href="#" class="text-black"><u>Terms and Conditions</u></a>.</p>
+                            <p class="text-black-50 mt-lg-6 mt-3  ">Selama periode 3 bulan, anda akan mendapatkan beberapa
+                                keuntungan!
+                                <!-- yang tertera pada <a href="#" class="text-black"><u>Terms and Conditions</u></a>. -->
+                              </p>
                         </div>
                         <div class="col-lg-9 col-12">
                             <div class="row justify-content-around">
+                              @component('components.custom.layanan-card')
+                                  @slot('id')
+                                      technology-conversion-opt
+                                  @endslot
+                                  @slot('title')
+                                      Technology and Conversion Optimization
+                                  @endslot
+                                  @slot('details')
+                                      <p class="list-data"><i class="fas fa-check-circle"></i> Landing Page Campaign
+                                      </p>
+                                      <p class="list-data"><i class="fas fa-check-circle"></i> Marketing and Sales Funnel (Digital Funneling)
+                                      </p>
+                                      <p class="list-data"><i class="fas fa-check-circle"></i> SEO (Search Engine Optimization)
+                                      </p>
+
+                                      <!-- <p class="list-data"><i class="fas fa-check-circle"></i> Campaign Tracking
+                                      </p>
+                                      <p class="list-data"><i class="fas fa-check-circle"></i> Online Support / Phone
+                                      </p>
+                                      <p class="list-data"><i class="fas fa-check-circle"></i> Monitoring and Maintenance
+                                      </p>
+                                      <p class="list-data"><i class="fas fa-check-circle"></i> Account Management and
+                                          Optimization Weekly
+                                      </p>
+                                      <p class="list-data"><i class="fas fa-check-circle"></i> Report Weekly
+                                      </p> -->
+                                  @endslot
+                                  @slot('harga')
+                                      Rp 5.000.000
+                                  @endslot
+                              @endcomponent
+                              @component('components.custom.layanan-card')
+                                  @slot('id')
+                                      virtual-event
+                                  @endslot
+                                  @slot('title')
+                                      Virtual Event/ Webinar
+                                      <br>
+                                  @endslot
+                                  @slot('details')
+
+                                      <p class="list-data" ><i class="fas fa-check-circle"></i> Virtual Event / Webinar
+                                      </p>
+                                      <p class="list-data"><i class="fas fa-check-circle"></i> Operate Streaming Activation
+                                      </p>
+                                      <ul>
+                                        <li>Zoom 3 hours</li>
+                                        <li>Operator Assisted</li>
+                                        <li>Smooth Presentation Software</li>
+                                      </ul>
+                                      <!-- <p class="list-data"><i class="fas fa-check-circle"></i> Up to 30 Keywords
+                                      </p>
+                                      <p class="list-data"><i class="fas fa-check-circle"></i> Up to 15 Professional Ads
+                                      </p>
+                                      <p class="list-data"><i class="fas fa-check-circle"></i> Campaign Tracking
+                                      </p>
+                                      <p class="list-data"><i class="fas fa-check-circle"></i> Online Support / Phone
+                                      </p>
+                                      <p class="list-data"><i class="fas fa-check-circle"></i> Monitoring and Maintenance
+                                      </p>
+                                      <p class="list-data"><i class="fas fa-check-circle"></i> Account Management and
+                                          Optimization Weekly
+                                      </p>
+                                      <p class="list-data"><i class="fas fa-check-circle"></i> Report Bi-Weekly
+                                      </p> -->
+                                  @endslot
+                                  @slot('harga')
+                                      Rp 7.500.000
+                                  @endslot
+                              @endcomponent
                                 @component('components.custom.layanan-card')
                                     @slot('id')
-                                        1
+                                        marketplace
                                     @endslot
                                     @slot('title')
-                                        Paket 1
+                                        Marketplace (Online Sales Strategy)
                                     @endslot
                                     @slot('details')
 
-                                        <p class="list-data"><i class="fas fa-check-circle"></i> Google Search
+                                        <p class="list-data"><i class="fas fa-check-circle"></i>Marketplace Optimization
                                         </p>
-                                        <p class="list-data"><i class="fas fa-check-circle"></i> Up to 15 Keywords
+                                        <ul>
+                                          <li>Shop Optimization (max. 2 shops)</li>
+                                          <li>Product Optimization</li>
+                                          <li>Reporting and Insight (Weekly)</li>
+                                        </ul>
+                                        <p class="list-data"><i class="fas fa-check-circle"></i> Marketplace Ads Optimization
                                         </p>
-                                        <p class="list-data"><i class="fas fa-check-circle"></i> Up to 5 Professional Ads
+                                        <ul>
+                                          <li>Ads Optimization (max. 2 shops)</li>
+                                          <li>Keyword and Category Optimization</li>
+                                          <li>Bonus Top Up Ads</li>
+                                          <li>Reporting and Insight (Weekly)</li>
+                                        </ul>
+                                        <p class="list-data"><i class="fas fa-check-circle"></i> Marketplace Live
                                         </p>
-                                        <p class="list-data"><i class="fas fa-check-circle"></i> Campaign Tracking
+                                        <ul>
+                                          <li>Shopee Live (5 times)</li>
+                                          <li>Tokopedia Live (5 times)</li>
+                                          <li>Live Duration 20 minutes</li>
+                                          <li>1 Host per Session</li>
+                                          <li>Reporting and Insight (Monthly)</li>
+                                          <!-- <li>KPI: Total Viewer 20.000 - 40.000</li>
+                                          <li>Exclude Giveaway</li> -->
+                                        </ul>
+
+
+
+
+
+                                        <p class="list-data text-end" style="margin-top: 35px; opacity: 0.7; font-size: 12px" >* with minimum 3 month campaign agreement</p>
+                                        <!-- <p class="list-data"><i class="fas fa-check-circle"></i> Campaign Tracking
                                         </p>
                                         <p class="list-data"><i class="fas fa-check-circle"></i> Online Support / Phone
                                         </p>
@@ -76,74 +173,15 @@
                                             Optimization 1x a Month
                                         </p>
                                         <p class="list-data"><i class="fas fa-check-circle"></i> Report Once A Month
-                                        </p>
+                                        </p> -->
 
                                     @endslot
                                     @slot('harga')
-                                        Rp 100.000,00
+                                        Rp. 10.000.000
                                     @endslot
                                 @endcomponent
-                                @component('components.custom.layanan-card')
-                                    @slot('id')
-                                        2
-                                    @endslot
-                                    @slot('title')
-                                        Paket 2
-                                    @endslot
-                                    @slot('details')
-                                        <p class="list-data"><i class="fas fa-check-circle"></i> Google Search
-                                        </p>
-                                        <p class="list-data"><i class="fas fa-check-circle"></i> Up to 45 Keywords
-                                        </p>
-                                        <p class="list-data"><i class="fas fa-check-circle"></i> Up to 25 Professional Ads
-                                        </p>
-                                        <p class="list-data"><i class="fas fa-check-circle"></i> Campaign Tracking
-                                        </p>
-                                        <p class="list-data"><i class="fas fa-check-circle"></i> Online Support / Phone
-                                        </p>
-                                        <p class="list-data"><i class="fas fa-check-circle"></i> Monitoring and Maintenance
-                                        </p>
-                                        <p class="list-data"><i class="fas fa-check-circle"></i> Account Management and
-                                            Optimization Weekly
-                                        </p>
-                                        <p class="list-data"><i class="fas fa-check-circle"></i> Report Weekly
-                                        </p>
-                                    @endslot
-                                    @slot('harga')
-                                        Rp 100.000,00
-                                    @endslot
-                                @endcomponent
-                                @component('components.custom.layanan-card')
-                                    @slot('id')
-                                        3
-                                    @endslot
-                                    @slot('title')
-                                        Paket 3
-                                    @endslot
-                                    @slot('details')
 
-                                        <p class="list-data"><i class="fas fa-check-circle"></i> Google Search
-                                        </p>
-                                        <p class="list-data"><i class="fas fa-check-circle"></i> Up to 30 Keywords
-                                        </p>
-                                        <p class="list-data"><i class="fas fa-check-circle"></i> Up to 15 Professional Ads
-                                        </p>
-                                        <p class="list-data"><i class="fas fa-check-circle"></i> Campaign Tracking
-                                        </p>
-                                        <p class="list-data"><i class="fas fa-check-circle"></i> Online Support / Phone
-                                        </p>
-                                        <p class="list-data"><i class="fas fa-check-circle"></i> Monitoring and Maintenance
-                                        </p>
-                                        <p class="list-data"><i class="fas fa-check-circle"></i> Account Management and
-                                            Optimization Weekly
-                                        </p>
-                                        <p class="list-data"><i class="fas fa-check-circle"></i> Report Bi-Weekly
-                                        </p>
-                                    @endslot
-                                    @slot('harga')
-                                        Rp 100.000,00
-                                    @endslot
-                                @endcomponent
+
                             </div>
                         </div>
                     </div>
@@ -261,7 +299,7 @@
                                             <div class="col-12 form-group mb-2">
                                                 <label>Name:</label>
                                                 <input type="text" name="name" id="landing-enquiry-name"
-                                                    class="form-control form-control-lg required" value=""
+                                                    class="form-control form-control-lg required" value="{{old('name')}}"
                                                     placeholder="John Doe" required>
                                                   <div style="color: red; font-size:11px" id="err-name">
 
@@ -270,7 +308,7 @@
                                             <div class="col-12 form-group mb-2">
                                                 <label>Email:</label>
                                                 <input type="email" name="email" id="landing-enquiry-email"
-                                                    class="form-control form-control-lg required" value=""
+                                                    class="form-control form-control-lg required" value="{{old('email')}}"
                                                     placeholder="user@company.com" required>
                                                     <div style="color: red; font-size:11px" id="err-email">
 
@@ -292,7 +330,7 @@
                                                     <option value="+49">+49</option> --}}
                                                     </select>
                                                     <input type="number" name="phone" id="landing-enquiry-phone"
-                                                        class="form-control form-control-lg required" value=""
+                                                        class="form-control form-control-lg required" value="{{old('phone')}}"
                                                         placeholder="" required>
                                                 </div>
                                                 <div style="color: red; font-size:11px" id="err-phone">
@@ -309,9 +347,18 @@
                                             <div class="col-12 form-group mb-2">
                                                 <label>Nama Perusahaan</label>
                                                 <input type="text" name="company" id="landing-enquiry-company"
-                                                    class="form-control form-control-lg required" value=""
+                                                    class="form-control form-control-lg required" value="{{old('company')}}"
                                                     placeholder="Company Name" required>
                                                 <div style="color: red; font-size:11px" id="err-company">
+
+                                                </div>
+                                            </div>
+                                            <div class="col-12 form-group mb-2">
+                                                <label>Kota Asal</label>
+                                                <input type="text" name="city" id="landing-enquiry-company"
+                                                    class="form-control form-control-lg required" value=""
+                                                    placeholder="Nama Kota" required>
+                                                <div style="color: red; font-size:11px" id="err-city">
 
                                                 </div>
                                             </div>
@@ -319,35 +366,29 @@
                                                 <label>Paket</label>
                                                 <select class="form-select form-control form-control-lg required"
                                                     name="landing_enquiry_paket" id="landing-enquiry-paket">
-                                                    <option value="paket-1" selected>Paket 1</option>
-                                                    <option value="paket-2">Paket 2</option>
-                                                    <option value="paket-3">Paket 3</option>
-                                                    <option value="landing-website">Landing Website</option>
-                                                    <option value="social-media-marketing">Social Media Marketing</option>
-                                                    <option value="search-engine-marketing">SEM/Search Engine Marketing
-                                                    </option>
-                                                    <option value="search-engine-optimization">SEO/Search Engine
-                                                        Optimization</option>
-
-                                                    <option value="content-creator">Content Creator</option>
-                                                    <option value="marketplace-ads-optimization">Marketplace Ads
-                                                        Optimization</option>
+                                                    @for($i = 0; $i< $count; $i++)
+                                                      @if($i == 0)
+                                                          <option value="{{$data[$i]->value}}" selected>{{$data[$i]->name}}</option>
+                                                      @else
+                                                          <option value="{{$data[$i]->value}}">{{$data[$i]->name}}</option>
+                                                      @endif
+                                                    @endfor
                                                 </select>
 
                                             </div>
                                             <div class="col-12 form-group mb-2">
-                                                <label>Tanggal</label>
+                                                <label>Jadwal Meeting dengan Account Executive</label>
                                                 <input type="date" name="date" id="landing-enquiry-date"
-                                                    class="form-control form-control-lg required" value=""
+                                                    class="form-control form-control-lg required" value="{{old('date')}}"
                                                     placeholder="date" required>
                                                 <div style="color: red; font-size:11px" id="err-date">
 
                                                 </div>
                                             </div>
                                             <div class="col-12 form-group mb-2">
-                                                <label>Waktu</label>
+                                                <label>Jam Meeting dengan Account Executive</label>
                                                 <input type="time" name="time" id="landing-enquiry-time"
-                                                    class="form-control form-control-lg required" value=""
+                                                    class="form-control form-control-lg required" value="{{old('time')}}"
                                                     placeholder="time" required>
                                                 <div style="color: red; font-size:11px" id="err-time">
 

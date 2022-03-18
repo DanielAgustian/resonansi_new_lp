@@ -47,18 +47,33 @@
         </div>
         <div class="section my-5">
             <div class="container">
-                <div class="row">
-                    <div class="col-12 d-flex align-items-lg-center text-center flex-row">
-                        <div class="col"><h3 class="mb-0">Clients:</h3></div>
-                        <div class="col"><img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png" alt="Clients"></div>
-                        <div class="col"><img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png" alt="Clients"></div>
-                        <div class="col"><img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png" alt="Clients"></div>
-                        <div class="col"><img src=" https://sribu-sg.s3.amazonaws.com/assets/media/contest_detail/2015/11/logo-ukm-indonesia-5645b0ccca6bcb3c1400000c/8fefabc2e6.png" alt="Clients"></div>
+                <div class="row align-items-center">
+                  <div class="col-lg-2 col-md-3 col-12">
+                      <h3 class="mb-0 text-center mb-md-0 mb-4">Clients</h3>
+                  </div>
+                    <div class="col-lg-10 col-md-9 col-12">
+                      <div class= "row justify-content-center d-md-flex d-none">
+                        <div class="col"><img class="img-client rounded" style="background: white" src=" {{asset('images/klien/kopgron.png')}}?v=1.0.0.1" alt="Clients"></div>
+                        <div class="col"><img class="img-client rounded" style="background: white" src=" {{asset('images/klien/sweet_monsta.png')}}?v=1.0.0.1" alt="Clients"></div>
+                        <div class="col"><img class="img-client rounded" style="background: white" src=" {{asset('images/klien/warung_52.png')}}?v=1.0.0.1" alt="Clients"></div>
+                        <div class="col"><img class="img-client rounded" style="background: white" src=" {{asset('images/klien/WGM.png')}}?v=1.0.0.1" alt="Clients"></div>
+                        <div class="col"><img class="img-client rounded" style="background: white" src=" {{asset('images/klien/WHW2_1.png')}}?v=1.0.0.1" alt="Clients"></div>
+                        <div class="col"><img class="img-client rounded" style="background: white" src=" {{asset('images/klien/logo-warisan.png')}}?v=1.0.0.1" alt="Clients"></div>
+
+                      </div>
+                      <div class=" row justify-content-center d-md-none d-flex">
+                        <div class="col-6"><img class="img-client rounded" style="background: white" src=" {{asset('images/klien/kopgron.png')}}?v=1.0.0.1" alt="Clients"></div>
+                        <div class="col-6"><img class="img-client rounded" style="background: white" src=" {{asset('images/klien/sweet_monsta.png')}}?v=1.0.0.1" alt="Clients"></div>
+                        <div class="col-6"><img class="img-client rounded" style="background: white" src=" {{asset('images/klien/warung_52.png')}}?v=1.0.0.1" alt="Clients"></div>
+                        <div class="col-6"><img class="img-client rounded" style="background: white" src=" {{asset('images/klien/WGM.png')}}?v=1.0.0.1" alt="Clients"></div>
+                        <div class="col-6"><img class="img-client rounded" style="background: white" src=" {{asset('images/klien/WHW2_1.png')}}?v=1.0.0.1" alt="Clients"></div>
+                        <div class="col-6"><img class="img-client rounded" style="background: white" src=" {{asset('images/klien/logo-warisan.png')}}?v=1.0.0.1" alt="Clients"></div>
+                      </div>
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <div class="container topmargin-lg bottommargin-lg">
             <div class="mx-auto text-center mt-4 bottommargin heading-block" style="max-width: 640px;">
                 <h5 class="text-uppercase ls1 text-muted mb-3">Prinsip Resonansi</h5>
@@ -74,7 +89,7 @@
                                     <img src="{{asset('images/idea.png')}}" alt="">
                                 </div>
                             </div>
-                            
+
                             <div class="fbox-content">
                                 <h2 class="h4 fw-bold mb-4 text-center">Filosofi Resonansi</h2>
                                 <div class="lead fw-normal text-black-50 text-center">Seperti sebuah garpu tala ketika bergetar, dapat memberikan getaran yang sama kepada garpu tala yang memiliki frekuensi yang sama.</div>
@@ -82,7 +97,7 @@
                         </div>
                     </div>
 
-                   
+
                 </div>
                 <div class="row justify-content-around">
                     <div class="col-md-5 bottommargin-lg">
@@ -90,10 +105,10 @@
                             <div class="d-flex justify-content-center">
                                 <div class="fbox-icon about-icon">
                                     <img src="{{asset('images/eye.png')}}" alt="">
-                                   
+
                                 </div>
                             </div>
-                            
+
                             <div class="fbox-content">
                                 <h2 class="h4 fw-bold mb-4 text-center">Visi resonansi</h2>
                                 <div class="lead fw-normal text-black-50 text-center">Menjadi digital strategi yang dapat meningkatkan Return on Digital Investment</div>
@@ -108,7 +123,7 @@
                                     <img src="{{asset('images/target.png')}}" alt="">
                                 </div>
                             </div>
-                            
+
                             <div class="fbox-content">
                                 <h2 class="h4 fw-bold mb-4 text-center ">Misi resonansi</h2>
                                 <div class="lead fw-normal text-black-50 text-center"> Membantu sebuah brand agar dapat satu frekuensi yang sama dengan apa yang sedang diperbincangan masyarakat, agar masyarakat atau konsumen dari brand dapat paham tentang produk milik brand.</div>
@@ -116,18 +131,18 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
 
         </div>
 
-        
-        <div class="clear"></div>
-        
 
         <div class="clear"></div>
 
-        
+
+        <div class="clear"></div>
+
+
 
         <div class="section mb-0 bg-color dotted-bg" style="background-image: linear-gradient(to bottom, #3D80E4 0%, #0a4bab 50%, #FFF 50%);">
 
@@ -153,5 +168,5 @@
 @endsection
 
 @section('js')
-    
+
 @endsection

@@ -33,25 +33,28 @@
                 <div class="container">
                     <div class="row justify-content-between col-mb-50">
                         <div class="col-lg-5">
-                            <div class="text-nowrap dotted-bg dotted-bg-dark">
-                                <h2 class="nott mb-3 display-3 fw-bold">Resonansi</h2>
-                                <p class="fw-normal text-black-50">Seperti sebuah garpu tala ketika bergetar, <br> dapat
-                                    memberikan getaran yang sama <br> kepada garpu tala yang memiliki frekuensi yang sama.</p>
-                            </div>
+                          <div class="">
+
+                              <h2 class="nott mb-3 display-3 fw-bold">Resonansi</h2>
+                              <p class="fw-normal text-black-50">Seperti sebuah garpu tala ketika bergetar, <br> dapat
+                                  memberikan getaran yang sama <br> kepada garpu tala yang memiliki frekuensi yang sama.</p>
+
+                          </div>
+
 
                             <div class="clear"></div>
 
                             <div class="my-5">
                                 <address>
                                     <strong>Office:</strong><br>
-                                    Ruko Crystal Lane 8 no. 18 Lt. 3<br>
+                                    Ruko Crystal 8 no. 18 Lantai 3<br>
                                     Kel. Pakualam, Kec. Serpong Utara,<br>
                                     Banten 15320
 
 
                                 </address>
-                                <abbr title="Phone Number"><strong>Phone:</strong></abbr> (+62) 88290592631<br>
-                                <abbr title="Email Address"><strong>Email:</strong></abbr> contact@resonansi.co.id
+                                <!-- <abbr title="Phone Number"><strong>Phone:</strong></abbr> (+62) 877-8439-7649<br> -->
+                                <abbr title="Email Address"><strong>Email:</strong></abbr> buvera@resonansi.co.id
                             </div>
 
                             <div class="d-flex mt-4">
@@ -171,6 +174,15 @@
                                                     <div style="color: red; font-size:11px" id="err-company">
 
                                                     </div>
+                                            </div>
+                                            <div class="col-12 form-group mb-2">
+                                                <label>Kota Asal</label>
+                                                <input type="text" name="city" id="landing-enquiry-company"
+                                                    class="form-control form-control-lg required" value=""
+                                                    placeholder="Nama Kota" required>
+                                                <div style="color: red; font-size:11px" id="err-city">
+
+                                                </div>
                                             </div>
                                             <div class="col-12 form-group mb-4">
                                                 <label>Message:</label>
@@ -329,7 +341,7 @@
         if (message.length< 3) {
           console.log("date empty");
           errorDate = true;
-          $('#err-msg').text('Tanggal Bertemu Tidak valid');
+          $('#err-msg').text('Pesan Terlalu Pendek');
         }else{
           $('#err-msg').text('');
         }

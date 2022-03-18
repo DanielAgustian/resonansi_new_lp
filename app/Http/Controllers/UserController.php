@@ -40,4 +40,24 @@ class UserController extends Controller
             return redirect()->route('userLoseDetail', [$id]);
         }
     }
+
+    public function adminDashboard(){
+      if (!CRUDBooster::isView()) {
+        return redirect()->away('https://resonansi.co.id/admin/login');
+      }
+      $dataMeet = DB::table('client')->join('meet', 'client.id', '=', 'meet.client_id');
+      $jumlahKlien = $dataMeet->count();
+      $jumlahLead  = $dataMeet->where('client.status', 'lead')->count();
+      $jumlahWin  = $dataMeet->where('client.status', 'win')->count();
+      $jumlahLose = $dataMeet->where('client.status', 'lose')->count();
+      $jumlahContact = DB::table('contact')->count();
+
+      return view('admin.dashboard', [
+        'jumlahKlien'=> $jumlahKlien,
+        'jumlahLead'=> $jumlahLead,
+        'jumlahContact'=> $jumlahContact,
+        'jumlahWin'=> $jumlahWin,
+        'jumlahLose'=> $jumlahLose,
+      ]);
+    }
 }

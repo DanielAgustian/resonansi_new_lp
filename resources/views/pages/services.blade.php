@@ -40,193 +40,155 @@
                             <div class="row my-5 justify-content-center">
                                 @component('components.custom.services-card')
                                     @slot('type')
-                                        landing-website
+                                        technology
                                     @endslot
                                     @slot('id')
-                                        service-landing
+                                        service-technology
                                     @endslot
                                     @slot('pic')
                                         {{ asset('images/landing-page.png') }}
 
                                     @endslot
                                     @slot('title')
-                                        Landing Page Website
+                                        Technology
                                     @endslot
                                     @slot('details')
-                                        <p>Landing Page merupakan sebuah halaman yang dirancang khusus untuk mengarahkan user ke
-                                            arah
-                                            yang dinginkan secara spesifik, Misalnya: halaman penawaran atau halaman khusus produk.
-                                            {{-- Jadi dapat disimpulkan landing page adalah sebuah halaman khusus yang menjadi tujuan
-                                            user
-                                            dan berisi informasi lebih detail dan spesifik tentang suatu produk, layanan, penawaran,
-                                            dan
-                                            sebagainya, untuk keperluan marketing atau campaign tertentu. --}}
-                                        </p>
-                                        <p>Berikut beberapa manfaat landing yang perlu kamu ketahui:</p>
+                                      <!-- <p class=" fw-bold ">Software Warehouse</p>
+                                      <ul style="margin-left:20px;">
+                                        <li>Website</li>
+                                        <li>Landing Page</li>
+                                        <li>Mobile Application Department</li>
+                                        <li>Augmented Reality</li>
+                                        <li>Virtual Reality</li>
+                                      </ul>
+                                      <p class=" fw-bold">Software as a Service</p>
+                                      <ul  style="margin-left:20px;">
+                                        <li>AJAKIN (Software Referral Management System)</li>
+                                        <li>NGERTIYO  (Software Gamification - Game Education Business)</li>
+                                        <li>Optiskor (Balanced Scorecard System)</li>
+                                        <li>DEST (Customer Relation Management)</li>
+                                        <li>Ispy (Digital Voice Mapping - Digital Social Listening)</li>
+                                        <li>Balanced Scorecard</li>
+                                        <li>Zukses (Software performance & Collaboration Tools )</li>
+                                        <li>Promolah (Software SME Home Delivery Service)</li>
+                                        <li>MANTOOLS (Management Tools)</li>
+                                        <li>INTEGREAT (Software Solusi Digital untuk Pengelolaan Investasi)</li>
+                                      </ul>
+                                      <p class=" fw-bold">Software As a Business</p> -->
+                                      <!-- <p class=" fw-bold ">Software Warehouse</p> -->
+                                      <ul style="margin-left:20px;margin-top:10px">
+                                        <li>Company Profile Website</li>
+                                        <li>Landing Page Campaign </li>
 
-
-                                        <ol class="list-service">
-                                            <li>Sebagai Sarana Promosi</li>
-                                            {{-- <p>Manfaat pertama dari landing page adalah sebagai sarana promosi.
-                                                Dengan sebuah landing page, kamu bisa memasukkan informasi singkat dengan tulisan
-                                                yang besar terkait promosi yang sedang kamu jalankan.
-                                                Kamu mungkin sedang memiliki berbagai jenis promosi. Namun, kamu hanya perlu
-                                                menonjolkan salah satunya dalam sebuah landing page saja.
-                                            </p> --}}
-                                            <li>Meningkatkan Conversion Rate</li>
-                                            {{-- <p>Selain sebagai sarana promosi, landing page juga berfungsi untuk meningkatkan
-                                                conversion rate. Dengan demikian, pengunjung tidak hanya hadir ke situsmu, tetapi
-                                                bisa lebih dari itu, pengunjung juga melakukan sebuah aksi yang kamu inginkan,
-                                                seperti berlangganan newsletter atau membeli produk-produkmu.
-                                            </p> --}}
-                                            <li>Mendapat data leads</li>
-                                            {{-- <p>Manfaat dari sebuah landing page berikutnya adalah mendapat data leads. Memang, ini
-                                                tergantung dari dengan jenis landing page yang kamu buat. Namun, umumnya landing
-                                                page akan meminta informasi pengunjung, seperti nama, email, dan nomor telepon.
-                                                Setidaknya, kamu sudah memiliki informasi dasar tentang siapa saja pengunjungmu
-                                                untuk selanjutnya bisa melakukan analisis lebih jauh.
-
-                                            </p> --}}
-                                        </ol>
+                                      </ul>
+                                      <p class=" fw-bold ">Software as a Service</p>
+                                      <ul style="margin-left:20px;margin-top:10px">
+                                        <li>AJAKIN (Referral Software Management System)</li>
+                                        <li>NGERTIYO  (Gamification Education Business)</li>
+                                      </ul>
                                     @endslot
 
                                 @endcomponent
                                 @component('components.custom.services-card')
                                     @slot('type')
-                                        social-media-marketing
+                                        digital-strategy
                                     @endslot
                                     @slot('id')
-                                        service-social-media
+                                        service-digital-strategy
                                     @endslot
                                     @slot('pic')
-                                        {{ asset('images/social-media.png') }}
-
-                                    @endslot
-                                    @slot('title')
-                                        Social Media Marketing
-                                    @endslot
-                                    @slot('details')
-                                        <p>Sosial media marketing adalah bentuk pemasaran digital yang menggunakan media sosial dan
-                                            situs web jaringan untuk mempromosikan suatu produk atau jasa layanan dari organisasi
-                                            maupun perusahaan melalui cara berbayar dan organik.
-
-
-                                        </p>
-                                        {{-- <p> Pemasaran melalui social media melibatkan aktivitas seperti membangun kehadiran di
-                                            jejaring social, menyebarkan kesadaran dan tingkat kepercayaan sebuah merek, melibatkan
-                                            prospek dan pelanggan melalui konten, mengarahkan lalu lintas kunjungan ke situs
-                                            website, dan sebagainya.
-                                        </p> --}}
-                                        <p>Marketer social media menggunakan platform media sosial untuk bisa menemukan dan
-                                            menjangkau pelanggan maupun calon pelanggan, dimana secara tidak langsung akan
-                                            mempromosikan produk dan jasa layanan serta melibatkan audiens untuk meningkatkan
-                                            konversi dan ROI.</p>
-                                        {{-- <p>Beberapa platform social media marketing yang paling sering digunakan seperti :
-                                            Facebook, Instagram, Linkedin, TikTok, Youtube, Twitter, dan lain sebagainya.
-                                        </p> --}}
-                                        {{-- <p>Dalam sebuah penelitian menyebutkan bahwa lebih dari 3,2 miliar orang di dunia saat ini
-                                            telah menggunakan media sosial. Angka ini menjadi fakta menarik, sekaligus bukti bahwa
-                                            media sosial memang digandrungi oleh masyarakat.</p> --}}
-                                        <p>Dengan media sosial, proses marketing yang dilakukan akan jadi jauh lebih menyenangkan.
-                                            Berikut beberapa keuntungan yang bisa menjadi alasan mengapa social media marketing itu
-                                            penting:</p>
-                                        <ol class="list-service">
-                                            <li>Meningkatkan Brand Awareness</li>
-                                            {{-- <p>Sebuah produk akan semakin diakui keberadaannya ketika diunggah di media sosial
-                                                secara terus-menerus. Hal ini terjadi karena perlahan-lahan masyarakat akan mulai
-                                                menaruh perhatian terhadap produk tersebut.
-                                                <br>
-                                                Awalnya masyarakat mungkin hanya ingin melihat-lihat produk atau jasa yang kamu
-                                                tawarkan untuk sementara waktu. Namun, jika terus diunggah di media sosial, sebuah
-                                                produk akan mulai dianggap ada dan akan selalu diingat oleh masyarakat, karena media
-                                                sosial jadi sebuah platform yang terus dikonsumsi setiap hari oleh orang-orang di
-                                                segala penjuru dunia.
-                                            </p> --}}
-                                            <li>Mendapatkan Feedback Produk Dan Strategi Pemasaran</li>
-                                            {{-- <p>Hal ini merupakan tahap lanjutan dari efek social media marketing. Setelah diakui
-                                                keberadaannya, sebuah produk akan mulai jadi topik pembicaraan yang hangat. Kamu pun
-                                                bisa melihat langsung bagaimana customer berinteraksi dengan konten di media
-                                                sosialmu, misalnya dengan memberikan like dan mulai mengikuti akun sosial mediamu.
-                                                <br>
-                                                Ditambah lagi, media sosial juga menawarkan fitur komentar. Hal ini memungkinkan
-                                                masyarakat untuk memberikan pendapatnya soal produk yang kamu tawarkan atau cara
-                                                kamu memasarkan produkmu dengan berbagai penjelasan.
-                                                <br>
-                                                Bagi perusahaan, hal ini bisa dijadikan alat untuk mengukur kelebihan dan kekurangan
-                                                dari sebuah produk atau strategi marketing yang dipilih.
-                                            </p> --}}
-                                            <li>Mempelajari Kompetitor</li>
-                                            {{-- <p>Mempelajari kompetitor jadi lebih mudah dengan social media marketing. Pasalnya,
-                                                social media marketing sekarang banyak digunakan oleh perusahaan untuk memasarkan
-                                                produk-produknya.
-                                                Dengan aktif di media sosial, strategi yang dilakukan oleh kompetitor bisa jadi
-                                                bahan pembelajaranmu</p> --}}
-                                        </ol>
-                                    @endslot
-                                @endcomponent
-                                @component('components.custom.services-card')
-                                    @slot('type')
-                                        search-engine-marketing
-                                    @endslot
-                                    @slot('id')
-                                        service-sem
-                                    @endslot
-                                    @slot('pic')
-
                                         {{ asset('images/digital-marketing.png') }}
+
                                     @endslot
                                     @slot('title')
-                                        SEM (Search Engine Marketing)
+                                        Digital Strategy
                                     @endslot
                                     @slot('details')
-                                        <p> SEM atau Search Engine Marketing adalah sebuah aktivitas marketing menggunakan iklan
-                                            berbayar yang akan muncul pada mesin pencarian atau search engine seperti Google.
+                                    <p class=" fw-bold ">Social Media Marketing</p>
+                                    <ul style="margin-left:20px;">
+                                      <li>Campaign</li>
+                                      <li>Matrix Plan</li>
+                                      <li>Content Management</li>
+                                      <!-- <li>Insight Reports</li> -->
+                                      <li>Digital Branding</li>
+                                      <!-- <li>Brand Positioning</li>
+                                      <li>Brand Disruption</li>
+                                      <li>Brand Personality</li> -->
+                                      <li>Brand Logo</li>
+                                      <!-- <li>naming & Logo</li> -->
+                                      <!-- <li>Tagline/Slogan</li>
+                                      <li>Brand Experience</li>
+                                      <li>Brand Perception</li> -->
+                                    </ul>
 
-                                        </p>
-                                        {{-- <p>Berbeda dengan SEO yang mendatangkan pengunjung ke website secara organik, SEM merupakan
-                                            salah satu cara berbayar untuk mendatangkan traffic kunjungan ke suatu website. SEM atau
-                                            Search Engine Marketing adalah satu dari sekian banyak metode di dalam internet
-                                            marketing. SEM jika digunakan dengan baik dan benar, dapat membantu bisnis berkembang
-                                            pesat di era digital yang semakin hari semakin kompetitif.</p> --}}
-                                        <p>Menggunakan search engine marketing sebagai sarana marketing di dunia online dengan cara
-                                            yang benar dan tepat akan sangat membantu suatu bisnis untuk lebih berkembang, berikut
-                                            beberapa manfaatnya:
-                                        </p>
-                                        <ol class="list-service">
-                                            <li>Targeted Marketing. </li>
-                                            {{-- <p>Keuntungan terbesar dalam menggunakan SEM adalah memberikan peluang kepada seorang
-                                                marketer untuk langsung menyampaikan iklan yang mereka inginkan kepada audiens yang
-                                                mereka tetapkan sendiri. </p> --}}
-                                            <li>Cepat Mendapatkan Hasilnya</li>
-                                            {{-- <p>Proses membuat dan memasang iklan pada Google Ads pun tergolong sangat cepat, dan
-                                                hasilnya bisa langsung dilihat setelah iklan kamu tayang. SEM unggul dalam hal
-                                                kecepatan jika dibandingkan dengan metode SEO yang memakan waktu berbulan-bulan
-                                                untuk membuahkan hasil optimalnya.
-                                                Metode ini sangatlah cocok bagi Anda yang baru memiliki website dan menginginkan
-                                                hasil dalam waktu singkat. </p> --}}
-                                            <li>Dapat Menyesuaikan Dengan Budget Yang Ada. </li>
-                                            {{-- <p>Keunggulan search engine marketing lainnya adalah kamu dapat memasang budget sesuai
-                                                dengan kemampuan dan keinginanmu sendiri. Saat budget yang kamu punya sudah habis,
-                                                maka iklan akan berhenti secara otomatis. </p> --}}
-                                        </ol>
+                                    <!-- <p class="fw-bold">Media Buying</p>
+                                    <ul  style="margin-left:20px;">
+                                      <li>Google Ads & Facebook Ads</li>
+                                      <li>Media Streaming</li>
+
+
+                                    </ul> -->
+                                    <p class="fw-bold">Conversion Optimization</p>
+                                    <ul  style="margin-left:20px;">
+                                      <!-- <li>Marketing & Sales Funnel</li>
+                                      <li>SEM (Search Engine Marketing)</li>
+                                      <li>SEO (Search Engine Optimization)</li>
+                                      <li>SEMO (Search Engine Marketing Optimization)</li>
+                                      <li>KOL/Influencer Marketing</li> -->
+                                      <li>Google Ads</li>
+                                      <li>Facebook Ads</li>
+
+                                      <li>Instagram Ads
+
+                                       </li>
+                                      <li>TikTok Ads </li>
+                                      <li>Youtube Ads</li>
+                                      <li>Email Marketing</li>
+                                      <li>SEO (Search Engine Optimization)
+                                      </li>
+                                      <li>Influencer & KOL Management </li>
+                                    </ul>
+                                    <!-- <p class="fw-bold">Digital Option Management</p> -->
                                     @endslot
                                 @endcomponent
+
                                 @component('components.custom.services-card')
                                     @slot('type')
-                                        search-engine-optimization
+                                        marketplace-opt
                                     @endslot
                                     @slot('id')
-                                        service-seo
+                                        service-marketplace
                                     @endslot
                                     @slot('pic')
 
-                                        {{ asset('images/seo.png') }}
+                                        {{ asset('images/opt.png') }}
                                     @endslot
                                     @slot('title')
-                                        SEO (Search Engine Optimization)
+                                        Marketplace Optimization
+                                        <!-- Marketplace -->
                                     @endslot
                                     @slot('details')
-                                        <p>SEO atau Search Engine Optimization adalah sebuah teknik optimasi website yang bertujuan
+                                    <!-- <p class="fw-bold">Online Sales Strategy</p>
+                                    <ul  style="margin-left:20px;">
+
+                                      <li>Marketplace Optimization</li>
+                                      <li>Marketplace Ads Optimization</li>
+                                      <li>Marketplace Live </li>
+                                    </ul>
+                                    <p class="fw-bold">Hyperlocal Enabler</p>
+                                    <ul  style="margin-left:20px;">
+
+                                      <li>Consolidated E-Commerce Dashboard</li>
+
+                                    </ul> -->
+                                    <ul  style="margin-left:20px;margin-top: 10px">
+
+                                      <li>Shop & Ads Optimization</li>
+                                      <li>Product Optimization</li>
+                                      <li>Marketplace Live Interaction</li>
+                                      <li>Marketplace Ads</li>
+                                    </ul>
+                                        <!-- <p>SEO atau Search Engine Optimization adalah sebuah teknik optimasi website yang bertujuan
                                             untuk bisa mendapatkan ranking teratas di mesin pencari Google. Dengan mendapatkan
                                             peringkat terbaik dari hasil mesin pencarian maka potensi untuk mendapatkan banyak
                                             traffic secara organik juga akan semakin besar.</p>
@@ -269,25 +231,43 @@
                                                 yang mempunyai interest dan kebutuhan, jadi ketika orang yang sedang mencari sesuatu
                                                 melalui search engine kemudian masuk ke website kamu kemungkinan closing rate akan
                                                 lebih tinggi dibanding orang yang melihat iklan melalui social media </p> --}}
-                                        </ol>
+                                        </ol> -->
                                     @endslot
                                 @endcomponent
                                 @component('components.custom.services-card')
                                     @slot('type')
-                                        content-creator
+                                        multimedia
                                     @endslot
                                     @slot('id')
-                                        service-content
+                                        service-multimedia
                                     @endslot
                                     @slot('pic')
 
                                         {{ asset('images/content-creator.png') }}
                                     @endslot
                                     @slot('title')
-                                        Content Creator
+                                        Multimedia
                                     @endslot
                                     @slot('details')
-                                        <p>Content Creator adalah seseorang yang memiliki tanggung jawab pada setiap informasi yang
+                                    <p class="fw-bold">Virtual</p>
+                                    <ul  style="margin-left:20px;">
+
+                                      <li>Virtual Event</li>
+                                      <li>Live Streaming</li>
+                                      <li>Webinar</li>
+
+                                    </ul>
+                                    <p class="fw-bold">Cross Platform Streaming</p>
+                                    <ul  style="margin-left:20px;">
+                                      <li>Interactive Website </li>
+                                    </ul>
+                                    <p class="fw-bold">Content Creator Management</p>
+                                    <ul  style="margin-left:20px;">
+                                      <li>TVC Production</li>
+                                      <li>3D Animation</li>
+                                      <li>Youtube</li>
+                                    </ul>
+                                        <!-- <p>Content Creator adalah seseorang yang memiliki tanggung jawab pada setiap informasi yang
                                             mereka sebarkan di media sosial.
                                             {{-- Berdasarkan definisi tersebut, content creator umumnya
                                             mempunyai target penonton atau audiensnya masing-masing.  --}}
@@ -333,35 +313,53 @@
                                                 Jadi, selain harus memproduksi konten yang menarik, kamu juga harus menerapkan
                                                 optimasi SEO di dalam konten kamu.
                                             </p> --}}
-                                        </ol>
+                                        </ol> -->
                                     @endslot
                                 @endcomponent
                                 @component('components.custom.services-card')
                                     @slot('type')
-                                        marketplace-ads-optimization
+                                        cloud-warehouse-software
                                     @endslot
                                     @slot('id')
-                                        service-opt
+                                        service-business
                                     @endslot
                                     @slot('pic')
 
-                                        {{ asset('images/opt.png') }}
+                                        {{ asset('images/bussiness.png') }}
                                     @endslot
                                     @slot('title')
-                                        Marketplace Ads Optimization
+                                        Cloud Warehouse Software
                                     @endslot
                                     @slot('details')
-                                        <p>Marketplace Ads Optimization adalah teknik optimasi berbayar yang dilakukan untuk sebuah
+                                    <!-- <p class="fw-bold">Network Brick and Click</p>
+                                    <ul style="margin-left:20px;">
+                                      <li>Warisan Platform</li>
+                                    </ul>
+                                    <p class="fw-bold">Community</p>
+                                    <ul style="margin-left:20px;">
+                                      <li>Kagumi</li>
+                                    </ul>
+                                    <p class="fw-bold">One Stop Order Management System</p>
+                                    <ul  style="margin-left:20px;">
+                                      <li>Gudangin Cloud Warehouse (Omnichannel & Fulfillment) </li>
+                                      <li>Teratur Part of Puninar Logistic</li>
+                                    </ul> -->
+                                    <p class="fw-bold">Gudangin</p>
+                                    <ul  style="margin-left:20px;margin-top: 10px">
+                                      <li>Jasa Fulfillment </li>
+                                      <li>Jasa Agregasi Chat</li>
+                                    </ul>
+                                        <!-- <p>Marketplace Ads Optimization adalah teknik optimasi berbayar yang dilakukan untuk sebuah
                                             toko pada marketplace tertentu agar supaya ketika calon pembeli mulai mengetikkan nama
                                             suatu produk yang mereka inginkan, maka produk jualan dari toko kamu yang akan muncul di
                                             urutan pencarian teratas. </p>
                                         <p>Cara kerjanya mirip dengan mesin pencari google, dimana pengguna perlu mengetikkan kata
                                             kunci atau keyword di kolom pencarian yang sesuai dengan dengan produk tertentu, maka
                                             sistem marketplace akan menampilkan sejumlah rekomendasi produk yang dicari calon
-                                            pembeli sesuai kata kunci yang diketikkan.</p>
+                                            pembeli sesuai kata kunci yang diketikkan.</p> -->
                                     @endslot
                                 @endcomponent
-                                {{-- <div class="col-md-9">
+                                <!-- {{-- <div class="col-md-9">
                                     <div class="feature-box fbox-plain">
                                         <div class="fbox-icon">
                                             <a href="#"><i class="icon-line2-support text-danger"></i></a>
@@ -372,7 +370,7 @@
                                                 &amp; Screenshots.</p>
                                         </div>
                                     </div>
-                                </div> --}}
+                                </div> --}} -->
                             </div>
                         </div>
                         {{-- <div class="col-lg-1"></div> --}}
@@ -423,13 +421,13 @@
                                             <div class="col-12 form-group mb-2">
                                                 <label>Name:</label>
                                                 <input type="text" name="name" id="landing-enquiry-name"
-                                                    class="form-control form-control-lg required" value=""
+                                                    class="form-control form-control-lg required" value="{{old('name')}}"
                                                     placeholder="John Doe" required>
                                             </div>
                                             <div class="col-12 form-group mb-2">
                                                 <label>Email:</label>
                                                 <input type="email" name="email" id="landing-enquiry-email"
-                                                    class="form-control form-control-lg required" value=""
+                                                    class="form-control form-control-lg required" value="{{old('email')}}"
                                                     placeholder="user@company.com" required>
                                             </div>
                                             <div class="col-12 form-group mb-2">
@@ -448,7 +446,7 @@
                                                         <option value="+49">+49</option> --}}
                                                     </select>
                                                     <input type="number" name="phone" id="landing-enquiry-phone"
-                                                        class="form-control form-control-lg required" value=""
+                                                        class="form-control form-control-lg required" value="{{old('phone')}}"
                                                         placeholder="">
                                                 </div>
                                             </div>
@@ -459,17 +457,30 @@
                                             <div class="col-12 form-group mb-2">
                                                 <label>Nama Perusahaan</label>
                                                 <input type="text" name="company" id="landing-enquiry-company"
-                                                    class="form-control form-control-lg required" value=""
+                                                    class="form-control form-control-lg required" value="{{old('company')}}"
                                                     placeholder="Company Name" required>
+                                            </div>
+                                            <div class="col-12 form-group mb-2">
+                                                <label>Kota Asal</label>
+                                                <input type="text" name="city" id="landing-enquiry-company"
+                                                    class="form-control form-control-lg required" value=""
+                                                    placeholder="Nama Kota" required>
+                                                <div style="color: red; font-size:11px" id="err-city">
+
+                                                </div>
                                             </div>
                                             <div class="col-12 form-group mb-2">
                                                 <label>Paket</label>
                                                 <select class="form-select form-control form-control-lg required"
                                                     name="landing-enquiry-paket" id="landing-enquiry-paket">
-                                                    <option value="paket-1" selected>Paket 1</option>
-                                                    <option value="paket-2">Paket 2</option>
-                                                    <option value="paket-3">Paket 3</option>
-                                                    <option value="landing-website">Landing Website</option>
+                                                    @for($i = 0; $i< $count; $i++)
+                                                      @if($i == 0)
+                                                          <option value="{{$data[$i]->value}}" selected>{{$data[$i]->name}}</option>
+                                                      @else
+                                                          <option value="{{$data[$i]->value}}">{{$data[$i]->name}}</option>
+                                                      @endif
+                                                    @endfor
+                                                    <!-- <option value="landing-website">Landing Website</option>
                                                     <option value="social-media-marketing">Social Media Marketing</option>
                                                     <option value="search-engine-marketing">SEM/Search Engine Marketing
                                                     </option>
@@ -478,21 +489,21 @@
 
                                                     <option value="content-creator">Content Creator</option>
                                                     <option value="marketplace-ads-optimization">Marketplace Ads
-                                                        Optimization</option>
+                                                        Optimization</option> -->
 
                                                 </select>
 
                                             </div>
                                             <div class="col-12 form-group mb-2">
-                                                <label>Tanggal</label>
+                                                <label>Jadwal Meeting dengan Account Executive</label>
                                                 <input type="date" name="date" id="landing-enquiry-date"
-                                                    class="form-control form-control-lg required" value=""
+                                                    class="form-control form-control-lg required" value="{{old('date')}}"
                                                     placeholder="dd/mm/yy" required>
                                             </div>
                                             <div class="col-12 form-group mb-2">
-                                                <label>Waktu</label>
+                                                <label>Jam Meeting dengan Account Executive</label>
                                                 <input type="time" name="time" id="landing-enquiry-time"
-                                                    class="form-control form-control-lg required" value=""
+                                                    class="form-control form-control-lg required" value="{{old('time')}}"
                                                     placeholder="HH:mm am/pm" required>
                                             </div>
                                             <div class="col-12 d-none">

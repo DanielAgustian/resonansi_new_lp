@@ -16,7 +16,10 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         // $schedule->command('inspire')->hourly();
+        // $schedule->call('App\Http\Controllers\MeetController@getFutureEvent')->dailyAt('14:11');;
+        $schedule->call('App\Http\Controllers\MeetController@getFutureEvent')->twiceDaily(8, 18);
     }
+
 
     /**
      * Register the commands for the application.

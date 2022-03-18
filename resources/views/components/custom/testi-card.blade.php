@@ -6,10 +6,11 @@
                 <img src="{{$img}}"
                 alt="" class="img-logo-testi text-center ">
             </div>
-            <h3 class="testi-details text-center">John Doe, CEO of John Doe Corp</h3>
+            <h3 class="testi-details text-center mb-1">{{$name}}</h3>
+            <h4 class="testi-details">{{$jabatan}}</h4>
             <h1  style="color: white; font-size:30px;line-height: 20px " class="text-start mb-0">"</h1>
             <h4 class="testi-details text-center">
-                {{$details}}
+                {!!$details!!}
             </h4>
             <h1  style="color: white; font-size:30px; line-height: 20px " class="text-end">"</h1>
 
