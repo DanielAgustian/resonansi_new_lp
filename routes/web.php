@@ -67,3 +67,7 @@ Route::post('/lab/meet', [LabController::class, 'create'])->name('postMeet');
 
 // NEW LANDING PAGE
 Route::get('/v2/marketplace-optimization', [NewLPController::class, 'marketplacePageV2'])->name('marketplacePageV2');
+Route::get('/v2/social-media-marketing', [NewLPController::class, 'socMedPageV2'])->name('socMedPageV2');
+Route::get('/v2/landing-page-campaign', [NewLPController::class, 'landingPageV2'])->name('landingPageV2');
+Route::get('/v2/cloud-warehouse-software', [NewLPController::class, 'warehousePageV2'])->name('warehousePageV2');
+Route::get('/v2/conversion-optimization', [NewLPController::class, 'conversionPageV2'])->name('conversionPageV2');

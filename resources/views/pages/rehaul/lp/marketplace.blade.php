@@ -1,8 +1,13 @@
 @extends('master-landing')
 
+@section('page')
+    | Marketplace Optimization
+@endsection
+
 @section('css')
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 @endsection
+
 @section('banner')
     <section id="slider" class="slider-element bg-color banner-element"
         style=" padding: 60px 0; background: url('demos/movers/images/bg-2.png') no-repeat center center / 100% 100%;">
@@ -255,7 +260,7 @@
                         </div>
                         <div class="col-lg-12 center">
                             <div class="d-flex justify-content-center align-items-center">
-                                <a href="" class="button  button-primary fw-medium m-0">Order Now</a>
+                                <button href="" class="button  button-primary fw-medium m-0 btn-order"  data-type="paket-marketplace">Order Now</button>
                             </div>
                         </div>
                     </div>
@@ -508,8 +513,8 @@
                             <div class="card bg-white shadow-lg border-0">
                                 <div class="card-body p-4">
                                     <!-- <div class="form-widget" data-loader="button" data-alert-type="inline"> -->
-                                    <h4 class="text-center" style="color:#0F66DD">Meet With Our Account Executive
-                                    </h4>
+                                        <h4 class="text-center" >Meet With <span style="color:#0F66DD">Our Account Executive</span> 
+                                        </h4>
                                     <div class="form-result"></div>
 
                                     <form class="row mb-0 form-services" id="form-enq"
@@ -519,7 +524,7 @@
                                         <div class="col-12 form-group mb-2">
                                             <label>Name:</label>
                                             <input type="text" name="name" id="landing-enquiry-name"
-                                                class="form-control form-control-lg required" value="{{ old('name') }}"
+                                                class="form-control  required" value="{{ old('name') }}"
                                                 placeholder="John Doe" required>
                                             <div style="color: red; font-size:11px" id="err-name">
 
@@ -528,7 +533,7 @@
                                         <div class="col-12 form-group mb-2">
                                             <label>Email:</label>
                                             <input type="email" name="email" id="landing-enquiry-email"
-                                                class="form-control form-control-lg required" value="{{ old('email') }}"
+                                                class="form-control  required" value="{{ old('email') }}"
                                                 placeholder="user@company.com" required>
                                             <div style="color: red; font-size:11px" id="err-email">
 
@@ -550,7 +555,7 @@
                                                     <option value="+49">+49</option> --}}
                                                 </select>
                                                 <input type="number" name="phone" id="landing-enquiry-phone"
-                                                    class="form-control form-control-lg required"
+                                                    class="form-control  required"
                                                     value="{{ old('phone') }}" placeholder="" required>
                                             </div>
                                             <div style="color: red; font-size:11px" id="err-phone">
@@ -561,13 +566,13 @@
                                             <label>Message:</label>
                                             <textarea name="landing-enquiry-additional-requirements"
                                                 id="landing-enquiry-additional-requirements"
-                                                class="form-control form-control-lg" cols="30" rows="5"
+                                                class="form-control " cols="30" rows="5"
                                                 placeholder="Please let us know how we can help you..."></textarea>
                                         </div> --}} -->
                                         <div class="col-12 form-group mb-2">
                                             <label>Nama Perusahaan</label>
                                             <input type="text" name="company" id="landing-enquiry-company"
-                                                class="form-control form-control-lg required"
+                                                class="form-control  required"
                                                 value="{{ old('company') }}" placeholder="Company Name" required>
                                             <div style="color: red; font-size:11px" id="err-company">
 
@@ -576,7 +581,7 @@
                                         <div class="col-12 form-group mb-2">
                                             <label>Kota Asal</label>
                                             <input type="text" name="city" id="landing-enquiry-company"
-                                                class="form-control form-control-lg required" value=""
+                                                class="form-control  required" value=""
                                                 placeholder="Nama Kota" required>
                                             <div style="color: red; font-size:11px" id="err-city">
 
@@ -584,7 +589,7 @@
                                         </div>
                                         <div class="col-12 form-group mb-2">
                                             <label>Paket</label>
-                                            <select class="form-select form-control form-control-lg required"
+                                            <select class="form-select form-control  required"
                                                 name="landing_enquiry_paket" id="landing-enquiry-paket">
 
                                                 @for ($i = 0; $i < $count; $i++)
@@ -611,7 +616,7 @@
                                         <div class="col-12 form-group mb-2">
                                             <label>Jadwal Meeting dengan Account Executive</label>
                                             <input type="date" name="date" id="landing-enquiry-date"
-                                                class="form-control form-control-lg required" value="{{ old('date') }}"
+                                                class="form-control  required" value="{{ old('date') }}"
                                                 placeholder="date" required>
                                             <div style="color: red; font-size:11px" id="err-date">
 
@@ -620,7 +625,7 @@
                                         <div class="col-12 form-group mb-2">
                                             <label>Jam Meeting dengan Account Executive</label>
                                             <input type="time" name="time" id="landing-enquiry-time"
-                                                class="form-control form-control-lg required" value="{{ old('time') }}"
+                                                class="form-control  required" value="{{ old('time') }}"
                                                 placeholder="time" required>
                                             <div style="color: red; font-size:11px" id="err-time">
 
