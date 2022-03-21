@@ -17,14 +17,14 @@
  ============================================= -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet"
         type="text/css" />
-
+    {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> --}}
 
     <link rel="stylesheet" href="{{ asset('asset/css/bootstrap.css') }}" type="text/css" />
     <link rel="stylesheet" href="{{ asset('asset/css/style.css') }}" type="text/css" />
-    <link rel="stylesheet" href="{{ asset('asset/css/swiper.css') }}" type="text/css" />
+    {{-- <link rel="stylesheet" href="{{ asset('asset/css/swiper.css') }}" type="text/css" /> --}}
 
     <link rel="stylesheet" href="{{ asset('asset/css/dark.css') }}" type="text/css" />
-    {{-- <link rel="stylesheet" href="{{asset('asset/css/font-icons.css')}}" type="text/css" /> --}}
+    {{-- <link rel="stylesheet" href="{{ asset('asset/css/font-icons.css') }}" type="text/css" /> --}}
     <link rel="stylesheet" href="{{ asset('asset/css/animate.css') }}" type="text/css" />
     <link rel="stylesheet" href="{{ asset('asset/css/magnific-popup.css') }}" type="text/css" />
 
@@ -35,14 +35,14 @@
 
     <link rel="stylesheet" href="{{ asset('asset/css/rehaul/fonts.css') }}" type="text/css" />
     <link rel="stylesheet" href="{{ asset('asset/css/rehaul/movers.css') }}" type="text/css" />
-    <link rel="stylesheet" href="{{ asset('asset/css/rehaul/new-style.css') }}?v=1.0.2" type="text/css" />
+    <link rel="stylesheet" href="{{ asset('asset/css/rehaul/new-style.css') }}?v=1.0.5" type="text/css" />
     <!-- / -->
     @yield('css')
 
     {{-- <!-- DatePicker CSS -->
 	<link rel="stylesheet" href="css/components/datepicker.css" type="text/css" /> --}}
 
-    {{-- <meta name='viewport' content='initial-scale=1, viewport-fit=cover'> --}}
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-220121536-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -111,7 +111,9 @@
  ============================================= -->
     <script src="{{ asset('asset/js/jquery.js') }}"></script>
     <script src="{{ asset('asset/js/plugins.min.js') }}"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
     <!-- Footer Scripts
  ============================================= -->
     <script src="{{ asset('asset/js/functions.js') }}?v=1.0.0"></script>
@@ -152,7 +154,7 @@
             }, 1000);
         });
     </script>
-    
+
     <script>
         $('.btn-wa').on('click', function() {
             var y = Math.random();

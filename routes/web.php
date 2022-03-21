@@ -65,6 +65,7 @@ Route::get('/lab/lab', [LabController::class, 'labPage'])->name('labPage');
 Route::post('/lab/meet', [LabController::class, 'create'])->name('postMeet');
 
 
+
 // NEW LANDING PAGE
 Route::get('/v2/marketplace-optimization', [NewLPController::class, 'marketplacePageV2'])->name('marketplacePageV2');
 Route::get('/v2/social-media-marketing', [NewLPController::class, 'socMedPageV2'])->name('socMedPageV2');

@@ -150,6 +150,11 @@ form .form-control, form .form-select{
 }
 
 @media screen  and (max-width: 450px){
+    .banner-element{
+        height: 110vh;
+        padding: 0px !important;
+        min-height: 820px;
+    }
     .swiperTestimoni .swiper-button-next, .swiperTestimoni .swiper-rtl .swiper-button-prev{
         right: 0px;;
     }
@@ -178,5 +183,8 @@ form .form-control, form .form-select{
     }
     .testi-jabatan{
         font-size: 14px;
+    }
+    .banner-img{
+        max-height: 250px;
     }
 }

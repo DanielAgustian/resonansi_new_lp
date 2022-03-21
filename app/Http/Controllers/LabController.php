@@ -179,4 +179,7 @@ class LabController extends Controller
 
       return redirect()->back()->with('successMsg', 'Success');
   }
+  public function labNew(){
+    return view('demo-movers');
+  }
 }

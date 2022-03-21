@@ -9,37 +9,37 @@
 
              <div class="row">
 
-                 
-                 <div class="col-lg-3 col-md-2 col-6">
+
+                 <div class="col-lg-3 col-md-3 col-6">
                      <div class="widget clearfix">
 
-                        <h4 class="ls0 mb-3 nott">Pages</h4>
+                         <h4 class="ls0 mb-3 nott">Pages</h4>
 
-                        <ul class="list-unstyled iconlist ms-0">
-                            <li class="mb-2"><a href="{{ route('aboutPage') }}">About Us</a></li>
-                            <li class="mb-2"><a href="{{ route('servicePage') }}">Our Services</a></li>
-                            <li class="mb-2"><a href="{{ route('blogsPage') }}">Blog</a></li>
+                         <ul class="list-unstyled iconlist ms-0">
+                             <li class="mb-2"><a href="{{ route('aboutPage') }}">About Us</a></li>
+                             <li class="mb-2"><a href="{{ route('servicePage') }}">Our Services</a></li>
+                             <li class="mb-2"><a href="{{ route('blogsPage') }}">Blog</a></li>
 
-                        </ul>
+                         </ul>
 
                      </div>
                  </div>
-                 <div class="col-lg-3 col-md-2 col-6">
+                 <div class="col-lg-3 col-md-3 col-6">
                      <div class="widget clearfix">
 
-                        
-                        <h4 class="ls0 mb-3 nott" style="height: 25px"> </h4>
 
-                        <ul  class="list-unstyled iconlist ms-0">
+                         <h4 class="ls0 mb-3 nott" style="height: 25px"> </h4>
 
-                            <li class="mb-2"><a href="{{ route('pricingPage') }}">Pricing</a></li>
-                            <li class="mb-2"><a href="{{ route('contactPage') }}">Contact Us</a></li>
-                            <li class="mb-2"><a href="{{route('karirPage')}}" >Career</a> </li>
-                        </ul>
+                         <ul class="list-unstyled iconlist ms-0">
+
+                             <li class="mb-2"><a href="{{ route('pricingPage') }}">Pricing</a></li>
+                             <li class="mb-2"><a href="{{ route('contactPage') }}">Contact Us</a></li>
+                             <li class="mb-2"><a href="{{ route('karirPage') }}">Career</a> </li>
+                         </ul>
 
                      </div>
                  </div>
-                 <div class="col-lg-2 col-md-0 col-0">
+                 <div class="col-lg-2 col-md-0  d-lg-flex d-none col-0">
                      {{-- <div class="widget clearfix">
 
                          <h4 class="ls0 mb-4 nott">Get to Know us</h4>
@@ -54,16 +54,17 @@
 
                      </div> --}}
                  </div>
-                 <div class="col-lg-4 col-md-4 text-md-end">
+                 <div class="col-lg-4 col-md-6 text-md-end">
                      <div class="widget clearfix">
-                        <img src="{{ asset('images/logo-resonansi-v2.png') }}" alt="" class="img-footer mb-3 mt-md-0 mt-4">
+                         <img src="{{ asset('images/logo-resonansi-v2.png') }}" alt=""
+                             class="img-footer mb-3 mt-md-0 mt-4">
                          <h4 class="ls0 mb-4 nott">Resonansi from Yokesen</h4>
 
                          <div>
                              <address>
-                                Ruko Crystal 8 no. 18 Lantai 3
-                                <br>Kel. Pakualam, Kec. Serpong Utara,
-                                <br>Banten 15320
+                                 Ruko Crystal 8 no. 18 Lantai 3
+                                 <br>Kel. Pakualam, Kec. Serpong Utara,
+                                 <br>Banten 15320
                              </address>
                              {{-- <h3 class="mb-3"><a href="tel:+111-22-33-44"><i class="icon-call me-1"
                                          style="font-size: 22px;"></i> +111 22-33-44</a></h3> --}}
