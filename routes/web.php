@@ -52,11 +52,11 @@ Route::get('/blogs', [LandingController::class, 'blogsPage'])->name('blogsPage')
 Route::get('/karir', [LandingController::class, 'karirPage'])->name('karirPage');
 Route::get('/digital-marketing', [LandingController::class, 'landing'])->name('landing');
 // Landing Service
-Route::get('/marketplace-optimization', [LandingController::class, 'marketplacePage'])->name('marketplacePage');
-Route::get('/social-media-marketing', [LandingController::class, 'socmedPage'])->name('socmedPage');
-Route::get('/landing-page', [LandingController::class, 'landingPPage'])->name('landingPPage');
-Route::get('/cloud-warehouse-software', [LandingController::class, 'warehousePage'])->name('warehousePage');
-Route::get('/conversion-optimization', [LandingController::class, 'conversionPage'])->name('conversionPage');
+Route::get('/archive/marketplace-optimization', [LandingController::class, 'marketplacePage'])->name('marketplacePage');
+Route::get('/archive/social-media-marketing', [LandingController::class, 'socmedPage'])->name('socmedPage');
+Route::get('/archive/landing-page', [LandingController::class, 'landingPPage'])->name('landingPPage');
+Route::get('/archive/cloud-warehouse-software', [LandingController::class, 'warehousePage'])->name('warehousePage');
+Route::get('/archive/conversion-optimization', [LandingController::class, 'conversionPage'])->name('conversionPage');
 Route::get('/get-future-event', [MeetController::class, 'getFutureEvent'])->name('getFutureEvent');
 
 
@@ -67,8 +67,8 @@ Route::post('/lab/meet', [LabController::class, 'create'])->name('postMeet');
 
 
 // NEW LANDING PAGE
-Route::get('/v2/marketplace-optimization', [NewLPController::class, 'marketplacePageV2'])->name('marketplacePageV2');
-Route::get('/v2/social-media-marketing', [NewLPController::class, 'socMedPageV2'])->name('socMedPageV2');
-Route::get('/v2/landing-page-campaign', [NewLPController::class, 'landingPageV2'])->name('landingPageV2');
-Route::get('/v2/cloud-warehouse-software', [NewLPController::class, 'warehousePageV2'])->name('warehousePageV2');
-Route::get('/v2/conversion-optimization', [NewLPController::class, 'conversionPageV2'])->name('conversionPageV2');
+Route::get('/marketplace-optimization', [NewLPController::class, 'marketplacePageV2'])->name('marketplacePageV2');
+Route::get('/social-media-marketing', [NewLPController::class, 'socMedPageV2'])->name('socMedPageV2');
+Route::get('/landing-page', [NewLPController::class, 'landingPageV2'])->name('landingPageV2');
+Route::get('/cloud-warehouse-software', [NewLPController::class, 'warehousePageV2'])->name('warehousePageV2');
+Route::get('/conversion-optimization', [NewLPController::class, 'conversionPageV2'])->name('conversionPageV2');
