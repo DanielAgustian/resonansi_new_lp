@@ -137,7 +137,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-9">
+                    <div class="col-lg-9 col-md-11">
                         <div class="row align-items-center">
                             <div class="col-sm-6 ">
                                 <img src="{{ asset('images/landing-service/warehouse-ill-2.png') }}" alt="Image 1"

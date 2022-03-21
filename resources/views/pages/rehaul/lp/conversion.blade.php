@@ -129,7 +129,7 @@
             <div class="container clearfix">
 
                 <div class="row justify-content-center mb-5">
-                    <div class="col-lg-8 center">
+                    <div class="col-lg-8 col-md-10 center">
                         <div class="heading-block">
                             <h3 class="nott mb-3 fw-semibold ls0">Layanan <span class="span-bl">Conversion
                                     Optimization</span> Yang Ditawarkan Oleh Resonansi</h3>
@@ -139,7 +139,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-11">
+                    <div class="col-lg-11 col-md-11">
                         <div class="row justify-content-center">
                             <div class="col-lg-6">
                                 <div class="row align-items-center">
@@ -164,11 +164,11 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="row align-items-center mt-lg-0 mt-5">
-                                    <div class="col-sm-6 order-lg-1 order-2">
+                                    <div class="col-sm-6 order-lg-1 order-sm-2 order-1">
                                         <img src="{{ asset('images/landing-service/conversion-ill.png') }}" alt="Image 1"
                                             class="img-layanan">
                                     </div>
-                                    <div class="col-sm-6 mb-4 mb-sm-0 order-lg-2 order-1">
+                                    <div class="col-sm-6 mb-4 mb-sm-0 order-lg-2 order-sm-1 order-2">
                                         <h3 class="text-center text-sm-start">Facebook Ads</h3>
                                         <p class="mb-2 text-center text-sm-start">Lorem ipsum dolor sit amet, consectetur
                                             adipisicing elit.
@@ -185,7 +185,7 @@
                             <div class="col-lg-6">
                                 <div class="row align-items-center mt-5">
 
-                                    <div class="col-sm-6 order-lg-1 order-2">
+                                    <div class="col-sm-6 order-lg-1 order-sm-2 order-2">
                                         <h3 class="text-center text-sm-start">Instagram Ads</h3>
                                         <p class="mb-2 text-center text-sm-start">Lorem ipsum dolor sit amet, consectetur
                                             adipisicing elit.
@@ -196,7 +196,7 @@
                                                     class="icon-line-arrow-right"></i></a>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6 order-lg-2 order-1">
+                                    <div class="col-sm-6 order-lg-2 order-sm-1 order-1">
                                         <img src="{{ asset('images/landing-service/conversion-ill.png') }}" alt="Image 1"
                                             class="img-layanan">
                                     </div>
@@ -204,7 +204,7 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="row align-items-center mt-5">
-                                    <div class="col-sm-6">
+                                    <div class="col-sm-6 order-sm-1 order-2">
                                         <h3 class="text-center text-sm-start">Youtube Ads</h3>
                                         <p class="mb-2 text-center text-sm-start">Lorem ipsum dolor sit amet, consectetur
                                             adipisicing elit.
@@ -215,7 +215,7 @@
                                                     class="icon-line-arrow-right"></i></a>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6">
+                                    <div class="col-sm-6 order-sm-2 order-1">
                                         <img src="{{ asset('images/landing-service/conversion-ill.png') }}" alt="Image 1"
                                             class="img-layanan">
                                     </div>
@@ -244,11 +244,11 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="row align-items-center mt-5">
-                                    <div class="col-sm-6 order-lg-1 order-2">
+                                    <div class="col-sm-6 order-lg-1 order-sm-2 order-1">
                                         <img src="{{ asset('images/landing-service/conversion-ill.png') }}" alt="Image 1"
                                             class="img-layanan">
                                     </div>
-                                    <div class="col-sm-6 order-lg-2 order-1">
+                                    <div class="col-sm-6 order-lg-2 order-sm-1 order-2">
 
                                         <h3 class="text-center text-sm-start">Search Engine Optimization</h3>
                                         <p class="mb-2 text-center text-sm-start">Lorem ipsum dolor sit amet, consectetur
@@ -268,7 +268,7 @@
                                 <div class="row align-items-center mt-5">
 
                                     
-                                    <div class="col-sm-6 order-lg-1 order-2">
+                                    <div class="col-sm-6 order-lg-1 order-sm-2 order-2">
                                         <h3 class="text-center text-sm-start">KOL Management</h3>
                                         <p class="mb-2 text-center text-sm-start">Lorem ipsum dolor sit amet, consectetur
                                             adipisicing elit.
@@ -279,7 +279,7 @@
                                                     class="icon-line-arrow-right"></i></a>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6 order-lg-2 order-1">
+                                    <div class="col-sm-6 order-lg-2 order-sm-1 order-1">
                                         <img src="{{ asset('images/landing-service/conversion-ill.png') }}" alt="Image 1"
                                             class="img-layanan">
                                     </div>
