@@ -66,7 +66,7 @@
 
                   </div>
 
-                  <div id="primary-menu-trigger" class="{{set_none_navbar('marketplacePageV2')}}">
+                  <div id="primary-menu-trigger" class="{{set_none_list()}}">
                       <svg class="svg-trigger" viewBox="0 0 100 100">
                           <path
                               d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20">
@@ -80,7 +80,7 @@
 
                   <!-- Primary Navigation
       ============================================= -->
-                  <nav class="primary-menu with-arrows not-dark {{set_none_navbar('marketplacePageV2')}}">
+                  <nav class="primary-menu with-arrows not-dark {{set_none_list()}}">
 
                       <ul class="menu-container ">
                           <li class="menu-item current"><a class="menu-link" href="{{ route('aboutPage') }}">
