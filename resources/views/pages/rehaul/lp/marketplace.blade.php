@@ -10,7 +10,7 @@
 
 @section('banner')
     <section id="slider" class="slider-element bg-color banner-element"
-        style=" padding: 60px 0; background: url('demos/movers/images/bg-2.png') no-repeat center center / 100% 100%;">
+        style=" padding: 20px 0; background: url('demos/movers/images/bg-2.png') no-repeat center center / 100% 100%;">
 
         <div class="container mt-4" style="z-index: 2">
             {{-- <div class="center">
