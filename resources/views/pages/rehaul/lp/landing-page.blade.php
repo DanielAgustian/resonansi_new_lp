@@ -144,14 +144,11 @@
                                     class="img-layanan">
                             </div>
                             <div class="col-sm-6">
-                                <h3 class="text-center text-sm-start">Company Profile Website</h3>
+                                <h3 class="text-center text-sm-start">Marketing & Sales</h3>
                                 <p class="mb-2 text-center text-sm-start">Lorem ipsum dolor sit amet, consectetur
                                     adipisicing elit.
                                     Nisi deserunt doloremque facilis rem, in recusandae, vel.</p>
-                                <div class="d-flex justify-content-center justify-content-sm-start">
-                                    <a target="_blank" href="" class="color btn btn-sm p-0 btn-link"><u>Selengkapnya</u> <i
-                                            class="icon-line-arrow-right"></i></a>
-                                </div>
+                               
 
                             </div>
                         </div>
@@ -161,53 +158,32 @@
                                 <p class="mb-2 text-center text-sm-start">Lorem ipsum dolor sit amet, consectetur
                                     adipisicing elit.
                                     Nisi deserunt doloremque facilis rem, in recusandae, vel.</p>
-                                <div class="d-flex justify-content-center justify-content-sm-start">
-                                    <a target="_blank" href="https://icons8.com"
-                                        class="color btn btn-sm p-0 btn-link"><u>Selengkapnya</u> <i
-                                            class="icon-line-arrow-right"></i></a>
-                                </div>
+                                
                             </div>
                             <div class="col-sm-6 order-sm-2 order-1">
                                 <img src="{{ asset('images/landing-service/landing-page-ill.png') }}" alt="Image 1"
                                     class="img-layanan">
                             </div>
                         </div>
-                        <h2 class="text-center text-black mt-5">Software as Service</h2>
+                        
                         <div class="row align-items-center mt-4">
                             <div class="col-sm-6">
                                 <img src="{{ asset('images/landing-service/landing-page-ill.png') }}" alt="Image 1"
                                     class="img-layanan">
                             </div>
                             <div class="col-sm-6">
-                                <h3 class="text-center text-sm-start">Referral Software</h3>
+                                <h3 class="text-center text-sm-start">SEO</h3>
                                 <p class="mb-2 text-center text-sm-start">Lorem ipsum dolor sit amet, consectetur
                                     adipisicing elit.
                                     Nisi deserunt doloremque facilis rem, in recusandae, vel.</p>
-                                <div class="d-flex justify-content-center justify-content-sm-start">
+                                {{-- <div class="d-flex justify-content-center justify-content-sm-start">
                                     <a target="_blank" href="https://icons8.com"
                                         class="color btn btn-sm p-0 btn-link"><u>Selengkapnya</u> <i
                                             class="icon-line-arrow-right"></i></a>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
-                        <div class="row align-items-center mt-4">
-                            <div class="col-sm-6">
-                                <h3 class="text-center text-sm-start">Gamification Education Business</h3>
-                                <p class="mb-2 text-center text-sm-start">Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit.
-                                    Nisi deserunt doloremque facilis rem, in recusandae, vel.</p>
-                                <div class="d-flex justify-content-center justify-content-sm-start">
-                                    <a target="_blank" href="https://icons8.com"
-                                        class="color btn btn-sm p-0 btn-link"><u>Selengkapnya</u> <i
-                                            class="icon-line-arrow-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <img src="{{ asset('images/landing-service/landing-page-ill.png') }}" alt="Image 1"
-                                    class="img-layanan">
-                            </div>
-
-                        </div>
+                       
 
                     </div>
                 </div>
