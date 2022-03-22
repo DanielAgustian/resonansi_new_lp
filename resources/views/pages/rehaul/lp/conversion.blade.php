@@ -148,14 +148,10 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <h3 class="text-center text-sm-start">Google Ads</h3>
-                                        <p class="mb-2 text-center text-sm-start">Lorem ipsum dolor sit amet, consectetur
+                                        {{-- <p class="mb-2 text-center text-sm-start">Lorem ipsum dolor sit amet, consectetur
                                             adipisicing elit.
-                                            Nisi deserunt doloremque facilis rem, in recusandae, vel.</p>
-                                        <div class="d-flex justify-content-center justify-content-sm-start">
-                                            <a target="_blank" href=""
-                                                class="color btn btn-sm p-0 btn-link"><u>Selengkapnya</u> <i
-                                                    class="icon-line-arrow-right"></i></a>
-                                        </div>
+                                            Nisi deserunt doloremque facilis rem, in recusandae, vel.</p> --}}
+                                        
 
                                     </div>
                                 </div>
@@ -169,14 +165,10 @@
                                     </div>
                                     <div class="col-sm-6 mb-4 mb-sm-0 order-lg-2 order-sm-1 order-2">
                                         <h3 class="text-center text-sm-start">Facebook Ads</h3>
-                                        <p class="mb-2 text-center text-sm-start">Lorem ipsum dolor sit amet, consectetur
+                                        {{-- <p class="mb-2 text-center text-sm-start">Lorem ipsum dolor sit amet, consectetur
                                             adipisicing elit.
-                                            Nisi deserunt doloremque facilis rem, in recusandae, vel.</p>
-                                        <div class="d-flex justify-content-center justify-content-sm-start">
-                                            <a target="_blank" href="https://icons8.com"
-                                                class="color btn btn-sm p-0 btn-link"><u>Selengkapnya</u> <i
-                                                    class="icon-line-arrow-right"></i></a>
-                                        </div>
+                                            Nisi deserunt doloremque facilis rem, in recusandae, vel.</p> --}}
+                                        
                                     </div>
 
                                 </div>
@@ -186,14 +178,7 @@
 
                                     <div class="col-sm-6 order-lg-1 order-sm-2 order-2">
                                         <h3 class="text-center text-sm-start">Instagram Ads</h3>
-                                        <p class="mb-2 text-center text-sm-start">Lorem ipsum dolor sit amet, consectetur
-                                            adipisicing elit.
-                                            Nisi deserunt doloremque facilis rem, in recusandae, vel.</p>
-                                        <div class="d-flex justify-content-center justify-content-sm-start">
-                                            <a target="_blank" href="https://icons8.com"
-                                                class="color btn btn-sm p-0 btn-link"><u>Selengkapnya</u> <i
-                                                    class="icon-line-arrow-right"></i></a>
-                                        </div>
+                                        
                                     </div>
                                     <div class="col-sm-6 order-lg-2 order-sm-1 order-1">
                                         <img src="{{ asset('images/landing-service/conversion-ill.png') }}" alt="Image 1"
@@ -205,14 +190,7 @@
                                 <div class="row align-items-center mt-5">
                                     <div class="col-sm-6 order-sm-1 order-2">
                                         <h3 class="text-center text-sm-start">Youtube Ads</h3>
-                                        <p class="mb-2 text-center text-sm-start">Lorem ipsum dolor sit amet, consectetur
-                                            adipisicing elit.
-                                            Nisi deserunt doloremque facilis rem, in recusandae, vel.</p>
-                                        <div class="d-flex justify-content-center justify-content-sm-start">
-                                            <a target="_blank" href="https://icons8.com"
-                                                class="color btn btn-sm p-0 btn-link"><u>Selengkapnya</u> <i
-                                                    class="icon-line-arrow-right"></i></a>
-                                        </div>
+                                        
                                     </div>
                                     <div class="col-sm-6 order-sm-2 order-1">
                                         <img src="{{ asset('images/landing-service/conversion-ill.png') }}" alt="Image 1"
@@ -229,15 +207,8 @@
                                             class="img-layanan">
                                     </div>
                                     <div class="col-sm-6">
-                                        <h3 class="text-center text-sm-start">Email</h3>
-                                        <p class="mb-2 text-center text-sm-start">Lorem ipsum dolor sit amet, consectetur
-                                            adipisicing elit.
-                                            Nisi deserunt doloremque facilis rem, in recusandae, vel.</p>
-                                        <div class="d-flex justify-content-center justify-content-sm-start">
-                                            <a target="_blank" href="https://icons8.com"
-                                                class="color btn btn-sm p-0 btn-link"><u>Selengkapnya</u> <i
-                                                    class="icon-line-arrow-right"></i></a>
-                                        </div>
+                                        <h3 class="text-center text-sm-start">Email Marketing</h3>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -250,14 +221,7 @@
                                     <div class="col-sm-6 order-lg-2 order-sm-1 order-2">
 
                                         <h3 class="text-center text-sm-start">Search Engine Optimization</h3>
-                                        <p class="mb-2 text-center text-sm-start">Lorem ipsum dolor sit amet, consectetur
-                                            adipisicing elit.
-                                            Nisi deserunt doloremque facilis rem, in recusandae, vel.</p>
-                                        <div class="d-flex justify-content-center justify-content-sm-start">
-                                            <a target="_blank" href="https://icons8.com"
-                                                class="color btn btn-sm p-0 btn-link"><u>Selengkapnya</u> <i
-                                                    class="icon-line-arrow-right"></i></a>
-                                        </div>
+                                        
                                     </div>
 
 
@@ -269,14 +233,7 @@
                                     
                                     <div class="col-sm-6 order-lg-1 order-sm-2 order-2">
                                         <h3 class="text-center text-sm-start">KOL Management</h3>
-                                        <p class="mb-2 text-center text-sm-start">Lorem ipsum dolor sit amet, consectetur
-                                            adipisicing elit.
-                                            Nisi deserunt doloremque facilis rem, in recusandae, vel.</p>
-                                        <div class="d-flex justify-content-center justify-content-sm-start">
-                                            <a target="_blank" href="https://icons8.com"
-                                                class="color btn btn-sm p-0 btn-link"><u>Selengkapnya</u> <i
-                                                    class="icon-line-arrow-right"></i></a>
-                                        </div>
+                                        
                                     </div>
                                     <div class="col-sm-6 order-lg-2 order-sm-1 order-1">
                                         <img src="{{ asset('images/landing-service/conversion-ill.png') }}" alt="Image 1"
