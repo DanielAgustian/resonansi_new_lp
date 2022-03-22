@@ -50,7 +50,7 @@ Route::get('/services', [LandingController::class, 'servicePage'])->name('servic
 Route::get('/contact-us', [LandingController::class, 'contactPage'])->name('contactPage');
 Route::get('/blogs', [LandingController::class, 'blogsPage'])->name('blogsPage');
 Route::get('/karir', [LandingController::class, 'karirPage'])->name('karirPage');
-Route::get('/digital-marketing', [LandingController::class, 'landing'])->name('landing');
+Route::get('/archive/digital-marketing', [LandingController::class, 'landing'])->name('landing');
 // Landing Service
 Route::get('/archive/marketplace-optimization', [LandingController::class, 'marketplacePage'])->name('marketplacePage');
 Route::get('/archive/social-media-marketing', [LandingController::class, 'socmedPage'])->name('socmedPage');
@@ -72,3 +72,5 @@ Route::get('/social-media-marketing', [NewLPController::class, 'socMedPageV2'])-
 Route::get('/landing-page', [NewLPController::class, 'landingPageV2'])->name('landingPageV2');
 Route::get('/cloud-warehouse-software', [NewLPController::class, 'warehousePageV2'])->name('warehousePageV2');
 Route::get('/conversion-optimization', [NewLPController::class, 'conversionPageV2'])->name('conversionPageV2');
+
+Route::get('/digital-marketing', [NewLPController::class, 'digitalMarketingPageV2'])->name('digitalMarketingPageV2');

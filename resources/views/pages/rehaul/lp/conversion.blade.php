@@ -40,19 +40,18 @@
                         <div class="swiper swiperBanner">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="{{ asset('images/landing-service/conversion-ill.png') }}" alt=""
+                                    <img src="{{ asset('images/rehaul/conversion-optimization.png') }}" alt=""
                                         class="w-100 banner-img">
 
                                 </div>
                                 <div class="swiper-slide">
                                     <img src="{{ asset('images/landing-service/conversion-ill.png') }}" alt=""
                                         class="w-100 banner-img">
-
                                 </div>
-                                <div class="swiper-slide">
+                                {{-- <div class="swiper-slide">
                                     <img src="{{ asset('images/landing-service/conversion-ill.png') }}" alt=""
                                         class="w-100 banner-img">
-                                </div>
+                                </div> --}}
 
                             </div>
                             <div class="swiper-button-next"></div>

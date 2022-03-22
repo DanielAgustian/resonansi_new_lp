@@ -140,12 +140,92 @@ form .form-control, form .form-select{
 .img-footer{
     height: 65px ;
 }
+.box-layanan{
+    cursor: pointer;
+}
+.box-layanan:hover{
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+     transition: all 0.5s;
+     background: #f0f0f0;
+}
+.box-layanan:hover h4{
+    color: #0F66DD !important;
+    transition: all 0.5s;
+}
+.box-layanan img{
+    height: 200px;
+    
+}
+.card-pricing{
+    border-radius: 20px;
+}
+.card-mobile-price .title-price,
+.card-pricing .title-price{
+    color: #06326e;
+}
+.card-mobile-price .price-val,
+.card-pricing .price-val{
+    color: #031938e8;
+}
+.divider-vertical{
+    background-color: gray;
+    height: 1px;
+    width: 100%
+    
+}
+.pricing-item i{
+    font-size: 18px;
+    color: #0F66DD;
+}
+.pricing-item{
+    color: #000000ee;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.pricing-border-right{
+    border-right: 3px solid #6d7e9666;
+}
+
+.list-item li{
+    color: #808080;
+}
+.list-item{
+    margin-left: 58px;
+    margin-bottom: 15px;
+}
+.btn-blue-dark{
+    background-color: #06326e;
+    color: white;
+    font-weight: 700;
+}
+.btn-blue-dark:focus,
+.btn-blue-dark:hover{
+    background-color: #0b5ccc;
+    transform: scale(1.15);
+    transition: all 0.5s;
+}
+.btn-blue-dark:focus{
+    box-shadow: none !important;
+}
+
 @media screen and (max-width: 996px) {
     .banner-element{
         height:90vh;
     }
     .iframe-calendar{
         min-height: 400px;
+    }
+    .pricing-border-right.second-b{
+        border-right: none;
+    }
+    .pricing-border-none{
+        margin-top: 15px;
+        padding-top: 15px;
+        
+    }
+    .card-mobile-price{
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     }
 }
 

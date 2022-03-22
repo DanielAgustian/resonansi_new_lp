@@ -1,6 +1,6 @@
 @extends('master-landing')
 @section('page')
-    | Landing Page Campaign
+    | Cloud Warehouse Software
 @endsection
 @section('css')
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -21,16 +21,19 @@
                     <div class="col-lg-6 order-lg-1 order-2 mt-lg-0 mt-4">
 
 
-                        <h2 class="text-white fw-bold mb-3">Sudah sering promosi online tapi Hasilnya belum maksimal?
+                        <h2 class="text-white fw-bold mb-3">Bisnis kamu masih gitu-gitu aja?
+                            Mau GO DIGITAL tapi nggak ngerti caranya?
+
                         </h2>
-                        <p class="text-white fw-normal mb-0">“Tenang bersama resonansi, kita akan buat Landing Page kamu
-                            semenarik mungkin dengan layanan Landing Page Campaign. Yuk segera daftar, konsultasinya gratis
-                            loh.”
+                        <p class="text-white fw-normal mb-0">“Tenang bersama Resonansi, kami akan buat bisnis kamu GO DIGITAL
+                            dengan berbagai layanan seperti: Digital Strategy, Marketplace Optimization, Multimedia,
+                            Technology, dan Cloud Warehouse Software.”
+
 
                         </p>
                         <div class="d-flex align-items-center justify-content-lg-start justify-content-center mt-5">
                             <button class="btn btn-blue mr-4 me-4 btn-bigger btn-klien">Our Client</button>
-                            <button class="btn btn-white btn-bigger btn-order" data-type="paket-technology-conversion-opt">Order
+                            <button class="btn btn-white btn-bigger btn-order">Order
                                 Now!</button>
                         </div>
 
@@ -38,16 +41,33 @@
                     <div class="col-lg-6  order-lg-2 order-1  flex-wrap justify-content-center">
                         <div class="swiper swiperBanner">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide d-flex flex-column h-100 justify-content-center">
+                                <div class="swiper-slide">
+                                    <img src="{{ asset('images/rehaul/marketplace-optimization.png') }}" alt=""
+                                        class="w-100 banner-img">
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="{{ asset('images/rehaul/cloud-warehouse.png') }}" alt=""
+                                        class="w-100 banner-img">
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="{{ asset('images/rehaul/social-media-marketing.png') }}" alt=""
+                                        class="w-100 banner-img">
+
+                                </div>
+                                <div class="swiper-slide">
                                     <img src="{{ asset('images/rehaul/landing-page.png') }}" alt=""
                                         class="w-100 banner-img">
+
                                 </div>
-                                <div class="swiper-slide d-flex flex-column h-100 justify-content-center">
-                                    <img src="{{ asset('images/landing-service/landing-page-ill.png') }}" alt=""
+                                <div class="swiper-slide">
+                                    <img src="{{ asset('images/rehaul/conversion-optimization.png') }}" alt=""
                                         class="w-100 banner-img">
+
                                 </div>
                                 {{-- <div class="swiper-slide">
-                                    <img src="{{ asset('images/landing-service/landing-page-ill.png') }}" alt=""
+                                    <img src="{{ asset('images/landing-service/warehouse-ill-2.png') }}" alt=""
                                         class="w-100 banner-img">
                                 </div> --}}
 
@@ -67,7 +87,7 @@
                 <svg preserveAspectRatio="xMidYMax meet" viewBox="0 0 1600 100" data-height="100">
                     <path style="opacity: 1;fill: rgba(255,255,255,0.75);"
                         d="M1040,56c0.5,0,1,0,1.6,0c-16.6-8.9-36.4-15.7-66.4-15.7c-56,0-76.8,23.7-106.9,41C881.1,89.3,895.6,96,920,96
-                                                                                                  C979.5,96,980,56,1040,56z">
+                                                                                                                                  C979.5,96,980,56,1040,56z">
                     </path>
                     <path style="opacity: 1;fill: rgba(255,255,255,0.75);"
                         d="M1699.8,96l0,10H1946l-0.3-6.9c0,0,0,0-88,0s-88.6-58.8-176.5-58.8c-51.4,0-73,20.1-99.6,36.8 c14.5,9.6,29.6,18.9,58.4,18.9C1699.8,96,1699.8,96,1699.8,96z">
@@ -81,8 +101,10 @@
                     <path style="opacity: 1;fill: rgba(255,255,255,0.75);"
                         d="M680,96c23.7,0,38.1-6.3,50.5-13.9C699.6,64.8,679,40.3,622.2,40.3c-30,0-49.8,6.8-66.3,15.8 c1.3,0,2.7-0.1,4.1-0.1C619.7,56,620.2,96,680,96z">
                     </path>
-                    <path style="opacity: 1;fill: rgba(255,255,255,0.75);" d="M-40,95.6c28.3,0,43.3-8.7,57.4-18C-9.6,60.8-31,40.2-83.2,40.2c-14.3,0-26.3,1.6-36.8,4.2V106h60V96L-40,95.6
-                                                                                                  z"></path>
+                    <path style="opacity: 1;fill: rgba(255,255,255,0.75);"
+                        d="M-40,95.6c28.3,0,43.3-8.7,57.4-18C-9.6,60.8-31,40.2-83.2,40.2c-14.3,0-26.3,1.6-36.8,4.2V106h60V96L-40,95.6
+                                                                                                                                  z">
+                    </path>
                     <path style="opacity: 1;fill: rgba(255,255,255,0.3);;"
                         d="M504,73.4c-2.6-0.8-5.7-1.4-9.6-1.4c-19.4,0-19.6,13-39,13c-19.4,0-19.5-13-39-13c-14,0-18,6.7-26.3,10.4 C402.4,89.9,416.7,96,440,96C472.5,96,487.5,84.2,504,73.4z">
                     </path>
@@ -128,85 +150,42 @@
                 <div class="row justify-content-center mb-5">
                     <div class="col-lg-8 center">
                         <div class="heading-block">
-                            <h3 class="nott mb-3 fw-semibold ls0">Layanan <span class="span-bl">Landing Page</span>
-                                Yang Ditawarkan Oleh Resonansi</h3>
+                            <h3 class="nott mb-3 fw-semibold ls0">Jasa Layanan Apa Saja Yang Disediakan Oleh
+                                <span class="span-bl">Resonansi</span>?
+                            </h3>
                             {{-- <span class="text-black-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                 Voluptate corporis, facilis assumenda optio consequuntur amet iure, quidem animi nam
                                 inventore!</span> --}}
                         </div>
                     </div>
 
-                    <div class="col-lg-9 col-md-11">
-                        <h2 class="text-center text-black">Technology</h2>
-                        <div class="row align-items-center">
-                            <div class="col-sm-6 ">
-                                <img src="{{ asset('images/landing-service/landing-page-ill.png') }}" alt="Image 1"
-                                    class="img-layanan">
-                            </div>
-                            <div class="col-sm-6">
-                                <h3 class="text-center text-sm-start">Company Profile Website</h3>
-                                <p class="mb-2 text-center text-sm-start">Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit.
-                                    Nisi deserunt doloremque facilis rem, in recusandae, vel.</p>
-                                <div class="d-flex justify-content-center justify-content-sm-start">
-                                    <a target="_blank" href="" class="color btn btn-sm p-0 btn-link"><u>Selengkapnya</u> <i
-                                            class="icon-line-arrow-right"></i></a>
-                                </div>
+                    <div class="col-lg-10 col-md-11">
+                        <div class="row align-items-center justify-content-around">
 
+                            <div class="col-lg-3 col-6 box-layanan p-3 rounded" data-type="landing-page">
+                                <img src="{{ asset('images/landing-page.png') }}" alt="Image 1" class="img-layanan">
+                                <h4 class="text-center mt-2 mb-0">Technology</h4>
                             </div>
-                        </div>
-                        <div class="row align-items-center mt-4">
-                            <div class="col-sm-6 mb-4 mb-sm-0 order-sm-1 order-2">
-                                <h3 class="text-center text-sm-start">Landing Page Campaign</h3>
-                                <p class="mb-2 text-center text-sm-start">Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit.
-                                    Nisi deserunt doloremque facilis rem, in recusandae, vel.</p>
-                                <div class="d-flex justify-content-center justify-content-sm-start">
-                                    <a target="_blank" href="https://icons8.com"
-                                        class="color btn btn-sm p-0 btn-link"><u>Selengkapnya</u> <i
-                                            class="icon-line-arrow-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 order-sm-2 order-1">
-                                <img src="{{ asset('images/landing-service/landing-page-ill.png') }}" alt="Image 1"
+                            <div class="col-lg-3 col-6 box-layanan p-3 rounded" data-type="social-media-marketing">
+                                <img src="{{ asset('images/landing-service/socmed-ill.png') }}" alt="Image 1"
                                     class="img-layanan">
+                                <h4 class="text-center mt-2 mb-0">Digital Strategy</h4>
                             </div>
-                        </div>
-                        <h2 class="text-center text-black mt-5">Software as Service</h2>
-                        <div class="row align-items-center mt-4">
-                            <div class="col-sm-6">
-                                <img src="{{ asset('images/landing-service/landing-page-ill.png') }}" alt="Image 1"
+                            <div class="col-lg-3 col-6 box-layanan p-3 rounded" data-type="marketplace-optimization">
+                                <img src="{{ asset('images/opt.png') }}" alt="Image 1" class="img-layanan">
+                                <h4 class="text-center mt-2 mb-0">Marketplace Optimization</h4>
+                            </div>
+                            <div class="w-100 d-lg-block d-none"></div>
+                            <div class="col-lg-3 col-6 box-layanan p-3 rounded" data-type="cloud-warehouse-software">
+                                <img src="{{ asset('images/landing-service/warehouse-ill-2.png') }}" alt="Image 1"
                                     class="img-layanan">
+                                <h4 class="text-center mt-2 mb-0">Cloud Warehouse Software</h4>
                             </div>
-                            <div class="col-sm-6">
-                                <h3 class="text-center text-sm-start">Referral Software</h3>
-                                <p class="mb-2 text-center text-sm-start">Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit.
-                                    Nisi deserunt doloremque facilis rem, in recusandae, vel.</p>
-                                <div class="d-flex justify-content-center justify-content-sm-start">
-                                    <a target="_blank" href="https://icons8.com"
-                                        class="color btn btn-sm p-0 btn-link"><u>Selengkapnya</u> <i
-                                            class="icon-line-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row align-items-center mt-4">
-                            <div class="col-sm-6">
-                                <h3 class="text-center text-sm-start">Gamification Education Business</h3>
-                                <p class="mb-2 text-center text-sm-start">Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit.
-                                    Nisi deserunt doloremque facilis rem, in recusandae, vel.</p>
-                                <div class="d-flex justify-content-center justify-content-sm-start">
-                                    <a target="_blank" href="https://icons8.com"
-                                        class="color btn btn-sm p-0 btn-link"><u>Selengkapnya</u> <i
-                                            class="icon-line-arrow-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <img src="{{ asset('images/landing-service/landing-page-ill.png') }}" alt="Image 1"
+                            <div class="col-lg-3 col-6 box-layanan p-3 rounded" data-type="conversion-optimization">
+                                <img src="{{ asset('images/landing-service/conversion-ill.png') }}" alt="Image 1"
                                     class="img-layanan">
+                                <h4 class="text-center mt-2 mb-0">Conversion Optimization</h4>
                             </div>
-
                         </div>
 
                     </div>
@@ -219,54 +198,261 @@
             <div class="section p-0 dark mb-0"
                 style="background: linear-gradient(to right, rgba(25,102,221,0.2), rgba(25,102,221,0.5)), url('{{ asset('images/rehaul/1.jpg') }}') no-repeat center center / cover; min-height: 400px">
                 <div class="container">
-                    <div class="row justify-content-between  mb-4 bottommargin" style="padding: 100px 0 160px;">
-                        <div class="col-lg-5 col-md-6 offset-lg-1 pt-lg-0 pt-3">
-                            {{-- <a href="https://www.youtube.com/watch?v=P3Huse9K6Xs" data-lightbox="iframe"
-                                class="play-video ms-3"><i class="icon-play"></i></a> --}}
-                            <h2 class="display-5  text-white">Berapa Harga Layanan <strong class="fw-bold">Technology and Conversion Optimization</strong> Dari Resonansi?
+                    <h2 class="display-5  text-white text-center" style="margin-top: 100px">Berapa Harga Paket Layanan
+                        <strong class="fw-bold">Jasa
+                            Resonansi</strong>?
 
-                            </h2>
-                        </div>
-                        <div class="col-lg-5 col-md-6 mb-0 mb-md-5">
-                            {{-- <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Incidunt distinctio dolor nemo quasi cum. A ipsam tempora voluptatem officiis!
-                                Accusantium!</p> --}}
-                            <h3 class="mb-2 text-white">Start from Rp 5.000.000</h3>
-                            <div class="row">
-                                <ul class="col-lg-8 col-md-10 col-12 iconlist">
-                                    <li class="my-2"><i class="icon-line-circle-check fw-light"></i>
-                                        <span class="ps-2 fw-bold">Landing Page Campaign</span>
-                                        
-                                        {{-- <ul class="little-list">
+                    </h2>
+                    <div class="container  mb-4 bottommargin" style="padding: 0px 0 160px;">
+                        <div class="card w-100 card-pricing shadow bg-white d-lg-block d-none">
+                            <div class="card-body p-lg-4">
 
-                                            <li>Campaign</li>
-                                            <li>Matrix Plan</li>
-                                            <li>Content Management</li>
-                                            <li>Digital Branding</li>
-                                            <li>Brand Logo</li>
+                                <div class="row no-gutters justify-content-center">
+                                    <div class="col-lg-4 col-md-6 pricing-border-right first-b">
+                                        <h4 class="title-price fw-semibold text-center mb-3">Technology and Conversion
+                                            Optimization</h4>
+                                        <h2 class="price-val fw-bold text-center mb-0">Rp 5.000.000</h2>
+                                        <div class="d-flex justify-content-center mt-2">
+                                            <button class="btn btn-blue-dark btn-order"
+                                                data-type="paket-technology-conversion-opt">Order Now!</button>
+                                        </div>
+                                        <div class="mx-3 my-4">
+                                            <div class="divider-vertical"></div>
+                                        </div>
+                                        <div class="d-flex flex-column  justify-content-center mx-3">
+                                            <p class="pricing-item">
+                                                <i class="fas fa-check-circle me-3 mt-1"></i>
+                                                Landing Page Campaign
+                                            </p>
+                                            <p class="pricing-item">
+                                                <i class="fas fa-check-circle me-3 mt-1"></i>
+                                                Marketing and Sales Funnel (Digital Funneling)
 
-                                        </ul> --}}
-                                    </li>
-                                    <li class="my-2"><i class="icon-line-circle-check fw-light"></i>
-                                       
-                                        <span class="ps-2 fw-bold">Marketing and Sales Funnel (Digital Funneling)</span>
-    
-                                    </li>
-                                    <li class="my-2"><i class="icon-line-circle-check fw-light"></i>
-                                        
-                                        <span class="ps-2 fw-bold">Search Engine Optimization</span>
-                                       
-                                    </li>
-                                </ul>
+
+                                            </p>
+                                            <p class="pricing-item">
+                                                <i class="fas fa-check-circle me-3 mt-1"></i>
+                                                SEO (Search Engine Optimization)
+                                            </p>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 pricing-border-right second-b">
+                                        <h4 class="title-price fw-semibold text-center mb-3">Virtual Event</h4>
+                                        <h2 class="price-val fw-bold text-center mb-0">Rp 7.500.000</h2>
+                                        <div class="d-flex justify-content-center mt-2">
+                                            <button class="btn btn-blue-dark btn-order"
+                                                data-type="paket-virtual-event">Order Now!</button>
+                                        </div>
+                                        <div class="mx-3 my-4">
+                                            <div class="divider-vertical"></div>
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-center mx-3">
+                                            <p class="pricing-item">
+                                                <i class="fas fa-check-circle me-3 mt-1"></i>
+                                                Virtual Event / Webinar
+
+                                            </p>
+                                            <p class="pricing-item mb-0">
+                                                <i class="fas fa-check-circle me-3 mt-1"></i>
+                                                Operate Streaming Activation
+
+                                            </p>
+                                            <ul class="list-item">
+                                                <li>Zoom 3 hours
+                                                </li>
+                                                <li>Operator Assisted</li>
+                                                <li>Smooth Presentation Software </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 pricing-border-none">
+                                        <h4 class="title-price fw-semibold text-center mb-3">Marketplace (Online Sales
+                                            Strategy)</h4>
+                                        <h2 class="price-val fw-bold text-center mb-0">Rp 10.000.000</h2>
+                                        <div class="d-flex justify-content-center mt-2">
+                                            <button class="btn btn-blue-dark btn-order" data-type="paket-marketplace">Order
+                                                Now!</button>
+                                        </div>
+                                        <div class="mx-3 my-4">
+                                            <div class="divider-vertical"></div>
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-center mx-3">
+                                            <p class="pricing-item mb-0">
+                                                <i class="fas fa-check-circle me-3 mt-1"></i>
+                                                Marketplace Optimization
+
+                                            </p>
+                                            <ul class="list-item">
+                                                <li>Shop Optimization (max. 2 shops)
+                                                </li>
+                                                <li>Product Optimization</li>
+                                                <li>Reporting and Insight (Weekly)</li>
+                                            </ul>
+                                            <p class="pricing-item mb-0">
+                                                <i class="fas fa-check-circle me-3 mt-1"></i>
+                                                Marketplace Ads Optimization
+
+
+
+                                            </p>
+                                            <ul class="list-item">
+                                                <li>Ads Optimization (max. 2 shops)</li>
+                                                <li>Keyword and Category Optimization</li>
+                                                <li>Bonus Top Up Ads</li>
+                                                <li>Reporting and Insight (Weekly)</li>
+                                            </ul>
+                                            <p class="pricing-item mb-0">
+                                                <i class="fas fa-check-circle me-3 mt-1"></i>
+                                                Marketplace Live
+
+
+
+                                            </p>
+                                            <ul class="list-item">
+                                                <li>Shopee Live (5 times)</li>
+                                                <li>Tokopedia Live (5 times)</li>
+                                                <li>Live Duration 20 minutes</li>
+                                                <li>1 Host per Session</li>
+                                                <li>Reporting and Insight (Monthly)</li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
-                        <div class="col-lg-12 center">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <button  class="button  button-primary fw-medium m-0 btn-order" data-type="paket-technology-conversion-opt">Order Now</button>
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 mb-5">
+                                <div class="card card-mobile-price bg-white d-lg-none d-block">
+                                    <div class="card-body">
+                                        <h4 class="title-price fw-semibold text-center mb-3">Technology and Conversion
+                                            Optimization</h4>
+                                        <h2 class="price-val fw-bold text-center mb-0">Rp 5.000.000</h2>
+                                        <div class="d-flex justify-content-center mt-2">
+                                            <button class="btn btn-blue-dark btn-order"
+                                                data-type="paket-technology-conversion-opt">Order Now!</button>
+                                        </div>
+                                        <div class="mx-3 my-4">
+                                            <div class="divider-vertical"></div>
+                                        </div>
+                                        <div class="d-flex flex-column  justify-content-center mx-3">
+                                            <p class="pricing-item">
+                                                <i class="fas fa-check-circle me-3 mt-1"></i>
+                                                Landing Page Campaign
+                                            </p>
+                                            <p class="pricing-item">
+                                                <i class="fas fa-check-circle me-3 mt-1"></i>
+                                                Marketing and Sales Funnel (Digital Funneling)
+
+
+                                            </p>
+                                            <p class="pricing-item">
+                                                <i class="fas fa-check-circle me-3 mt-1"></i>
+                                                SEO (Search Engine Optimization)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-5">
+                                <div class="card card-mobile-price bg-white d-lg-none d-block">
+                                    <div class="card-body">
+                                        <h4 class="title-price fw-semibold text-center mb-3">Virtual Event</h4>
+                                        <h2 class="price-val fw-bold text-center mb-0">Rp 7.500.000</h2>
+                                        <div class="d-flex justify-content-center mt-2">
+                                            <button class="btn btn-blue-dark btn-order"
+                                                data-type="paket-virtual-event">Order Now!</button>
+                                        </div>
+                                        <div class="mx-3 my-4">
+                                            <div class="divider-vertical"></div>
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-center mx-3">
+                                            <p class="pricing-item">
+                                                <i class="fas fa-check-circle me-3 mt-1"></i>
+                                                Virtual Event / Webinar
+
+                                            </p>
+                                            <p class="pricing-item mb-0">
+                                                <i class="fas fa-check-circle me-3 mt-1"></i>
+                                                Operate Streaming Activation
+
+                                            </p>
+                                            <ul class="list-item">
+                                                <li>Zoom 3 hours
+                                                </li>
+                                                <li>Operator Assisted</li>
+                                                <li>Smooth Presentation Software </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="col-md-6 mb-5">
+                                <div class="card card-mobile-price bg-white d-lg-none d-block">
+                                    <div class="card-body">
+                                        <h4 class="title-price fw-semibold text-center mb-3">Marketplace (Online Sales
+                                            Strategy)</h4>
+                                        <h2 class="price-val fw-bold text-center mb-0">Rp 10.000.000</h2>
+                                        <div class="d-flex justify-content-center mt-2">
+                                            <button class="btn btn-blue-dark btn-order" data-type="paket-marketplace">Order
+                                                Now!</button>
+                                        </div>
+                                        <div class="mx-3 my-4">
+                                            <div class="divider-vertical"></div>
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-center mx-3">
+                                            <p class="pricing-item mb-0">
+                                                <i class="fas fa-check-circle me-3 mt-1"></i>
+                                                Marketplace Optimization
+
+                                            </p>
+                                            <ul class="list-item">
+                                                <li>Shop Optimization (max. 2 shops)
+                                                </li>
+                                                <li>Product Optimization</li>
+                                                <li>Reporting and Insight (Weekly)</li>
+                                            </ul>
+                                            <p class="pricing-item mb-0">
+                                                <i class="fas fa-check-circle me-3 mt-1"></i>
+                                                Marketplace Ads Optimization
+
+
+
+                                            </p>
+                                            <ul class="list-item">
+                                                <li>Ads Optimization (max. 2 shops)</li>
+                                                <li>Keyword and Category Optimization</li>
+                                                <li>Bonus Top Up Ads</li>
+                                                <li>Reporting and Insight (Weekly)</li>
+                                            </ul>
+                                            <p class="pricing-item mb-0">
+                                                <i class="fas fa-check-circle me-3 mt-1"></i>
+                                                Marketplace Live
+
+
+
+                                            </p>
+                                            <ul class="list-item">
+                                                <li>Shopee Live (5 times)</li>
+                                                <li>Tokopedia Live (5 times)</li>
+                                                <li>Live Duration 20 minutes</li>
+                                                <li>1 Host per Session</li>
+                                                <li>Reporting and Insight (Monthly)</li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
                             </div>
                         </div>
+
                     </div>
+
 
                 </div>
                 <div class="clear"></div>
@@ -516,7 +702,8 @@
                             <div class="card bg-white shadow-lg border-0">
                                 <div class="card-body p-4">
                                     <!-- <div class="form-widget" data-loader="button" data-alert-type="inline"> -->
-                                    <h4 class="text-center" >Meet With <span style="color:#0F66DD">Our Account Executive</span> 
+                                    <h4 class="text-center">Meet With <span style="color:#0F66DD">Our Account
+                                            Executive</span>
                                     </h4>
                                     <div class="form-result"></div>
 
@@ -558,8 +745,8 @@
                                                     <option value="+49">+49</option> --}}
                                                 </select>
                                                 <input type="number" name="phone" id="landing-enquiry-phone"
-                                                    class="form-control  required"
-                                                    value="{{ old('phone') }}" placeholder="" required>
+                                                    class="form-control  required" value="{{ old('phone') }}"
+                                                    placeholder="" required>
                                             </div>
                                             <div style="color: red; font-size:11px" id="err-phone">
 
@@ -575,8 +762,8 @@
                                         <div class="col-12 form-group mb-2">
                                             <label>Nama Perusahaan</label>
                                             <input type="text" name="company" id="landing-enquiry-company"
-                                                class="form-control  required"
-                                                value="{{ old('company') }}" placeholder="Company Name" required>
+                                                class="form-control  required" value="{{ old('company') }}"
+                                                placeholder="Company Name" required>
                                             <div style="color: red; font-size:11px" id="err-company">
 
                                             </div>
@@ -584,16 +771,15 @@
                                         <div class="col-12 form-group mb-2">
                                             <label>Kota Asal</label>
                                             <input type="text" name="city" id="landing-enquiry-company"
-                                                class="form-control  required" value=""
-                                                placeholder="Nama Kota" required>
+                                                class="form-control  required" value="" placeholder="Nama Kota" required>
                                             <div style="color: red; font-size:11px" id="err-city">
 
                                             </div>
                                         </div>
                                         <div class="col-12 form-group mb-2">
                                             <label>Paket</label>
-                                            <select class="form-select form-control  required"
-                                                name="landing_enquiry_paket" id="landing-enquiry-paket">
+                                            <select class="form-select form-control  required" name="landing_enquiry_paket"
+                                                id="landing-enquiry-paket">
 
                                                 @for ($i = 0; $i < $count; $i++)
                                                     @if ($i == 0)
@@ -605,14 +791,14 @@
                                                     @endif
                                                 @endfor
                                                 <!-- <option value="paket-technology-conversion-opt" selected>Paket Technology Conversion Optimization</option>
-                                                                                                        <option value="paket-virtual-event">Paket Virtual Event / Webinar</option>
-                                                                                                        <option value="paket-marketplace">Paket Marketplace</option>
-                                                                                                        <option value="technology">Technology</option>
-                                                                                                        <option value="digital-strategy">Digital Strategy</option>
+                                                                                                                                        <option value="paket-virtual-event">Paket Virtual Event / Webinar</option>
+                                                                                                                                        <option value="paket-marketplace">Paket Marketplace</option>
+                                                                                                                                        <option value="technology">Technology</option>
+                                                                                                                                        <option value="digital-strategy">Digital Strategy</option>
 
-                                                                                                        <option value="marketplace-opt">Marketplace Optimization</option>
-                                                                                                        <option value="multimedia">Multimedia </option>
-                                                                                                        <option value="cloud-warehouse-software">Cloud Warehouse Software</option> -->
+                                                                                                                                        <option value="marketplace-opt">Marketplace Optimization</option>
+                                                                                                                                        <option value="multimedia">Multimedia </option>
+                                                                                                                                        <option value="cloud-warehouse-software">Cloud Warehouse Software</option> -->
                                             </select>
 
                                         </div>
@@ -752,5 +938,11 @@
                 $('#landing-enquiry-paket option[value="' + type + '"]').attr('selected', 'selected');
             }
         });
+    </script>
+    <script>
+        $('.box-layanan').click(function() {
+            let values = $(this).data('type');
+            window.open('https://resonansi.co.id/' + values, '_blank');
+        })
     </script>
 @endsection
