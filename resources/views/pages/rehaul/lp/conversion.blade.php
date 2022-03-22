@@ -158,7 +158,7 @@
 
                         <div class="row justify-content-around">
                             <div class="col-lg-3 col-sm-4 col-6">
-                                <img src="{{ asset('images/rehaul/google-ads.png') }}" alt="Image 1"
+                                <img src="{{ asset('images/rehaul/google-logo.png') }}" alt="Image 1"
                                     class="img-layanan">
                                 <h4 class="text-center mt-1">Google Ads</h4>
                             </div>
