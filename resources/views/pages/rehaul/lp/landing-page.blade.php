@@ -137,10 +137,10 @@
                     </div>
 
                     <div class="col-lg-9 col-md-11">
-                        <h2 class="text-center text-black">Technology</h2>
+                        {{-- <h2 class="text-center text-black">Technology</h2> --}}
                         <div class="row align-items-center">
                             <div class="col-sm-6 ">
-                                <img src="{{ asset('images/landing-service/landing-page-ill.png') }}" alt="Image 1"
+                                <img src="{{ asset('images/rehaul/referral-software.png') }}" alt="Image 1"
                                     class="img-layanan">
                             </div>
                             <div class="col-sm-6">
@@ -168,7 +168,7 @@
                         
                         <div class="row align-items-center mt-4">
                             <div class="col-sm-6">
-                                <img src="{{ asset('images/landing-service/landing-page-ill.png') }}" alt="Image 1"
+                                <img src="{{ asset('images/rehaul/seo.png') }}" alt="Image 1"
                                     class="img-layanan">
                             </div>
                             <div class="col-sm-6">

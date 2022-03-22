@@ -48,10 +48,12 @@
                                         class="w-100 banner-img">
 
                                 </div>
-                                {{-- <div class="swiper-slide">
-                                    <img src="{{ asset('images/landing-service/warehouse-ill-2.png') }}" alt=""
+                                
+                                <div class="swiper-slide">
+                                    <img src="{{ asset('images/rehaul/jasa-fulfillment.png') }}" alt=""
                                         class="w-100 banner-img">
-                                </div> --}}
+
+                                </div>
 
                             </div>
                             <div class="swiper-button-next"></div>
@@ -140,7 +142,7 @@
                     <div class="col-lg-9 col-md-11">
                         <div class="row align-items-center">
                             <div class="col-sm-6 ">
-                                <img src="{{ asset('images/landing-service/warehouse-ill-2.png') }}" alt="Image 1"
+                                <img src="{{ asset('images/rehaul/jasa-fulfillment.png') }}" alt="Image 1"
                                     class="img-layanan">
                             </div>
                             <div class="col-sm-6">
@@ -167,7 +169,7 @@
                                
                             </div>
                             <div class="col-sm-6 order-sm-2 order-1">
-                                <img src="{{ asset('images/landing-service/warehouse-ill-2.png') }}" alt="Image 1"
+                                <img src="{{ asset('images/rehaul/agregasi-chat.png') }}" alt="Image 1"
                                     class="img-layanan">
                             </div>
                         </div>

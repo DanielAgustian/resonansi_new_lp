@@ -4,6 +4,21 @@
 @endsection
 @section('css')
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        .img-layanan{
+            height: 200px;
+        }
+        @media screen and (max-width: 996px){
+            .img-layanan{
+                height: 170px;
+            }
+        }
+        @media screen and (max-width: 450px){
+            .img-layanan{
+                height: 150px;
+            }
+        }
+    </style>
 @endsection
 @section('banner')
     <section id="slider" class="slider-element bg-color banner-element"
@@ -143,39 +158,39 @@
 
                         <div class="row justify-content-around">
                             <div class="col-lg-3 col-sm-4 col-6">
-                                <img src="{{ asset('images/landing-service/conversion-ill.png') }}" alt="Image 1"
+                                <img src="{{ asset('images/rehaul/google-ads.png') }}" alt="Image 1"
                                     class="img-layanan">
                                 <h4 class="text-center mt-1">Google Ads</h4>
                             </div>
                             <div class="col-lg-3 col-sm-4 col-6">
-                                <img src="{{ asset('images/landing-service/conversion-ill.png') }}" alt="Image 1"
+                                <img src="{{ asset('images/rehaul/fb-ads.png') }}" alt="Image 1"
                                     class="img-layanan">
                                 <h4 class="text-center mt-1">Facebook Ads</h4>
                             </div>
                             <div class="col-lg-3 col-sm-4 col-6">
-                                <img src="{{ asset('images/landing-service/conversion-ill.png') }}" alt="Image 1"
+                                <img src="{{ asset('images/rehaul/ig-ads.png') }}" alt="Image 1"
                                     class="img-layanan">
                                 <h4 class="text-center mt-1">Instagram Ads</h4>
                             </div>
                             <div class="w-100 d-lg-flex d-none"></div>
                             <div class="col-lg-3 col-sm-4 col-6">
-                                <img src="{{ asset('images/landing-service/conversion-ill.png') }}" alt="Image 1"
+                                <img src="{{ asset('images/rehaul/youtube-ads.png') }}" alt="Image 1"
                                     class="img-layanan">
                                 <h4 class="text-center mt-1">Youtube Ads</h4>
                             </div>
                             <div class="col-lg-3 col-sm-4 col-6">
-                                <img src="{{ asset('images/landing-service/conversion-ill.png') }}" alt="Image 1"
+                                <img src="{{ asset('images/rehaul/email-marketing.png') }}" alt="Image 1"
                                     class="img-layanan">
                                 <h4 class="text-center mt-1">Email Marketing</h4>
                             </div>
                             <div class="col-lg-3 col-sm-4 col-6">
-                                <img src="{{ asset('images/landing-service/conversion-ill.png') }}" alt="Image 1"
+                                <img src="{{ asset('images/rehaul/seo.png') }}" alt="Image 1"
                                     class="img-layanan">
                                 <h4 class="text-center mt-1">Search Engine Optimization</h4>
                             </div>
                             <div class="w-100 d-lg-flex d-none"></div>
                             <div class="col-lg-3 col-sm-4 col-6">
-                                <img src="{{ asset('images/landing-service/conversion-ill.png') }}" alt="Image 1"
+                                <img src="{{ asset('images/rehaul/kol-management.png') }}" alt="Image 1"
                                     class="img-layanan">
                                 <h4 class="text-center mt-1">KOL Management</h4>
                             </div>
