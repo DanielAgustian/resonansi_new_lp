@@ -490,15 +490,25 @@
                                             alt="" class="img-client shadow rounded">
                                         <h6 class="blue-text">Kopi Grontol</h6>
                                     </div>
-                                    {{-- <div class="col-lg-4 col-6">
-                                        <img src="{{asset('images/klien/sweet_monsta.png')}}?v=1.0.0.1"
+                                    <div class="col-lg-4 col-6">
+                                        <img src="{{asset('images/klien/mowilex.png')}}?v=1.0.0.1"
                                             alt="" class="img-client shadow rounded">
-                                        <h6 class="blue-text">Sweet Monsta</h6>
-                                    </div> --}}
+                                        <h6 class="blue-text">Mowilex</h6>
+                                    </div>
+                                    <div class="col-lg-4 col-6">
+                                        <img src="{{asset('images/klien/twg-2.png')}}?v=1.0.0.1"
+                                            alt="" class="img-client shadow rounded">
+                                        <h6 class="blue-text">TWG</h6>
+                                    </div>
                                     <div class="col-lg-4 col-6">
                                         <img src="{{asset('images/klien/warung_52.png')}}?v=1.0.0.1"
                                             alt="" class="img-client shadow rounded">
                                         <h6 class="blue-text">Warung Makan 52</h6>
+                                    </div>
+                                    <div class="col-lg-4 col-6">
+                                        <img src="{{asset('images/klien/yutensil.png')}}?v=1.0.0.1"
+                                            alt="" class="img-client shadow rounded">
+                                        <h6 class="blue-text">Yutensil</h6>
                                     </div>
                                     <div class="col-lg-4 col-6">
                                         <img src="{{asset('images/klien/WGM.png')}}?v=1.0.0.1"

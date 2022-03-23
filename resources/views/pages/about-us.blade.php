@@ -59,7 +59,9 @@
                         <div class="col"><img class="img-client rounded" style="background: white" src=" {{asset('images/klien/WGM.png')}}?v=1.0.0.1" alt="Clients"></div>
                         <div class="col"><img class="img-client rounded" style="background: white" src=" {{asset('images/klien/WHW2_1.png')}}?v=1.0.0.1" alt="Clients"></div>
                         <div class="col"><img class="img-client rounded" style="background: white" src=" {{asset('images/klien/logo-warisan.png')}}?v=1.0.0.1" alt="Clients"></div>
-
+                        <div class="col"><img class="img-client rounded" style="background: white" src=" {{asset('images/klien/twg-2.png')}}?v=1.0.0.1" alt="Clients"></div>
+                        <div class="col"><img class="img-client rounded" style="background: white" src=" {{asset('images/klien/yutensil.png')}}?v=1.0.0.1" alt="Clients"></div>
+                        <div class="col"><img class="img-client rounded" style="background: white" src=" {{asset('images/klien/mowilex.png')}}?v=1.0.0.1" alt="Clients"></div>
                       </div>
                       <div class=" row justify-content-center d-md-none d-flex">
                         <div class="col-6"><img class="img-client rounded" style="background: white" src=" {{asset('images/klien/kopgron.png')}}?v=1.0.0.1" alt="Clients"></div>
@@ -68,6 +70,9 @@
                         <div class="col-6"><img class="img-client rounded" style="background: white" src=" {{asset('images/klien/WGM.png')}}?v=1.0.0.1" alt="Clients"></div>
                         <div class="col-6"><img class="img-client rounded" style="background: white" src=" {{asset('images/klien/WHW2_1.png')}}?v=1.0.0.1" alt="Clients"></div>
                         <div class="col-6"><img class="img-client rounded" style="background: white" src=" {{asset('images/klien/logo-warisan.png')}}?v=1.0.0.1" alt="Clients"></div>
+                        <div class="col-6"><img class="img-client rounded" style="background: white" src=" {{asset('images/klien/twg-2.png')}}?v=1.0.0.1" alt="Clients"></div>
+                        <div class="col-6"><img class="img-client rounded" style="background: white" src=" {{asset('images/klien/yutensil.png')}}?v=1.0.0.1" alt="Clients"></div>
+                        <div class="col-6"><img class="img-client rounded" style="background: white" src=" {{asset('images/klien/mowilex.png')}}?v=1.0.0.1" alt="Clients"></div>
                       </div>
                     </div>
                 </div>
