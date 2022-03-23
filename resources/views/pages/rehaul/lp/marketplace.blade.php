@@ -138,7 +138,7 @@
                     <div class="col-lg-9 col-md-11">
                         <div class="row align-items-center">
                             <div class="col-sm-6 ">
-                                <img src="{{ asset('images/landing-service/marketplace-opt-ill.png') }}" alt="Image 1"
+                                <img src="{{ asset('images/rehaul/shops-optimization.png') }}" alt="Image 1"
                                     class="img-layanan">
                             </div>
                             <div class="col-sm-6">
@@ -163,13 +163,13 @@
 
                             </div>
                             <div class="col-sm-6 order-sm-2 order-1">
-                                <img src="{{ asset('images/landing-service/marketplace-opt-ill.png') }}" alt="Image 1"
+                                <img src="{{ asset('images/rehaul/product-opt.png') }}" alt="Image 1"
                                     class="img-layanan">
                             </div>
                         </div>
                         <div class="row align-items-center mt-5">
                             <div class="col-sm-6">
-                                <img src="{{ asset('images/landing-service/marketplace-opt-ill.png') }}" alt="Image 1"
+                                <img src="{{ asset('images/rehaul/mktp-live.png') }}" alt="Image 1"
                                     class="img-layanan">
                             </div>
                             <div class="col-sm-6">

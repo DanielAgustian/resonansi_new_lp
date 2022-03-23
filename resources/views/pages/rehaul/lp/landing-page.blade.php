@@ -47,10 +47,10 @@
                                     <img src="{{ asset('images/landing-service/landing-page-ill.png') }}" alt=""
                                         class="w-100 banner-img">
                                 </div>
-                                {{-- <div class="swiper-slide">
-                                    <img src="{{ asset('images/landing-service/landing-page-ill.png') }}" alt=""
+                                <div class="swiper-slide">
+                                    <img src="{{ asset('images/rehaul/landing-page-campaign.png') }}" alt=""
                                         class="w-100 banner-img">
-                                </div> --}}
+                                </div>
 
                             </div>
                             <div class="swiper-button-next"></div>
@@ -164,7 +164,7 @@
 
                             </div>
                             <div class="col-sm-6 order-sm-2 order-1">
-                                <img src="{{ asset('images/landing-service/landing-page-ill.png') }}" alt="Image 1"
+                                <img src="{{ asset('images/rehaul/landing-page-campaign.png') }}" alt="Image 1"
                                     class="img-layanan">
                             </div>
                         </div>

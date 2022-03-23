@@ -139,13 +139,13 @@
                     <div class="col-lg-9 col-md-11">
                         <div class="row align-items-center">
                             <div class="col-sm-6 ">
-                                <img src="{{ asset('images/landing-service/socmed-ill.png') }}" alt="Image 1"
+                                <img src="{{ asset('images/rehaul/campaign.png') }}" alt="Image 1"
                                     class="img-layanan">
                             </div>
                             <div class="col-sm-6">
                                 <h3 class="text-center text-sm-start">Campaign</h3>
                                 <p class="mb-2 text-center text-sm-start">Merupakan salah satu cara dalam mempromosikan
-                                    suatu produk atua jasa melalui berbagai macam media / platform online yang berbeda.
+                                    suatu produk atau jasa melalui berbagai macam media atau platform online yang berbeda.
                                 </p>
                                 {{-- <div class="d-flex justify-content-center justify-content-sm-start">
                                     <a target="_blank" href="" class="color btn btn-sm p-0 btn-link"><u>Selengkapnya</u> <i
@@ -160,17 +160,16 @@
                                 <p class="mb-2 text-center text-sm-start">Lorem ipsum dolor sit amet, consectetur
                                     adipisicing elit.
                                     Nisi deserunt doloremque facilis rem, in recusandae, vel.</p>
-                                <div class="d-flex justify-content-center justify-content-sm-start">
-                                    <a target="_blank" href="https://icons8.com"
-                                        class="color btn btn-sm p-0 btn-link"><u>Selengkapnya</u> <i
-                                            class="icon-line-arrow-right"></i></a>
-                                </div>
+                                
                             </div>
-
+                            <div class="col-sm-6 order-sm-2 order-1">
+                                <img src="{{ asset('images/rehaul/mtrix-plan.png') }}" alt="Image 1"
+                                    class="img-layanan">
+                            </div>
                         </div>
                         <div class="row align-items-center mt-5">
                             <div class="col-sm-6">
-                                <img src="{{ asset('images/landing-service/socmed-ill.png') }}" alt="Image 1"
+                                <img src="{{ asset('images/rehaul/content-manage.png') }}" alt="Image 1"
                                     class="img-layanan">
                             </div>
                             <div class="col-sm-6">
