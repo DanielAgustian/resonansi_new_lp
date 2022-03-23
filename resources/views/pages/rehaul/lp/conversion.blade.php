@@ -5,19 +5,22 @@
 @section('css')
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <style>
-        .img-layanan{
+        .img-layanan {
             height: 200px;
         }
-        @media screen and (max-width: 996px){
-            .img-layanan{
+
+        @media screen and (max-width: 996px) {
+            .img-layanan {
                 height: 170px;
             }
         }
-        @media screen and (max-width: 450px){
-            .img-layanan{
+
+        @media screen and (max-width: 450px) {
+            .img-layanan {
                 height: 150px;
             }
         }
+
     </style>
 @endsection
 @section('banner')
@@ -36,12 +39,15 @@
                     <div class="col-lg-6 order-lg-1 order-2 mt-lg-0 mt-4">
 
 
-                        <h2 class="text-white fw-bold mb-3">Sudah pernah beriklan tetapi
-                            Hasilnya kurang memuaskan?
+                        <h2 class="text-white fw-bold mb-3">Sudah sering beriklan, tapi hasilnya belum terlihat dan kurang
+                            memuaskan?
+
 
                         </h2>
-                        <p class="text-white fw-normal mb-0">“Tenang bersama Resonansi, kami akan mempromosikan produk kamu
-                            dengan STRATEGY dan AUDIENCE yang tepat dengan layanan Conversion Optimization.”
+                        <p class="text-white fw-normal mb-0">“Optimalkan promosi bisnis kamu dengan strategi dan target pasar
+                            yang tepat melalui layanan Conversion Optimization. Hasilkan konversi yang memuaskan dan
+                            menguntungkan bersama Resonansi.”
+
 
                         </p>
                         <div class="d-flex align-items-center justify-content-lg-start justify-content-center mt-5">
@@ -84,7 +90,7 @@
                 <svg preserveAspectRatio="xMidYMax meet" viewBox="0 0 1600 100" data-height="100">
                     <path style="opacity: 1;fill: rgba(255,255,255,0.75);"
                         d="M1040,56c0.5,0,1,0,1.6,0c-16.6-8.9-36.4-15.7-66.4-15.7c-56,0-76.8,23.7-106.9,41C881.1,89.3,895.6,96,920,96
-                                                                                                      C979.5,96,980,56,1040,56z">
+                                                                                                              C979.5,96,980,56,1040,56z">
                     </path>
                     <path style="opacity: 1;fill: rgba(255,255,255,0.75);"
                         d="M1699.8,96l0,10H1946l-0.3-6.9c0,0,0,0-88,0s-88.6-58.8-176.5-58.8c-51.4,0-73,20.1-99.6,36.8 c14.5,9.6,29.6,18.9,58.4,18.9C1699.8,96,1699.8,96,1699.8,96z">
@@ -99,7 +105,7 @@
                         d="M680,96c23.7,0,38.1-6.3,50.5-13.9C699.6,64.8,679,40.3,622.2,40.3c-30,0-49.8,6.8-66.3,15.8 c1.3,0,2.7-0.1,4.1-0.1C619.7,56,620.2,96,680,96z">
                     </path>
                     <path style="opacity: 1;fill: rgba(255,255,255,0.75);" d="M-40,95.6c28.3,0,43.3-8.7,57.4-18C-9.6,60.8-31,40.2-83.2,40.2c-14.3,0-26.3,1.6-36.8,4.2V106h60V96L-40,95.6
-                                                                                                      z"></path>
+                                                                                                              z"></path>
                     <path style="opacity: 1;fill: rgba(255,255,255,0.3);;"
                         d="M504,73.4c-2.6-0.8-5.7-1.4-9.6-1.4c-19.4,0-19.6,13-39,13c-19.4,0-19.5-13-39-13c-14,0-18,6.7-26.3,10.4 C402.4,89.9,416.7,96,440,96C472.5,96,487.5,84.2,504,73.4z">
                     </path>
@@ -163,13 +169,11 @@
                                 <h4 class="text-center mt-1">Google Ads</h4>
                             </div>
                             <div class="col-lg-3 col-sm-4 col-6">
-                                <img src="{{ asset('images/rehaul/fb-ads.png') }}" alt="Image 1"
-                                    class="img-layanan">
+                                <img src="{{ asset('images/rehaul/fb-ads.png') }}" alt="Image 1" class="img-layanan">
                                 <h4 class="text-center mt-1">Facebook Ads</h4>
                             </div>
                             <div class="col-lg-3 col-sm-4 col-6">
-                                <img src="{{ asset('images/rehaul/ig-ads.png') }}" alt="Image 1"
-                                    class="img-layanan">
+                                <img src="{{ asset('images/rehaul/ig-ads.png') }}" alt="Image 1" class="img-layanan">
                                 <h4 class="text-center mt-1">Instagram Ads</h4>
                             </div>
                             <div class="w-100 d-lg-flex d-none"></div>
@@ -184,8 +188,7 @@
                                 <h4 class="text-center mt-1">Email Marketing</h4>
                             </div>
                             <div class="col-lg-3 col-sm-4 col-6">
-                                <img src="{{ asset('images/rehaul/seo.png') }}" alt="Image 1"
-                                    class="img-layanan">
+                                <img src="{{ asset('images/rehaul/seo.png') }}" alt="Image 1" class="img-layanan">
                                 <h4 class="text-center mt-1">Search Engine Optimization</h4>
                             </div>
                             <div class="w-100 d-lg-flex d-none"></div>
@@ -195,7 +198,7 @@
                                 <h4 class="text-center mt-1">KOL Management</h4>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
 
@@ -603,14 +606,14 @@
                                                     @endif
                                                 @endfor
                                                 <!-- <option value="paket-technology-conversion-opt" selected>Paket Technology Conversion Optimization</option>
-                                                                                                            <option value="paket-virtual-event">Paket Virtual Event / Webinar</option>
-                                                                                                            <option value="paket-marketplace">Paket Marketplace</option>
-                                                                                                            <option value="technology">Technology</option>
-                                                                                                            <option value="digital-strategy">Digital Strategy</option>
+                                                                                                                    <option value="paket-virtual-event">Paket Virtual Event / Webinar</option>
+                                                                                                                    <option value="paket-marketplace">Paket Marketplace</option>
+                                                                                                                    <option value="technology">Technology</option>
+                                                                                                                    <option value="digital-strategy">Digital Strategy</option>
 
-                                                                                                            <option value="marketplace-opt">Marketplace Optimization</option>
-                                                                                                            <option value="multimedia">Multimedia </option>
-                                                                                                            <option value="cloud-warehouse-software">Cloud Warehouse Software</option> -->
+                                                                                                                    <option value="marketplace-opt">Marketplace Optimization</option>
+                                                                                                                    <option value="multimedia">Multimedia </option>
+                                                                                                                    <option value="cloud-warehouse-software">Cloud Warehouse Software</option> -->
                                             </select>
 
                                         </div>
