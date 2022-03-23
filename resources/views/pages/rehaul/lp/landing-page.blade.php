@@ -44,7 +44,7 @@
                                         class="w-100 banner-img">
                                 </div>
                                 <div class="swiper-slide d-flex flex-column h-100 justify-content-center">
-                                    <img src="{{ asset('images/landing-service/landing-page-ill.png') }}" alt=""
+                                    <img src="{{ asset('images/rehaul/website.png') }}" alt=""
                                         class="w-100 banner-img">
                                 </div>
                                 <div class="swiper-slide">

@@ -190,7 +190,7 @@
 
                             </div>
                             <div class="col-sm-6">
-                                <img src="{{ asset('images/landing-service/socmed-ill.png') }}" alt="Image 1"
+                                <img src="{{ asset('images/rehaul/branding.png') }}" alt="Image 1"
                                     class="img-layanan">
                             </div>
 
@@ -198,7 +198,7 @@
                         <div class="row align-items-center mt-5">
 
                             <div class="col-sm-6">
-                                <img src="{{ asset('images/landing-service/socmed-ill.png') }}" alt="Image 1"
+                                <img src="{{ asset('images/rehaul/brand-logo.png') }}" alt="Image 1"
                                     class="img-layanan">
                             </div>
                             <div class="col-sm-6">
