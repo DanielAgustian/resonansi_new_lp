@@ -490,11 +490,11 @@
                                             alt="" class="img-client shadow rounded">
                                         <h6 class="blue-text">Kopi Grontol</h6>
                                     </div>
-                                    <div class="col-lg-4 col-6">
+                                    {{-- <div class="col-lg-4 col-6">
                                         <img src="{{asset('images/klien/sweet_monsta.png')}}?v=1.0.0.1"
                                             alt="" class="img-client shadow rounded">
                                         <h6 class="blue-text">Sweet Monsta</h6>
-                                    </div>
+                                    </div> --}}
                                     <div class="col-lg-4 col-6">
                                         <img src="{{asset('images/klien/warung_52.png')}}?v=1.0.0.1"
                                             alt="" class="img-client shadow rounded">

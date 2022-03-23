@@ -235,7 +235,7 @@
             <div class="section section-features section-klien bg-transparent mt-0 p-0 clearfix">
                 <div class="container clearfix">
                     <h2 class="center">Siapa Saja Pengguna Jasa Kami?</h2>
-                    <div class="row col-mb-50 col-mb-lg-80">
+                    <div class="row col-mb-50 col-mb-lg-80 justify-content-between">
                         <div class="col-lg-2 col-md-4 col-6">
                             <div class="feature-box media-box mb-2">
                                 <img src="{{ asset('images/klien/kopgron.png') }}?v=1.0.0.1" alt=""
@@ -246,7 +246,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-md-4 col-6">
+                        {{-- <div class="col-lg-2 col-md-4 col-6">
                             <div class="feature-box media-box mb-2">
                                 <img src="{{ asset('images/klien/sweet_monsta.png') }}?v=1.0.0.1" alt=""
                                     class="w-100">
@@ -257,7 +257,7 @@
                             </div>
 
 
-                        </div>
+                        </div> --}}
                         <div class="col-lg-2 col-md-4 col-6">
                             <div class="feature-box media-box mb-2">
                                 <img src="{{ asset('images/klien/warung_52.png') }}?v=1.0.0.1" alt=""
