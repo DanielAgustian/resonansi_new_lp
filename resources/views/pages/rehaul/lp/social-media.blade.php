@@ -51,8 +51,7 @@
 
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="{{ asset('images/rehaul/campaign.png') }}" alt=""
-                                        class="w-100 banner-img">
+                                    <img src="{{ asset('images/rehaul/campaign.png') }}" alt="" class="w-100 banner-img">
                                 </div>
 
                             </div>
@@ -71,7 +70,7 @@
                 <svg preserveAspectRatio="xMidYMax meet" viewBox="0 0 1600 100" data-height="100">
                     <path style="opacity: 1;fill: rgba(255,255,255,0.75);"
                         d="M1040,56c0.5,0,1,0,1.6,0c-16.6-8.9-36.4-15.7-66.4-15.7c-56,0-76.8,23.7-106.9,41C881.1,89.3,895.6,96,920,96
-                                                                                                  C979.5,96,980,56,1040,56z">
+                                                                                                      C979.5,96,980,56,1040,56z">
                     </path>
                     <path style="opacity: 1;fill: rgba(255,255,255,0.75);"
                         d="M1699.8,96l0,10H1946l-0.3-6.9c0,0,0,0-88,0s-88.6-58.8-176.5-58.8c-51.4,0-73,20.1-99.6,36.8 c14.5,9.6,29.6,18.9,58.4,18.9C1699.8,96,1699.8,96,1699.8,96z">
@@ -86,7 +85,7 @@
                         d="M680,96c23.7,0,38.1-6.3,50.5-13.9C699.6,64.8,679,40.3,622.2,40.3c-30,0-49.8,6.8-66.3,15.8 c1.3,0,2.7-0.1,4.1-0.1C619.7,56,620.2,96,680,96z">
                     </path>
                     <path style="opacity: 1;fill: rgba(255,255,255,0.75);" d="M-40,95.6c28.3,0,43.3-8.7,57.4-18C-9.6,60.8-31,40.2-83.2,40.2c-14.3,0-26.3,1.6-36.8,4.2V106h60V96L-40,95.6
-                                                                                                  z"></path>
+                                                                                                      z"></path>
                     <path style="opacity: 1;fill: rgba(255,255,255,0.3);;"
                         d="M504,73.4c-2.6-0.8-5.7-1.4-9.6-1.4c-19.4,0-19.6,13-39,13c-19.4,0-19.5-13-39-13c-14,0-18,6.7-26.3,10.4 C402.4,89.9,416.7,96,440,96C472.5,96,487.5,84.2,504,73.4z">
                     </path>
@@ -160,9 +159,10 @@
                         <div class="row align-items-center mt-5">
                             <div class="col-sm-6 mb-4 mb-sm-0 order-sm-1 order-2">
                                 <h3 class="text-center text-sm-start">Matrix Plan</h3>
-                                <p class="mb-2 text-center text-sm-start">Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit.
-                                    Nisi deserunt doloremque facilis rem, in recusandae, vel.</p>
+                                <p class="mb-2 text-center text-sm-start">Strategi pengelolaan konten-konten yang akan
+                                    diunggah ke social media, mulai dari jenis konten, materi konten, isi konten hingga
+                                    penyusunan jadwal unggahan setiap kontennya.
+                                </p>
 
                             </div>
                             <div class="col-sm-6 order-sm-2 order-1">
@@ -601,14 +601,14 @@
                                                     @endif
                                                 @endfor
                                                 <!-- <option value="paket-technology-conversion-opt" selected>Paket Technology Conversion Optimization</option>
-                                                                                                        <option value="paket-virtual-event">Paket Virtual Event / Webinar</option>
-                                                                                                        <option value="paket-marketplace">Paket Marketplace</option>
-                                                                                                        <option value="technology">Technology</option>
-                                                                                                        <option value="digital-strategy">Digital Strategy</option>
+                                                                                                            <option value="paket-virtual-event">Paket Virtual Event / Webinar</option>
+                                                                                                            <option value="paket-marketplace">Paket Marketplace</option>
+                                                                                                            <option value="technology">Technology</option>
+                                                                                                            <option value="digital-strategy">Digital Strategy</option>
 
-                                                                                                        <option value="marketplace-opt">Marketplace Optimization</option>
-                                                                                                        <option value="multimedia">Multimedia </option>
-                                                                                                        <option value="cloud-warehouse-software">Cloud Warehouse Software</option> -->
+                                                                                                            <option value="marketplace-opt">Marketplace Optimization</option>
+                                                                                                            <option value="multimedia">Multimedia </option>
+                                                                                                            <option value="cloud-warehouse-software">Cloud Warehouse Software</option> -->
                                             </select>
 
                                         </div>
