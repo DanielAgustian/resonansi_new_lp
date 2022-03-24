@@ -83,20 +83,20 @@
                   <nav class="primary-menu with-arrows not-dark {{set_none_list()}}">
 
                       <ul class="menu-container ">
-                          <li class="menu-item "><a class="menu-link" href="">
+                          <li class="menu-item {{set_active_navbar('aboutPageV2')}}"><a class="menu-link" href="{{route('aboutPageV2')}}">
                                   <div>About Us</div>
                               </a></li>
-                          <li class="menu-item"><a class="menu-link" href="">
+                          <li class="menu-item {{set_active_navbar('servicePageV2')}}"><a class="menu-link" href="{{route('servicePageV2')}}">
                                   <div>Services</div>
                               </a></li>
 
                           <li class="menu-item {{set_active_navbar('pricingPageV2')}}"><a class="menu-link" href="{{ route('pricingPageV2') }}">
                                   <div>Pricing</div>
                               </a></li>
-                          <li class="menu-item"><a class="menu-link" href="">
+                          <li class="menu-item {{set_active_navbar('blogsPageV2')}}"><a class="menu-link" href="{{route('blogsPageV2')}}">
                                   <div>Blog</div>
                               </a></li>
-                          <li class="menu-item"><a class="menu-link" href="">
+                          <li class="menu-item {{set_active_navbar('careerPageV2')}}"><a class="menu-link" href="{{route('careerPageV2')}}">
                                   <div>Career</div>
                               </a></li>
                         <li class="menu-item {{set_active_navbar('contactUsV2')}}"><a class="menu-link" href="{{ route('contactUsV2') }}">

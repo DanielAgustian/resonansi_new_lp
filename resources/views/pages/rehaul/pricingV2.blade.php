@@ -1,6 +1,6 @@
 @extends('master-landing')
 @section('page')
-    | Home
+    | Pricing
 @endsection
 @section('css')
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />

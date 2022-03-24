@@ -16,9 +16,9 @@
                          <h4 class="ls0 mb-3 nott">Pages</h4>
 
                          <ul class="list-unstyled iconlist ms-0">
-                             <li class="mb-2"><a href="{{ route('aboutPage') }}">About Us</a></li>
-                             <li class="mb-2"><a href="{{ route('servicePage') }}">Our Services</a></li>
-                             <li class="mb-2"><a href="{{ route('blogsPage') }}">Blog</a></li>
+                             <li class="mb-2"><a href="{{ route('aboutPageV2') }}">About Us</a></li>
+                             <li class="mb-2"><a href="{{ route('servicePageV2') }}">Our Services</a></li>
+                             <li class="mb-2"><a href="{{ route('blogsPageV2') }}">Blog</a></li>
 
                          </ul>
 
@@ -32,9 +32,9 @@
 
                          <ul class="list-unstyled iconlist ms-0">
 
-                             <li class="mb-2"><a href="{{ route('pricingPage') }}">Pricing</a></li>
-                             <li class="mb-2"><a href="{{ route('contactPage') }}">Contact Us</a></li>
-                             <li class="mb-2"><a href="{{ route('karirPage') }}">Career</a> </li>
+                             <li class="mb-2"><a href="{{ route('pricingPageV2') }}">Pricing</a></li>
+                             <li class="mb-2"><a href="{{ route('contactUsV2') }}">Contact Us</a></li>
+                             <li class="mb-2"><a href="{{ route('careerPageV2') }}">Career</a> </li>
                          </ul>
 
                      </div>

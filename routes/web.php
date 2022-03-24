@@ -79,3 +79,7 @@ Route::get('/digital-marketing', [NewLPController::class, 'digitalMarketingPageV
 Route::get('/', [NewHomeController::class, 'homePageV2'])->name('homePageV2');
 Route::get('/pricing', [NewHomeController::class, 'pricingPageV2'])->name('pricingPageV2');
 Route::get('/contact-us', [NewHomeController::class, 'contactUsV2'])->name('contactUsV2');
+Route::get('/service', [NewHomeController::class, 'servicePageV2'])->name('servicePageV2');
+Route::get('/about-us', [NewHomeController::class, 'aboutPageV2'])->name('aboutPageV2');
+Route::get('/blogs', [NewHomeController::class, 'blogsPageV2'])->name('blogsPageV2');
+Route::get('/career', [NewHomeController::class, 'careerPageV2'])->name('careerPageV2');

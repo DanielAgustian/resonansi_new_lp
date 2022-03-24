@@ -35,7 +35,7 @@
 
     <link rel="stylesheet" href="{{ asset('asset/css/rehaul/fonts.css') }}" type="text/css" />
     <link rel="stylesheet" href="{{ asset('asset/css/rehaul/movers.css') }}" type="text/css" />
-    <link rel="stylesheet" href="{{ asset('asset/css/rehaul/new-style.css') }}?v=1.0.7" type="text/css" />
+    <link rel="stylesheet" href="{{ asset('asset/css/rehaul/new-style.css') }}?v=1.0.8" type="text/css" />
     <!-- / -->
     @yield('css')
 

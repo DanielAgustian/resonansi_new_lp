@@ -267,4 +267,7 @@ form .form-control, form .form-select{
     .banner-img{
         max-height: 250px;
     }
+    .header-size-sm #header-wrap #logo img{
+        height: 50px !important;
+    }
 }
