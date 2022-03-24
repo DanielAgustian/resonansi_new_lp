@@ -172,7 +172,7 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="d-flex justify-content-center mt-4 justify-content-sm-end">
-                                        <button class="btn btn-blue btn-bigger">Order Now!</button>
+                                        <button class="btn btn-blue btn-bigger btn-order">Order Now!</button>
                                     </div>
                                 </div>
                             </div>
@@ -211,7 +211,7 @@
                                         Marketplace Ads
                                     </span>
                                     <div class="d-flex justify-content-center mt-4 justify-content-sm-start">
-                                        <button class="btn btn-blue btn-bigger">Order Now!</button>
+                                        <button class="btn btn-blue btn-bigger btn-order">Order Now!</button>
                                     </div>
                                 </div>
                             </div>
@@ -294,7 +294,7 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="d-flex justify-content-center mt-4 justify-content-sm-end">
-                                        <button class="btn btn-blue btn-bigger">Order Now</button>
+                                        <button class="btn btn-blue btn-bigger btn-order">Order Now</button>
                                     </div>
                                 </div>
                             </div>
@@ -329,9 +329,7 @@
 
 
                                     <div class="d-flex justify-content-center mt-4 justify-content-sm-start">
-                                        <a target="_blank" href=""
-                                            class="color btn btn-sm p-0 btn-link"><u>Selengkapnya</u> <i
-                                                class="icon-line-arrow-right"></i></a>
+                                        <button class="btn btn-blue btn-bigger btn-order">Order Now</button>
                                     </div>
                                 </div>
                             </div>
