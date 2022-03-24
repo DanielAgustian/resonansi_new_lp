@@ -45,8 +45,8 @@
 
                         </p>
                         <div class="d-flex align-items-center justify-content-lg-start justify-content-center mt-5">
-                            <button class="btn btn-blue mr-4 me-4 btn-bigger btn-klien">Our Client</button>
-                            <button class="btn btn-white btn-bigger ">Pricing</button>
+                            <button class="btn btn-blue mr-4 me-4 btn-bigger btn-klien" style="min-width: 145px">Our Client</button>
+                            <a href="{{route('pricingPageV2')}}" class="btn btn-white btn-bigger " style="min-width: 145px">Pricing</a>
                         </div>
 
                     </div>
@@ -99,8 +99,8 @@
                                 </div> --}}
 
                             </div>
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
+                            {{-- <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div> --}}
                             <div class="swiper-pagination"></div>
                         </div>
                     </div>
@@ -776,7 +776,7 @@
             </div>
             <div class="" style="min-height: 100px">
                 <div class="d-flex flex-column align-items-center justify-content-center">
-                    <h2 class="text-center fw-semibold" style="margin-bottom: 20px">Masih Kurang Jelas? Hubungi <span class="span-bl">Resonansi</span> !</h2>
+                    <h2 class="text-center fw-semibold" style="margin-bottom: 20px">Masih Kurang Jelas, Hubungi<span class="span-bl"> Tim Resonansi</span> !</h2>
                     <button class="btn btn-blue mt-4 btn-order btn-bigger">Click Here</button>
                     <div style="height: 40px"></div>
                 </div>
@@ -1138,10 +1138,7 @@
                 el: ".swiper-pagination",
                 clickable: false,
             },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
+            
             autoplay: {
                 delay: 15000,
                 disableOnInteraction: false,
@@ -1161,6 +1158,7 @@
             },
             pagination: {
                 el: ".swiper-pagination",
+                clickable: true,
             },
             mousewheel: false,
             keyboard: false,

@@ -38,10 +38,10 @@
           <div class="container">
               <div class="header-row justify-content-between  flex-lg-row ">
                   <div id="logo" class="border-end-0">
-                      <a href="{{ route('homepage2') }}" class="standard-logo"
+                      <a href="{{ route('homePageV2') }}" class="standard-logo"
                           data-dark-logo="{{ asset('images/logo-resonansi-putih-v2.png') }}"><img
                               src="{{ asset('images/logo-resonansi-putih-v2.png') }}" alt="Canvas Logo"></a>
-                      <a href="{{ route('homepage2') }}" class="retina-logo "><img
+                      <a href="{{ route('homePageV2') }}" class="retina-logo "><img
                               src="{{ asset('images/logo-resonansi-putih-v2.png') }}" alt="Canvas Logo"
                               class="d-lg-flex d-none">
                           <img src="{{ asset('images/logo-resonansi-putih-v2.png') }}" alt="Resonansi"
