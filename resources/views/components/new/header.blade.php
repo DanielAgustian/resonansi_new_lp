@@ -83,23 +83,23 @@
                   <nav class="primary-menu with-arrows not-dark {{set_none_list()}}">
 
                       <ul class="menu-container ">
-                          <li class="menu-item current"><a class="menu-link" href="{{ route('aboutPage') }}">
+                          <li class="menu-item "><a class="menu-link" href="">
                                   <div>About Us</div>
                               </a></li>
-                          <li class="menu-item"><a class="menu-link" href="{{ route('servicePage') }}">
+                          <li class="menu-item"><a class="menu-link" href="">
                                   <div>Services</div>
                               </a></li>
 
-                          <li class="menu-item"><a class="menu-link" href="{{ route('pricingPage') }}">
+                          <li class="menu-item {{set_active_navbar('pricingPageV2')}}"><a class="menu-link" href="{{ route('pricingPageV2') }}">
                                   <div>Pricing</div>
                               </a></li>
-                          <li class="menu-item"><a class="menu-link" href="{{ route('blogsPage') }}">
+                          <li class="menu-item"><a class="menu-link" href="">
                                   <div>Blog</div>
                               </a></li>
-                          <li class="menu-item"><a class="menu-link" href="{{ route('karirPage') }}">
+                          <li class="menu-item"><a class="menu-link" href="">
                                   <div>Career</div>
                               </a></li>
-                          <li class="menu-item"><a class="menu-link" href="{{ route('contactPage') }}">
+                        <li class="menu-item {{set_active_navbar('contactUsV2')}}"><a class="menu-link" href="{{ route('contactUsV2') }}">
                                   <div>Contact</div>
                               </a></li>
                           <li class="menu-item dropdown mb-lg-0 mb-1">

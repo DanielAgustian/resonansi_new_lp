@@ -154,10 +154,7 @@
                                     dimulai dari penerimaan pemesanan hingga pengiriman produk sampai ke alamat penerima
                                     atau pelanggan.
                                     .</p>
-                                {{-- <div class="d-flex justify-content-center justify-content-sm-start">
-                                    <a target="_blank" href="" class="color btn btn-sm p-0 btn-link"><u>Selengkapnya</u> <i
-                                            class="icon-line-arrow-right"></i></a>
-                                </div> --}}
+                                
 
                             </div>
                         </div>

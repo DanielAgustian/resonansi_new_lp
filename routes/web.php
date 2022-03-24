@@ -7,7 +7,7 @@ use App\Http\Controllers\ProcessController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\LabController;
 use App\Http\Controllers\NewLPController;
-
+use App\Http\Controllers\NewHomeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -43,13 +43,13 @@ Route::post('contact/create', [MeetController::class, 'makeContactUs'])->name('m
 
 
 Route::get('/previous-version', [LandingController::class, 'homepage'])->name('homepage');
-Route::get('/', [LandingController::class, 'homepage2'])->name('homepage2');
-Route::get('/about-us', [LandingController::class, 'aboutPage'])->name('aboutPage');
-Route::get('/pricing', [LandingController::class, 'pricingPage'])->name('pricingPage');
-Route::get('/services', [LandingController::class, 'servicePage'])->name('servicePage');
-Route::get('/contact-us', [LandingController::class, 'contactPage'])->name('contactPage');
-Route::get('/blogs', [LandingController::class, 'blogsPage'])->name('blogsPage');
-Route::get('/karir', [LandingController::class, 'karirPage'])->name('karirPage');
+Route::get('/v1', [LandingController::class, 'homepage2'])->name('homepage2');
+Route::get('/v1/about-us', [LandingController::class, 'aboutPage'])->name('aboutPage');
+Route::get('/v1/pricing', [LandingController::class, 'pricingPage'])->name('pricingPage');
+Route::get('/v1/services', [LandingController::class, 'servicePage'])->name('servicePage');
+Route::get('/v1/contact-us', [LandingController::class, 'contactPage'])->name('contactPage');
+Route::get('/v1/blogs', [LandingController::class, 'blogsPage'])->name('blogsPage');
+Route::get('/v1/karir', [LandingController::class, 'karirPage'])->name('karirPage');
 Route::get('/archive/digital-marketing', [LandingController::class, 'landing'])->name('landing');
 // Landing Service
 Route::get('/archive/marketplace-optimization', [LandingController::class, 'marketplacePage'])->name('marketplacePage');
@@ -74,3 +74,8 @@ Route::get('/cloud-warehouse-software', [NewLPController::class, 'warehousePageV
 Route::get('/conversion-optimization', [NewLPController::class, 'conversionPageV2'])->name('conversionPageV2');
 
 Route::get('/digital-marketing', [NewLPController::class, 'digitalMarketingPageV2'])->name('digitalMarketingPageV2');
+
+// NEW HOME PAGE
+Route::get('/', [NewHomeController::class, 'homePageV2'])->name('homePageV2');
+Route::get('/pricing', [NewHomeController::class, 'pricingPageV2'])->name('pricingPageV2');
+Route::get('/contact-us', [NewHomeController::class, 'contactUsV2'])->name('contactUsV2');

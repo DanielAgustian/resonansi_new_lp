@@ -321,7 +321,6 @@
                                     class="w-100">
                                 <div class="fbox-content mt-1">
                                     <h3 class="nott fw-semibold text-center">Yutensil</h3>
-
                                 </div>
                             </div>
 

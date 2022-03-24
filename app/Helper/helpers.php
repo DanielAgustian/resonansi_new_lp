@@ -30,3 +30,16 @@ function set_none_list( $output = ' d-none')
    }
  }
 }
+function set_active_navbar($uri, $output = ' current'){
+  if( is_array($uri) ) {
+    foreach ($uri as $u) {
+      if (Route::is($u)) {
+        return $output;
+      }
+    }
+  } else {
+    if (Route::is($uri)){
+      return $output;
+    }
+  }
+}
