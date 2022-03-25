@@ -197,13 +197,13 @@
                 <div class="container">
                     <div class="row align-items-center justify-content-center center my-4">
 
-                        <div class="col-sm-8">
+                        <div class="col-sm-10">
                             <div class="heading-block border-bottom-0 mb-4">
-                                <h2 class="fw-semibold ls0 nott mb-3" style="font-size: 44px; line-height: 1.3">Ingin Tahu Layanan Resonansi Ada Apa Saja?</h2>
-                                <p>Klik tombol di bawah ini untuk melihat layanan Resonansi selengkapnya!</p>
+                                <h2 class="fw-semibold ls0 nott mb-3" style="font-size: 31px; line-height: 1.3">Ingin Mengetahui Layanan Kami Lebih Lanjut?</h2>
+                                <p>Klik tombol di bawah ini jika ingin mengetahui lebih lanjut tentang apa yang bisa dilakukan Resonansi!</p>
                             </div>
-                            <a href="demo-movers-contact.html"
-                                class="button button-white button-light button-rounded fw-medium m-0 btn-bigger">Klik Disini!</a>
+                            <a href="{{route('servicePageV2')}}"
+                                class="button button-white button-light button-rounded fw-medium m-0">Klik disini</a>
                         </div>
 
                     </div>
