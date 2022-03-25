@@ -27,7 +27,7 @@
 
         <div class="container clearfix">
             <h1>Contact Us</h1>
-            <span>Get In Touch</span>
+            <span>Penasaran? Hubungi Kami!</span>
             {{-- <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{route('homePageV2')}}">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page"><a href="{{route('contactUsV2')}}">Contact us</a></li>
