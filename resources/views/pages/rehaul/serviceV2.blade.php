@@ -21,10 +21,10 @@
         <div class="container clearfix">
             <h1 class="nott">Service</h1>
             <span>Layanan dari Kami untuk Anda</span>
-            <ol class="breadcrumb">
+            {{-- <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{ route('homePageV2') }}">Home</a></li>
                 <li class="breadcrumb-item"><a href="{{ route('servicePageV2') }}">Services</a></li>
-            </ol>
+            </ol> --}}
         </div>
 
     </section>

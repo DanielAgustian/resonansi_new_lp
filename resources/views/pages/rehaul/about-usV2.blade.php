@@ -31,10 +31,10 @@
         <div class="container clearfix">
             <h1 class="nott">About Us</h1>
             <span>Siapa Kami dan Filosofi Kami</span>
-            <ol class="breadcrumb">
+            {{-- <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{ route('homePageV2') }}">Home</a></li>
                 <li class="breadcrumb-item"><a href="{{ route('aboutPageV2') }}">About Us</a></li>
-            </ol>
+            </ol> --}}
 
         </div>
 

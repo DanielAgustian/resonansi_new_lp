@@ -20,10 +20,10 @@
             
             <h1 class="nott">Pricing</h1>
             <span>Pelayanan Maksimal dengan Harga Minimal</span>
-            <ol class="breadcrumb">
+            {{-- <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{ route('homePageV2') }}">Home</a></li>
                 <li class="breadcrumb-item"><a href="{{ route('pricingPageV2') }}">Pricing</a></li>
-            </ol>
+            </ol> --}}
             <div style="height: 30px"></div>
         </div>
         <div class="svg-separator">
