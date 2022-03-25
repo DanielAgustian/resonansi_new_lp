@@ -42,7 +42,6 @@ Route::post('contact/create', [MeetController::class, 'makeContactUs'])->name('m
 
 
 
-Route::get('/previous-version', [LandingController::class, 'homepage'])->name('homepage');
 Route::get('/v1', [LandingController::class, 'homepage2'])->name('homepage2');
 Route::get('/v1/about-us', [LandingController::class, 'aboutPage'])->name('aboutPage');
 Route::get('/v1/pricing', [LandingController::class, 'pricingPage'])->name('pricingPage');
@@ -72,7 +71,6 @@ Route::get('/social-media-marketing', [NewLPController::class, 'socMedPageV2'])-
 Route::get('/landing-page', [NewLPController::class, 'landingPageV2'])->name('landingPageV2');
 Route::get('/cloud-warehouse-software', [NewLPController::class, 'warehousePageV2'])->name('warehousePageV2');
 Route::get('/conversion-optimization', [NewLPController::class, 'conversionPageV2'])->name('conversionPageV2');
-
 Route::get('/digital-marketing', [NewLPController::class, 'digitalMarketingPageV2'])->name('digitalMarketingPageV2');
 
 // NEW HOME PAGE

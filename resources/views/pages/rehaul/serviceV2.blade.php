@@ -64,7 +64,7 @@
                                         NGERTIYO (Gamification Education Business))
                                     </span>
                                     <div class="d-flex justify-content-center mt-4 justify-content-sm-start me-sm-0 me-3">
-                                        <button class="btn btn-blue btn-bigger btn-order">Order Now</button>
+                                        <button class="btn btn-blue btn-bigger btn-order" data-type="technology">Order Now</button>
                                     </div>
                                 </div>
                             </div>
@@ -172,7 +172,7 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="d-flex justify-content-center mt-4 justify-content-sm-end">
-                                        <button class="btn btn-blue btn-bigger btn-order">Order Now!</button>
+                                        <button class="btn btn-blue btn-bigger btn-order" data-type=" digital-strategy">Order Now!</button>
                                     </div>
                                 </div>
                             </div>
@@ -211,7 +211,7 @@
                                         Marketplace Ads
                                     </span>
                                     <div class="d-flex justify-content-center mt-4 justify-content-sm-start">
-                                        <button class="btn btn-blue btn-bigger btn-order">Order Now!</button>
+                                        <button class="btn btn-blue btn-bigger btn-order" data-type="marketplace-opt">Order Now!</button>
                                     </div>
                                 </div>
                             </div>
@@ -294,7 +294,7 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="d-flex justify-content-center mt-4 justify-content-sm-end">
-                                        <button class="btn btn-blue btn-bigger btn-order">Order Now</button>
+                                        <button class="btn btn-blue btn-bigger btn-order" data-type="multimedia">Order Now</button>
                                     </div>
                                 </div>
                             </div>
@@ -329,7 +329,7 @@
 
 
                                     <div class="d-flex justify-content-center mt-4 justify-content-sm-start">
-                                        <button class="btn btn-blue btn-bigger btn-order">Order Now</button>
+                                        <button class="btn btn-blue btn-bigger btn-order" data-type="cloud-warehouse-software">Order Now</button>
                                     </div>
                                 </div>
                             </div>
