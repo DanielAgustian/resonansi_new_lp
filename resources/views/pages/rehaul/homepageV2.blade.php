@@ -217,7 +217,7 @@
                                             NGERTIYO (Gamification Education Business))
                                         </span>
                                         <div class="d-flex justify-content-center mt-4 justify-content-sm-start">
-                                            <a target="_blank" href=""
+                                            <a target="_blank" href="{{route('servicePageV2')}}"
                                                 class="color btn btn-sm p-0 btn-link"><u>Selengkapnya</u> <i
                                                     class="icon-line-arrow-right"></i></a>
                                         </div>
@@ -266,7 +266,7 @@
                                             <i class="fas fa-check-circle ms-2 mt-1 d-sm-inline-flex d-none"></i>
                                         </span>
                                         <div class="d-flex justify-content-center mt-4 justify-content-sm-end">
-                                            <a target="_blank" href=""
+                                            <a target="_blank" href="{{route('servicePageV2')}}"
                                                 class="color btn btn-sm p-0 btn-link"><u>Selengkapnya</u> <i
                                                     class="icon-line-arrow-right"></i></a>
                                         </div>
@@ -308,7 +308,7 @@
                                             Marketplace Ads
                                         </span>
                                         <div class="d-flex justify-content-center mt-4 justify-content-sm-start">
-                                            <a target="_blank" href=""
+                                            <a target="_blank" href="{{route('servicePageV2')}}"
                                                 class="color btn btn-sm p-0 btn-link"><u>Selengkapnya</u> <i
                                                     class="icon-line-arrow-right"></i></a>
                                         </div>
@@ -345,7 +345,7 @@
                                         </span>
 
                                         <div class="d-flex justify-content-center mt-4 justify-content-sm-end">
-                                            <a target="_blank" href=""
+                                            <a target="_blank" href="{{route('servicePageV2')}}"
                                                 class="color btn btn-sm p-0 btn-link"><u>Selengkapnya</u> <i
                                                     class="icon-line-arrow-right"></i></a>
                                         </div>
@@ -383,7 +383,7 @@
 
 
                                         <div class="d-flex justify-content-center mt-4 justify-content-sm-start">
-                                            <a target="_blank" href=""
+                                            <a target="_blank" href="{{route('servicePageV2')}}"
                                                 class="color btn btn-sm p-0 btn-link"><u>Selengkapnya</u> <i
                                                     class="icon-line-arrow-right"></i></a>
                                         </div>

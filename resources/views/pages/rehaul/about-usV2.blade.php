@@ -148,7 +148,7 @@
                                 <h2 class="fw-semibold ls0 nott mb-3" style="font-size: 31px; line-height: 1.3">Ingin Mengetahui Layanan Kami Lebih Lanjut?</h2>
                                 <p>Klik tombol di bawah ini jika ingin mengetahui lebih lanjut tentang apa yang bisa dilakukan Resonansi!</p>
                             </div>
-                            <a href="demo-movers-contact.html"
+                            <a href="{{route('servicePageV2')}}"
                                 class="button button-white button-light button-rounded fw-medium m-0">Klik disini</a>
                         </div>
 
