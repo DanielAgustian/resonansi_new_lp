@@ -55,7 +55,7 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="round-animation">
-                                        <img src="{{ asset('images/rehaul/marketplace-optimization.png') }}" alt=""
+                                        <img src="{{ asset('images/rehaul/banner/market-opt.png') }}" alt=""
                                             class="w-100 banner-img leftRight">
                                     </div>
 
@@ -63,7 +63,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="round-animation">
-                                        <img src="{{ asset('images/rehaul/cloud-warehouse.png') }}" alt=""
+                                        <img src="{{ asset('images/rehaul/banner/cws.png') }}" alt=""
                                             class="w-100 banner-img leftRight">
                                     </div>
 
@@ -71,7 +71,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="round-animation">
-                                        <img src="{{ asset('images/rehaul/social-media-marketing.png') }}" alt=""
+                                        <img src="{{ asset('images/rehaul/banner/ds.png') }}" alt=""
                                             class="w-100 banner-img leftRight">
                                     </div>
 
@@ -79,7 +79,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="round-animation">
-                                        <img src="{{ asset('images/rehaul/landing-page.png') }}" alt=""
+                                        <img src="{{ asset('images/rehaul/banner/tech.png') }}" alt=""
                                             class="w-100 banner-img leftRight">
                                     </div>
 
@@ -87,7 +87,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="round-animation">
-                                        <img src="{{ asset('images/rehaul/conversion-optimization.png') }}" alt=""
+                                        <img src="{{ asset('images/rehaul/banner/co.png') }}" alt=""
                                             class="w-100 banner-img leftRight">
                                     </div>
 
