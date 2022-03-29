@@ -9,6 +9,24 @@
             height: 110vh;
         }
 
+        .banner-name {
+            padding: 5px 25px;
+            background: white;
+            border-radius: 40px;
+            border-left: 5px solid #0F66DD;
+            border-bottom: 7px solid #0F66DD;
+            margin-bottom: 5px;
+            z-index: 99;
+        }
+
+        .banner-name .name {
+            color: #0F66DD;
+            margin-bottom: 0px;
+
+        }
+        .swiperBanner .swiper-slide{
+            height: auto !important;
+        }
     </style>
     <link rel="stylesheet" href="{{ asset('asset/css/rehaul/homepage.css') }}">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -45,8 +63,10 @@
 
                         </p>
                         <div class="d-flex align-items-center justify-content-lg-start justify-content-center mt-5">
-                            <button class="btn btn-blue mr-4 me-4 btn-bigger btn-klien" style="min-width: 145px">Our Client</button>
-                            <a href="{{route('pricingPageV2')}}" class="btn btn-white btn-bigger " style="min-width: 145px">Pricing</a>
+                            <button class="btn btn-blue mr-4 me-4 btn-bigger btn-klien" style="min-width: 145px">Our
+                                Client</button>
+                            <a href="{{ route('pricingPageV2') }}" class="btn btn-white btn-bigger "
+                                style="min-width: 145px">Pricing</a>
                         </div>
 
                     </div>
@@ -55,40 +75,66 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="round-animation">
-                                        <img src="{{ asset('images/rehaul/banner/market-opt.png') }}" alt=""
+                                        <img src="{{ asset('images/rehaul/marketplace-optimization.png') }}" alt=""
                                             class="w-100 banner-img leftRight">
+                                        <div class="d-flex align-items-center justify-content-center mt-4">
+                                            <div class="banner-name">
+                                                <h4 class="name">Marketplace Optimization</h4>
+                                            </div>
+                                        </div>
                                     </div>
 
 
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="round-animation">
-                                        <img src="{{ asset('images/rehaul/banner/cws.png') }}" alt=""
+                                        <img src="{{ asset('images/rehaul/cloud-warehouse.png') }}" alt=""
                                             class="w-100 banner-img leftRight">
+                                        <div class="d-flex align-items-center justify-content-center mt-4">
+                                            <div class="banner-name">
+                                                <h4 class="name">Cloud Warehouse Software</h4>
+                                            </div>
+                                        </div>
                                     </div>
 
 
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="round-animation">
-                                        <img src="{{ asset('images/rehaul/banner/ds.png') }}" alt=""
+                                        <img src="{{ asset('images/rehaul/social-media-marketing.png') }}" alt=""
                                             class="w-100 banner-img leftRight">
+                                        <div class="d-flex align-items-center justify-content-center mt-4">
+                                            <div class="banner-name">
+                                                <h4 class="name">Digital Strategy</h4>
+                                            </div>
+                                        </div>
                                     </div>
 
 
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="round-animation">
-                                        <img src="{{ asset('images/rehaul/banner/tech.png') }}" alt=""
+                                        <img src="{{ asset('images/rehaul/landing-page.png') }}" alt=""
                                             class="w-100 banner-img leftRight">
+                                        <div class="d-flex align-items-center justify-content-center mt-4">
+                                            <div class="banner-name">
+                                                <h4 class="name">Technology</h4>
+                                            </div>
+                                        </div>
+                                        <h5></h5>
                                     </div>
 
 
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="round-animation">
-                                        <img src="{{ asset('images/rehaul/banner/co.png') }}" alt=""
+                                    <div class="round-animation d-flex h-100 flex-column justify-content-center">
+                                        <img src="{{ asset('images/rehaul/conversion-optimization.png') }}" alt=""
                                             class="w-100 banner-img leftRight">
+                                        <div class="d-flex align-items-center justify-content-center mt-4">
+                                            <div class="banner-name">
+                                                <h4 class="name">Conversion Optimization</h4>
+                                            </div>
+                                        </div>
                                     </div>
 
 
@@ -114,7 +160,7 @@
                 <svg preserveAspectRatio="xMidYMax meet" viewBox="0 0 1600 100" data-height="100">
                     <path style="opacity: 1;fill: rgba(255,255,255,0.75);"
                         d="M1040,56c0.5,0,1,0,1.6,0c-16.6-8.9-36.4-15.7-66.4-15.7c-56,0-76.8,23.7-106.9,41C881.1,89.3,895.6,96,920,96
-                                                                                                                                                                      C979.5,96,980,56,1040,56z">
+                                                                                                                                                                                  C979.5,96,980,56,1040,56z">
                     </path>
                     <path style="opacity: 1;fill: rgba(255,255,255,0.75);"
                         d="M1699.8,96l0,10H1946l-0.3-6.9c0,0,0,0-88,0s-88.6-58.8-176.5-58.8c-51.4,0-73,20.1-99.6,36.8 c14.5,9.6,29.6,18.9,58.4,18.9C1699.8,96,1699.8,96,1699.8,96z">
@@ -130,7 +176,7 @@
                     </path>
                     <path style="opacity: 1;fill: rgba(255,255,255,0.75);"
                         d="M-40,95.6c28.3,0,43.3-8.7,57.4-18C-9.6,60.8-31,40.2-83.2,40.2c-14.3,0-26.3,1.6-36.8,4.2V106h60V96L-40,95.6
-                                                                                                                                                                      z">
+                                                                                                                                                                                  z">
                     </path>
                     <path style="opacity: 1;fill: rgba(255,255,255,0.3);;"
                         d="M504,73.4c-2.6-0.8-5.7-1.4-9.6-1.4c-19.4,0-19.6,13-39,13c-19.4,0-19.5-13-39-13c-14,0-18,6.7-26.3,10.4 C402.4,89.9,416.7,96,440,96C472.5,96,487.5,84.2,504,73.4z">
@@ -217,7 +263,7 @@
                                             NGERTIYO (Gamification Education Business))
                                         </span>
                                         <div class="d-flex justify-content-center mt-4 justify-content-sm-start">
-                                            <a target="_blank" href="{{route('servicePageV2')}}"
+                                            <a target="_blank" href="{{ route('servicePageV2') }}"
                                                 class="color btn btn-sm p-0 btn-link"><u>Selengkapnya</u> <i
                                                     class="icon-line-arrow-right"></i></a>
                                         </div>
@@ -266,7 +312,7 @@
                                             <i class="fas fa-check-circle ms-2 mt-1 d-sm-inline-flex d-none"></i>
                                         </span>
                                         <div class="d-flex justify-content-center mt-4 justify-content-sm-end">
-                                            <a target="_blank" href="{{route('servicePageV2')}}"
+                                            <a target="_blank" href="{{ route('servicePageV2') }}"
                                                 class="color btn btn-sm p-0 btn-link"><u>Selengkapnya</u> <i
                                                     class="icon-line-arrow-right"></i></a>
                                         </div>
@@ -276,7 +322,8 @@
 
                             </div>
                             <div class="col-sm-6 order-sm-2 order-1">
-                                <img src="{{ asset('images/rehaul/campaign.png') }}" alt="Image 1" class="img-layanan">
+                                <img src="{{ asset('images/rehaul/campaign.png') }}" alt="Image 1"
+                                    class="img-layanan">
                             </div>
                         </div>
                         <div class="row align-items-center mt-5">
@@ -308,7 +355,7 @@
                                             Marketplace Ads
                                         </span>
                                         <div class="d-flex justify-content-center mt-4 justify-content-sm-start">
-                                            <a target="_blank" href="{{route('servicePageV2')}}"
+                                            <a target="_blank" href="{{ route('servicePageV2') }}"
                                                 class="color btn btn-sm p-0 btn-link"><u>Selengkapnya</u> <i
                                                     class="icon-line-arrow-right"></i></a>
                                         </div>
@@ -345,7 +392,7 @@
                                         </span>
 
                                         <div class="d-flex justify-content-center mt-4 justify-content-sm-end">
-                                            <a target="_blank" href="{{route('servicePageV2')}}"
+                                            <a target="_blank" href="{{ route('servicePageV2') }}"
                                                 class="color btn btn-sm p-0 btn-link"><u>Selengkapnya</u> <i
                                                     class="icon-line-arrow-right"></i></a>
                                         </div>
@@ -383,7 +430,7 @@
 
 
                                         <div class="d-flex justify-content-center mt-4 justify-content-sm-start">
-                                            <a target="_blank" href="{{route('servicePageV2')}}"
+                                            <a target="_blank" href="{{ route('servicePageV2') }}"
                                                 class="color btn btn-sm p-0 btn-link"><u>Selengkapnya</u> <i
                                                     class="icon-line-arrow-right"></i></a>
                                         </div>
@@ -665,11 +712,11 @@
                                     Incidunt distinctio dolor nemo quasi cum. A ipsam tempora voluptatem officiis!
                                     Accusantium!</p> --}}
                                 <div class="row justify-content-center ">
-                                    
+
                                     <div class="col-lg-4 col-6  mb-3">
                                         <div class="feature-box media-box mb-2">
                                             <div class="media-box-inner">
-                                                
+
                                             </div>
                                             <img src="{{ asset('images/klien/kopgron.png') }}?v=1.0.0.1" alt=""
                                                 class="w-100">
@@ -776,13 +823,14 @@
             </div>
             <div class="" style="min-height: 100px">
                 <div class="d-flex flex-column align-items-center justify-content-center">
-                    <h2 class="text-center fw-semibold" style="margin-bottom: 20px">Masih Kurang Jelas, Hubungi<span class="span-bl"> Tim Resonansi</span> !</h2>
+                    <h2 class="text-center fw-semibold" style="margin-bottom: 20px">Masih Kurang Jelas, Hubungi<span
+                            class="span-bl"> Tim Resonansi</span> !</h2>
                     <button class="btn btn-blue mt-4 btn-order btn-bigger">Click Here</button>
                     <div style="height: 40px"></div>
                 </div>
-                
+
             </div>
-            
+
 
 
 
@@ -1038,14 +1086,14 @@
                                                     @endif
                                                 @endfor
                                                 <!-- <option value="paket-technology-conversion-opt" selected>Paket Technology Conversion Optimization</option>
-                                                                                                                                                                            <option value="paket-virtual-event">Paket Virtual Event / Webinar</option>
-                                                                                                                                                                            <option value="paket-marketplace">Paket Marketplace</option>
-                                                                                                                                                                            <option value="technology">Technology</option>
-                                                                                                                                                                            <option value="digital-strategy">Digital Strategy</option>
+                                                                                                                                                                                        <option value="paket-virtual-event">Paket Virtual Event / Webinar</option>
+                                                                                                                                                                                        <option value="paket-marketplace">Paket Marketplace</option>
+                                                                                                                                                                                        <option value="technology">Technology</option>
+                                                                                                                                                                                        <option value="digital-strategy">Digital Strategy</option>
 
-                                                                                                                                                                            <option value="marketplace-opt">Marketplace Optimization</option>
-                                                                                                                                                                            <option value="multimedia">Multimedia </option>
-                                                                                                                                                                            <option value="cloud-warehouse-software">Cloud Warehouse Software</option> -->
+                                                                                                                                                                                        <option value="marketplace-opt">Marketplace Optimization</option>
+                                                                                                                                                                                        <option value="multimedia">Multimedia </option>
+                                                                                                                                                                                        <option value="cloud-warehouse-software">Cloud Warehouse Software</option> -->
                                             </select>
 
                                         </div>
@@ -1136,9 +1184,9 @@
             loop: true,
             pagination: {
                 el: ".swiper-pagination",
-                clickable: false,
+                clickable:  true,
             },
-            
+
             autoplay: {
                 delay: 15000,
                 disableOnInteraction: false,

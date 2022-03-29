@@ -119,12 +119,7 @@
     <script src="{{ asset('asset/js/functions.js') }}?v=1.0.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.10/dist/sweetalert2.all.min.js"></script>
 
-    <script>
-        jQuery('.home-date').datepicker({
-            autoclose: true,
-            startDate: "today",
-        });
-    </script>
+    
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.10/dist/sweetalert2.all.min.js"></script>
     <!-- <script type="text/javascript">
         $(function() {
