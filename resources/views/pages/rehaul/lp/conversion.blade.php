@@ -292,17 +292,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-md-4 col-6">
-                            <div class="feature-box media-box mb-2">
-                                <img src="{{ asset('images/klien/mowilex.png') }}?v=1.0.0.1" alt=""
-                                    class="w-100">
-                                <div class="fbox-content mt-1">
-                                    <h3 class="nott fw-semibold text-center">Mowilex</h3>
-
-                                </div>
-                            </div>
-
-                        </div>
+                        
                         <div class="col-lg-2 col-md-4 col-6">
                             <div class="feature-box media-box mb-2">
                                 <img src="{{ asset('images/klien/warung_52.png') }}?v=1.0.0.1" alt=""

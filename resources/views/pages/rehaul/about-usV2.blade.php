@@ -1,6 +1,6 @@
 @extends('master-landing')
 @section('page')
-    | Service
+    | About Us
 @endsection
 @section('css')
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -17,7 +17,7 @@
         }
         @media screen and (max-width: 450px){
             .big-icon{
-                font-size: 54px; 
+                font-size: 54px;
             }
             .img-about{
                 max-height: 420px;
@@ -71,7 +71,7 @@
                         <div class="row justify-content-center">
                             <div class="col-xl-9 col-lg-10 col-md-11">
                                 <div class="row">
-                                    
+
                                     <div class="col-lg-3 col-md-4 col-6"><img class="img-client rounded" style="background: white"
                                             src=" {{ asset('images/klien/kopgron.png') }}?v=1.0.0.1" alt="Clients"></div>
                                     {{-- <div class="col-6"><img class="img-client rounded" style="background: white" src=" {{asset('images/klien/sweet_monsta.png')}}?v=1.0.0.1" alt="Clients"></div> --}}
@@ -88,8 +88,7 @@
                                             src=" {{ asset('images/klien/twg-2.png') }}?v=1.0.0.1" alt="Clients"></div>
                                     <div class="col-lg-3 col-md-4 col-6"><img class="img-client rounded" style="background: white"
                                             src=" {{ asset('images/klien/yutensil.png') }}?v=1.0.0.1" alt="Clients"></div>
-                                    <div class="col-lg-3 col-md-4 col-6"><img class="img-client rounded" style="background: white"
-                                            src=" {{ asset('images/klien/mowilex.png') }}?v=1.0.0.1" alt="Clients"></div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -108,7 +107,7 @@
                         <div class="col-md-5">
                             <h3 class="display-4 fw-bold mb-4">Teknologi Terbaik untuk <br> Bisnis Anda</h3>
                             <img src="{{asset('images/rehaul/lower-pic.png')}}" alt="Image" class="img-about rounded" style="width: 100%;
-                            
+
                             object-fit: cover;">
                         </div>
                         <div class="col-md-6 mt-md-0 mt-4">
@@ -118,18 +117,18 @@
                             <p class="mt-2 mb-1">Seperti sebuah garpu tala ketika bergetar, dapat memberikan getaran yang sama kepada garpu tala yang memiliki frekuensi yang sama.</p>
                             <i class="fas fa-eye mt-5 big-icon"></i>
                             <h3 class="text-white fw-bold mb-2 mt-4">Visi Resonansi</h3>
-                            
+
                             <p class="mb-1" >Menjadi digital strategi yang dapat meningkatkan Return on Digital Investment</p>
                             <i class="fas fa-bullseye mt-5 big-icon"></i>
                             <h3 class="text-white fw-bold mb-2 mt-4">Misi Resonansi</h3>
                             <p class="mb-1">Membantu sebuah brand agar dapat satu frekuensi yang sama dengan apa yang sedang diperbincangan masyarakat, agar masyarakat atau konsumen dari brand dapat paham tentang produk milik brand.</p>
-                            
+
                         </div>
                     </div>
                 </div>
             </div>
 
-            
+
 
             <div class="clear"></div>
 
@@ -161,9 +160,9 @@
 
 
 
-        
 
-        
+
+
     </section>
 @endsection
 @section('js')

@@ -1,6 +1,6 @@
 @extends('master-landing')
 @section('page')
-    | Pricing
+    | {{$string}}
 @endsection
 @section('banner')
     {{-- <section id="slider" class="slider-element dark min-vh-25 min-vh-md-50 include-header py-5"
@@ -34,7 +34,7 @@
                     <strong class="fw-bold">Coming Soon</strong>
 
                 </h2>
-            
+
             </div>
             <div class="clear"></div>
             {{-- <svg class="svg-curve" viewBox="0 0 1463 188.03">

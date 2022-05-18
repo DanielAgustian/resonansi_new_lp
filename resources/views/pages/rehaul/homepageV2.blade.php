@@ -1,6 +1,9 @@
 @extends('master-landing')
 @section('page')
-    | Home
+ | Social Media Marketing | Marketplace Optimization @endsection
+@section('meta_tag')
+<meta name="description" content="Resonansi membantu bisnis anda menjadi nomor 1 di Google, dengan jasa layanan digital strategy, social media marketing, marketplace optimization." />
+    <meta name="keywords" content="landing page campaign, digital marketing strategy, social media marketing, marketplace optimization, cloud warehouse software" />
 @endsection
 @section('css')
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -28,7 +31,7 @@
             height: auto !important;
         }
     </style>
-    <link rel="stylesheet" href="{{ asset('asset/css/rehaul/homepage.css') }}">
+    <link rel="stylesheet" href="{{ asset('asset/css/rehaul/homepage.css') }}?v=1.0.0">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 @endsection
 @section('banner')
@@ -726,18 +729,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-6 mb-3">
-                                        <div class="feature-box media-box mb-2">
-                                            <img src="{{ asset('images/klien/mowilex.png') }}?v=1.0.0.1" alt=""
-                                                class="w-100">
-                                            <div class="fbox-content mt-1">
-                                                <h5 class="nott fw-semibold text-center">Mowilex</h5>
-
-                                            </div>
-                                        </div>
-
-
-                                    </div>
+                                    
                                     <div class="col-lg-4 col-6 mb-3">
                                         <div class="feature-box media-box mb-2">
                                             <img src="{{ asset('images/klien/yutensil.png') }}?v=1.0.0.1" alt=""

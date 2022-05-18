@@ -86,9 +86,11 @@ class NewHomeController extends Controller
         return view('pages.rehaul.about-usV2', compact('data', 'count', 'ref', 'so', 'campaign' ));
     }
     public function blogsPageV2(){
-        return view('pages.rehaul.coming-soon');
+      $string = "Blog";
+        return view('pages.rehaul.coming-soon', compact('string'));
     }
     public function careerPageV2(){
-        return view('pages.rehaul.coming-soon');
+      $string  = "Career";
+        return view('pages.rehaul.coming-soon', compact('string'));
     }
 }

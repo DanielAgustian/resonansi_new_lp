@@ -6,7 +6,11 @@
 
     <title>Resonansi @yield('page')</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="author" content="Yokesen Teknologi Indonesia" />
+    @yield('meta_tag')
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="author" content="Resonansi" />
+    <link rel="canonical" href="https://resonansi.co.id" />
     <link rel="shortcut icon" href="{{ asset('images/favicon/favicon.ico') }}">
 
 
@@ -119,7 +123,7 @@
     <script src="{{ asset('asset/js/functions.js') }}?v=1.0.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.10/dist/sweetalert2.all.min.js"></script>
 
-    
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.10/dist/sweetalert2.all.min.js"></script>
     <!-- <script type="text/javascript">
         $(function() {
@@ -163,6 +167,20 @@
                 `https://wa.me/${wa[y]}?text=Halo%2C%20aku%20mau%20bertanya%20tentang%20Layanan%20di%20Resonansi`
             )
         })
+    </script>
+    <script type="text/javascript">
+    $('.btn-ask').on('click', function() {
+        var y = Math.random();
+        if (y < 0.5) {
+            y = 0
+        } else {
+            y = 1
+        }
+        let wa = [6287784397649, 6287784397649]
+        window.open(
+            `https://wa.me/${wa[y]}?text=Halo%2C%20saya%20mau%20bertanya%20tentang%20Harga%20Paket%20Jasa%20Layanan%20di%20Resonansi`
+        )
+    })
     </script>
     @if (Session::has('successMsg'))
         <script>
