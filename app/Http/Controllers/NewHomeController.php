@@ -75,10 +75,10 @@ class NewHomeController extends Controller
         $so = "";
         $campaign = "";
         if($request->ref != null){
-        $ref = $request->ref;
+            $ref = $request->ref;
         }
         if($request->so != null){
-        $so = $request->so;
+            $so = $request->so;
         }
         if ($request->campaign != null) {
             $campaign = $request->campaign;
@@ -86,8 +86,9 @@ class NewHomeController extends Controller
         return view('pages.rehaul.about-usV2', compact('data', 'count', 'ref', 'so', 'campaign' ));
     }
     public function blogsPageV2(){
-      $string = "Blog";
-        return view('pages.rehaul.coming-soon', compact('string'));
+        $string  = "Blogs";
+        // return view('pages.rehaul.coming-soon', compact('string'));
+        return view('pages.rehaul.blogsV2');
     }
     public function careerPageV2(){
       $string  = "Career";

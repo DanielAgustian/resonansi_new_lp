@@ -8,21 +8,34 @@
     <link rel="stylesheet" href="{{ asset('asset/css/rehaul/homepage.css') }}">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-        .big-icon{
+        .big-icon {
             font-size: 66px;
             color: white;
         }
-        .img-about{
+
+        .img-about {
             max-height: 520px;
         }
-        @media screen and (max-width: 450px){
-            .big-icon{
+
+        @media screen and (max-width: 450px) {
+            .big-icon {
                 font-size: 54px;
             }
-            .img-about{
+
+            .img-about {
                 max-height: 420px;
             }
         }
+
+        .link-yokesen {
+            color: #c59f34;
+        }
+
+        .link-yokesen:hover {
+            text-decoration: underline !important;
+            color: #c59f34 !important;
+        }
+
     </style>
 @endsection
 @section('banner')
@@ -54,45 +67,73 @@
                         <div class="col-xl-7 col-lg-10 col-md-11">
                             <h5 class="mb-3 text-uppercase ls3 text-white-50">Siapa Kami</h5>
                             <h3 class="display-4 fw-semibold mb-4"> <span class="span-bl">Resonansi</span> from
-                                Yokesen</h3>
+                                <a href="https://yokesen.com/" class="link-yokesen">Yokesen</a>
+                            </h3>
                             <p>Resonansi ada untuk membantu sebuah brand agar dapat satu frekuensi yang sama, dengan apa
                                 yang sedang diperbincangan setiap saat oleh masyarakat, untuk membantu masyarakat atau
                                 konsumen dari brand untuk paham tentang produk milik brand.</p>
                         </div>
+                        <div class="col-12 mt-2">
+                            <a href="{{ asset('images/rehaul/1.jpg') }}" download>
+                                <button class="btn btn-blue-dark">Learn More</button>
+                            </a>
+                        </div>
                     </div>
+                    
+
                 </div>
             </div>
 
             <div class="section-map clearfix bottommargin-lg topmargin-lg">
                 <div class="container">
-                    <img src="{{ asset('images/rehaul/map-indo-alt.png') }}" alt="Map Image" class="img-fluid map-image">
+                    {{-- <img src="{{ asset('images/rehaul/map-indo-alt.png') }}" alt="Map Image" class="img-fluid map-image"> --}}
+                    {{-- Company Section --}}
+                    <div class="holder-company">
+                        <div class="row">
+                            <div class="col-lg-5"></div>
+                        </div>
+                    </div>
                     <div class="map-title">
-                        <h2 class="center">Kami Dipercaya oleh Klien dari Seluruh Indonesia.</h2>
+                        <h2 class="center">Kami Dipercaya oleh <span class="span-bl">Klien</span> dari Seluruh Indonesia.</h2>
                         <div class="row justify-content-center">
                             <div class="col-xl-9 col-lg-10 col-md-11">
-                                <div class="row">
+                                <div class="row justify-content-center">
 
-                                    <div class="col-lg-3 col-md-4 col-6"><img class="img-client rounded" style="background: white"
+                                    <div class="col-lg-3 col-md-4 col-6"><img class="img-client rounded"
+                                            style="background: white"
                                             src=" {{ asset('images/klien/kopgron.png') }}?v=1.0.0.1" alt="Clients"></div>
                                     {{-- <div class="col-6"><img class="img-client rounded" style="background: white" src=" {{asset('images/klien/sweet_monsta.png')}}?v=1.0.0.1" alt="Clients"></div> --}}
-                                    <div class="col-lg-3 col-md-4 col-6"><img class="img-client rounded" style="background: white"
-                                            src=" {{ asset('images/klien/warung_52.png') }}?v=1.0.0.1" alt="Clients"></div>
-                                    <div class="col-lg-3 col-md-4 col-6"><img class="img-client rounded" style="background: white"
-                                            src=" {{ asset('images/klien/WGM.png') }}?v=1.0.0.1" alt="Clients"></div>
-                                    <div class="col-lg-3 col-md-4 col-6"><img class="img-client rounded" style="background: white"
+                                    <div class="col-lg-3 col-md-4 col-6"><img class="img-client rounded"
+                                            style="background: white"
+                                            src=" {{ asset('images/klien/warung_52.png') }}?v=1.0.0.1" alt="Clients">
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-6"><img class="img-client rounded"
+                                            style="background: white" src=" {{ asset('images/klien/WGM.png') }}?v=1.0.0.1"
+                                            alt="Clients"></div>
+                                    <div class="col-lg-3 col-md-4 col-6"><img class="img-client rounded"
+                                            style="background: white"
                                             src=" {{ asset('images/klien/WHW2_1.png') }}?v=1.0.0.1" alt="Clients"></div>
-                                    <div class="col-lg-3 col-md-4 col-6"><img class="img-client rounded" style="background: white"
+                                    <div class="col-lg-3 col-md-4 col-6"><img class="img-client rounded"
+                                            style="background: white"
                                             src=" {{ asset('images/klien/logo-warisan.png') }}?v=1.0.0.1" alt="Clients">
                                     </div>
-                                    <div class="col-lg-3 col-md-4 col-6"><img class="img-client rounded" style="background: white"
+                                    <div class="col-lg-3 col-md-4 col-6"><img class="img-client rounded"
+                                            style="background: white"
                                             src=" {{ asset('images/klien/twg-2.png') }}?v=1.0.0.1" alt="Clients"></div>
-                                    <div class="col-lg-3 col-md-4 col-6"><img class="img-client rounded" style="background: white"
+                                    <div class="col-lg-3 col-md-4 col-6"><img class="img-client rounded"
+                                            style="background: white"
                                             src=" {{ asset('images/klien/yutensil.png') }}?v=1.0.0.1" alt="Clients"></div>
-                                    
+
                                 </div>
                             </div>
                         </div>
 
+                    </div>
+
+                    <div class="d-flex justify-content-center mt-3">
+                        <a href="https://yokesen.com/#client-section">
+                            <button class="btn btn-blue-dark btn-bigger">More Clients</button>
+                        </a>
                     </div>
                 </div>
 
@@ -106,22 +147,27 @@
                     <div class="row justify-content-between">
                         <div class="col-md-5">
                             <h3 class="display-4 fw-bold mb-4">Teknologi Terbaik untuk <br> Bisnis Anda</h3>
-                            <img src="{{asset('images/rehaul/lower-pic.png')}}" alt="Image" class="img-about rounded" style="width: 100%;
+                            <img src="{{ asset('images/rehaul/lower-pic.png') }}" alt="Image" class="img-about rounded"
+                                style="width: 100%;
 
-                            object-fit: cover;">
+                                object-fit: cover;">
                         </div>
                         <div class="col-md-6 mt-md-0 mt-4">
 
                             <i class="fas fa-lightbulb big-icon"></i>
                             <h3 class="text-white fw-bold mb-2 mt-4">Filosofi Resonansi</h3>
-                            <p class="mt-2 mb-1">Seperti sebuah garpu tala ketika bergetar, dapat memberikan getaran yang sama kepada garpu tala yang memiliki frekuensi yang sama.</p>
+                            <p class="mt-2 mb-1">Seperti sebuah garpu tala ketika bergetar, dapat memberikan getaran
+                                yang sama kepada garpu tala yang memiliki frekuensi yang sama.</p>
                             <i class="fas fa-eye mt-5 big-icon"></i>
                             <h3 class="text-white fw-bold mb-2 mt-4">Visi Resonansi</h3>
 
-                            <p class="mb-1" >Menjadi digital strategi yang dapat meningkatkan Return on Digital Investment</p>
+                            <p class="mb-1">Menjadi digital strategi yang dapat meningkatkan Return on Digital
+                                Investment</p>
                             <i class="fas fa-bullseye mt-5 big-icon"></i>
                             <h3 class="text-white fw-bold mb-2 mt-4">Misi Resonansi</h3>
-                            <p class="mb-1">Membantu sebuah brand agar dapat satu frekuensi yang sama dengan apa yang sedang diperbincangan masyarakat, agar masyarakat atau konsumen dari brand dapat paham tentang produk milik brand.</p>
+                            <p class="mb-1">Membantu sebuah brand agar dapat satu frekuensi yang sama dengan apa
+                                yang sedang diperbincangan masyarakat, agar masyarakat atau konsumen dari brand dapat paham
+                                tentang produk milik brand.</p>
 
                         </div>
                     </div>
@@ -144,10 +190,12 @@
 
                         <div class="col-sm-10">
                             <div class="heading-block border-bottom-0 mb-4">
-                                <h2 class="fw-semibold ls0 nott mb-3" style="font-size: 31px; line-height: 1.3">Ingin Mengetahui Layanan Kami Lebih Lanjut?</h2>
-                                <p>Klik tombol di bawah ini jika ingin mengetahui lebih lanjut tentang apa yang bisa dilakukan Resonansi!</p>
+                                <h2 class="fw-semibold ls0 nott mb-3" style="font-size: 31px; line-height: 1.3">Ingin
+                                    Mengetahui Layanan Kami Lebih Lanjut?</h2>
+                                <p>Klik tombol di bawah ini jika ingin mengetahui lebih lanjut tentang apa yang bisa
+                                    dilakukan Resonansi!</p>
                             </div>
-                            <a href="{{route('servicePageV2')}}"
+                            <a href="{{ route('servicePageV2') }}"
                                 class="button button-white button-light button-rounded fw-medium m-0">Klik disini</a>
                         </div>
 

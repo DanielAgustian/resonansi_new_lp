@@ -52,7 +52,9 @@ class LandingController extends Controller
     public function contactPage(){
         return view('pages.contact-us');
     }
+    // Blogs page
     public function blogsPage(){
+
         return view('pages.blogs');
         // return view('pages.blogs');
     }
