@@ -42,20 +42,20 @@ Route::post('contact/create', [MeetController::class, 'makeContactUs'])->name('m
 
 
 
-Route::get('/v1', [LandingController::class, 'homepage2'])->name('homepage2');
-Route::get('/v1/about-us', [LandingController::class, 'aboutPage'])->name('aboutPage');
-Route::get('/v1/pricing', [LandingController::class, 'pricingPage'])->name('pricingPage');
-Route::get('/v1/services', [LandingController::class, 'servicePage'])->name('servicePage');
-Route::get('/v1/contact-us', [LandingController::class, 'contactPage'])->name('contactPage');
-Route::get('/v1/blogs', [LandingController::class, 'blogsPage'])->name('blogsPage');
-Route::get('/v1/karir', [LandingController::class, 'karirPage'])->name('karirPage');
-Route::get('/archive/digital-marketing', [LandingController::class, 'landing'])->name('landing');
-// Landing Service
-Route::get('/archive/marketplace-optimization', [LandingController::class, 'marketplacePage'])->name('marketplacePage');
-Route::get('/archive/social-media-marketing', [LandingController::class, 'socmedPage'])->name('socmedPage');
-Route::get('/archive/landing-page', [LandingController::class, 'landingPPage'])->name('landingPPage');
-Route::get('/archive/cloud-warehouse-software', [LandingController::class, 'warehousePage'])->name('warehousePage');
-Route::get('/archive/conversion-optimization', [LandingController::class, 'conversionPage'])->name('conversionPage');
+// Route::get('/v1', [LandingController::class, 'homepage2'])->name('homepage2');
+// Route::get('/v1/about-us', [LandingController::class, 'aboutPage'])->name('aboutPage');
+// Route::get('/v1/pricing', [LandingController::class, 'pricingPage'])->name('pricingPage');
+// Route::get('/v1/services', [LandingController::class, 'servicePage'])->name('servicePage');
+// Route::get('/v1/contact-us', [LandingController::class, 'contactPage'])->name('contactPage');
+// Route::get('/v1/blogs', [LandingController::class, 'blogsPage'])->name('blogsPage');
+// Route::get('/v1/karir', [LandingController::class, 'karirPage'])->name('karirPage');
+// Route::get('/archive/digital-marketing', [LandingController::class, 'landing'])->name('landing');
+// // Landing Service
+// Route::get('/archive/marketplace-optimization', [LandingController::class, 'marketplacePage'])->name('marketplacePage');
+// Route::get('/archive/social-media-marketing', [LandingController::class, 'socmedPage'])->name('socmedPage');
+// Route::get('/archive/landing-page', [LandingController::class, 'landingPPage'])->name('landingPPage');
+// Route::get('/archive/cloud-warehouse-software', [LandingController::class, 'warehousePage'])->name('warehousePage');
+// Route::get('/archive/conversion-optimization', [LandingController::class, 'conversionPage'])->name('conversionPage');
 Route::get('/get-future-event', [MeetController::class, 'getFutureEvent'])->name('getFutureEvent');
 
 
@@ -81,3 +81,5 @@ Route::get('/service', [NewHomeController::class, 'servicePageV2'])->name('servi
 Route::get('/about-us', [NewHomeController::class, 'aboutPageV2'])->name('aboutPageV2');
 Route::get('/blogs', [NewHomeController::class, 'blogsPageV2'])->name('blogsPageV2');
 Route::get('/career', [NewHomeController::class, 'careerPageV2'])->name('careerPageV2');
+
+Route::get('/blogs/read/{slug}',[NewHomeController::class, 'blogsDetailPageV2'])->name('blogsDetailPageV2');

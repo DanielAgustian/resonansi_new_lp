@@ -74,7 +74,7 @@
                                 konsumen dari brand untuk paham tentang produk milik brand.</p>
                         </div>
                         <div class="col-12 mt-2">
-                            <a href="{{ asset('images/rehaul/1.jpg') }}" download>
+                            <a href="{{ asset('brosur/brosur_resonansi.pdf') }}" download>
                                 <button class="btn btn-blue-dark">Learn More</button>
                             </a>
                         </div>

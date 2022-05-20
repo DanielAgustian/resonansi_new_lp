@@ -42,8 +42,6 @@
                     transform="translate(0 -171.47)" />
             </svg> --}}
 
-
-
         </div>
 
     </section>

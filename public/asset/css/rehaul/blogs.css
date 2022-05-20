@@ -1,0 +1,73 @@
+.entry-meta i{
+    position: static !important;
+    
+}
+
+.entry-content *{
+    font-family: 'Poppins', sans-serif  !important;
+    font-size: 14px;
+    color: #555555;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.entry-content:hover *{
+    color: #0F66DD;
+    text-decoration: underline !important;
+    cursor: pointer;
+}
+.grid-inner.card{
+    transition: all 0.5s;
+}
+
+.grid-inner:hover.card{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    ;
+    transform: scale(1.015);
+    cursor: pointer;
+}
+.grid-inner:hover .title-blog a{
+    color: #0F66DD !important;
+
+}
+
+/* Detail */
+
+.blogs-detail-title{
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+}
+.container-detail{
+    margin-top: -50px;
+}
+
+.head-blog-detail{
+    height: 40vh;
+}
+
+.head-blog-detail .span-time{
+    font-size: 0.875rem !important;
+}
+.detail-text{
+    margin: 0px 5px;
+}
+.detail-text *{
+    text-align: justify  !important;
+    font-size: 18px !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+.body-blogs-detail{
+    padding-right: 10px;
+    border-right: 1px solid rgba(128, 128, 128, 0.35);
+}
+.txt-copyright{
+    font-size: 11px;
+    color: #555555A1;
+    text-align: center;
+}
+.share-card img{
+    
+}

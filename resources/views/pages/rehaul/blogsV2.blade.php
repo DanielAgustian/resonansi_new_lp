@@ -1,6 +1,6 @@
 @extends('master-landing')
 @section('page')
-    | Contact Us
+    | Blogs
 @endsection
 @section('css')
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -23,6 +23,7 @@
 
     </style>
     <link rel="stylesheet" href="{{ asset('asset/css/rehaul/homepage.css') }}">
+    <link rel="stylesheet" href="{{ asset('asset/css/rehaul/blogs.css') }}">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 @endsection
 @section('banner')
@@ -50,16 +51,16 @@
                     <div class="entry col-lg-4 col-md-6">
                         <div class="grid-inner card">
                             <a href="#" data-lightbox="image">
-                                <img src="demos/movers/images/blog/1.jpg" alt="Image" class="card-img-top">
+                                <img src="https://thumbs.dreamstime.com/z/blogger-woman-demo%E2%80%A6d-blogger-woman-demonstrates-sewing-233628615.jpg" alt="Image" class="card-img-top">
                             </a>
                             <div class="p-4">
                                 <div class="entry-title title-sm">
-                                    <h3 class="nott ls0 h5"><a href="blog-single.html">Rules of COVID 19</a></h3>
+                                    <h3 class="nott ls0 h5 title-blog"><a href="blog-single.html">Rules of COVID 19</a></h3>
                                 </div>
                                 <div class="entry-meta">
                                     <ul>
-                                        <li><i class="icon-calendar3"></i> 10th Feb 2021</li>
-                                        <li><a href="blog-single.html#comments"><i class="icon-comments"></i> 13</a></li>
+                                        <li><i class="fas fa-calendar-alt"></i> 10th Feb 2021</li>
+                                        <li><a href="blog-single.html#comments"><i class="fas fa-eye " style="color:#061a35; margin-right: 10px"></i>13</a></li>
                                     </ul>
                                 </div>
                                 <div class="entry-content mt-4">
@@ -71,129 +72,7 @@
                         </div>
                     </div>
 
-                    <div class="entry col-lg-4 col-md-6">
-                        <div class="grid-inner card">
-                            <a href="#" data-lightbox="image">
-                                <img src="demos/movers/images/blog/2.jpg" alt="Image" class="card-img-top">
-                            </a>
-                            <div class="p-4">
-                                <div class="entry-title title-sm">
-                                    <h3 class="nott ls0 h5"><a href="blog-single.html">International Shipment
-                                            available</a></h3>
-                                </div>
-                                <div class="entry-meta">
-                                    <ul>
-                                        <li><i class="icon-calendar3"></i> 10th Feb 2021</li>
-                                        <li><a href="blog-single.html#comments"><i class="icon-comments"></i> 13</a></li>
-                                    </ul>
-                                </div>
-                                <div class="entry-content mt-4">
-                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                        Repellat velit, quidem illo non harum illum! Sed omnis facilis facere, tenetur
-                                        reiciendis dolor sit amet mollitia..</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="entry col-lg-4 col-md-6">
-                        <div class="grid-inner card">
-                            <a href="#" data-lightbox="image">
-                                <img src="demos/movers/images/blog/3.jpg" alt="Image" class="card-img-top">
-                            </a>
-                            <div class="p-4">
-                                <div class="entry-title title-sm">
-                                    <h3 class="nott ls0 h5"><a href="blog-single.html">Partnership with Amazon</a></h3>
-                                </div>
-                                <div class="entry-meta">
-                                    <ul>
-                                        <li><i class="icon-calendar3"></i> 10th Feb 2021</li>
-                                        <li><a href="blog-single.html#comments"><i class="icon-comments"></i> 13</a></li>
-                                    </ul>
-                                </div>
-                                <div class="entry-content mt-4">
-                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                        Repellat velit, quidem illo non harum illum! Sed omnis facilis facere, tenetur
-                                        reiciendis dolor sit amet mollitia..</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="entry col-lg-4 col-md-6">
-                        <div class="grid-inner card">
-                            <a href="#" data-lightbox="image">
-                                <img src="demos/movers/images/blog/4.jpg" alt="Image" class="card-img-top">
-                            </a>
-                            <div class="p-4">
-                                <div class="entry-title title-sm">
-                                    <h3 class="nott ls0 h5"><a href="blog-single.html">Coronavirus: Safe and Cleaness</a>
-                                    </h3>
-                                </div>
-                                <div class="entry-meta">
-                                    <ul>
-                                        <li><i class="icon-calendar3"></i> 10th Feb 2021</li>
-                                        <li><a href="blog-single.html#comments"><i class="icon-comments"></i> 13</a></li>
-                                    </ul>
-                                </div>
-                                <div class="entry-content mt-4">
-                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                        Repellat velit, quidem illo non harum illum! Sed omnis facilis facere, tenetur
-                                        reiciendis dolor sit amet mollitia suscipit aut, nemo soluta..</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="entry col-lg-4 col-md-6">
-                        <div class="grid-inner card">
-                            <a href="#" data-lightbox="image">
-                                <img src="demos/movers/images/blog/5.jpg" alt="Image" class="card-img-top">
-                            </a>
-                            <div class="p-4">
-                                <div class="entry-title title-sm">
-                                    <h3 class="nott ls0 h5"><a href="blog-single.html">7 Tips to make Moving Home Easier
-                                            for Kids</a></h3>
-                                </div>
-                                <div class="entry-meta">
-                                    <ul>
-                                        <li><i class="icon-calendar3"></i> 10th Feb 2021</li>
-                                        <li><a href="blog-single.html#comments"><i class="icon-comments"></i> 13</a></li>
-                                    </ul>
-                                </div>
-                                <div class="entry-content mt-4">
-                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                        Repellat velit, quidem illo non harum illum! Sed omnis facilis facere, tenetur
-                                        reiciendis dolor sit amet mollitia..</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="entry col-lg-4 col-md-6">
-                        <div class="grid-inner card">
-                            <a href="#" data-lightbox="image">
-                                <img src="demos/movers/images/blog/6.jpg" alt="Image" class="card-img-top">
-                            </a>
-                            <div class="p-4">
-                                <div class="entry-title title-sm">
-                                    <h3 class="nott ls0 h5"><a href="blog-single.html">Long Distance or Inter - City
-                                            Moving Services</a></h3>
-                                </div>
-                                <div class="entry-meta">
-                                    <ul>
-                                        <li><i class="icon-calendar3"></i> 10th Feb 2021</li>
-                                        <li><a href="blog-single.html#comments"><i class="icon-comments"></i> 13</a></li>
-                                    </ul>
-                                </div>
-                                <div class="entry-content mt-4">
-                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                        Repellat velit, quidem illo non harum illum! Sed omnis facilis facere, tenetur
-                                        reiciendis dolor sit amet mollitia..</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                   
 
                 </div>
             </div>
