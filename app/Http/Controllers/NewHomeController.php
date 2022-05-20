@@ -87,8 +87,8 @@ class NewHomeController extends Controller
     }
     public function blogsPageV2(){
         $string  = "Blogs";
-        // return view('pages.rehaul.coming-soon', compact('string'));
-        return view('pages.rehaul.blogsV2');
+        return view('pages.rehaul.coming-soon', compact('string'));
+        // return view('pages.rehaul.blogsV2');
     }
     public function careerPageV2(){
       $string  = "Career";
