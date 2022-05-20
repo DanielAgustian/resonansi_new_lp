@@ -8,11 +8,17 @@
         .title-contact {
             font-size: 48px;
         }
-
+        .lists-blog-front{
+            border-right: 1px solid rgba(128, 128, 128, 0.35);
+        }
         @media screen and (max-width: 996px) {
             .title-contact {
                 font-size: 42px;
             }
+            .lists-blog-front{
+                border-right: none;
+            }
+            
         }
 
         @media screen and (max-width: 450px) {
@@ -20,7 +26,7 @@
                 font-size: 36px;
             }
         }
-
+        
     </style>
     <link rel="stylesheet" href="{{ asset('asset/css/rehaul/homepage.css') }}">
     <link rel="stylesheet" href="{{ asset('asset/css/rehaul/blogs.css') }}">
@@ -47,7 +53,7 @@
 
             <div class="container mb-5">
                 <div class="row">
-                    <div class="col-lg-8" style="border-right: 1px solid rgba(128, 128, 128, 0.35);">
+                    <div class="col-lg-8 list-blog" style="">
                         <div class="post-grid row col-mb-30 " >
 
                             <div class="entry col-lg-4 col-md-6">
