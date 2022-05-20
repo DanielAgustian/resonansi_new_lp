@@ -40,6 +40,7 @@
     <link rel="stylesheet" href="{{ asset('asset/css/rehaul/fonts.css') }}" type="text/css" />
     <link rel="stylesheet" href="{{ asset('asset/css/rehaul/movers.css') }}" type="text/css" />
     <link rel="stylesheet" href="{{ asset('asset/css/rehaul/new-style.css') }}?v=1.0.8" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <!-- / -->
     @yield('css')
 
@@ -169,18 +170,18 @@
         })
     </script>
     <script type="text/javascript">
-    $('.btn-ask').on('click', function() {
-        var y = Math.random();
-        if (y < 0.5) {
-            y = 0
-        } else {
-            y = 1
-        }
-        let wa = [6287784397649, 6287784397649]
-        window.open(
-            `https://wa.me/${wa[y]}?text=Halo%2C%20saya%20mau%20bertanya%20tentang%20Harga%20Paket%20Jasa%20Layanan%20di%20Resonansi`
-        )
-    })
+        $('.btn-ask').on('click', function() {
+            var y = Math.random();
+            if (y < 0.5) {
+                y = 0
+            } else {
+                y = 1
+            }
+            let wa = [6287784397649, 6287784397649]
+            window.open(
+                `https://wa.me/${wa[y]}?text=Halo%2C%20saya%20mau%20bertanya%20tentang%20Harga%20Paket%20Jasa%20Layanan%20di%20Resonansi`
+            )
+        })
     </script>
     @if (Session::has('successMsg'))
         <script>
@@ -343,6 +344,8 @@
             $('[data-toggle="tooltip"]').tooltip();
         });
     </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
     @yield('js')
 </body>
 

@@ -35,8 +35,16 @@
             text-decoration: underline !important;
             color: #c59f34 !important;
         }
-
+        .section-perusahaan{
+            background: linear-gradient(180deg , white, #052c6310);
+        }
+        .img-sis-comp{
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
     </style>
+    <link rel="stylesheet" href="">
 @endsection
 @section('banner')
     <section id="page-title" class="bg-color page-title-dark py-6">
@@ -84,15 +92,50 @@
                 </div>
             </div>
 
+            <div class="section-perusahaan py-5">
+                <div class="holder-company">
+                    <div class="container">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-lg-5 pe-3 col-md-10">
+                                <h2 class=" fw-semibold mb-4 text-lg-start text-center"> Perusahaan Induk <span>Kami</span>  
+                                </h2>
+                                <p class="text-lg-start text-center">Resonansi hanya dapat terjadi karena adanya sinergi dengan perusahaan induk kami. Sinergi tersebut menghasilkan produk yang mumpuni, berkualitas dan sesuai permintaan customer.</p>
+                            </div>
+                            <div class="col-lg-7 col-md-10">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-4 mb-3 col-6">
+                                        <img src="{{asset('images/klien/logo-yokesen.png')}}" alt="" class="img-sis-comp">
+                                    </div>
+                                    <div class="w-100 d-none d-md-block"></div>
+                                    <div class="col-md-4 mb-3 col-6">
+                                        <img src="{{asset('images/klien/logo-gudangin.png')}}" alt="" class="img-sis-comp">
+                                    </div>
+                                    <div class="col-md-4 mb-3 col-6">
+                                        <img src="{{asset('images/klien/logo-warisan.png')}}" alt="" class="img-sis-comp">
+                                    </div>
+                                    <div class="col-md-4 mb-3 col-6">
+                                        <img src="{{asset('images/klien/WGM.png')}}" alt="" class="img-sis-comp">
+                                    </div>
+                                    <div class="col-md-4 mb-3 col-6">
+                                        <img src="{{asset('images/klien/WHW2_1.png')}}" alt="" class="img-sis-comp">
+                                    </div>
+                                    <div class="col-md-4 mb-3 col-6">
+                                        <img src="{{asset('images/klien/logo-kagumi.png')}}" alt="" class="img-sis-comp">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+
             <div class="section-map clearfix bottommargin-lg topmargin-lg">
                 <div class="container">
                     {{-- <img src="{{ asset('images/rehaul/map-indo-alt.png') }}" alt="Map Image" class="img-fluid map-image"> --}}
                     {{-- Company Section --}}
-                    <div class="holder-company">
-                        <div class="row">
-                            <div class="col-lg-5"></div>
-                        </div>
-                    </div>
+                    
                     <div class="map-title">
                         <h2 class="center">Kami Dipercaya oleh <span class="span-bl">Klien</span> dari Seluruh Indonesia.</h2>
                         <div class="row justify-content-center">

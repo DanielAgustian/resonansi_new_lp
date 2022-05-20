@@ -51,7 +51,8 @@
                     <div class="entry col-lg-4 col-md-6">
                         <div class="grid-inner card">
                             <a href="#" data-lightbox="image">
-                                <img src="https://thumbs.dreamstime.com/z/blogger-woman-demo%E2%80%A6d-blogger-woman-demonstrates-sewing-233628615.jpg" alt="Image" class="card-img-top">
+                                <img src="https://thumbs.dreamstime.com/z/blogger-woman-demo%E2%80%A6d-blogger-woman-demonstrates-sewing-233628615.jpg"
+                                    alt="Image" class="card-img-top">
                             </a>
                             <div class="p-4">
                                 <div class="entry-title title-sm">
@@ -60,7 +61,8 @@
                                 <div class="entry-meta">
                                     <ul>
                                         <li><i class="fas fa-calendar-alt"></i> 10th Feb 2021</li>
-                                        <li><a href="blog-single.html#comments"><i class="fas fa-eye " style="color:#061a35; margin-right: 10px"></i>13</a></li>
+                                        <li><a href="blog-single.html#comments"><i class="fas fa-eye "
+                                                    style="color:#061a35; margin-right: 10px"></i>13</a></li>
                                     </ul>
                                 </div>
                                 <div class="entry-content mt-4">
@@ -72,7 +74,7 @@
                         </div>
                     </div>
 
-                   
+
 
                 </div>
             </div>
@@ -89,20 +91,22 @@
                 <div class="container">
                     <div class="row align-items-center justify-content-center center my-4">
 
-                        <div class="col-sm-8">
+                        <div class="col-sm-10">
                             <div class="heading-block border-bottom-0 mb-4">
-                                <h2 class="fw-semibold ls0 nott mb-3" style="font-size: 44px; line-height: 1.3">Contact Our
-                                    Movers Specialist</h2>
-                                <p>Phosfluorescently develop customized relationships vis-a-vis B2C infomediaries.</p>
+                                <h2 class="fw-semibold ls0 nott mb-3" style="font-size: 31px; line-height: 1.3">Ingin
+                                    Mengetahui Layanan Kami Lebih Lanjut?</h2>
+                                <p>Klik tombol di bawah ini jika ingin mengetahui lebih lanjut tentang apa yang bisa
+                                    dilakukan Resonansi!</p>
                             </div>
-                            <a href="demo-movers-contact.html"
-                                class="button button-white button-light button-rounded fw-medium m-0">Get In Touch</a>
+                            <a href="{{ route('servicePageV2') }}"
+                                class="button button-white button-light button-rounded fw-medium m-0">Klik disini</a>
                         </div>
 
                     </div>
                 </div>
             </div>
         </div>
+
     </section>
 @endsection
 @section('js')

@@ -68,6 +68,132 @@
     color: #555555A1;
     text-align: center;
 }
+.share-card{
+    border: 0px;
+}
 .share-card img{
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+    margin: 0px 5px;
+}
+.share-card img:hover{
+    opacity: 0.8;
+    transform: scale(0.95);
+}
+
+.share-card-fixed{
+    position: fixed;
+    left: 3px;
+    top: 46%;
+    z-index: 1000;
+    display: block;
+}
+.share-card-fixed img{
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    margin-bottom: 3px;
+}
+
+.blog-right-child{
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    margin-bottom: 15px;
     
+}
+
+.blog-right-child:hover{
+    box-shadow: rgba(6, 26, 53, 0.2) 0px 2px 8px 0px;
+}
+.blog-right-child .img-blog-detail{
+    height: 80px;
+    width: 100px;
+    object-fit: cover;
+    margin-right: 10px;
+
+}
+.blog-right-child .info-title{
+    color: #0F66DD;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.blog-right-child:hover .info-title{
+    text-decoration: underline  !important;
+    color: #06326e;
+}
+.blog-right-child .span-detail{
+    font-size: 12px;
+    color: #555555A1;
+    margin-bottom: 0px ;
+}
+
+.title-latest-art{
+    padding: 10px 5px;
+    border-top: 2px solid #06326e;
+    border-bottom: 2px solid #06326e;
+    margin-bottom: 10px;
+}
+.title-latest-art .title-latest{
+    color: #06326e;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.list-blog{
+    position: sticky;
+    top: 90px;
+}
+
+@media screen and (max-width: 996px) {
+    .detail-text *{
+        font-size: 16px !important;
+    }
+    .blog-right-child{
+        display: block;
+        
+    }
+    .list-blog{
+        margin-top: 25px;
+    }
+    .blog-right-child .img-blog-detail{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .blog-right-child .span-detail{
+        font-size: 11px;
+    }
+    .body-blogs-detail{
+        border: none;
+    }
+    .head-blog-detail{
+        height: 35vh;
+    }   
+    .blogs-detail-title{
+        font-size: 32px !important;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .blogs-detail-title{
+        font-size: 23px !important;
+    }
+    .span-time{
+        font-size: 10px;
+    }
+    .head-blog-detail{
+        height: 45vh;
+    }
+    .detail-text *{
+        font-size: 14px !important;
+    }
+    .container-detail{
+        margin-top: -35px;
+    }
 }
