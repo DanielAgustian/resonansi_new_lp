@@ -53,7 +53,7 @@
 
             <div class="container mb-5">
                 <div class="row">
-                    <div class="col-lg-8 list-blog" style="">
+                    <div class="col-lg-8 list-blog-front" style="">
                         <div class="post-grid row col-mb-30 " >
 
                             <div class="entry col-lg-4 col-md-6">
