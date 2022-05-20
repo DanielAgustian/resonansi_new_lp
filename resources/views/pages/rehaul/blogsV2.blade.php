@@ -46,37 +46,72 @@
         <div class="content-wrap pb-0">
 
             <div class="container mb-5">
-                <div class="post-grid row col-mb-30">
+                <div class="row">
+                    <div class="col-lg-8" style="border-right: 1px solid rgba(128, 128, 128, 0.35);">
+                        <div class="post-grid row col-mb-30 " >
 
-                    <div class="entry col-lg-4 col-md-6">
-                        <div class="grid-inner card">
-                            <a href="#" data-lightbox="image">
-                                <img src="https://thumbs.dreamstime.com/z/blogger-woman-demo%E2%80%A6d-blogger-woman-demonstrates-sewing-233628615.jpg"
-                                    alt="Image" class="card-img-top">
-                            </a>
-                            <div class="p-4">
-                                <div class="entry-title title-sm">
-                                    <h3 class="nott ls0 h5 title-blog"><a href="blog-single.html">Rules of COVID 19</a></h3>
-                                </div>
-                                <div class="entry-meta">
-                                    <ul>
-                                        <li><i class="fas fa-calendar-alt"></i> 10th Feb 2021</li>
-                                        <li><a href="blog-single.html#comments"><i class="fas fa-eye "
-                                                    style="color:#061a35; margin-right: 10px"></i>13</a></li>
-                                    </ul>
-                                </div>
-                                <div class="entry-content mt-4">
-                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                        Repellat velit, quidem illo non harum illum! Sed omnis facilis facere, tenetur
-                                        reiciendis dolor sit amet mollitia suscipit aut, nemo soluta..</p>
+                            <div class="entry col-lg-4 col-md-6">
+                                <div class="grid-inner card">
+
+                                    <img src="https://thumbs.dreamstime.com/z/blogger-woman-demo%E2%80%A6d-blogger-woman-demonstrates-sewing-233628615.jpg"
+                                        alt="Image" class="card-img-top">
+
+                                    <div class="p-3">
+                                        <div class="entry-title title-sm">
+                                            <h4 class="nott ls0 h5 title-blog"><a href="blog-single.html">Rules of COVID
+                                                    19</a></h4>
+                                        </div>
+                                        <div class="entry-meta">
+                                            <ul>
+                                                <li><i class="fas fa-calendar-alt"></i> 10th Feb 2021</li>
+                                                <li><a href="blog-single.html#comments"><i class="fas fa-eye "
+                                                            style="color:#061a35; margin-right: 10px"></i>13</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="entry-content mt-2">
+                                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                                elit.
+                                                Repellat velit, quidem illo non harum illum! Sed omnis facilis facere,
+                                                tenetur
+                                                reiciendis dolor sit amet mollitia suscipit aut, nemo soluta..</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+
+
+
                         </div>
                     </div>
+                    <div class="col-lg-4 col-md-10">
+                        <div class="list-blog">
+                            <div class="title-latest-art">
+                                <h4 class="title-latest">Latest Article</h4>
+                            </div>
 
+                            <div class="list-blogs-right row">
+                                @for ($i = 0; $i < 6; $i++)
+                                    @component('components.rehaul.small-blog-child')
+                                        @slot('slug')
+                                            jjadada
+                                        @endslot
+                                        @slot('title')
+                                            Kita Coba menjadi Pemain Sepak Bola Terbaik indonesia
+                                        @endslot
+                                        @slot('date')
+                                            Senin, 23 November 2022
+                                        @endslot
+                                        @slot('img')
+                                            https://thumbs.dreamstime.com/z/blogger-woman-demo%E2%80%A6d-blogger-woman-demonstrates-sewing-233628615.jpg
+                                        @endslot
+                                    @endcomponent
+                                @endfor
+                            </div>
+                        </div>
 
-
+                    </div>
                 </div>
+
             </div>
 
             <div class="clear"></div>
