@@ -35,8 +35,8 @@
 
         <div class="container clearfix h-100">
             <div class="d-flex flex-column justify-content-center h-100">
-                <h1 class="blogs-detail-title nott">Title Blog Untuk Percobaan Bikin Design </h1>
-                <span class="text-center span-time">1 bulan yang lalu</span>
+                <h1 class="blogs-detail-title nott">{{$blog->blogTitle}}</h1>
+                <span class="text-center span-time">{{timestamp_to_date($blog->created_at)}}</span>
             </div>
 
             {{-- <ol class="breadcrumb">
@@ -77,26 +77,12 @@
                     <div class="row justify-content-center">
 
                         <div class="col-lg-8 col-md-10 body-blogs-detail">
-                            <img src="https://thumbs.dreamstime.com/z/blogger-woman-demo%E2%80%A6d-blogger-woman-demonstrates-sewing-233628615.jpg"
-                                alt="" class="w-100 ">
+                            <img src="https://crm.resonansi.co.id/{{$blog->blogImage1}}"
+                                alt="{{$blog->blogTitle}}" class="w-100 ">
                             <p class="txt-copyright mb-4 mt-1">Copyright by <a href="{{ route('aboutPageV2') }}"><span
                                         class="span-bl">Team Resonansi</span></a> </p>
                             <div class="detail-text">
-                                <p>Frank Lampard has declared keeping Everton in the Premier League as "one of the greatest
-                                    moments of my footballing life and career".
-
-                                    Everton came from 2-0 down to beat Crystal Palace 3-2 on Thursday - a result which
-                                    guaranteed their survival after a tense relegation battle.
-
-                                    Lampard enjoyed a stellar playing career, which saw him make 106 international
-                                    appearances for England and perform at three World Cups.</p>
-
-                                <p>
-                                    Lampard enjoyed a stellar playing career, which saw him make 106 international
-                                    appearances for England and perform at three World Cups.</p>
-                                <p>
-                                    Lampard enjoyed a stellar playing career, which saw him make 106 international
-                                    appearances for England and perform at three World Cups.</p>
+                                {!!$blog->blogContent!!}
                             </div>
                             <div class="d-flex mt-5 mb-3">
                                 <div class="card shadow share-card">
@@ -136,22 +122,22 @@
                                 </div>
 
                                 <div class="list-blogs-right row">
-                                    @for ($i = 0; $i < 6; $i++)
-                                        @component('components.rehaul.small-blog-child')
-                                            @slot('slug')
-                                                jjadada
-                                            @endslot
-                                            @slot('title')
-                                                Kita Coba menjadi Pemain Sepak Bola Terbaik indonesia
-                                            @endslot
-                                            @slot('date')
-                                                Senin, 23 November 2022
-                                            @endslot
-                                            @slot('img')
-                                                https://thumbs.dreamstime.com/z/blogger-woman-demo%E2%80%A6d-blogger-woman-demonstrates-sewing-233628615.jpg
-                                            @endslot
-                                        @endcomponent
-                                    @endfor
+                                  @foreach ($latest as $items)
+                                      @component('components.rehaul.small-blog-child')
+                                          @slot('slug')
+                                              {{$items->blogSlug}}
+                                          @endslot
+                                          @slot('title')
+                                              {{$items->blogTitle}}
+                                          @endslot
+                                          @slot('date')
+                                              {{timestamp_to_date($items->created_at)}}
+                                          @endslot
+                                          @slot('img')
+                                              https://crm.resonansi.co.id/{{$items->blogImage1}}
+                                          @endslot
+                                      @endcomponent
+                                  @endforeach
                                 </div>
                             </div>
 

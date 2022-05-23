@@ -1,0 +1,13 @@
+.pagination-blogs .page-item{
+  margin: 0px 8px;
+
+}
+.pagination-blogs .page-item .page-link{
+  border-radius: 5px;
+  padding: 0.45rem 1rem;
+  font-size: 18px;
+  font-weight: 600;
+}
+.pagination-blogs .page-item.number .page-link{
+  border: none;
+}

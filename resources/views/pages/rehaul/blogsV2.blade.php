@@ -18,7 +18,7 @@
             .lists-blog-front{
                 border-right: none;
             }
-            
+
         }
 
         @media screen and (max-width: 450px) {
@@ -26,10 +26,13 @@
                 font-size: 36px;
             }
         }
-        
+        .content-wrap{
+          overflow: visible !important;
+        }
     </style>
     <link rel="stylesheet" href="{{ asset('asset/css/rehaul/homepage.css') }}">
-    <link rel="stylesheet" href="{{ asset('asset/css/rehaul/blogs.css') }}">
+    <link rel="stylesheet" href="{{ asset('asset/css/rehaul/blogs.css') }}?v=1.0.4">
+    <link rel="stylesheet" href="{{ asset('asset/css/rehaul/pagination.css') }}?v=1.1.3">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 @endsection
 @section('banner')
@@ -54,39 +57,35 @@
             <div class="container mb-5">
                 <div class="row">
                     <div class="col-lg-8 lists-blog-front" style="">
-                        <div class="post-grid row col-mb-30 " >
 
-                            <div class="entry col-lg-4 col-md-6">
-                                <div class="grid-inner card">
+                        <div class="post-grid row col-mb-30 "   >
+                          @foreach($blogs as $items)
+                              <div class="entry open-detail col-lg-4 col-md-6"  data-slug="{{$items->blogSlug}}">
+                                  <div class="grid-inner card">
+                                      <img src="https://crm.resonansi.co.id/{{$items->blogImage1}}"
+                                          alt="Image" class="card-img-top">
 
-                                    <img src="https://thumbs.dreamstime.com/z/blogger-woman-demo%E2%80%A6d-blogger-woman-demonstrates-sewing-233628615.jpg"
-                                        alt="Image" class="card-img-top">
-
-                                    <div class="p-3">
-                                        <div class="entry-title title-sm">
-                                            <h4 class="nott ls0 h5 title-blog"><a href="blog-single.html">Rules of COVID
-                                                    19</a></h4>
-                                        </div>
-                                        <div class="entry-meta">
-                                            <ul>
-                                                <li><i class="fas fa-calendar-alt"></i> 10th Feb 2021</li>
-                                                <li><a href="blog-single.html#comments"><i class="fas fa-eye "
-                                                            style="color:#061a35; margin-right: 10px"></i>13</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="entry-content mt-2">
-                                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                                elit.
-                                                Repellat velit, quidem illo non harum illum! Sed omnis facilis facere,
-                                                tenetur
-                                                reiciendis dolor sit amet mollitia suscipit aut, nemo soluta..</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
+                                      <div class="p-3">
+                                          <div class="entry-title title-sm">
+                                              <h4 class="nott ls0 h5 title-blog">{{$items->blogTitle}}</h4>
+                                          </div>
+                                          <div class="entry-meta">
+                                              <ul>
+                                                  <li><i class="fas fa-calendar-alt"></i> {{timestamp_to_date($items->created_at)}}</li>
+                                                  <li><a href="blog-single.html#comments"><i class="fas fa-eye "
+                                                              style="color:#061a35; margin-right: 10px"></i>{{$items->blogRead}}</a></li>
+                                              </ul>
+                                          </div>
+                                          <div class="entry-content mt-2">
+                                              {!!$items->blogContent!!}
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                            @endforeach
+                        </div>
+                        <div class="d-flex justify-content-center pagination-blogs">
+                          {{$blogs->links()}}
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-10">
@@ -96,27 +95,29 @@
                             </div>
 
                             <div class="list-blogs-right row">
-                                @for ($i = 0; $i < 6; $i++)
+                                @foreach ($latest as $items)
                                     @component('components.rehaul.small-blog-child')
                                         @slot('slug')
-                                            jjadada
+                                            {{$items->blogSlug}}
                                         @endslot
                                         @slot('title')
-                                            Kita Coba menjadi Pemain Sepak Bola Terbaik indonesia
+                                            {{$items->blogTitle}}
                                         @endslot
                                         @slot('date')
-                                            Senin, 23 November 2022
+                                            {{timestamp_to_date($items->created_at)}}
                                         @endslot
                                         @slot('img')
-                                            https://thumbs.dreamstime.com/z/blogger-woman-demo%E2%80%A6d-blogger-woman-demonstrates-sewing-233628615.jpg
+                                            https://crm.resonansi.co.id/{{$items->blogImage1}}
                                         @endslot
                                     @endcomponent
-                                @endfor
+                                @endforeach
                             </div>
                         </div>
 
                     </div>
+
                 </div>
+
 
             </div>
 
@@ -163,4 +164,11 @@
             );
         </script>
     @endif
+    <script type="text/javascript">
+      $('.open-detail').click(function(){
+        let slug = $(this).data('slug');
+        location.href = "/blogs/read/"+slug;
+      })
+    </script>
+
 @endsection

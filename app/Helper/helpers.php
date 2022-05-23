@@ -43,3 +43,27 @@ function set_active_navbar($uri, $output = ' current'){
     }
   }
 }
+function timestamp_to_date($timestamp){
+  $date = strtotime('now');
+    $bulan = [
+        "",
+        "Januari",
+        "Februari",
+        "Maret",
+        "April",
+        "Mei",
+        "Juni",
+        "Juli",
+        "Agustus",
+        "September",
+        "Oktober",
+        "November",
+        "Desember",
+    ];
+    if($timeStamp != null){
+        $date = strtotime($timeStamp);
+    }
+
+
+    return date('d', $date) . " " . $bulan[date('n', $date)] . " " . date('Y', $date);
+}
