@@ -87,14 +87,35 @@ class NewHomeController extends Controller
     }
     public function blogsPageV2(){
         $string  = "Blogs";
+        $data['blogs'] = DB::table('blogs')
+          ->select('blogs.blogTitle', 'blogs.blogSlug', 'blogs.blogContent', 'blogs.blogLike', 'blogs.blogRead', 'blogs.created_at', 'blogs.blogImage1', 'blogs.id', 'blogs.titleImage')
+          ->where('blogStatus' , '=', 'active')
+          ->orderBy('created_at', 'desc')
+          ->paginate(9);
+        $data['latest'] =  DB::table('blogs')
+            ->select('blogs.blogTitle', 'blogs.blogSlug', 'blogs.blogContent', 'blogs.blogLike', 'blogs.blogRead', 'blogs.created_at', 'blogs.blogImage1', 'blogs.id', 'blogs.titleImage')
+            ->where('blogStatus' , '=', 'active')
+            ->orderBy('created_at', 'desc')
+            ->limit(6)->get();
+        // dd($data['latest']);
         // return view('pages.rehaul.coming-soon', compact('string'));
-        return view('pages.rehaul.blogsV2');
+        return view('pages.rehaul.blogsV2', $data);
     }
     public function careerPageV2(){
       $string  = "Career";
         return view('pages.rehaul.coming-soon', compact('string'));
     }
     public function blogsDetailPageV2($slug){
-        return view('pages.rehaul.blogs-detailV2');
+        $data['blog'] = DB::table('blogs')
+            ->where('blogSlug', $slug)->first();
+        $data['latest'] =  DB::table('blogs')
+          ->select('blogs.blogTitle', 'blogs.blogSlug', 'blogs.blogContent', 'blogs.blogLike', 'blogs.blogRead', 'blogs.created_at', 'blogs.blogImage1', 'blogs.id', 'blogs.titleImage')
+          ->where('blogStatus' , '=', 'active')
+          ->whereNotIn('blogSlug', [$slug])
+          ->orderBy('created_at', 'desc')
+          ->limit(6)->get();
+        return view('pages.rehaul.blogs-detailV2', $data);
     }
+
+
 }
