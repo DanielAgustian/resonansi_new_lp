@@ -11,6 +11,62 @@
             object-fit: contain
         }
 
+        .card-problem {
+            border-radius: 12px;
+            background: #CED3DC !important;
+            box-shadow: 0px 10px 20px 2px rgba(255, 255, 255, 0.25);
+            transition: all 0.5s;
+
+        }
+
+        .card-problem .card-body {
+            padding: 0.85rem;
+        }
+
+        .card-problem img {
+            width: 100%;
+            height: 120px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+
+        .card-problem .problem-title {
+            color: black;
+            line-height: 1.75;
+        }
+
+        .card-problem:hover {
+            transform: translateY(-5px);
+            background: white !important;
+            box-shadow: 0px 10px 20px 2px rgba(255, 255, 255, 0.35);
+
+        }
+
+        .title-service {
+            font-size: 34px;
+        }
+
+        @media screen and (max-width: 996px) {
+            .title-service {
+                font-size: 28px;
+            }
+        }
+
+        @media screen and (max-width: 450px) {
+            .title-service {
+                font-size: 24px;
+            }
+            .card-problem .problem-title{
+                font-size: 11px;
+            }
+            .card-problem{
+                min-height: 270px;
+            }
+            .card-problem img{
+                height: 100px;
+            }
+        }
+
     </style>
     <link rel="stylesheet" href="{{ asset('asset/css/rehaul/homepage.css') }}">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -32,39 +88,106 @@
 @section('content')
     <section id="content">
 
-       
-        <div class="section mt-0"
-                style="background-position: center center; background-repeat: no-repeat; background-size: cover; background-color: #061a35;);">
-                <div class="shape-divider" data-shape="wave" data-position="bottom" data-height="100"></div>
 
-                <div class="container dark">
-                    <div class="row justify-content-center align-items-center">
+        <div class="section mt-0"
+            style="background-position: center center; background-repeat: no-repeat; background-size: cover; background-color: #061a35;);">
+            <div class="shape-divider" data-shape="wave" data-position="bottom" data-height="100"></div>
+
+            <div class="container dark">
+                <div style="padding: 50px 0px 150px">
+                    <div class="row align-items-center">
                         <div class="col-lg-4">
-                            
+                            <h5 class="mb-3 text-uppercase ls3 " style="color: rgba(255, 255, 255, 0.85)">Solusi Resonansi
+                            </h5>
+                            <h2 class="title-service mb-4" style="font-weight: 500">Kami paham masalahmu dalam menjalani
+                                <strong>bisnis online</strong>.
+                                </h3>
+                                <p class="text-white">
+                                    Apapun masalahmu ketika menjalani bisnis online, Resonansi bisa menjawab dan
+                                    menyelesaikan masalah tersebut dengan berbagai layanan yang kami sediakan.
+                                </p>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="row justify-content-center align-items-md-center">
+                                <div class="col-md-4 col-6 order-md-1 order-1">
+                                    @component('components.rehaul.problem-card')
+                                        @slot('img')
+                                            {{ asset('images/rehaul/marketplace-optimization.png') }}
+                                        @endslot
+                                        @slot('title')
+                                            Udah bikin konten tapi gak ada likes & comment. Sering posting tapi gak ada interaksi di
+                                            sosmed?
+                                        @endslot
+                                    @endcomponent
+                                    @component('components.rehaul.problem-card')
+                                        @slot('img')
+                                            {{ asset('images/rehaul/marketplace-optimization.png') }}
+                                        @endslot
+                                        @slot('title')
+                                            Punya website tapi gak ada pengunjung responsifnya, bingung bikin design yang
+                                            profesional & menarik
+                                        @endslot
+                                    @endcomponent
+                                </div>
+                                <div class="col-md-4 col-6 order-md-2 order-3">
+                                    @component('components.rehaul.problem-card')
+                                        @slot('img')
+                                            {{ asset('images/rehaul/marketplace-optimization.png') }}
+                                        @endslot
+                                        @slot('title')
+                                            Omzet usaha masih gitu-gitu aja,
+                                            mau naikin profit & berkembang di dunia digital tapi gak tau gimana caranya
+                                        @endslot
+                                    @endcomponent
+                                </div> 
+                                <div class="col-md-4 col-6 order-md-3 order-2">
+                                    @component('components.rehaul.problem-card')
+                                        @slot('img')
+                                            {{ asset('images/rehaul/marketplace-optimization.png') }}
+                                        @endslot
+                                        @slot('title')
+                                            Nambah barang /toko = nambah admin. Biaya operasional terus naik seiring dengan naiknya
+                                            omzet
+                                        @endslot
+                                    @endcomponent
+                                    @component('components.rehaul.problem-card')
+                                        @slot('img')
+                                            {{ asset('images/rehaul/marketplace-optimization.png') }}
+                                        @endslot
+                                        @slot('title')
+                                            Mau bikin virtual event/ webinar tapi gak punya resource buat handle acara?
+                                        @endslot
+                                    @endcomponent
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="row align-items-center h-100" style="padding: 50px 0 150px">
-                        <div class=" col-lg-6 col-md-11">
+                    <div class="row align-items-center h-100 justify-content-center">
+                        <div class=" col-lg-8 col-md-11">
                             {{-- <h5 class="mb-3 text-uppercase ls3 text-white-50">Siapa Kami</h5> --}}
-                            <h3 class="display-7 fw-semibold mb-4"> Apakah kamu merasakan masalah yang sama?
-                            </h3>
+
                             {{-- <p>Resonansi ada untuk membantu sebuah brand agar dapat satu frekuensi yang sama, dengan apa
-                                yang sedang diperbincangan setiap saat oleh masyarakat, untuk membantu masyarakat atau
-                                konsumen dari brand untuk paham tentang produk milik brand.</p> --}}
+                                    yang sedang diperbincangan setiap saat oleh masyarakat, untuk membantu masyarakat atau
+                                    konsumen dari brand untuk paham tentang produk milik brand.</p> --}}
                         </div>
                         {{-- <div class="col-12 mt-2">
-                            <a href="{{ asset('brosur/brosur_resonansi.pdf') }}" download>
-                                <button class="btn btn-blue-dark">Learn More</button>
-                            </a>
-                        </div> --}}
+                                <a href="{{ asset('brosur/brosur_resonansi.pdf') }}" download>
+                                    <button class="btn btn-blue-dark">Learn More</button>
+                                </a>
+                            </div> --}}
                     </div>
-                    
 
                 </div>
+
+
+
+
             </div>
+        </div>
 
         <div class="" style="height: 60px"></div>
         <div class="container ">
+            <h3 class="display-6 fw-bold mb-5 text-center" style="color: #000000AE">Layanan <span class="span-bl">Resonansi</span> untuk Anda</h3>
             <div class="row justify-content-center">
                 <div class="col-lg-12 col-md-10">
                     <div class="row align-items-center">
@@ -96,7 +219,8 @@
                                         NGERTIYO (Gamification Education Business))
                                     </span>
                                     <div class="d-flex justify-content-center mt-4 justify-content-sm-start me-sm-0 me-3">
-                                        <button class="btn btn-blue btn-bigger btn-order" data-type="technology">Order Now</button>
+                                        <button class="btn btn-blue btn-bigger btn-order" data-type="technology">Order
+                                            Now</button>
                                     </div>
                                 </div>
                             </div>
@@ -204,7 +328,8 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="d-flex justify-content-center mt-4 justify-content-sm-end">
-                                        <button class="btn btn-blue btn-bigger btn-order" data-type=" digital-strategy">Order Now!</button>
+                                        <button class="btn btn-blue btn-bigger btn-order"
+                                            data-type=" digital-strategy">Order Now!</button>
                                     </div>
                                 </div>
                             </div>
@@ -243,7 +368,8 @@
                                         Marketplace Ads
                                     </span>
                                     <div class="d-flex justify-content-center mt-4 justify-content-sm-start">
-                                        <button class="btn btn-blue btn-bigger btn-order" data-type="marketplace-opt">Order Now!</button>
+                                        <button class="btn btn-blue btn-bigger btn-order" data-type="marketplace-opt">Order
+                                            Now!</button>
                                     </div>
                                 </div>
                             </div>
@@ -259,9 +385,9 @@
                                     <div class="d-flex flex-column ms-sm-0 ms-4 align-items-sm-end">
                                         <div>
                                             <p class="mb-2 text-start text-sm-end fw-bold">
-                                                Content Creator Management  
+                                                Content Creator Management
                                             </p>
-        
+
                                             <span class="list-layanan text-start text-sm-end ">
                                                 <i class="fas fa-check-circle me-2 mt-1 d-sm-none d-inline-flex"></i>
                                                 TVC Production
@@ -272,16 +398,16 @@
                                                 3D Animation
                                                 <i class="fas fa-check-circle ms-2 mt-1 d-sm-inline-flex d-none"></i>
                                             </span>
-        
+
                                             <span class="list-layanan text-start text-sm-end ">
                                                 <i class="fas fa-check-circle me-2 mt-1 d-sm-none d-inline-flex"></i>
                                                 Youtube
                                                 <i class="fas fa-check-circle ms-2 mt-1 d-sm-inline-flex d-none"></i>
                                             </span>
-                                           
-                                            
+
+
                                         </div>
-        
+
                                     </div>
                                 </div>
                                 <div class="col-lg-6 ">
@@ -290,7 +416,7 @@
                                             <p class="mb-2 text-start text-sm-end fw-bold">
                                                 Virtual
                                             </p>
-        
+
                                             <span class="list-layanan text-start text-sm-end ">
                                                 <i class="fas fa-check-circle me-2 mt-1 d-sm-none d-inline-flex"></i>
                                                 Virtual Event
@@ -301,7 +427,7 @@
                                                 Live Streaming
                                                 <i class="fas fa-check-circle ms-2 mt-1 d-sm-inline-flex d-none"></i>
                                             </span>
-        
+
                                             <span class="list-layanan text-start text-sm-end ">
                                                 <i class="fas fa-check-circle me-2 mt-1 d-sm-none d-inline-flex"></i>
                                                 Webinar
@@ -309,28 +435,29 @@
                                             </span>
                                             <p class="mb-2  mt-4 text-start text-sm-end fw-bold">
                                                 Cross Platform Streaming
-        
-        
+
+
                                             </p>
-        
+
                                             <span class="list-layanan text-start text-sm-end ">
                                                 <i class="fas fa-check-circle me-2 mt-1 d-sm-none d-inline-flex"></i>
                                                 Interactive Website
-        
+
                                                 <i class="fas fa-check-circle ms-2 mt-1 d-sm-inline-flex d-none"></i>
                                             </span>
-                                            
+
                                         </div>
-        
+
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="d-flex justify-content-center mt-4 justify-content-sm-end">
-                                        <button class="btn btn-blue btn-bigger btn-order" data-type="multimedia">Order Now</button>
+                                        <button class="btn btn-blue btn-bigger btn-order" data-type="multimedia">Order
+                                            Now</button>
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
                         <div class="col-sm-6 order-sm-2 order-1">
                             <img src="{{ asset('images/rehaul/mktp-live.png') }}" alt="Image 1" class="img-layanan-bg">
@@ -361,7 +488,8 @@
 
 
                                     <div class="d-flex justify-content-center mt-4 justify-content-sm-start">
-                                        <button class="btn btn-blue btn-bigger btn-order" data-type="cloud-warehouse-software">Order Now</button>
+                                        <button class="btn btn-blue btn-bigger btn-order"
+                                            data-type="cloud-warehouse-software">Order Now</button>
                                     </div>
                                 </div>
                             </div>
@@ -377,7 +505,7 @@
 
 
 
-        <div class="" style="height: 60px"></div>   
+        <div class="" style="height: 60px"></div>
 
         <div class="section section-form  pt-0 mb-0 bg-color mt-0"
             style="background: url('demos/movers/images/bg-2.png') no-repeat center bottom / 100%; overflow: visible">
@@ -493,14 +621,14 @@
                                                 @endif
                                             @endfor
                                             <!-- <option value="paket-technology-conversion-opt" selected>Paket Technology Conversion Optimization</option>
-                                                                                                                                                                                            <option value="paket-virtual-event">Paket Virtual Event / Webinar</option>
-                                                                                                                                                                                            <option value="paket-marketplace">Paket Marketplace</option>
-                                                                                                                                                                                            <option value="technology">Technology</option>
-                                                                                                                                                                                            <option value="digital-strategy">Digital Strategy</option>
+                                                                                                                                                                                                                        <option value="paket-virtual-event">Paket Virtual Event / Webinar</option>
+                                                                                                                                                                                                                        <option value="paket-marketplace">Paket Marketplace</option>
+                                                                                                                                                                                                                        <option value="technology">Technology</option>
+                                                                                                                                                                                                                        <option value="digital-strategy">Digital Strategy</option>
 
-                                                                                                                                                                                            <option value="marketplace-opt">Marketplace Optimization</option>
-                                                                                                                                                                                            <option value="multimedia">Multimedia </option>
-                                                                                                                                                                                            <option value="cloud-warehouse-software">Cloud Warehouse Software</option> -->
+                                                                                                                                                                                                                        <option value="marketplace-opt">Marketplace Optimization</option>
+                                                                                                                                                                                                                        <option value="multimedia">Multimedia </option>
+                                                                                                                                                                                                                        <option value="cloud-warehouse-software">Cloud Warehouse Software</option> -->
                                         </select>
 
                                     </div>

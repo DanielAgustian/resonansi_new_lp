@@ -113,14 +113,17 @@
                                     <div class="col-md-4 mb-3 col-6">
                                         <img src="{{asset('images/klien/logo-warisan.png')}}" alt="" class="img-sis-comp">
                                     </div>
-                                    <div class="col-md-4 mb-3 col-6">
+                                    {{-- <div class="col-md-4 mb-3 col-6">
                                         <img src="{{asset('images/klien/WGM.png')}}" alt="" class="img-sis-comp">
                                     </div>
                                     <div class="col-md-4 mb-3 col-6">
                                         <img src="{{asset('images/klien/WHW2_1.png')}}" alt="" class="img-sis-comp">
-                                    </div>
+                                    </div> --}}
                                     <div class="col-md-4 mb-3 col-6">
                                         <img src="{{asset('images/klien/logo-kagumi.png')}}" alt="" class="img-sis-comp">
+                                    </div>
+                                    <div class="col-md-4 mb-3 col-6">
+                                        <img src="{{asset('images/klien/logo-wpn.png')}}" alt="" class="img-sis-comp">
                                     </div>
                                 </div>
                             </div>
