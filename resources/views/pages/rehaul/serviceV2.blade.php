@@ -31,6 +31,38 @@
 @endsection
 @section('content')
     <section id="content">
+
+       
+        <div class="section mt-0"
+                style="background-position: center center; background-repeat: no-repeat; background-size: cover; background-color: #061a35;);">
+                <div class="shape-divider" data-shape="wave" data-position="bottom" data-height="100"></div>
+
+                <div class="container dark">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-lg-4">
+                            
+                        </div>
+                    </div>
+                    <div class="row align-items-center h-100" style="padding: 50px 0 150px">
+                        <div class=" col-lg-6 col-md-11">
+                            {{-- <h5 class="mb-3 text-uppercase ls3 text-white-50">Siapa Kami</h5> --}}
+                            <h3 class="display-7 fw-semibold mb-4"> Apakah kamu merasakan masalah yang sama?
+                            </h3>
+                            {{-- <p>Resonansi ada untuk membantu sebuah brand agar dapat satu frekuensi yang sama, dengan apa
+                                yang sedang diperbincangan setiap saat oleh masyarakat, untuk membantu masyarakat atau
+                                konsumen dari brand untuk paham tentang produk milik brand.</p> --}}
+                        </div>
+                        {{-- <div class="col-12 mt-2">
+                            <a href="{{ asset('brosur/brosur_resonansi.pdf') }}" download>
+                                <button class="btn btn-blue-dark">Learn More</button>
+                            </a>
+                        </div> --}}
+                    </div>
+                    
+
+                </div>
+            </div>
+
         <div class="" style="height: 60px"></div>
         <div class="container ">
             <div class="row justify-content-center">
