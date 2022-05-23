@@ -1,0 +1,68 @@
+.logo-reso{
+    max-height: 280px;
+    object-fit: contain;
+}
+
+.value-box{
+    transition: all 0.5s;
+    padding: 15px;
+    background-color: white;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;;
+}
+
+.value-box:hover{
+    
+    background-color: #061a35;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 20px, rgba(0, 0, 0, 0.49) 0px 6px 6px;;
+    transform: translateY(-8px);
+}
+
+.value-box i{
+    color: #000000AA;
+    font-size: 36px;
+    font-weight: 800;
+    transition: all 0.5s;
+}
+
+.value-box:hover i{
+    color: white;
+}
+.value-box .value-title{
+    color: #000000AA;
+    margin-top: 10px;
+    transition: all 0.5s;
+}
+.value-box:hover .value-title{
+    color: white;
+}
+.value-team{
+    padding-top: 55px !important;
+    padding-bottom: 55px;
+    background: linear-gradient(180deg , white, #052c6310);
+
+}
+.box-advan{
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.box-advan img{
+    margin-bottom: 10px;
+}
+.box-advan .adv-title{
+    text-align: center;
+    color: #061a35EE;
+    font-weight: 500;
+
+}
+@media screen and (max-width: 996px) {
+    
+}
+@media screen and (max-width: 450px){
+    .logo-reso{
+        margin-bottom: 25px;
+    }
+}

@@ -376,11 +376,8 @@
                                     <div class="card-body">
                                         <h4 class="title-price fw-semibold text-center mb-3">Technology and Conversion
                                             Optimization</h4>
-                                        <h2 class="price-val fw-bold text-center mb-0">Rp 5.000.000</h2>
-                                        <div class="d-flex justify-content-center mt-2">
-                                            <button class="btn btn-blue-dark btn-order"
-                                                data-type="paket-technology-conversion-opt">Order Now!</button>
-                                        </div>
+                                        {{-- <h2 class="price-val fw-bold text-center mb-0">Rp 5.000.000</h2> --}}
+                                        
                                         <div class="mx-3 my-4">
                                             <div class="divider-vertical"></div>
                                         </div>
@@ -400,6 +397,10 @@
                                                 SEO (Search Engine Optimization)
                                             </p>
                                         </div>
+                                        <div class="d-flex justify-content-center mt-2">
+                                            <button class="btn btn-blue-dark btn-ask"
+                                                data-type="paket-technology-conversion-opt">Order Now!</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -407,11 +408,8 @@
                                 <div class="card card-mobile-price bg-white d-lg-none d-block">
                                     <div class="card-body">
                                         <h4 class="title-price fw-semibold text-center mb-3">Virtual Event</h4>
-                                        <h2 class="price-val fw-bold text-center mb-0">Rp 7.500.000</h2>
-                                        <div class="d-flex justify-content-center mt-2">
-                                            <button class="btn btn-blue-dark btn-order"
-                                                data-type="paket-virtual-event">Order Now!</button>
-                                        </div>
+                                        {{-- <h2 class="price-val fw-bold text-center mb-0">Rp 7.500.000</h2> --}}
+                                        
                                         <div class="mx-3 my-4">
                                             <div class="divider-vertical"></div>
                                         </div>
@@ -433,6 +431,10 @@
                                                 <li>Smooth Presentation Software </li>
                                             </ul>
                                         </div>
+                                        <div class="d-flex justify-content-center mt-2">
+                                            <button class="btn btn-blue-dark btn-order"
+                                                data-type="paket-virtual-event">Order Now!</button>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -442,11 +444,8 @@
                                     <div class="card-body">
                                         <h4 class="title-price fw-semibold text-center mb-3">Marketplace (Online Sales
                                             Strategy)</h4>
-                                        <h2 class="price-val fw-bold text-center mb-0">Rp 10.000.000</h2>
-                                        <div class="d-flex justify-content-center mt-2">
-                                            <button class="btn btn-blue-dark btn-order" data-type="paket-marketplace">Order
-                                                Now!</button>
-                                        </div>
+                                        {{-- <h2 class="price-val fw-bold text-center mb-0">Rp 10.000.000</h2> --}}
+                                        
                                         <div class="mx-3 my-4">
                                             <div class="divider-vertical"></div>
                                         </div>
@@ -490,6 +489,10 @@
                                                 <li>Reporting and Insight (Monthly)</li>
 
                                             </ul>
+                                        </div>
+                                        <div class="d-flex justify-content-center mt-2">
+                                            <button class="btn btn-blue-dark btn-order" data-type="paket-marketplace">Order
+                                                Now!</button>
                                         </div>
                                     </div>
                                 </div>

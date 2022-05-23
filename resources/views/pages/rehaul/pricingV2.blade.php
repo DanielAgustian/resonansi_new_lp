@@ -102,116 +102,152 @@
 
                             <div class="row no-gutters justify-content-center">
                                 <div class="col-lg-4 col-md-6 pricing-border-right first-b">
-                                    <h4 class="title-price fw-semibold text-center mb-3">Technology and Conversion
-                                        Optimization</h4>
-                                    <h2 class="price-val fw-bold text-center mb-0">Rp 5.000.000</h2>
-                                    <div class="d-flex justify-content-center mt-2">
-                                        <button class="btn btn-blue-dark btn-order"
-                                            data-type="paket-technology-conversion-opt">Order Now!</button>
-                                    </div>
-                                    <div class="mx-3 my-4">
-                                        <div class="divider-vertical"></div>
-                                    </div>
-                                    <div class="d-flex flex-column  justify-content-center mx-3">
-                                        <p class="pricing-item">
-                                            <i class="fas fa-check-circle me-3 mt-1"></i>
-                                            Landing Page Campaign
-                                        </p>
-                                        <p class="pricing-item">
-                                            <i class="fas fa-check-circle me-3 mt-1"></i>
-                                            Marketing and Sales Funnel (Digital Funneling)
+                                  <div class="d-flex flex-column h-100 justify-content-between">
+                                    <div class="">
+                                      <div class="" style="min-height:60px">
+                                        <h4 class="title-price fw-semibold text-center mb-3">Technology and Conversion
+                                            Optimization</h4>
+                                        <!-- <h2 class="price-val fw-bold text-center mb-0">Rp 5.000.000</h2> -->
+                                        <!-- <div class="d-flex justify-content-center mt-2">
+                                            <button class="btn btn-blue-dark btn-order"
+                                                data-type="paket-technology-conversion-opt">Order Now!</button>
+                                        </div> -->
+
+                                      </div>
+                                      <div class="mx-3 my-4">
+                                          <div class="divider-vertical"></div>
+                                      </div>
+                                      <div class="d-flex flex-column  justify-content-center mx-3">
+                                          <p class="pricing-item">
+                                              <i class="fas fa-check-circle me-3 mt-1"></i>
+                                              Landing Page Campaign
+                                          </p>
+                                          <p class="pricing-item">
+                                              <i class="fas fa-check-circle me-3 mt-1"></i>
+                                              Marketing and Sales Funnel (Digital Funneling)
 
 
-                                        </p>
-                                        <p class="pricing-item">
-                                            <i class="fas fa-check-circle me-3 mt-1"></i>
-                                            SEO (Search Engine Optimization)
-                                        </p>
+                                          </p>
+                                          <p class="pricing-item">
+                                              <i class="fas fa-check-circle me-3 mt-1"></i>
+                                              SEO (Search Engine Optimization)
+                                          </p>
+                                      </div>
+
                                     </div>
+                                    <div class="d-flex justify-content-center mt-3 ">
+                                        <button class="btn btn-blue-dark btn-ask btn-bigger "
+                                            data-type="paket-technology-conversion-opt">Ask for Price</button>
+                                    </div>
+                                  </div>
 
 
                                 </div>
                                 <div class="col-lg-4 col-md-6 pricing-border-right second-b">
-                                    <h4 class="title-price fw-semibold text-center mb-3">Virtual Event</h4>
-                                    <h2 class="price-val fw-bold text-center mb-0">Rp 7.500.000</h2>
-                                    <div class="d-flex justify-content-center mt-2">
-                                        <button class="btn btn-blue-dark btn-order" data-type="paket-virtual-event">Order
-                                            Now!</button>
-                                    </div>
-                                    <div class="mx-3 my-4">
-                                        <div class="divider-vertical"></div>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center mx-3">
-                                        <p class="pricing-item">
-                                            <i class="fas fa-check-circle me-3 mt-1"></i>
-                                            Virtual Event / Webinar
+                                  <div class="flex-column d-flex justify-content-between h-100">
+                                    <div class="">
+                                      <div class="" style="min-height:60px">
+                                        <h4 class="title-price fw-semibold text-center mb-3">Virtual Event</h4>
+                                      </div>
 
-                                        </p>
-                                        <p class="pricing-item mb-0">
-                                            <i class="fas fa-check-circle me-3 mt-1"></i>
-                                            Operate Streaming Activation
+                                      <!-- <h2 class="price-val fw-bold text-center mb-0">Rp 7.500.000</h2> -->
+                                      <!-- <div class="d-flex justify-content-center mt-2">
+                                          <button class="btn btn-blue-dark btn-order btn-bigger w-100"
+                                              data-type="paket-virtual-event">Order Now!</button>
+                                      </div> -->
+                                      <div class="mx-3 my-4">
+                                          <div class="divider-vertical"></div>
+                                      </div>
+                                      <div class="d-flex flex-column justify-content-center mx-3">
+                                          <p class="pricing-item">
+                                              <i class="fas fa-check-circle me-3 mt-1"></i>
+                                              Virtual Event / Webinar
 
-                                        </p>
-                                        <ul class="list-item">
-                                            <li>Zoom 3 hours
-                                            </li>
-                                            <li>Operator Assisted</li>
-                                            <li>Smooth Presentation Software </li>
-                                        </ul>
+                                          </p>
+                                          <p class="pricing-item mb-0">
+                                              <i class="fas fa-check-circle me-3 mt-1"></i>
+                                              Operate Streaming Activation
+
+                                          </p>
+                                          <ul class="list-item">
+                                              <li>Zoom 3 hours
+                                              </li>
+                                              <li>Operator Assisted</li>
+                                              <li>Smooth Presentation Software </li>
+                                          </ul>
+                                      </div>
                                     </div>
+                                    <div class="d-flex justify-content-center mt-3">
+                                        <button class="btn btn-blue-dark btn-ask btn-bigger "
+                                            data-type="paket-virtual-event">Ask for Price</button>
+                                    </div>
+                                  </div>
+
                                 </div>
                                 <div class="col-lg-4 col-md-6 pricing-border-none">
-                                    <h4 class="title-price fw-semibold text-center mb-3">Marketplace (Online Sales
-                                        Strategy)</h4>
-                                    <h2 class="price-val fw-bold text-center mb-0">Rp 10.000.000</h2>
-                                    <div class="d-flex justify-content-center mt-2">
-                                        <button class="btn btn-blue-dark btn-order" data-type="paket-marketplace">Order
-                                            Now!</button>
+                                  <div class="d-flex flex-column h-100 justify-content-between">
+                                    <div class="">
+                                      <div class="" style="min-height: 60px">
+                                        <h4 class="title-price fw-semibold text-center mb-3">Marketplace (Online Sales
+                                            Strategy)</h4>
+                                        <!-- <h2 class="price-val fw-bold text-center mb-0">Rp 10.000.000</h2> -->
+                                        <!-- <div class="d-flex justify-content-center mt-2">
+                                            <button class="btn btn-blue-dark btn-order" data-type="paket-marketplace">Order
+                                                Now!</button>
+                                        </div> -->
+                                      </div>
+                                      <div class="mx-3 my-4">
+                                          <div class="divider-vertical"></div>
+                                      </div>
+                                      <div class="d-flex flex-column justify-content-center mx-3">
+                                          <p class="pricing-item mb-0">
+                                              <i class="fas fa-check-circle me-3 mt-1"></i>
+                                              Marketplace Optimization
+
+                                          </p>
+                                          <ul class="list-item">
+                                              <li>Shop Optimization (max. 2 shops)
+                                              </li>
+                                              <li>Product Optimization</li>
+                                              <li>Reporting and Insight (Weekly)</li>
+                                          </ul>
+                                          <p class="pricing-item mb-0">
+                                              <i class="fas fa-check-circle me-3 mt-1"></i>
+                                              Marketplace Ads Optimization
+
+
+
+                                          </p>
+                                          <ul class="list-item">
+                                              <li>Ads Optimization (max. 2 shops)</li>
+                                              <li>Keyword and Category Optimization</li>
+                                              <li>Bonus Top Up Ads</li>
+                                              <li>Reporting and Insight (Weekly)</li>
+                                          </ul>
+                                          <p class="pricing-item mb-0">
+                                              <i class="fas fa-check-circle me-3 mt-1"></i>
+                                              Marketplace Live
+
+
+
+                                          </p>
+                                          <ul class="list-item">
+                                              <li>Shopee Live (5 times)</li>
+                                              <li>Tokopedia Live (5 times)</li>
+                                              <li>Live Duration 20 minutes</li>
+                                              <li>1 Host per Session</li>
+                                              <li>Reporting and Insight (Monthly)</li>
+
+                                          </ul>
+                                      </div>
                                     </div>
-                                    <div class="mx-3 my-4">
-                                        <div class="divider-vertical"></div>
+                                    <div class="d-flex justify-content-center mt-3">
+                                        <button class="btn btn-blue-dark btn-ask btn-bigger" data-type="paket-marketplace">Ask for Price</button>
                                     </div>
-                                    <div class="d-flex flex-column justify-content-center mx-3">
-                                        <p class="pricing-item mb-0">
-                                            <i class="fas fa-check-circle me-3 mt-1"></i>
-                                            Marketplace Optimization
-
-                                        </p>
-                                        <ul class="list-item">
-                                            <li>Shop Optimization (max. 2 shops)
-                                            </li>
-                                            <li>Product Optimization</li>
-                                            <li>Reporting and Insight (Weekly)</li>
-                                        </ul>
-                                        <p class="pricing-item mb-0">
-                                            <i class="fas fa-check-circle me-3 mt-1"></i>
-                                            Marketplace Ads Optimization
+                                  </div>
 
 
 
-                                        </p>
-                                        <ul class="list-item">
-                                            <li>Ads Optimization (max. 2 shops)</li>
-                                            <li>Keyword and Category Optimization</li>
-                                            <li>Bonus Top Up Ads</li>
-                                            <li>Reporting and Insight (Weekly)</li>
-                                        </ul>
-                                        <p class="pricing-item mb-0">
-                                            <i class="fas fa-check-circle me-3 mt-1"></i>
-                                            Marketplace Live
-
-
-
-                                        </p>
-                                        <ul class="list-item">
-                                            <li>Shopee Live (5 times)</li>
-                                            <li>Tokopedia Live (5 times)</li>
-                                            <li>Live Duration 20 minutes</li>
-                                            <li>1 Host per Session</li>
-                                            <li>Reporting and Insight (Monthly)</li>
-
-                                        </ul>
-                                    </div>
                                 </div>
                             </div>
 
@@ -223,11 +259,8 @@
                                 <div class="card-body">
                                     <h4 class="title-price fw-semibold text-center mb-3">Technology and Conversion
                                         Optimization</h4>
-                                    <h2 class="price-val fw-bold text-center mb-0">Rp 5.000.000</h2>
-                                    <div class="d-flex justify-content-center mt-2">
-                                        <button class="btn btn-blue-dark btn-order"
-                                            data-type="paket-technology-conversion-opt">Order Now!</button>
-                                    </div>
+                                    {{-- <h2 class="price-val fw-bold text-center mb-0">Rp 5.000.000</h2> --}}
+                                    
                                     <div class="mx-3 my-4">
                                         <div class="divider-vertical"></div>
                                     </div>
@@ -247,6 +280,10 @@
                                             SEO (Search Engine Optimization)
                                         </p>
                                     </div>
+                                    <div class="d-flex justify-content-center mt-2">
+                                        <button class="btn btn-blue-dark btn-ask"
+                                            data-type="paket-technology-conversion-opt">Order Now!</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -254,11 +291,8 @@
                             <div class="card card-mobile-price bg-white d-lg-none d-block">
                                 <div class="card-body">
                                     <h4 class="title-price fw-semibold text-center mb-3">Virtual Event</h4>
-                                    <h2 class="price-val fw-bold text-center mb-0">Rp 7.500.000</h2>
-                                    <div class="d-flex justify-content-center mt-2">
-                                        <button class="btn btn-blue-dark btn-order" data-type="paket-virtual-event">Order
-                                            Now!</button>
-                                    </div>
+                                    {{-- <h2 class="price-val fw-bold text-center mb-0">Rp 7.500.000</h2> --}}
+                                    
                                     <div class="mx-3 my-4">
                                         <div class="divider-vertical"></div>
                                     </div>
@@ -280,6 +314,10 @@
                                             <li>Smooth Presentation Software </li>
                                         </ul>
                                     </div>
+                                    <div class="d-flex justify-content-center mt-2">
+                                        <button class="btn btn-blue-dark btn-order"
+                                            data-type="paket-virtual-event">Order Now!</button>
+                                    </div>
                                 </div>
                             </div>
 
@@ -289,11 +327,8 @@
                                 <div class="card-body">
                                     <h4 class="title-price fw-semibold text-center mb-3">Marketplace (Online Sales
                                         Strategy)</h4>
-                                    <h2 class="price-val fw-bold text-center mb-0">Rp 10.000.000</h2>
-                                    <div class="d-flex justify-content-center mt-2">
-                                        <button class="btn btn-blue-dark btn-order" data-type="paket-marketplace">Order
-                                            Now!</button>
-                                    </div>
+                                    {{-- <h2 class="price-val fw-bold text-center mb-0">Rp 10.000.000</h2> --}}
+                                    
                                     <div class="mx-3 my-4">
                                         <div class="divider-vertical"></div>
                                     </div>
@@ -337,6 +372,10 @@
                                             <li>Reporting and Insight (Monthly)</li>
 
                                         </ul>
+                                    </div>
+                                    <div class="d-flex justify-content-center mt-2">
+                                        <button class="btn btn-blue-dark btn-order" data-type="paket-marketplace">Order
+                                            Now!</button>
                                     </div>
                                 </div>
                             </div>

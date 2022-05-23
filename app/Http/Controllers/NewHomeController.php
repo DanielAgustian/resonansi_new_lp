@@ -103,7 +103,7 @@ class NewHomeController extends Controller
     }
     public function careerPageV2(){
       $string  = "Career";
-        return view('pages.rehaul.coming-soon', compact('string'));
+        return view('pages.rehaul.careerV2');
     }
     public function blogsDetailPageV2($slug){
         $data['blog'] = DB::table('blogs')
