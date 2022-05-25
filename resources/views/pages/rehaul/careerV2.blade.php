@@ -139,7 +139,7 @@
                         <div class="row mt-5 justify-content-center">
                             <div class="col-lg-4 col-6">
                                 <div class="box-advan">
-                                    <img src="{{asset('images/rehaul/career/increase-sales.png')}}"
+                                    <img src="{{asset('images/rehaul/career/increase-sale.png')}}"
                                         alt="">
                                     <h5 class="adv-title">Increase Product or Service
                                         Sales Conversion
