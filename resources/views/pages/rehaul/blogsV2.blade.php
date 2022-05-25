@@ -8,15 +8,17 @@
         .title-contact {
             font-size: 48px;
         }
-        .lists-blog-front{
+
+        .lists-blog-front {
             border-right: 1px solid rgba(128, 128, 128, 0.35);
         }
-     
+
         @media screen and (max-width: 996px) {
             .title-contact {
                 font-size: 42px;
             }
-            .lists-blog-front{
+
+            .lists-blog-front {
                 border-right: none;
             }
 
@@ -27,9 +29,11 @@
                 font-size: 36px;
             }
         }
-        .content-wrap{
-          overflow: visible !important;
+
+        .content-wrap {
+            overflow: visible !important;
         }
+
     </style>
     <link rel="stylesheet" href="{{ asset('asset/css/rehaul/homepage.css') }}">
     <link rel="stylesheet" href="{{ asset('asset/css/rehaul/blogs.css') }}?v=1.0.4">
@@ -40,8 +44,15 @@
     <section id="page-title" class="bg-color page-title-dark py-6">
 
         <div class="container clearfix">
-            <h1>Blogs</h1>
-            <span>Berita Terbaru dari Kami untuk Anda.</span>
+            <div class="row">
+                <div class="col-lg-6 col-md-9 col-12">
+                    <h1>Blogs</h1>
+                    <span>Tetap terhubung dan sefrekuensi dengan berita atau informasi terbaru di era digital untuk wawasan
+                        dalam
+                        bisnis dengan Resonansi</span>
+                </div>
+            </div>
+
             {{-- <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{route('homePageV2')}}">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page"><a href="{{route('contactUsV2')}}">Contact us</a></li>
@@ -53,43 +64,45 @@
 @section('content')
     <section id="content">
 
-        <div class="content-wrap pb-0" >
+        <div class="content-wrap pb-0">
 
             <div class="container mb-5">
                 <div class="row">
                     <div class="col-lg-8 lists-blog-front" style="">
 
-                        <div class="post-grid row col-mb-30 "   >
-                          @foreach($blogs as $items)
-                              <div class="entry open-detail col-lg-4 col-md-6"  data-slug="{{$items->blogSlug}}">
-                                  <div class="grid-inner card">
-                                      <img src="https://crm.resonansi.co.id/{{$items->blogImage1}}"
-                                          alt="Image" class="card-img-top">
+                        <div class="post-grid row col-mb-30 ">
+                            @foreach ($blogs as $items)
+                                <div class="entry open-detail col-lg-4 col-md-6" data-slug="{{ $items->blogSlug }}">
+                                    <div class="grid-inner card">
+                                        <img src="https://crm.resonansi.co.id/{{ $items->blogImage1 }}" alt="Image"
+                                            class="card-img-top">
 
-                                      <div class="p-3">
-                                          <div class="entry-title title-sm">
-                                              <h4 class="nott ls0 h5 title-blog">{{$items->blogTitle}}</h4>
-                                          </div>
-                                          <div class="entry-meta">
-                                              <ul>
-                                                  <li><i class="fas fa-calendar-alt"></i> {{timestamp_to_date($items->created_at)}}</li>
-                                                  <li><a href="blog-single.html#comments"><i class="fas fa-eye "
-                                                              style="color:#061a35; margin-right: 10px"></i>{{$items->blogRead}}</a></li>
-                                              </ul>
-                                          </div>
-                                          <div class="entry-content mt-2">
-                                              {!!$items->blogContent!!}
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
+                                        <div class="p-3">
+                                            <div class="entry-title title-sm">
+                                                <h4 class="nott ls0 h5 title-blog">{{ $items->blogTitle }}</h4>
+                                            </div>
+                                            <div class="entry-meta">
+                                                <ul>
+                                                    <li><i class="fas fa-calendar-alt"></i>
+                                                        {{ timestamp_to_date($items->created_at) }}</li>
+                                                    <li><a href="blog-single.html#comments"><i class="fas fa-eye "
+                                                                style="color:#061a35; margin-right: 10px"></i>{{ $items->blogRead }}</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="entry-content mt-2">
+                                                {!! $items->blogContent !!}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             @endforeach
                         </div>
                         {{-- <div class="d-flex justify-content-center pagination-blogs">
                           {{$blogs->links()}}
                         </div> --}}
                     </div>
-                    <div class="col-lg-4 col-md-10">
+                    <div class="col-lg-4 col-md-12">
                         <div class="list-blog">
                             <div class="title-latest-art">
                                 <h4 class="title-latest">Latest Article</h4>
@@ -99,16 +112,16 @@
                                 @foreach ($latest as $items)
                                     @component('components.rehaul.small-blog-child')
                                         @slot('slug')
-                                            {{$items->blogSlug}}
+                                            {{ $items->blogSlug }}
                                         @endslot
                                         @slot('title')
-                                            {{$items->blogTitle}}
+                                            {{ $items->blogTitle }}
                                         @endslot
                                         @slot('date')
-                                            {{timestamp_to_date($items->created_at)}}
+                                            {{ timestamp_to_date($items->created_at) }}
                                         @endslot
                                         @slot('img')
-                                            https://crm.resonansi.co.id/{{$items->blogImage1}}
+                                            https://crm.resonansi.co.id/{{ $items->blogImage1 }}
                                         @endslot
                                     @endcomponent
                                 @endforeach
@@ -166,10 +179,9 @@
         </script>
     @endif
     <script type="text/javascript">
-      $('.open-detail').click(function(){
-        let slug = $(this).data('slug');
-        location.href = "/blogs/read/"+slug;
-      })
+        $('.open-detail').click(function() {
+            let slug = $(this).data('slug');
+            location.href = "/blogs/read/" + slug;
+        })
     </script>
-
 @endsection

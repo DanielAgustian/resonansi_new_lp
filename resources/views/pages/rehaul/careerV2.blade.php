@@ -39,14 +39,13 @@
                         <h3 class="display-5 fw-semibold mb-4">Working at
                             <span class="span-bl">Resonansi</span>
                         </h3>
-                        <p>We live to work together with you to help your customers understand better about your brand or
-                            products, help you break through technology barriers, capitalize on opportunities and connect
-                            with people in this evolving digital landscape
+                        <p>Kami hadir untuk bekerja sama demi membantu pelanggan dalam memahami mengenai produk atau brand
+                            anda lebih jelas, membantu mengatasi permasalahan teknologi, meningkatkan peluang bisnis, dan
+                            tetap terhubung dengan orang-orang di era digital.
                         </p>
                     </div>
                     <div class="col-lg-6">
-                        <img src="{{asset('images/rehaul/banner-career.png')}}"
-                            alt="" class="w-100 rounded">
+                        <img src="{{ asset('images/rehaul/banner-career.png') }}" alt="" class="w-100 rounded">
                     </div>
                 </div>
 
@@ -62,17 +61,17 @@
                     <div class="col-md-7">
                         <h3 class="display-6 fw-semibold mb-4"> <span class="span-bl">Resonansi</span>'s Team
                         </h3>
-                        <p>We can make your digital strategy become action & implement our technology and data science into
-                            your
-                            marketing strategy.
+                        <p>Kami dapat mewujudkan strategi digital Anda menjadi aksi nyata, serta menerapkan teknologi dan
+                            ilmu data kami ke dalam strategi pemasaran Anda.
+
                         </p>
-                        <p>With our expertise in technology and digital strategy, We always aim to make your company’s grow
-                            that
-                            minimum
-                            10 times.
+                        <p>Kami memiliki tujuan untuk membuat perusahaan Anda tumbuh minimal 10 kali lipat dengan keahlian
+                            dan pengalaman kami di bidang teknologi dan strategi digital,
+                            .
                         </p>
-                        <p>We live to work together with you to help your customer understand better about your brand or
-                            products.
+                        <p>Kami ada untuk bekerja sama dengan Anda untuk membantu pelanggan memahami lebih baik tentang
+                            merek atau produk Anda.
+
                         </p>
                     </div>
                 </div>
@@ -83,22 +82,23 @@
             <div class="container">
                 <div class=" row justify-content-between align-items-center">
                     <div class="col-lg-4 mb-lg-0 mb-4">
-                        <h3 class="display-6 fw-semibold mb-3">Our <span class="span-bl">Values</span></h3>
-                        <p>Our values is integral to our quality and it is implemented on our daily basis.</p>
+                        <h3 class="display-6 fw-semibold mb-3"><span class="span-bl">Nilai</span> Resonansi</h3>
+                        <p>Nilai kami sangat penting untuk menjaga kualitas kami dan nilai-nilai tersebut kami terapkan
+                            setiap hari.</p>
                     </div>
                     <div class="col-lg-7">
                         <div class="row justify-content-around">
                             <div class="col-md-4 col-6">
                                 <div class="value-box">
                                     <i class="fas fa-running"></i>
-                                    <h5 class="value-title">Going Extra Miles</h5>
+                                    <h5 class="value-title">Melangkah Lebih Jauh</h5>
                                 </div>
                             </div>
                             <div class="col-md-1 d-md-flex d-none"></div>
                             <div class="col-md-4 col-6">
                                 <div class="value-box">
                                     <i class="fas fa-history"></i>
-                                    <h5 class="value-title">Break a Routine</h5>
+                                    <h5 class="value-title">Mendobrak Rutinitas</h5>
                                 </div>
                             </div>
                             <div class="col-md-3 d-md-flex d-none"></div>
@@ -107,14 +107,14 @@
                             <div class="col-md-4 col-6">
                                 <div class="value-box">
                                     <i class="fas fa-crown"></i>
-                                    <h5 class="value-title">Be a Master</h5>
+                                    <h5 class="value-title">Menjadi Sang Ahli</h5>
                                 </div>
                             </div>
                             <div class="col-md-1 d-md-flex d-none"></div>
                             <div class="col-md-4 col-6">
                                 <div class="value-box">
                                     <i class="fas fa-star"></i>
-                                    <h5 class="value-title">Living in a 5 stars</h5>
+                                    <h5 class="value-title">Memberikan Pelayanan Bintang 5</h5>
                                 </div>
                             </div>
                         </div>
@@ -131,42 +131,43 @@
             <div class="container">
                 <div class="row justify-content-center align-items-center">
                     <div class="col-md-7 text-center">
-                        <h3 class="display-6 text-center mb-4 fw-semibold">Advantages Of Working With <strong>Resonansi</strong></h3>
+                        <h3 class="display-6 text-center mb-4 fw-semibold">Advantages Of Working With
+                            <strong>Resonansi</strong>
+                        </h3>
                         {{-- <p class="text-center">Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem facere quibusdam numquam fugiat reiciendis et, dolorem illo, quisquam tempore, id ducimus quis officia sit quam, doloremque rerum necessitatibus labore modi.</p> --}}
-                        
+
                     </div>
                     <div class="col-lg-9 col-md-10">
                         <div class="row mt-5 justify-content-center">
                             <div class="col-lg-4 col-6">
                                 <div class="box-advan">
-                                    <img src="{{asset('images/rehaul/career/increase-sale.png')}}"
-                                        alt="">
-                                    <h5 class="adv-title">Increase Product or Service
-                                        Sales Conversion
-                                    </h5>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-6">
-                                <div class="box-advan">
-                                    <img src="{{asset('images/rehaul/career/compete-with-competitor.png')}}"
-                                        alt="">
-                                    <h5 class="adv-title">Helping Businesses to Compete with Competitors
+                                    <img src="{{ asset('images/rehaul/career/increase-sale.png') }}" alt="">
+                                    <h5 class="adv-title">Meningkatkan Konversi Penjualan Produk dan Layanan
 
                                     </h5>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-6">
                                 <div class="box-advan">
-                                    <img src="{{asset('images/rehaul/career/expanding-business.png')}}"
-                                        alt="">
-                                    <h5 class="adv-title">Expanding Potential Market Reach
+                                    <img src="{{ asset('images/rehaul/career/compete-with-competitor.png') }}" alt="">
+                                    <h5 class="adv-title">Membantu Para Pebisnis untuk Bersaing dengan Kompetitor Lain
+
+
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-6">
+                                <div class="box-advan">
+                                    <img src="{{ asset('images/rehaul/career/expanding-business.png') }}" alt="">
+                                    <h5 class="adv-title">Meningkatkan Konversi Penjualan Produk dan Layanan
+
 
                                     </h5>
                                 </div>
                             </div>
                         </div>
                     </div>
-                   
+
                     {{-- <div class="col-md-5" style="transform: translateY(-45px)">
 								<img src="demos/movers/images/team/section.jpg" alt="John Doe">
 							</div> --}}
@@ -187,11 +188,12 @@
 
                     <div class="col-sm-8">
                         <div class="heading-block border-bottom-0 mb-4">
-                            <h3 class="fw-semibold ls0 nott mb-3 display-6" style=" line-height: 1.3">Interested to Join Us?</h3>
-                            
+                            <h3 class="fw-semibold ls0 nott mb-3 display-6" style=" line-height: 1.3">Open Position</h3>
+
                         </div>
-                        <a href=""
-                            class="button button-white button-light button-rounded fw-bold m-0">Click here</a>
+                        <h2 class="text-center display-3 fw-semibold ls0 nott">Coming Soon</h2>
+                        {{-- <a href=""
+                            class="button button-white button-light button-rounded fw-bold m-0">Click here</a> --}}
                     </div>
 
                 </div>
