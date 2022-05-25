@@ -108,12 +108,18 @@ class NewHomeController extends Controller
     public function blogsDetailPageV2($slug){
         $data['blog'] = DB::table('blogs')
             ->where('blogSlug', $slug)->first();
+        
         $data['latest'] =  DB::table('blogs')
           ->select('blogs.blogTitle', 'blogs.blogSlug', 'blogs.blogContent', 'blogs.blogLike', 'blogs.blogRead', 'blogs.created_at', 'blogs.blogImage1', 'blogs.id', 'blogs.titleImage')
           ->where('blogStatus' , '=', 'active')
           ->whereNotIn('blogSlug', [$slug])
           ->orderBy('created_at', 'desc')
           ->limit(4)->get();
+        
+        $read= $data['blog']->blogRead;
+        $update = DB::table('blogs')
+         ->where('blogSlug', $slug)->update(['blogRead' => $read + 1]);
+        //  dd($data);
         return view('pages.rehaul.blogs-detailV2', $data);
     }
 
