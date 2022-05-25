@@ -91,12 +91,12 @@ class NewHomeController extends Controller
           ->select('blogs.blogTitle', 'blogs.blogSlug', 'blogs.blogContent', 'blogs.blogLike', 'blogs.blogRead', 'blogs.created_at', 'blogs.blogImage1', 'blogs.id', 'blogs.titleImage')
           ->where('blogStatus' , '=', 'active')
           ->orderBy('created_at', 'desc')
-          ->paginate(9);
+          ->paginate(6);
         $data['latest'] =  DB::table('blogs')
             ->select('blogs.blogTitle', 'blogs.blogSlug', 'blogs.blogContent', 'blogs.blogLike', 'blogs.blogRead', 'blogs.created_at', 'blogs.blogImage1', 'blogs.id', 'blogs.titleImage')
             ->where('blogStatus' , '=', 'active')
             ->orderBy('created_at', 'desc')
-            ->limit(6)->get();
+            ->limit(4)->get();
         // dd($data['latest']);
         // return view('pages.rehaul.coming-soon', compact('string'));
         return view('pages.rehaul.blogsV2', $data);
