@@ -113,7 +113,7 @@ class NewHomeController extends Controller
           ->where('blogStatus' , '=', 'active')
           ->whereNotIn('blogSlug', [$slug])
           ->orderBy('created_at', 'desc')
-          ->limit(6)->get();
+          ->limit(4)->get();
         return view('pages.rehaul.blogs-detailV2', $data);
     }
 
