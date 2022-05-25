@@ -11,6 +11,7 @@
         .lists-blog-front{
             border-right: 1px solid rgba(128, 128, 128, 0.35);
         }
+     
         @media screen and (max-width: 996px) {
             .title-contact {
                 font-size: 42px;
@@ -52,7 +53,7 @@
 @section('content')
     <section id="content">
 
-        <div class="content-wrap pb-0">
+        <div class="content-wrap pb-0" >
 
             <div class="container mb-5">
                 <div class="row">

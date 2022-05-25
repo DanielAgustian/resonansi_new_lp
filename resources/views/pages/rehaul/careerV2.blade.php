@@ -45,7 +45,7 @@
                         </p>
                     </div>
                     <div class="col-lg-6">
-                        <img src="https://www.openaccessgovernment.org/wp-content/uploads/2019/03/dreamstime_s_115214614-696x465.jpg"
+                        <img src="{{asset('images/rehaul/banner-career.png')}}"
                             alt="" class="w-100 rounded">
                     </div>
                 </div>
