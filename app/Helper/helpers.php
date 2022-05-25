@@ -44,7 +44,7 @@ function set_active_navbar($uri, $output = ' current'){
   }
 }
 function timestamp_to_date($timestamp){
-  $date = strtotime('now');
+    $date = strtotime('now');
     $bulan = [
         "",
         "Januari",
@@ -60,10 +60,10 @@ function timestamp_to_date($timestamp){
         "November",
         "Desember",
     ];
-    if($timeStamp != null){
-        $date = strtotime($timeStamp);
+    if($timestamp != null){
+        $date = strtotime($timestamp);
     }
-
+   
 
     return date('d', $date) . " " . $bulan[date('n', $date)] . " " . date('Y', $date);
 }
