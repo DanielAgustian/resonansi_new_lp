@@ -139,7 +139,7 @@
                         <div class="row mt-5 justify-content-center">
                             <div class="col-lg-4 col-6">
                                 <div class="box-advan">
-                                    <img src="https://www.openaccessgovernment.org/wp-content/uploads/2019/03/dreamstime_s_115214614-696x465.jpg"
+                                    <img src="{{asset('images/rehaul/career/increase-sales.png')}}"
                                         alt="">
                                     <h5 class="adv-title">Increase Product or Service
                                         Sales Conversion
@@ -148,7 +148,7 @@
                             </div>
                             <div class="col-lg-4 col-6">
                                 <div class="box-advan">
-                                    <img src="https://www.openaccessgovernment.org/wp-content/uploads/2019/03/dreamstime_s_115214614-696x465.jpg"
+                                    <img src="{{asset('images/rehaul/career/compete-with-competitor.png')}}"
                                         alt="">
                                     <h5 class="adv-title">Helping Businesses to Compete with Competitors
 
@@ -157,7 +157,7 @@
                             </div>
                             <div class="col-lg-4 col-6">
                                 <div class="box-advan">
-                                    <img src="https://www.openaccessgovernment.org/wp-content/uploads/2019/03/dreamstime_s_115214614-696x465.jpg"
+                                    <img src="{{asset('images/rehaul/career/expanding-business.png')}}"
                                         alt="">
                                     <h5 class="adv-title">Expanding Potential Market Reach
 

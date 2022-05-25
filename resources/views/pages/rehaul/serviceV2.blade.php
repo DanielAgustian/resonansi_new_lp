@@ -112,7 +112,7 @@
                                 <div class="col-md-4 col-6 order-md-1 order-1">
                                     @component('components.rehaul.problem-card')
                                         @slot('img')
-                                            {{ asset('images/rehaul/marketplace-optimization.png') }}
+                                            {{ asset('images/rehaul/service/resonansi-1.png') }}
                                         @endslot
                                         @slot('title')
                                             Udah bikin konten tapi gak ada likes & comment. Sering posting tapi gak ada interaksi di
@@ -121,7 +121,7 @@
                                     @endcomponent
                                     @component('components.rehaul.problem-card')
                                         @slot('img')
-                                            {{ asset('images/rehaul/marketplace-optimization.png') }}
+                                            {{ asset('images/rehaul/service/resonansi-4.png') }}
                                         @endslot
                                         @slot('title')
                                             Punya website tapi gak ada pengunjung responsifnya, bingung bikin design yang
@@ -132,7 +132,7 @@
                                 <div class="col-md-4 col-6 order-md-2 order-3">
                                     @component('components.rehaul.problem-card')
                                         @slot('img')
-                                            {{ asset('images/rehaul/marketplace-optimization.png') }}
+                                            {{ asset('images/rehaul/service/resonansi-3.png') }}
                                         @endslot
                                         @slot('title')
                                             Omzet usaha masih gitu-gitu aja,
@@ -143,7 +143,7 @@
                                 <div class="col-md-4 col-6 order-md-3 order-2">
                                     @component('components.rehaul.problem-card')
                                         @slot('img')
-                                            {{ asset('images/rehaul/marketplace-optimization.png') }}
+                                            {{ asset('images/rehaul/service/resonansi-2.png') }}
                                         @endslot
                                         @slot('title')
                                             Nambah barang /toko = nambah admin. Biaya operasional terus naik seiring dengan naiknya
@@ -152,7 +152,7 @@
                                     @endcomponent
                                     @component('components.rehaul.problem-card')
                                         @slot('img')
-                                            {{ asset('images/rehaul/marketplace-optimization.png') }}
+                                            {{ asset('images/rehaul/service/resonansi-5.png') }}
                                         @endslot
                                         @slot('title')
                                             Mau bikin virtual event/ webinar tapi gak punya resource buat handle acara?
