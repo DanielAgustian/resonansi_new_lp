@@ -59,7 +59,7 @@
 
         gtag('config', 'UA-220121536-1');
     </script>
-    <script>
+    {{-- <script>
         ! function(f, b, e, v, n, t, s) {
             if (f.fbq) return;
             n = f.fbq = function() {
@@ -80,6 +80,28 @@
             'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', '472961517746793');
         fbq('track', 'PageView');
+    </script> --}}
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '399592895383861');
+        fbq('track', 'PageView');
     </script>
     <!-- Document Title
  ============================================= -->
@@ -88,6 +110,8 @@
 </head>
 
 <body class="stretched">
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=399592895383861&ev=PageView&noscript=1" /></noscript>
     <button class="btn-wa" data-toggle="tooltip" title="Kami siap membantu Anda">
         <i class="fab fa-whatsapp"></i>
     </button>
