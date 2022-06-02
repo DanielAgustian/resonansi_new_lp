@@ -11,7 +11,8 @@ use Spatie\GoogleCalendar\Event;
 class MeetController extends Controller
 {
     public function create(Request $request){
-
+      // Budget Data
+      
       $dateTimeString = $request->date." ".$request->time.":00";
       $dueDateTime = Carbon::createFromFormat('Y-m-d H:i:s', $dateTimeString, 'Asia/Jakarta');
       date_default_timezone_set("Asia/Bangkok");
@@ -88,6 +89,7 @@ class MeetController extends Controller
         $parent = 2;
         $origin = "Walk In";
         $campaign = "";
+        $budget = null;
         if (!empty($request->ref )) {
           $parent = $request->ref ;
         }
@@ -97,6 +99,15 @@ class MeetController extends Controller
         }
         if (!empty($request->campaign)) {
           $campaign = $request->campaign ;
+        }
+        if (!empty($request->budget)) {
+          # code...
+          $string_budget  = explode(", ", $request->budget);
+          $loc_budget = str_replace('Rp. ', '', $string_budget[0]);
+          $loc_budget = str_replace('.', '', $loc_budget);
+          $budget = $loc_budget;
+          
+          
         }
         $data = [
             'name' => $request->name,
@@ -111,6 +122,7 @@ class MeetController extends Controller
             'origin' => $origin,
             'campaign'=> $campaign,
             'kota'=>$city,
+            'budget' => $request->budget,
             // 'platform' => $agent->platform(),
             'desktop' => $screen,
             //'screen' => $screen,
@@ -196,5 +208,68 @@ class MeetController extends Controller
       }
       
       return "Successfully Set Data";
+    }
+
+    public function companyCreate(Request $request){
+        date_default_timezone_set("Asia/Bangkok");
+
+        $capcha = $request->input('g-recaptcha-response');
+        // LIMIT CAPCHA
+        if ($capcha == null) {
+          return redirect()->back()->with('errorCapcha', 'errorCapcha')->withInput($request->all());
+        }
+        
+        $agent = new Agent();
+
+        if ($agent->isPhone()) {
+            $screen = "Phone";
+        } elseif ($agent->isTablet()) {
+            $screen = "Tablet";
+        } elseif ($agent->isDesktop()) {
+            $screen = "Desktop";
+        }
+        $parent = 2;
+        $origin = "Walk In";
+        $campaign = "";
+        $budget = null;
+        if (!empty($request->ref )) {
+          $parent = $request->ref ;
+        }
+        if (!empty($request->so )) {
+
+          $origin =  strtolower($request->so);
+        }
+        if (!empty($request->campaign)) {
+          $campaign = $request->campaign ;
+        }
+        $data = [
+          'name' => $request->name_company,
+          'email' => $request->email_company,
+         
+          'status' => 'lead',
+          'company'=> $request->name_company,
+          'parent' => $parent,
+          'ipaddress' => \Request::ip(),
+          'device' => $agent->device(),
+          'origin' => $origin,
+          'campaign'=> $campaign,
+          'big_company' => 'Big Company',
+          // 'platform' => $agent->platform(),
+          'desktop' => $screen,
+          //'screen' => $screen,
+          // 'version_platform' => $agent->version($agent->platform()),
+          // 'browser' => $agent->browser(),
+          // 'version_browser' =>  $agent->version($agent->browser()),
+          // 'languages' => $agent->languages()[0],
+          'created_at' =>  Carbon::now(),
+      ];
+      $userId = DB::table('clients')->insertGetId($data);
+      $insertContact = DB::table('client_input')->insertGetId([
+        'client_id' => $userId,
+        'status' => 'meet',
+        'created_at'=> Carbon::now()
+
+      ]);
+      return redirect()->back()->with('successMsg', 'Success');
     }
 }

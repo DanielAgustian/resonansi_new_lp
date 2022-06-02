@@ -39,7 +39,7 @@ Route::get('admin/jadwal-meet/detail/{id}', [UserController::class, 'userDetail'
 // form Request
 Route::post('meet/create', [MeetController::class, 'create'])->name('meet-create');
 Route::post('contact/create', [MeetController::class, 'makeContactUs'])->name('makeContactUs');
-
+Route::post('meet/create/company', [MeetController::class, 'companyCreate'])->name('companyCreate');
 
 
 // Route::get('/v1', [LandingController::class, 'homepage2'])->name('homepage2');

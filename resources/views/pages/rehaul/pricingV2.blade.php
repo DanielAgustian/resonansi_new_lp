@@ -12,12 +12,13 @@
     </style>
     <link rel="stylesheet" href="{{ asset('asset/css/rehaul/homepage.css') }}"> --}}
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('asset/css/rehaul/pricing.css') }}" />
 @endsection
 @section('banner')
     <section id="page-title" class="bg-color page-title-dark py-6 position-relative">
 
         <div class="container clearfix">
-            
+
             <h1 class="nott">Pricing</h1>
             <span>Pelayanan Maksimal dengan Harga Minimal</span>
             {{-- <ol class="breadcrumb">
@@ -31,7 +32,7 @@
                 <svg preserveAspectRatio="xMidYMax meet" viewBox="0 0 1600 100" data-height="100">
                     <path style="opacity: 1;fill: rgba(255,255,255,0.75);"
                         d="M1040,56c0.5,0,1,0,1.6,0c-16.6-8.9-36.4-15.7-66.4-15.7c-56,0-76.8,23.7-106.9,41C881.1,89.3,895.6,96,920,96
-                                                                                                                                                                      C979.5,96,980,56,1040,56z">
+                                                                                                                                                                                                      C979.5,96,980,56,1040,56z">
                     </path>
                     <path style="opacity: 1;fill: rgba(255,255,255,0.75);"
                         d="M1699.8,96l0,10H1946l-0.3-6.9c0,0,0,0-88,0s-88.6-58.8-176.5-58.8c-51.4,0-73,20.1-99.6,36.8 c14.5,9.6,29.6,18.9,58.4,18.9C1699.8,96,1699.8,96,1699.8,96z">
@@ -47,7 +48,7 @@
                     </path>
                     <path style="opacity: 1;fill: rgba(255,255,255,0.75);"
                         d="M-40,95.6c28.3,0,43.3-8.7,57.4-18C-9.6,60.8-31,40.2-83.2,40.2c-14.3,0-26.3,1.6-36.8,4.2V106h60V96L-40,95.6
-                                                                                                                                                                      z">
+                                                                                                                                                                                                      z">
                     </path>
                     <path style="opacity: 1;fill: rgba(255,255,255,0.3);;"
                         d="M504,73.4c-2.6-0.8-5.7-1.4-9.6-1.4c-19.4,0-19.6,13-39,13c-19.4,0-19.5-13-39-13c-14,0-18,6.7-26.3,10.4 C402.4,89.9,416.7,96,440,96C472.5,96,487.5,84.2,504,73.4z">
@@ -77,17 +78,85 @@
                         d="M-40,95.6C20.3,95.6,20.1,56,80,56s60,40,120,40s59.9-40,120-40s60.3,40,120,40s60.3-40,120-40s60.2,40,120,40s60.1-40,120-40s60.5,40,120,40s60-40,120-40s60.4,40,120,40s59.9-40,120-40s60.3,40,120,40s60.2-40,120-40s60.2,40,120,40s59.8,0,59.8,0l0.2,143H-60V96L-40,95.6z">
                     </path>
                 </svg>
-                
+
             </div>
         </div>
     </section>
-    <div class="bg-white" style="height: 90px"></div>
+    <div class="bg-white" style="height: 60px"></div>
 @endsection
 @section('content')
     <section id="content">
 
+        <div class="section p-0 mb-0  bg-white">
+            <div class="container">
+                <div class="row align-items-center mb-5">
+                    <div class="col-lg-5 mb-md-0 mb-3">
+                        <h3 class="mb-2">Berapa Budget Anda?</h3>
+                        <p>Pengetahuan <span class="span-bl">budget anda</span> akan mempermudah kami untuk memenuhi
+                            kebutuhan anda.</p>
+                    </div>
+                    <div class="col-lg-7">
+                        <input type="range" class="slider-range" id="volume" name="volume" min="250000" max="10000000"
+                            value="250000">
+                        <h4 class="mt-2 mb-0" style="font-weight: 400">Budget Saya Sebesar <span id="range_val"
+                                class="range-title">RP. 250.000</span></h4>
+                    </div>
 
+                </div>
+                <div style="height: 30px"></div>
 
+            </div>
+
+        </div>
+        <div class=" section-light-blue">
+            <div style="height: 70px"></div>
+            <div class="container ">
+                <div class="row justify-content-between">
+                    <div class="col-lg-6">
+                        <h4 class="mb-2">Hubungi <span class="span-bl">Kami</span> secara B2B!</h4>
+                        <p>Apakah kalian berbudget lebih dari 10 juta? Atau ingin mengambil jasa kami secara <i>business to
+                                business</i> (B2B)? </p>
+                        <div class="card card-company">
+
+                            <div class="card-body">
+                                <form action="{{route('companyCreate')}}" method="POST" class="mb-0 form-company">
+                                    @csrf
+                                    <div class=" form-group mb-2">
+                                        <label>Email</label>
+                                        <input type="email" name="email_company" id="landing-enquiry-email-company"
+                                            class="form-control  required" value="{{ old('email_company') }}"
+                                            placeholder="Email Perusahaan" required>
+                                        <div style="color: red; font-size:11px" id="err-email-company">
+
+                                        </div>
+                                    </div>
+                                    <div class=" form-group mb-2">
+                                        <label>Nama Perusahaan</label>
+                                        <input type="text" name="name_company" id="landing-enquiry-name-company"
+                                            class="form-control  required" value="{{ old('name_company') }}"
+                                            placeholder="Nama Perusahaan" required>
+                                        <div style="color: red; font-size:11px" id="err-name-company">
+
+                                        </div>
+                                    </div>
+                                    <div class="g-recaptcha" data-callback="recaptchaCallback"
+                                        data-sitekey="6LdLM1UeAAAAANIPJEOY3Bo_7bysZ5pSdgMMkyc5"></div>
+                                    <div class="d-flex justify-content-center mt-3">
+                                        <button name="" id="btn-form-company" class="btn btn-primary fw-bold ">Book
+                                            Now!</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <img src="{{ asset('images/rehaul/stock-company.jpg') }}" alt="" class="company-form-image shadow"
+                            style="">
+                    </div>
+                </div>
+            </div>
+            <div style="height: 85px"></div>
+        </div>
         <div class="section p-0 dark mb-0"
             style="background: linear-gradient(to right, rgba(25,102,221,0.2), rgba(25,102,221,0.5)), url('{{ asset('images/rehaul/1.jpg') }}') no-repeat center center / cover; min-height: 400px; margin-top: 0px; margin-bottom: 0px">
             <div class="container">
@@ -102,149 +171,152 @@
 
                             <div class="row no-gutters justify-content-center">
                                 <div class="col-lg-4 col-md-6 pricing-border-right first-b">
-                                  <div class="d-flex flex-column h-100 justify-content-between">
-                                    <div class="">
-                                      <div class="" style="min-height:60px">
-                                        <h4 class="title-price fw-semibold text-center mb-3">Technology and Conversion
-                                            Optimization</h4>
-                                        <!-- <h2 class="price-val fw-bold text-center mb-0">Rp 5.000.000</h2> -->
-                                        <!-- <div class="d-flex justify-content-center mt-2">
-                                            <button class="btn btn-blue-dark btn-order"
-                                                data-type="paket-technology-conversion-opt">Order Now!</button>
-                                        </div> -->
+                                    <div class="d-flex flex-column h-100 justify-content-between">
+                                        <div class="">
+                                            <div class="" style="min-height:60px">
+                                                <h4 class="title-price fw-semibold text-center mb-3">Technology and
+                                                    Conversion
+                                                    Optimization</h4>
+                                                <!-- <h2 class="price-val fw-bold text-center mb-0">Rp 5.000.000</h2> -->
+                                                <!-- <div class="d-flex justify-content-center mt-2">
+                                                                            <button class="btn btn-blue-dark btn-order"
+                                                                                data-type="paket-technology-conversion-opt">Order Now!</button>
+                                                                        </div> -->
 
-                                      </div>
-                                      <div class="mx-3 my-4">
-                                          <div class="divider-vertical"></div>
-                                      </div>
-                                      <div class="d-flex flex-column  justify-content-center mx-3">
-                                          <p class="pricing-item">
-                                              <i class="fas fa-check-circle me-3 mt-1"></i>
-                                              Landing Page Campaign
-                                          </p>
-                                          <p class="pricing-item">
-                                              <i class="fas fa-check-circle me-3 mt-1"></i>
-                                              Marketing and Sales Funnel (Digital Funneling)
+                                            </div>
+                                            <div class="mx-3 my-4">
+                                                <div class="divider-vertical"></div>
+                                            </div>
+                                            <div class="d-flex flex-column  justify-content-center mx-3">
+                                                <p class="pricing-item">
+                                                    <i class="fas fa-check-circle me-3 mt-1"></i>
+                                                    Landing Page Campaign
+                                                </p>
+                                                <p class="pricing-item">
+                                                    <i class="fas fa-check-circle me-3 mt-1"></i>
+                                                    Marketing and Sales Funnel (Digital Funneling)
 
 
-                                          </p>
-                                          <p class="pricing-item">
-                                              <i class="fas fa-check-circle me-3 mt-1"></i>
-                                              SEO (Search Engine Optimization)
-                                          </p>
-                                      </div>
+                                                </p>
+                                                <p class="pricing-item">
+                                                    <i class="fas fa-check-circle me-3 mt-1"></i>
+                                                    SEO (Search Engine Optimization)
+                                                </p>
+                                            </div>
 
+                                        </div>
+                                        <div class="d-flex justify-content-center mt-3 ">
+                                            <button class="btn btn-blue-dark btn-ask btn-bigger "
+                                                data-type="paket-technology-conversion-opt">Ask for Price</button>
+                                        </div>
                                     </div>
-                                    <div class="d-flex justify-content-center mt-3 ">
-                                        <button class="btn btn-blue-dark btn-ask btn-bigger "
-                                            data-type="paket-technology-conversion-opt">Ask for Price</button>
-                                    </div>
-                                  </div>
 
 
                                 </div>
                                 <div class="col-lg-4 col-md-6 pricing-border-right second-b">
-                                  <div class="flex-column d-flex justify-content-between h-100">
-                                    <div class="">
-                                      <div class="" style="min-height:60px">
-                                        <h4 class="title-price fw-semibold text-center mb-3">Virtual Event</h4>
-                                      </div>
+                                    <div class="flex-column d-flex justify-content-between h-100">
+                                        <div class="">
+                                            <div class="" style="min-height:60px">
+                                                <h4 class="title-price fw-semibold text-center mb-3">Virtual Event</h4>
+                                            </div>
 
-                                      <!-- <h2 class="price-val fw-bold text-center mb-0">Rp 7.500.000</h2> -->
-                                      <!-- <div class="d-flex justify-content-center mt-2">
-                                          <button class="btn btn-blue-dark btn-order btn-bigger w-100"
-                                              data-type="paket-virtual-event">Order Now!</button>
-                                      </div> -->
-                                      <div class="mx-3 my-4">
-                                          <div class="divider-vertical"></div>
-                                      </div>
-                                      <div class="d-flex flex-column justify-content-center mx-3">
-                                          <p class="pricing-item">
-                                              <i class="fas fa-check-circle me-3 mt-1"></i>
-                                              Virtual Event / Webinar
+                                            <!-- <h2 class="price-val fw-bold text-center mb-0">Rp 7.500.000</h2> -->
+                                            <!-- <div class="d-flex justify-content-center mt-2">
+                                                                          <button class="btn btn-blue-dark btn-order btn-bigger w-100"
+                                                                              data-type="paket-virtual-event">Order Now!</button>
+                                                                      </div> -->
+                                            <div class="mx-3 my-4">
+                                                <div class="divider-vertical"></div>
+                                            </div>
+                                            <div class="d-flex flex-column justify-content-center mx-3">
+                                                <p class="pricing-item">
+                                                    <i class="fas fa-check-circle me-3 mt-1"></i>
+                                                    Virtual Event / Webinar
 
-                                          </p>
-                                          <p class="pricing-item mb-0">
-                                              <i class="fas fa-check-circle me-3 mt-1"></i>
-                                              Operate Streaming Activation
+                                                </p>
+                                                <p class="pricing-item mb-0">
+                                                    <i class="fas fa-check-circle me-3 mt-1"></i>
+                                                    Operate Streaming Activation
 
-                                          </p>
-                                          <ul class="list-item">
-                                              <li>Zoom 3 hours
-                                              </li>
-                                              <li>Operator Assisted</li>
-                                              <li>Smooth Presentation Software </li>
-                                          </ul>
-                                      </div>
+                                                </p>
+                                                <ul class="list-item">
+                                                    <li>Zoom 3 hours
+                                                    </li>
+                                                    <li>Operator Assisted</li>
+                                                    <li>Smooth Presentation Software </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center mt-3">
+                                            <button class="btn btn-blue-dark btn-ask btn-bigger "
+                                                data-type="paket-virtual-event">Ask for Price</button>
+                                        </div>
                                     </div>
-                                    <div class="d-flex justify-content-center mt-3">
-                                        <button class="btn btn-blue-dark btn-ask btn-bigger "
-                                            data-type="paket-virtual-event">Ask for Price</button>
-                                    </div>
-                                  </div>
 
                                 </div>
                                 <div class="col-lg-4 col-md-6 pricing-border-none">
-                                  <div class="d-flex flex-column h-100 justify-content-between">
-                                    <div class="">
-                                      <div class="" style="min-height: 60px">
-                                        <h4 class="title-price fw-semibold text-center mb-3">Marketplace (Online Sales
-                                            Strategy)</h4>
-                                        <!-- <h2 class="price-val fw-bold text-center mb-0">Rp 10.000.000</h2> -->
-                                        <!-- <div class="d-flex justify-content-center mt-2">
-                                            <button class="btn btn-blue-dark btn-order" data-type="paket-marketplace">Order
-                                                Now!</button>
-                                        </div> -->
-                                      </div>
-                                      <div class="mx-3 my-4">
-                                          <div class="divider-vertical"></div>
-                                      </div>
-                                      <div class="d-flex flex-column justify-content-center mx-3">
-                                          <p class="pricing-item mb-0">
-                                              <i class="fas fa-check-circle me-3 mt-1"></i>
-                                              Marketplace Optimization
+                                    <div class="d-flex flex-column h-100 justify-content-between">
+                                        <div class="">
+                                            <div class="" style="min-height: 60px">
+                                                <h4 class="title-price fw-semibold text-center mb-3">Marketplace (Online
+                                                    Sales
+                                                    Strategy)</h4>
+                                                <!-- <h2 class="price-val fw-bold text-center mb-0">Rp 10.000.000</h2> -->
+                                                <!-- <div class="d-flex justify-content-center mt-2">
+                                                                            <button class="btn btn-blue-dark btn-order" data-type="paket-marketplace">Order
+                                                                                Now!</button>
+                                                                        </div> -->
+                                            </div>
+                                            <div class="mx-3 my-4">
+                                                <div class="divider-vertical"></div>
+                                            </div>
+                                            <div class="d-flex flex-column justify-content-center mx-3">
+                                                <p class="pricing-item mb-0">
+                                                    <i class="fas fa-check-circle me-3 mt-1"></i>
+                                                    Marketplace Optimization
 
-                                          </p>
-                                          <ul class="list-item">
-                                              <li>Shop Optimization (max. 2 shops)
-                                              </li>
-                                              <li>Product Optimization</li>
-                                              <li>Reporting and Insight (Weekly)</li>
-                                          </ul>
-                                          <p class="pricing-item mb-0">
-                                              <i class="fas fa-check-circle me-3 mt-1"></i>
-                                              Marketplace Ads Optimization
-
-
-
-                                          </p>
-                                          <ul class="list-item">
-                                              <li>Ads Optimization (max. 2 shops)</li>
-                                              <li>Keyword and Category Optimization</li>
-                                              <li>Bonus Top Up Ads</li>
-                                              <li>Reporting and Insight (Weekly)</li>
-                                          </ul>
-                                          <p class="pricing-item mb-0">
-                                              <i class="fas fa-check-circle me-3 mt-1"></i>
-                                              Marketplace Live
+                                                </p>
+                                                <ul class="list-item">
+                                                    <li>Shop Optimization (max. 2 shops)
+                                                    </li>
+                                                    <li>Product Optimization</li>
+                                                    <li>Reporting and Insight (Weekly)</li>
+                                                </ul>
+                                                <p class="pricing-item mb-0">
+                                                    <i class="fas fa-check-circle me-3 mt-1"></i>
+                                                    Marketplace Ads Optimization
 
 
 
-                                          </p>
-                                          <ul class="list-item">
-                                              <li>Shopee Live (5 times)</li>
-                                              <li>Tokopedia Live (5 times)</li>
-                                              <li>Live Duration 20 minutes</li>
-                                              <li>1 Host per Session</li>
-                                              <li>Reporting and Insight (Monthly)</li>
+                                                </p>
+                                                <ul class="list-item">
+                                                    <li>Ads Optimization (max. 2 shops)</li>
+                                                    <li>Keyword and Category Optimization</li>
+                                                    <li>Bonus Top Up Ads</li>
+                                                    <li>Reporting and Insight (Weekly)</li>
+                                                </ul>
+                                                <p class="pricing-item mb-0">
+                                                    <i class="fas fa-check-circle me-3 mt-1"></i>
+                                                    Marketplace Live
 
-                                          </ul>
-                                      </div>
+
+
+                                                </p>
+                                                <ul class="list-item">
+                                                    <li>Shopee Live (5 times)</li>
+                                                    <li>Tokopedia Live (5 times)</li>
+                                                    <li>Live Duration 20 minutes</li>
+                                                    <li>1 Host per Session</li>
+                                                    <li>Reporting and Insight (Monthly)</li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center mt-3">
+                                            <button class="btn btn-blue-dark btn-ask btn-bigger"
+                                                data-type="paket-marketplace">Ask for Price</button>
+                                        </div>
                                     </div>
-                                    <div class="d-flex justify-content-center mt-3">
-                                        <button class="btn btn-blue-dark btn-ask btn-bigger" data-type="paket-marketplace">Ask for Price</button>
-                                    </div>
-                                  </div>
 
 
 
@@ -260,7 +332,7 @@
                                     <h4 class="title-price fw-semibold text-center mb-3">Technology and Conversion
                                         Optimization</h4>
                                     {{-- <h2 class="price-val fw-bold text-center mb-0">Rp 5.000.000</h2> --}}
-                                    
+
                                     <div class="mx-3 my-4">
                                         <div class="divider-vertical"></div>
                                     </div>
@@ -292,7 +364,7 @@
                                 <div class="card-body">
                                     <h4 class="title-price fw-semibold text-center mb-3">Virtual Event</h4>
                                     {{-- <h2 class="price-val fw-bold text-center mb-0">Rp 7.500.000</h2> --}}
-                                    
+
                                     <div class="mx-3 my-4">
                                         <div class="divider-vertical"></div>
                                     </div>
@@ -315,8 +387,8 @@
                                         </ul>
                                     </div>
                                     <div class="d-flex justify-content-center mt-2">
-                                        <button class="btn btn-blue-dark btn-order"
-                                            data-type="paket-virtual-event">Order Now!</button>
+                                        <button class="btn btn-blue-dark btn-order" data-type="paket-virtual-event">Order
+                                            Now!</button>
                                     </div>
                                 </div>
                             </div>
@@ -328,7 +400,7 @@
                                     <h4 class="title-price fw-semibold text-center mb-3">Marketplace (Online Sales
                                         Strategy)</h4>
                                     {{-- <h2 class="price-val fw-bold text-center mb-0">Rp 10.000.000</h2> --}}
-                                    
+
                                     <div class="mx-3 my-4">
                                         <div class="divider-vertical"></div>
                                     </div>
@@ -394,9 +466,9 @@
             </svg>
         </div>
 
-        
 
-    
+
+
 
         <div class="section section-form position-relative  pt-0 mb-0 bg-color mt-0"
             style="background: url('demos/movers/images/bg-2.png') no-repeat center bottom / 100%; overflow: visible">
@@ -513,16 +585,18 @@
                                                 @endif
                                             @endfor
                                             <!-- <option value="paket-technology-conversion-opt" selected>Paket Technology Conversion Optimization</option>
-                                                                                                                                                                                <option value="paket-virtual-event">Paket Virtual Event / Webinar</option>
-                                                                                                                                                                                <option value="paket-marketplace">Paket Marketplace</option>
-                                                                                                                                                                                <option value="technology">Technology</option>
-                                                                                                                                                                                <option value="digital-strategy">Digital Strategy</option>
-
-                                                                                                                                                                                <option value="marketplace-opt">Marketplace Optimization</option>
-                                                                                                                                                                                <option value="multimedia">Multimedia </option>
-                                                                                                                                                                                <option value="cloud-warehouse-software">Cloud Warehouse Software</option> -->
+                                                        <option value="cloud-warehouse-software">Cloud Warehouse Software</option> -->
                                         </select>
 
+                                    </div>
+                                    <div class="col-12 form-group mb-2">
+                                        <label>Budget</label>
+                                        <input type="text" name="budget" id="landing-enquiry-budget"
+                                            class="form-control  required" value="{{ old('budget') }}"
+                                            placeholder="Budget Anda" required>
+                                        <div style="color: red; font-size:11px" id="err-budget">
+
+                                        </div>
                                     </div>
                                     <div class="col-12 form-group mb-2">
                                         <label>Jadwal Meeting dengan Account Executive</label>
@@ -622,5 +696,70 @@
                 $('#landing-enquiry-paket option[value="' + type + '"]').attr('selected', 'selected');
             }
         });
+    </script>
+    <script>
+        $('.slider-range').on('input', function() {
+            let valueSlider = $(this).val();
+
+            let formatRp = formatRupiah(valueSlider, "Rp. ");
+
+            $('#range_val').text(formatRp);
+            $('#landing-enquiry-budget').val(formatRp);
+        })
+    </script>
+    <script>
+        function formatRupiah(angka, prefix) {
+            // return Intl.NumberFormat("id-ID", {
+            //     style: "currency",
+            //     currency: "IDR"
+            // }).format(angka);
+            var number_string = angka.replace(/[^,\d]/g, '').toString(),
+                split = number_string.split(','),
+                sisa = split[0].length % 3,
+                rupiah = split[0].substr(0, sisa),
+                ribuan = split[0].substr(sisa).match(/\d{3}/gi);
+
+            // tambahkan titik jika yang di input sudah menjadi angka ribuan
+            if (ribuan) {
+                separator = sisa ? '.' : '';
+                rupiah += separator + ribuan.join('.');
+            }
+
+            rupiah = split[1] != undefined ? rupiah + ',' + split[1] : rupiah;
+            return prefix == undefined ? rupiah : (rupiah ? 'Rp. ' + rupiah : '');
+        }
+    </script>
+    <script>
+        $('#landing-enquiry-budget').on('input', function(){
+            let locValue = $(this).val();
+            $(this).val(formatRupiah(locValue, "Rp. "));
+        })
+    </script>
+    <script>
+        $('.form-company').on('submit', function(e){
+            let email = $('input[name="email_company"]').val();
+            let name = $('input[name="name_company"]').val();
+            
+            let emailError = false;
+            let nameError = false;
+            var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+            if (!email.match(mailformat) || email.length < 8) {
+               emailError = true; 
+               $('#err-email-company').text('Email Tidak Valid');
+            }else{
+                $('#err-email-company').text('');
+            }
+            if (name.length < 2) {
+                nameError = true;
+                $('#err-name-company').text('Nama Tidak Valid');
+
+            }else{
+                $('#err-name-company').text('');
+            }
+            if (emailError || nameError) {
+                e.preventDefault();
+            }
+        })
     </script>
 @endsection
