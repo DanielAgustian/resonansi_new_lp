@@ -42,6 +42,19 @@
     <link rel="stylesheet" href="{{ asset('asset/css/rehaul/new-style.css') }}?v=1.0.8" type="text/css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <!-- / -->
+    <style>
+         .banner-element {
+            height: 110vh;
+        }
+         @media screen and (max-width: 400px){
+            .topmargin{
+                margin-top: 2rem !important;
+            }
+            .banner-element{
+                height: 120vh;
+            }
+        }
+    </style>
     @yield('css')
 
     {{-- <!-- DatePicker CSS -->

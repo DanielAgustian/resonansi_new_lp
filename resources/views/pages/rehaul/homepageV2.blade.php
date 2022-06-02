@@ -1,16 +1,17 @@
 @extends('master-landing')
 @section('page')
- | Social Media Marketing | Marketplace Optimization @endsection
+    | Social Media Marketing | Marketplace Optimization
+@endsection
 @section('meta_tag')
-<meta name="description" content="Resonansi membantu bisnis anda menjadi nomor 1 di Google, dengan jasa layanan digital strategy, social media marketing, marketplace optimization." />
-    <meta name="keywords" content="landing page campaign, digital marketing strategy, social media marketing, marketplace optimization, cloud warehouse software" />
+    <meta name="description"
+        content="Resonansi membantu bisnis anda menjadi nomor 1 di Google, dengan jasa layanan digital strategy, social media marketing, marketplace optimization." />
+    <meta name="keywords"
+        content="landing page campaign, digital marketing strategy, social media marketing, marketplace optimization, cloud warehouse software" />
 @endsection
 @section('css')
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <style>
-        .banner-element {
-            height: 110vh;
-        }
+       
 
         .banner-name {
             padding: 5px 25px;
@@ -27,9 +28,15 @@
             margin-bottom: 0px;
 
         }
-        .swiperBanner .swiper-slide{
+
+        .swiperBanner .swiper-slide {
             height: auto !important;
         }
+
+        .banner-img {
+            width: 95%;
+        }
+       
     </style>
     <link rel="stylesheet" href="{{ asset('asset/css/rehaul/homepage.css') }}?v=1.0.2">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -78,73 +85,80 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="round-animation">
-                                        <img src="{{ asset('images/rehaul/marketplace-optimization.png') }}" alt=""
-                                            class="w-100 banner-img leftRight">
-                                        <div class="d-flex align-items-center justify-content-center mt-4">
+                                        <div class="d-flex justify-content-center"><img
+                                                src="{{ asset('images/rehaul/banner/market-opt-2.png') }}" alt=""
+                                                class="banner-img leftRight"></div>
+
+                                        {{-- <div class="d-flex align-items-center justify-content-center mt-4">
                                             <div class="banner-name">
                                                 <h4 class="name">Marketplace Optimization</h4>
                                             </div>
-                                        </div>
+                                        </div> --}}
                                     </div>
 
 
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="round-animation">
-                                        <img src="{{ asset('images/rehaul/cloud-warehouse.png') }}" alt=""
-                                            class="w-100 banner-img leftRight">
-                                        <div class="d-flex align-items-center justify-content-center mt-4">
-                                            <div class="banner-name">
-                                                <h4 class="name">Cloud Warehouse Software</h4>
-                                            </div>
-                                        </div>
+                                        <div class="d-flex justify-content-center"><img
+                                                src="{{ asset('images/rehaul/banner/cws-2.png') }}" alt=""
+                                                class="banner-img leftRight"></div>
+
+
                                     </div>
 
 
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="round-animation">
-                                        <img src="{{ asset('images/rehaul/social-media-marketing.png') }}" alt=""
-                                            class="w-100 banner-img leftRight">
-                                        <div class="d-flex align-items-center justify-content-center mt-4">
+                                        <div class="d-flex justify-content-center"><img
+                                                src="{{ asset('images/rehaul/banner/ds-2.png') }}" alt=""
+                                                class="banner-img leftRight"></div>
+
+                                        {{-- <div class="d-flex align-items-center justify-content-center mt-4">
                                             <div class="banner-name">
                                                 <h4 class="name">Digital Strategy</h4>
                                             </div>
-                                        </div>
+                                        </div> --}}
                                     </div>
 
 
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="round-animation">
-                                        <img src="{{ asset('images/rehaul/landing-page.png') }}" alt=""
-                                            class="w-100 banner-img leftRight">
-                                        <div class="d-flex align-items-center justify-content-center mt-4">
+                                        <div class="d-flex justify-content-center"><img
+                                                src="{{ asset('images/rehaul/banner/tech-2.png') }}" alt=""
+                                                class="banner-img leftRight"></div>
+
+                                        {{-- <div class="d-flex align-items-center justify-content-center mt-4">
                                             <div class="banner-name">
                                                 <h4 class="name">Technology</h4>
                                             </div>
-                                        </div>
-                                        <h5></h5>
+                                        </div> --}}
+                                        {{-- <h5></h5> --}}
                                     </div>
 
 
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="round-animation d-flex h-100 flex-column justify-content-center">
-                                        <img src="{{ asset('images/rehaul/conversion-optimization.png') }}" alt=""
-                                            class="w-100 banner-img leftRight">
-                                        <div class="d-flex align-items-center justify-content-center mt-4">
+                                        <div class="d-flex justify-content-center">
+                                            <img src="{{ asset('images/rehaul/banner/co-2.png') }}" alt=""
+                                                class="banner-img leftRight">
+                                        </div>
+
+                                        {{-- <div class="d-flex align-items-center justify-content-center mt-4">
                                             <div class="banner-name">
                                                 <h4 class="name">Conversion Optimization</h4>
                                             </div>
-                                        </div>
+                                        </div> --}}
                                     </div>
 
 
                                 </div>
                                 {{-- <div class="swiper-slide">
                                     <img src="{{ asset('images/landing-service/warehouse-ill-2.png') }}" alt=""
-                                        class="w-100 banner-img">
+                                        class="banner-img">
                                 </div> --}}
 
                             </div>
@@ -163,7 +177,7 @@
                 <svg preserveAspectRatio="xMidYMax meet" viewBox="0 0 1600 100" data-height="100">
                     <path style="opacity: 1;fill: rgba(255,255,255,0.75);"
                         d="M1040,56c0.5,0,1,0,1.6,0c-16.6-8.9-36.4-15.7-66.4-15.7c-56,0-76.8,23.7-106.9,41C881.1,89.3,895.6,96,920,96
-                                                                                                                                                                                  C979.5,96,980,56,1040,56z">
+                                                                                                                                                                                      C979.5,96,980,56,1040,56z">
                     </path>
                     <path style="opacity: 1;fill: rgba(255,255,255,0.75);"
                         d="M1699.8,96l0,10H1946l-0.3-6.9c0,0,0,0-88,0s-88.6-58.8-176.5-58.8c-51.4,0-73,20.1-99.6,36.8 c14.5,9.6,29.6,18.9,58.4,18.9C1699.8,96,1699.8,96,1699.8,96z">
@@ -179,7 +193,7 @@
                     </path>
                     <path style="opacity: 1;fill: rgba(255,255,255,0.75);"
                         d="M-40,95.6c28.3,0,43.3-8.7,57.4-18C-9.6,60.8-31,40.2-83.2,40.2c-14.3,0-26.3,1.6-36.8,4.2V106h60V96L-40,95.6
-                                                                                                                                                                                  z">
+                                                                                                                                                                                      z">
                     </path>
                     <path style="opacity: 1;fill: rgba(255,255,255,0.3);;"
                         d="M504,73.4c-2.6-0.8-5.7-1.4-9.6-1.4c-19.4,0-19.6,13-39,13c-19.4,0-19.5-13-39-13c-14,0-18,6.7-26.3,10.4 C402.4,89.9,416.7,96,440,96C472.5,96,487.5,84.2,504,73.4z">
@@ -934,22 +948,22 @@
                                     @endslot
                                 @endcomponent
                                 <!-- @component('components.new.testi-card')
-                                    @slot('img')
-                                        {{ asset('images/testi/bu_vera.jpeg') }}
-                                    @endslot
-                                    @slot('name')
-                                        Vera Pannieragouw
-                                    @endslot
-                                    @slot('jabatan')
-                                        Head Operational Of Kopi Grontol
-                                    @endslot
-                                    @slot('details')
-                                        Saya sangat puas dengan pelayanan tim Resonansi. Semua bisnis F&B online saya dihandle oleh
-                                        tim Resonansi, dari social media, platform food delivery, media iklannya, sampai ke
-                                        promo-promonya. Dari awal saya bangun F&B, sudah dihandle oleh tim Resonansi dengan
-                                        pelayanan yang luar biasa sekali.
-                                    @endslot
-                                @endcomponent -->
+        @slot('img')
+            {{ asset('images/testi/bu_vera.jpeg') }}
+        @endslot
+                                            @slot('name')
+            Vera Pannieragouw
+        @endslot
+                                            @slot('jabatan')
+            Head Operational Of Kopi Grontol
+        @endslot
+                                            @slot('details')
+            Saya sangat puas dengan pelayanan tim Resonansi. Semua bisnis F&B online saya dihandle oleh
+                                                    tim Resonansi, dari social media, platform food delivery, media iklannya, sampai ke
+                                                    promo-promonya. Dari awal saya bangun F&B, sudah dihandle oleh tim Resonansi dengan
+                                                    pelayanan yang luar biasa sekali.
+        @endslot
+    @endcomponent -->
                             </div>
                             <div class="swiper-button-next"></div>
                             <div class="swiper-button-prev"></div>
@@ -1078,14 +1092,14 @@
                                                     @endif
                                                 @endfor
                                                 <!-- <option value="paket-technology-conversion-opt" selected>Paket Technology Conversion Optimization</option>
-                                                                                                                                                                                        <option value="paket-virtual-event">Paket Virtual Event / Webinar</option>
-                                                                                                                                                                                        <option value="paket-marketplace">Paket Marketplace</option>
-                                                                                                                                                                                        <option value="technology">Technology</option>
-                                                                                                                                                                                        <option value="digital-strategy">Digital Strategy</option>
+                                                                                                                                                                                            <option value="paket-virtual-event">Paket Virtual Event / Webinar</option>
+                                                                                                                                                                                            <option value="paket-marketplace">Paket Marketplace</option>
+                                                                                                                                                                                            <option value="technology">Technology</option>
+                                                                                                                                                                                            <option value="digital-strategy">Digital Strategy</option>
 
-                                                                                                                                                                                        <option value="marketplace-opt">Marketplace Optimization</option>
-                                                                                                                                                                                        <option value="multimedia">Multimedia </option>
-                                                                                                                                                                                        <option value="cloud-warehouse-software">Cloud Warehouse Software</option> -->
+                                                                                                                                                                                            <option value="marketplace-opt">Marketplace Optimization</option>
+                                                                                                                                                                                            <option value="multimedia">Multimedia </option>
+                                                                                                                                                                                            <option value="cloud-warehouse-software">Cloud Warehouse Software</option> -->
                                             </select>
 
                                         </div>
@@ -1176,7 +1190,7 @@
             loop: true,
             pagination: {
                 el: ".swiper-pagination",
-                clickable:  true,
+                clickable: true,
             },
 
             autoplay: {
