@@ -151,17 +151,13 @@
                                 <div class="box-advan">
                                     <img src="{{ asset('images/rehaul/career/compete-with-competitor.png') }}" alt="">
                                     <h5 class="adv-title">Membantu Para Pebisnis untuk Bersaing dengan Kompetitor Lain
-
-
                                     </h5>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-6">
                                 <div class="box-advan">
                                     <img src="{{ asset('images/rehaul/career/expanding-business.png') }}" alt="">
-                                    <h5 class="adv-title">Meningkatkan Konversi Penjualan Produk dan Layanan
-
-
+                                    <h5 class="adv-title">Memperluas Potensi Jangkauan Pasar
                                     </h5>
                                 </div>
                             </div>

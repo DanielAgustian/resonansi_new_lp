@@ -31,7 +31,7 @@
             height: auto !important;
         }
     </style>
-    <link rel="stylesheet" href="{{ asset('asset/css/rehaul/homepage.css') }}?v=1.0.0">
+    <link rel="stylesheet" href="{{ asset('asset/css/rehaul/homepage.css') }}?v=1.0.2">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 @endsection
 @section('banner')
@@ -729,7 +729,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="col-lg-4 col-6 mb-3">
                                         <div class="feature-box media-box mb-2">
                                             <img src="{{ asset('images/klien/yutensil.png') }}?v=1.0.0.1" alt=""
@@ -933,7 +933,7 @@
                                         merekomendasikan Resonansi untuk para startup untuk mencapai potensi maksimal bisnismu.
                                     @endslot
                                 @endcomponent
-                                @component('components.new.testi-card')
+                                <!-- @component('components.new.testi-card')
                                     @slot('img')
                                         {{ asset('images/testi/bu_vera.jpeg') }}
                                     @endslot
@@ -949,7 +949,7 @@
                                         promo-promonya. Dari awal saya bangun F&B, sudah dihandle oleh tim Resonansi dengan
                                         pelayanan yang luar biasa sekali.
                                     @endslot
-                                @endcomponent
+                                @endcomponent -->
                             </div>
                             <div class="swiper-button-next"></div>
                             <div class="swiper-button-prev"></div>

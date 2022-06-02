@@ -377,7 +377,7 @@
                                         <h4 class="title-price fw-semibold text-center mb-3">Technology and Conversion
                                             Optimization</h4>
                                         {{-- <h2 class="price-val fw-bold text-center mb-0">Rp 5.000.000</h2> --}}
-                                        
+
                                         <div class="mx-3 my-4">
                                             <div class="divider-vertical"></div>
                                         </div>
@@ -409,7 +409,7 @@
                                     <div class="card-body">
                                         <h4 class="title-price fw-semibold text-center mb-3">Virtual Event</h4>
                                         {{-- <h2 class="price-val fw-bold text-center mb-0">Rp 7.500.000</h2> --}}
-                                        
+
                                         <div class="mx-3 my-4">
                                             <div class="divider-vertical"></div>
                                         </div>
@@ -445,7 +445,7 @@
                                         <h4 class="title-price fw-semibold text-center mb-3">Marketplace (Online Sales
                                             Strategy)</h4>
                                         {{-- <h2 class="price-val fw-bold text-center mb-0">Rp 10.000.000</h2> --}}
-                                        
+
                                         <div class="mx-3 my-4">
                                             <div class="divider-vertical"></div>
                                         </div>
@@ -525,7 +525,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="col-lg-2 col-md-4 col-6">
                             <div class="feature-box media-box mb-2">
                                 <img src="{{ asset('images/klien/yutensil.png') }}?v=1.0.0.1" alt=""
@@ -708,7 +708,7 @@
                                         merekomendasikan Resonansi untuk para startup untuk mencapai potensi maksimal bisnismu.
                                     @endslot
                                 @endcomponent
-                                @component('components.new.testi-card')
+                                <!-- @component('components.new.testi-card')
                                     @slot('img')
                                         {{ asset('images/testi/bu_vera.jpeg') }}
                                     @endslot
@@ -724,7 +724,7 @@
                                         promo-promonya. Dari awal saya bangun F&B, sudah dihandle oleh tim Resonansi dengan
                                         pelayanan yang luar biasa sekali.
                                     @endslot
-                                @endcomponent
+                                @endcomponent -->
                             </div>
                             <div class="swiper-button-next"></div>
                             <div class="swiper-button-prev"></div>

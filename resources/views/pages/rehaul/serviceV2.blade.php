@@ -68,7 +68,7 @@
         }
 
     </style>
-    <link rel="stylesheet" href="{{ asset('asset/css/rehaul/homepage.css') }}">
+    <link rel="stylesheet" href="{{ asset('asset/css/rehaul/homepage.css') }}?v=1.0.2">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 @endsection
 @section('banner')
@@ -139,7 +139,7 @@
                                             mau naikin profit & berkembang di dunia digital tapi gak tau gimana caranya
                                         @endslot
                                     @endcomponent
-                                </div> 
+                                </div>
                                 <div class="col-md-4 col-6 order-md-3 order-2">
                                     @component('components.rehaul.problem-card')
                                         @slot('img')
@@ -402,6 +402,21 @@
                                             <span class="list-layanan text-start text-sm-end ">
                                                 <i class="fas fa-check-circle me-2 mt-1 d-sm-none d-inline-flex"></i>
                                                 Youtube
+                                                <i class="fas fa-check-circle ms-2 mt-1 d-sm-inline-flex d-none"></i>
+                                            </span>
+                                            <span class="list-layanan text-start text-sm-end">
+                                                <i class="fas fa-check-circle me-2 mt-1 d-sm-none d-inline-flex"></i>
+                                                Youtube Live Stream
+                                                <i class="fas fa-check-circle ms-2 mt-1 d-sm-inline-flex d-none"></i>
+                                            </span>
+                                            <span class="list-layanan text-start text-sm-end  d-flex justify-content-sm-right justify-content-left">
+                                                <i class="fas fa-check-circle me-2 mt-1 d-sm-none d-inline-flex"></i>
+                                                Managing Youtube Content (Plan & Production)
+                                                <i class="fas fa-check-circle ms-2 mt-1 d-sm-inline-flex d-none"></i>
+                                            </span>
+                                            <span class="list-layanan text-start text-sm-end d-flex justify-content-sm-right justify-content-left">
+                                                <i class="fas fa-check-circle me-2 mt-1 d-sm-none d-inline-flex"></i>
+                                                Support Profesional Talent to Produce the Content
                                                 <i class="fas fa-check-circle ms-2 mt-1 d-sm-inline-flex d-none"></i>
                                             </span>
 

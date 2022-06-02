@@ -55,6 +55,7 @@
     color: #555;
     display: block;
     margin-bottom: 8px;
+    justify-content: right;
 }
 .list-layanan i{
     font-size: 14px;

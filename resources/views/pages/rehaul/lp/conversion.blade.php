@@ -292,7 +292,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="col-lg-2 col-md-4 col-6">
                             <div class="feature-box media-box mb-2">
                                 <img src="{{ asset('images/klien/warung_52.png') }}?v=1.0.0.1" alt=""
@@ -474,7 +474,7 @@
                                         merekomendasikan Resonansi untuk para startup untuk mencapai potensi maksimal bisnismu.
                                     @endslot
                                 @endcomponent
-                                @component('components.new.testi-card')
+                                <!-- @component('components.new.testi-card')
                                     @slot('img')
                                         {{ asset('images/testi/bu_vera.jpeg') }}
                                     @endslot
@@ -490,7 +490,7 @@
                                         promo-promonya. Dari awal saya bangun F&B, sudah dihandle oleh tim Resonansi dengan
                                         pelayanan yang luar biasa sekali.
                                     @endslot
-                                @endcomponent
+                                @endcomponent -->
                             </div>
                             <div class="swiper-button-next"></div>
                             <div class="swiper-button-prev"></div>
