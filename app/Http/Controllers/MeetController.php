@@ -12,7 +12,7 @@ class MeetController extends Controller
 {
     public function create(Request $request){
       // Budget Data
-      
+
       $dateTimeString = $request->date." ".$request->time.":00";
       $dueDateTime = Carbon::createFromFormat('Y-m-d H:i:s', $dateTimeString, 'Asia/Jakarta');
       date_default_timezone_set("Asia/Bangkok");
@@ -61,13 +61,13 @@ class MeetController extends Controller
       }
         $city = ucwords(strtolower($request->city));
 
-        $event = new Event;
-        // FOR ADD EVENT IN GOOGLE CALENDAR
-        $event->name = 'Request Bertemu AE oleh '.$request->name."di Resonansi";
-        $event->description = 'Hubungi untuk contact langsung:'.$request->input('landing-enquiry-idd').$request->phone ;
-        $event->startDateTime = $dueDateTime;
-        $event->endDateTime = $dueDateTime->addHour(2);
-        $event->save();
+        // $event = new Event;
+        // // FOR ADD EVENT IN GOOGLE CALENDAR
+        // $event->name = 'Request Bertemu AE oleh '.$request->name."di Resonansi";
+        // $event->description = 'Hubungi untuk contact langsung:'.$request->input('landing-enquiry-idd').$request->phone ;
+        // $event->startDateTime = $dueDateTime;
+        // $event->endDateTime = $dueDateTime->addHour(2);
+        // $event->save();
 
         $capcha = $request->input('g-recaptcha-response');
 
@@ -106,8 +106,8 @@ class MeetController extends Controller
           $loc_budget = str_replace('Rp. ', '', $string_budget[0]);
           $loc_budget = str_replace('.', '', $loc_budget);
           $budget = $loc_budget;
-          
-          
+
+
         }
         $data = [
             'name' => $request->name,
@@ -122,7 +122,7 @@ class MeetController extends Controller
             'origin' => $origin,
             'campaign'=> $campaign,
             'kota'=>$city,
-            'budget' => $request->budget,
+            'budget' => $budget,
             // 'platform' => $agent->platform(),
             'desktop' => $screen,
             //'screen' => $screen,
@@ -206,7 +206,7 @@ class MeetController extends Controller
 
         DB::table('data_calendar')->updateOrInsert($data);
       }
-      
+
       return "Successfully Set Data";
     }
 
@@ -218,7 +218,7 @@ class MeetController extends Controller
         if ($capcha == null) {
           return redirect()->back()->with('errorCapcha', 'errorCapcha')->withInput($request->all());
         }
-        
+
         $agent = new Agent();
 
         if ($agent->isPhone()) {
@@ -245,7 +245,7 @@ class MeetController extends Controller
         $data = [
           'name' => $request->name_company,
           'email' => $request->email_company,
-         
+
           'status' => 'lead',
           'company'=> $request->name_company,
           'parent' => $parent,
