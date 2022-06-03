@@ -112,10 +112,9 @@
             <div style="height: 70px"></div>
             <div class="container ">
                 <div class="row justify-content-between">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6">
                         <h4 class="mb-2">Hubungi <span class="span-bl">Kami</span> secara B2B!</h4>
-                        <p>Apakah kalian berbudget lebih dari 10 juta? Atau ingin mengambil jasa kami secara <i>business to
-                                business</i> (B2B)? </p>
+                        <p>Anda punya budget lebih? Ingin mengambil jasa kami secara <i>business to business (B2B)</i> ?</p>
                         <div class="card card-company">
 
                             <div class="card-body">
@@ -149,8 +148,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-5">
-                        <img src="{{ asset('images/rehaul/stock-company.jpg') }}" alt="" class="company-form-image shadow"
+                    <div class="col-lg-5 col-md-6 ">
+                        <img src="{{ asset('images/rehaul/stock-company.jpg') }}" alt="" class="company-form-image shadow d-md-block d-none"
                             style="">
                     </div>
                 </div>
@@ -739,13 +738,13 @@
         $('.form-company').on('submit', function(e){
             let email = $('input[name="email_company"]').val();
             let name = $('input[name="name_company"]').val();
-            
+
             let emailError = false;
             let nameError = false;
             var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
             if (!email.match(mailformat) || email.length < 8) {
-               emailError = true; 
+               emailError = true;
                $('#err-email-company').text('Email Tidak Valid');
             }else{
                 $('#err-email-company').text('');
