@@ -11,7 +11,7 @@
 @section('css')
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <style>
-       
+
 
         .banner-name {
             padding: 5px 25px;
@@ -34,9 +34,9 @@
         }
 
         .banner-img {
-            width: 95%;
+            width: 100%;
         }
-       
+
     </style>
     <link rel="stylesheet" href="{{ asset('asset/css/rehaul/homepage.css') }}?v=1.0.2">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -84,7 +84,7 @@
                         <div class="swiper swiperBanner">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <div class="round-animation">
+
                                         <div class="d-flex justify-content-center"><img
                                                 src="{{ asset('images/rehaul/banner/market-opt-2.png') }}" alt=""
                                                 class="banner-img leftRight"></div>
@@ -94,23 +94,23 @@
                                                 <h4 class="name">Marketplace Optimization</h4>
                                             </div>
                                         </div> --}}
-                                    </div>
+
 
 
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="round-animation">
+
                                         <div class="d-flex justify-content-center"><img
                                                 src="{{ asset('images/rehaul/banner/cws-2.png') }}" alt=""
                                                 class="banner-img leftRight"></div>
 
 
-                                    </div>
+
 
 
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="round-animation">
+
                                         <div class="d-flex justify-content-center"><img
                                                 src="{{ asset('images/rehaul/banner/ds-2.png') }}" alt=""
                                                 class="banner-img leftRight"></div>
@@ -120,12 +120,12 @@
                                                 <h4 class="name">Digital Strategy</h4>
                                             </div>
                                         </div> --}}
-                                    </div>
+
 
 
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="round-animation">
+
                                         <div class="d-flex justify-content-center"><img
                                                 src="{{ asset('images/rehaul/banner/tech-2.png') }}" alt=""
                                                 class="banner-img leftRight"></div>
@@ -136,12 +136,12 @@
                                             </div>
                                         </div> --}}
                                         {{-- <h5></h5> --}}
-                                    </div>
+
 
 
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="round-animation d-flex h-100 flex-column justify-content-center">
+
                                         <div class="d-flex justify-content-center">
                                             <img src="{{ asset('images/rehaul/banner/co-2.png') }}" alt=""
                                                 class="banner-img leftRight">
@@ -152,7 +152,7 @@
                                                 <h4 class="name">Conversion Optimization</h4>
                                             </div>
                                         </div> --}}
-                                    </div>
+
 
 
                                 </div>
