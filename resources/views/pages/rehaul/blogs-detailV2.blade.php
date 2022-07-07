@@ -62,10 +62,10 @@
             <img src="{{ asset('images/socmed/socmed-(3).svg') }}">
         </a>
         <a href="https://twitter.com/intent/tweet/?text=Coba+Lihat+Artikel+Menarik+di+&amp;url={{ urlencode(Request::url()) }}"
-            class="d-block">
+            class="d-block" target="_blank">
             <img src="{{ asset('images/socmed/socmed-(4).svg') }}">
         </a>
-        <a onclick="" id=" copyLink" href="javascript:" class="d-block">
+        <a onclick="" id="" class="d-block copyLink">
             <img src="{{ asset('images/socmed/socmed-(5).svg') }}" style="cursor:pointer;">
         </a>
     </div>
@@ -102,10 +102,10 @@
                                                 <img src="{{ asset('images/socmed/socmed-(3).svg') }}">
                                             </a>
                                             <a
-                                                href="https://twitter.com/intent/tweet/?text=Coba+Lihat+Artikel+Menarik+di+&amp;url={{ urlencode(Request::url()) }}">
+                                                href="https://twitter.com/intent/tweet/?text=Coba+Lihat+Artikel+Menarik+di+&amp;url={{ urlencode(Request::url()) }}" target="_blank">
                                                 <img src="{{ asset('images/socmed/socmed-(4).svg') }}">
                                             </a>
-                                            <a onclick="" id=" copyLink" href="javascript:">
+                                            <a onclick="" class="copyLink">
                                                 <img src="{{ asset('images/socmed/socmed-(5).svg') }}"
                                                     style="cursor:pointer;">
                                             </a>
@@ -151,7 +151,7 @@
 
 @section('js')
     <script>
-        $('#copyLink').click(function() {
+        $('.copyLink').click(function() {
             let link = window.location.href;
             navigator.clipboard.writeText(link);
             Toastify({
