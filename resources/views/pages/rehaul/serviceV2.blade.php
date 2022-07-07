@@ -385,26 +385,27 @@
                                     <div class="d-flex flex-column ms-sm-0 ms-4 align-items-sm-end">
                                         <div>
                                             <p class="mb-2 text-start text-sm-end fw-bold">
-                                                Content Creator Management
+                                              Digital Activity & Broadcasting Management
+
                                             </p>
 
                                             <span class="list-layanan text-start text-sm-end ">
                                                 <i class="fas fa-check-circle me-2 mt-1 d-sm-none d-inline-flex"></i>
-                                                TVC Production
+                                                Digital Activation
                                                 <i class="fas fa-check-circle ms-2 mt-1 d-sm-inline-flex d-none"></i>
                                             </span>
                                             <span class="list-layanan text-start text-sm-end ">
                                                 <i class="fas fa-check-circle me-2 mt-1 d-sm-none d-inline-flex"></i>
-                                                3D Animation
+                                                Youtube Management
                                                 <i class="fas fa-check-circle ms-2 mt-1 d-sm-inline-flex d-none"></i>
                                             </span>
 
                                             <span class="list-layanan text-start text-sm-end ">
                                                 <i class="fas fa-check-circle me-2 mt-1 d-sm-none d-inline-flex"></i>
-                                                Youtube
+                                                Host Streamer Academy
                                                 <i class="fas fa-check-circle ms-2 mt-1 d-sm-inline-flex d-none"></i>
                                             </span>
-                                            <span class="list-layanan text-start text-sm-end">
+                                            <!-- <span class="list-layanan text-start text-sm-end">
                                                 <i class="fas fa-check-circle me-2 mt-1 d-sm-none d-inline-flex"></i>
                                                 Youtube Live Stream
                                                 <i class="fas fa-check-circle ms-2 mt-1 d-sm-inline-flex d-none"></i>
@@ -418,7 +419,7 @@
                                                 <i class="fas fa-check-circle me-2 mt-1 d-sm-none d-inline-flex"></i>
                                                 Support Profesional Talent to Produce the Content
                                                 <i class="fas fa-check-circle ms-2 mt-1 d-sm-inline-flex d-none"></i>
-                                            </span>
+                                            </span> -->
 
 
                                         </div>

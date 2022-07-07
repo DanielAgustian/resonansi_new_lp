@@ -1,6 +1,6 @@
 @extends('master-landing')
 @section('page')
-    | Career
+    | Karir
 @endsection
 @section('css')
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -35,8 +35,8 @@
             <div class="container dark">
                 <div class="row align-items-center h-100" style="padding: 50px 0 150px">
                     <div class=" col-lg-6 col-md-11">
-                        <h5 class="mb-3 text-uppercase ls3 text-white-50">Join Our Team</h5>
-                        <h3 class="display-5 fw-semibold mb-4">Working at
+                        <h5 class="mb-3 text-uppercase ls3 text-white-50">Bergabung dengan Kami!</h5>
+                        <h3 class="display-5 fw-semibold mb-4">Bekerja Bersama
                             <span class="span-bl">Resonansi</span>
                         </h3>
                         <p>Kami hadir untuk bekerja sama demi membantu pelanggan dalam memahami mengenai produk atau brand
@@ -59,7 +59,7 @@
                         <img src="{{ asset('images/logo-resonansi.png') }}" alt="" class="logo-reso w-100">
                     </div>
                     <div class="col-md-7">
-                        <h3 class="display-6 fw-semibold mb-4"> <span class="span-bl">Resonansi</span>'s Team
+                        <h3 class="display-6 fw-semibold mb-4">Tim <span class="span-bl">Resonansi</span>
                         </h3>
                         <p>Kami dapat mewujudkan strategi digital Anda menjadi aksi nyata, serta menerapkan teknologi dan
                             ilmu data kami ke dalam strategi pemasaran Anda.
@@ -131,7 +131,7 @@
             <div class="container">
                 <div class="row justify-content-center align-items-center">
                     <div class="col-md-7 text-center">
-                        <h3 class="display-6 text-center mb-4 fw-semibold">Advantages Of Working With
+                        <h3 class="display-6 text-center mb-4 fw-semibold">Kelebihan Bekerja Bersama
                             <strong>Resonansi</strong>
                         </h3>
                         {{-- <p class="text-center">Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem facere quibusdam numquam fugiat reiciendis et, dolorem illo, quisquam tempore, id ducimus quis officia sit quam, doloremque rerum necessitatibus labore modi.</p> --}}
