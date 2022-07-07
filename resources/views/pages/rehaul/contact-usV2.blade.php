@@ -5,16 +5,18 @@
 @section('css')
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <style>
-        .title-contact{
+        .title-contact {
             font-size: 48px;
         }
-        @media screen and (max-width: 996px){
-            .title-contact{
+
+        @media screen and (max-width: 996px) {
+            .title-contact {
                 font-size: 42px;
             }
         }
-        @media screen and (max-width: 450px){
-            .title-contact{
+
+        @media screen and (max-width: 450px) {
+            .title-contact {
                 font-size: 36px;
             }
         }
@@ -94,7 +96,8 @@
                                     <div class="col-12 form-group mb-4">
                                         <label>Nama Perusahaan</label>
                                         <input type="text" name="company" id="landing-enquiry-company"
-                                            class="form-control   required" value="" placeholder="Company Name" required>
+                                            class="form-control   required" value="" placeholder="Company Name"
+                                            required>
                                         <div style="color: red; font-size:11px" id="err-company">
 
                                         </div>
@@ -109,8 +112,8 @@
                                     </div>
                                     <div class="col-12 form-group mb-4">
                                         <label>Message:</label>
-                                        <textarea name="message" id="landing-enquiry-additional-requirements" class="form-control  " cols="30" rows="5"
-                                            placeholder="Please let us know how we can help you..." required></textarea>
+                                        <textarea name="message" id="landing-enquiry-additional-requirements" class="form-control  " cols="30"
+                                            rows="5" placeholder="Please let us know how we can help you..." required></textarea>
                                         <div style="color: red; font-size:11px" id="err-msg">
 
                                         </div>
@@ -199,10 +202,12 @@
 
                         <div class="col-sm-10">
                             <div class="heading-block border-bottom-0 mb-4">
-                                <h2 class="fw-semibold ls0 nott mb-3" style="font-size: 31px; line-height: 1.3">Ingin Mengetahui Layanan Kami Lebih Lanjut?</h2>
-                                <p>Klik tombol di bawah ini jika ingin mengetahui lebih lanjut tentang apa yang bisa dilakukan Resonansi!</p>
+                                <h2 class="fw-semibold ls0 nott mb-3" style="font-size: 31px; line-height: 1.3">Ingin
+                                    Mengetahui Layanan Kami Lebih Lanjut?</h2>
+                                <p>Klik tombol di bawah ini jika ingin mengetahui lebih lanjut tentang apa yang bisa
+                                    dilakukan Resonansi!</p>
                             </div>
-                            <a href="{{route('servicePageV2')}}"
+                            <a href="{{ route('servicePageV2') }}"
                                 class="button button-white button-light button-rounded fw-medium m-0">Klik disini</a>
                         </div>
 
@@ -235,80 +240,91 @@
             }
         });
     </script>
-     @if(Session::has('successContact'))
-     <script type="text/javascript">
-     Swal.fire(
-         'Success!',
-         'Pesan telah terkirim!',
-         'success'
-     );
-     </script>
-   @endif
-   <script>
-       $('.form-contact').on('submit', function(e){
- 
-         let errorEmail = false;
-         let errorName = false;
-         let errorPhone = false;
-         let errorCompany = false;
-         let errorMsg = false;
- 
-         let email = $('input[name="email"]').val() ?? "";
-         let name = $('input[name="name"]').val() ;
-         let phone = $('input[name="phone"]').val();
-         let company = $('input[name="company"]').val();
-         let message = $('textarea[name="message"]').val();
- 
-         var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
- 
-         if (!email.match(mailformat) ) {
-           console.log("wrong email");
-           errorEmail = true;
-           $('#err-email').text('Email Tidak Valid');
- 
-         }else{
-           $('#err-email').text('');
-         }
- 
-         if (name.length < 2) {
-           console.log("name empty");
-           errorName = true;
-           $('#err-name').text('Nama tidak valid');
-         }else{
-           $('#err-name').text('');
-         }
-         if (phone.length < 9 ) {
-           console.log("phone error");
-           errorPhone = true;
-           $('#err-phone').text('Nomor Kamu Tidak Valid');
-         }else{
-           $('#err-phone').text('');
-         }
- 
-         if (company.length< 3) {
-           console.log("company error");
-           errorCompany = true;
-           $('#err-company').text('Nama Perusahaan Tidak Valid');
-         }else{
-           $('#err-company').text('');
-         }
- 
-         if (message.length< 3) {
-           console.log("date empty");
-           errorDate = true;
-           $('#err-msg').text('Pesan Terlalu Pendek');
-         }else{
-           $('#err-msg').text('');
-         }
- 
- 
- 
- 
-         if(errorName || errorEmail || errorPhone ||errorCompany || errorMsg){
-           console.log("ONE OF THEM IS EMPTY/WRONG");
-           e.preventDefault();
-         }
-       })
- 
-   </script>
+    @if (Session::has('successContact'))
+        <script type="text/javascript">
+            Swal.fire(
+                'Success!',
+                'Pesan telah terkirim!',
+                'success'
+            );
+        </script>
+        <script>
+            var y = Math.random();
+            if (y < 0.5) {
+                y = 0
+            } else {
+                y = 1
+            }
+            let wa = [6287784397649, 6287784397649]
+            window.open(
+                `https://wa.me/${wa[y]}?text=Halo%2C%20saya%20mau%20bertanya%20tentang%20Resonansi`
+            )
+        </script>
+    @endif
+    <script>
+        $('.form-contact').on('submit', function(e) {
+
+            let errorEmail = false;
+            let errorName = false;
+            let errorPhone = false;
+            let errorCompany = false;
+            let errorMsg = false;
+
+            let email = $('input[name="email"]').val() ?? "";
+            let name = $('input[name="name"]').val();
+            let phone = $('input[name="phone"]').val();
+            let company = $('input[name="company"]').val();
+            let message = $('textarea[name="message"]').val();
+
+            var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+            if (!email.match(mailformat)) {
+                console.log("wrong email");
+                errorEmail = true;
+                $('#err-email').text('Email Tidak Valid');
+
+            } else {
+                $('#err-email').text('');
+            }
+
+            if (name.length < 2) {
+                console.log("name empty");
+                errorName = true;
+                $('#err-name').text('Nama tidak valid');
+            } else {
+                $('#err-name').text('');
+            }
+            if (phone.length < 9) {
+                console.log("phone error");
+                errorPhone = true;
+                $('#err-phone').text('Nomor Kamu Tidak Valid');
+            } else {
+                $('#err-phone').text('');
+            }
+
+            if (company.length < 3) {
+                console.log("company error");
+                errorCompany = true;
+                $('#err-company').text('Nama Perusahaan Tidak Valid');
+            } else {
+                $('#err-company').text('');
+            }
+
+            if (message.length < 3) {
+                console.log("date empty");
+                errorDate = true;
+                $('#err-msg').text('Pesan Terlalu Pendek');
+            } else {
+                $('#err-msg').text('');
+            }
+
+
+
+
+            if (errorName || errorEmail || errorPhone || errorCompany || errorMsg) {
+                console.log("ONE OF THEM IS EMPTY/WRONG");
+                e.preventDefault();
+            }
+        })
+    </script>
 @endsection

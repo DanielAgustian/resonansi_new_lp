@@ -61,13 +61,13 @@ class MeetController extends Controller
       }
         $city = ucwords(strtolower($request->city));
 
-        // $event = new Event;
-        // // FOR ADD EVENT IN GOOGLE CALENDAR
-        // $event->name = 'Request Bertemu AE oleh '.$request->name."di Resonansi";
-        // $event->description = 'Hubungi untuk contact langsung:'.$request->input('landing-enquiry-idd').$request->phone ;
-        // $event->startDateTime = $dueDateTime;
-        // $event->endDateTime = $dueDateTime->addHour(2);
-        // $event->save();
+        $event = new Event;
+        // FOR ADD EVENT IN GOOGLE CALENDAR
+        $event->name = 'Request Bertemu AE oleh '.$request->name."di Resonansi";
+        $event->description = 'Hubungi untuk contact langsung:'.$request->input('landing-enquiry-idd').$request->phone ;
+        $event->startDateTime = $dueDateTime;
+        $event->endDateTime = $dueDateTime->addHour(2);
+        $event->save();
 
         $capcha = $request->input('g-recaptcha-response');
 
@@ -144,7 +144,7 @@ class MeetController extends Controller
             'created_at'=> Carbon::now()
         ]);
 
-        return redirect()->back()->with('successMsg', 'Success');
+        return redirect()->back()->with('successMsg', $request->landing_enquiry_paket);
     }
 
     public function makeContactUs(Request $request){

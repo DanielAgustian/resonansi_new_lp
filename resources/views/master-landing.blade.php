@@ -43,14 +43,16 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <!-- / -->
     <style>
-         .banner-element {
+        .banner-element {
             height: 110vh;
         }
-         @media screen and (max-width: 400px){
-            .topmargin{
+
+        @media screen and (max-width: 400px) {
+            .topmargin {
                 margin-top: 2rem !important;
             }
-            .banner-element{
+
+            .banner-element {
                 height: 120vh;
             }
         }
@@ -125,9 +127,9 @@
 <body class="stretched">
     <noscript><img height="1" width="1" style="display:none"
             src="https://www.facebook.com/tr?id=399592895383861&ev=PageView&noscript=1" /></noscript>
-    <button class="btn-wa" data-toggle="tooltip" title="Kami siap membantu Anda">
+    {{-- <button class="btn-wa" data-toggle="tooltip" title="Kami siap membantu Anda">
         <i class="fab fa-whatsapp"></i>
-    </button>
+    </button> --}}
     <!-- Document Wrapper
  ============================================= -->
     <div id="wrapper" class="clearfix">
@@ -228,6 +230,19 @@
                 'Account executive kami akan menghubungi Anda maksimal satu hari sebelum jadwal diskusi, terima kasih!',
                 'success'
             );
+        </script>
+        <script>
+            var y = Math.random();
+            if (y < 0.5) {
+                y = 0
+            } else {
+                y = 1
+            }
+            let wa = [6287784397649, 6287784397649]
+            window.open(
+                `https://wa.me/${wa[y]}?text=Halo%2C%20saya%20mau%20bertanya%20tentang%20Paket%20Jasa%20Layanan%20{{Session::get('successMsg')}}%20di%20Resonansi`
+            )
+
         </script>
         <script type="text/javascript">
             $(function() {
