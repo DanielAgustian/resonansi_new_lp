@@ -553,20 +553,7 @@
                     <div class="swiper swiperTestimoni">
                         <div class="swiper-wrapper">
 
-                          @component('components.custom.testi-card')
-                              @slot('img')
-                                  {{asset('images/testi/shinta.jpeg')}}
-                              @endslot
-                              @slot('name')
-                                Shinta
-                              @endslot
-                              @slot('jabatan')
-                                Jr. Manager Operational Warisan Perdagangan Nusantara
-                              @endslot
-                              @slot('details')
-                                  Semenjak dibantu Resonansi, toko-toko ku kebanjiran followers & pengunjung, customer yang checkout juga nambah pesat! Pokoknya toko aku tambah rame! Thanks a lot Resonansi and team!
-                              @endslot
-                          @endcomponent
+
                           @component('components.custom.testi-card')
                               @slot('img')
                                   {{asset('images/testi/pak_yosep.jpeg')}}
@@ -851,7 +838,7 @@
     <script>
         var swiper = new Swiper(".swiperTestimoni", {
             cssMode: true,
-            loop: true,
+            // loop: true,
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",

@@ -111,4 +111,5 @@ class NewLPController extends Controller
       }
       return view('pages.rehaul.lp.digital-marketing', compact('data', 'count', 'ref', 'so', 'campaign' ));
   }
+
 }

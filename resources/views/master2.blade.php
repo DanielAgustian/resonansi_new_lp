@@ -152,6 +152,9 @@
         <div class="btn-wa" data-toggle="tooltip" title="Kami siap membantu Anda">
             <i class="fab fa-whatsapp"></i>
         </div>
+        <div class="btn-wa" data-toggle="tooltip" title="Kami siap membantu Anda">
+            <i class="fab fa-whatsapp"></i>
+        </div>
         <!-- Slider
   ============================================= -->
         @yield('banner')

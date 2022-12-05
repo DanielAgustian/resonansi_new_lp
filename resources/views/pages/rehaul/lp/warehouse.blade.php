@@ -394,21 +394,23 @@
                             <div class="swiper-wrapper">
 
 
-                                @component('components.new.testi-card')
-                                    @slot('img')
-                                        {{ asset('images/testi/shinta.jpeg') }}
-                                    @endslot
-                                    @slot('name')
-                                        Shinta
-                                    @endslot
-                                    @slot('jabatan')
-                                        Jr. Manager Operational Warisan Perdagangan Nusantara
-                                    @endslot
-                                    @slot('details')
-                                        Semenjak dibantu Resonansi, toko-toko ku kebanjiran followers & pengunjung, customer yang
-                                        checkout juga nambah pesat! Pokoknya toko aku tambah rame! Thanks a lot Resonansi and team!
-                                    @endslot
-                                @endcomponent
+                              @component('components.new.testi-card')
+                                  @slot('img')
+                                      {{ asset('images/testi/kezia.png') }}
+                                  @endslot
+                                  @slot('name')
+                                    Kezia Mellia Chandra
+
+                                  @endslot
+                                  @slot('jabatan')
+                                  Head of Warisan Perdagangan Nusantara
+
+                                  @endslot
+                                  @slot('details')
+                                    Layanan dan insights yang diberikan oleh Resonansi menjadi katalisator utama dalam perkembangan bisnis di Warisan Perdagangan Nusantara, serta membantu kami menangkap peluang baru dalam dunia bisnis. Hingga saat ini Resonansi selalu memberikan service yang terbaik mulai dari marketplace optimization sampai pada manajemen fullfilment.
+
+                                  @endslot
+                              @endcomponent
                                 @component('components.new.testi-card')
                                     @slot('img')
                                         {{ asset('images/testi/pak_yosep.jpeg') }}

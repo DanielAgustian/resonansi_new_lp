@@ -98,9 +98,9 @@
                                 </div>
                             @endforeach
                         </div>
-                        {{-- <div class="d-flex justify-content-center pagination-blogs">
+                        <div class="d-flex justify-content-center pagination-blogs">
                           {{$blogs->links()}}
-                        </div> --}}
+                        </div>
                     </div>
                     <div class="col-lg-4 col-md-12">
                         <div class="list-blog">

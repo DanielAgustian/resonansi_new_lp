@@ -127,9 +127,9 @@
 <body class="stretched">
     <noscript><img height="1" width="1" style="display:none"
             src="https://www.facebook.com/tr?id=399592895383861&ev=PageView&noscript=1" /></noscript>
-    {{-- <button class="btn-wa" data-toggle="tooltip" title="Kami siap membantu Anda">
+    <button class="btn-wa" data-toggle="tooltip" title="Kami siap membantu Anda">
         <i class="fab fa-whatsapp"></i>
-    </button> --}}
+    </button>
     <!-- Document Wrapper
  ============================================= -->
     <div id="wrapper" class="clearfix">
@@ -192,21 +192,22 @@
                 $('.owl-stage').after('<div class="owl-stage-outer-bg"></div>');
             }, 1000);
         });
+
     </script>
 
     <script>
-        $('.btn-wa').on('click', function() {
-            var y = Math.random();
-            if (y < 0.5) {
-                y = 0
-            } else {
-                y = 1
-            }
-            let wa = [6287784397649, 6287784397649]
-            window.open(
-                `https://wa.me/${wa[y]}?text=Halo%2C%20aku%20mau%20bertanya%20tentang%20Layanan%20di%20Resonansi`
-            )
-        })
+    $('.btn-wa').on('click', function() {
+        var y = Math.random();
+        if (y < 0.5) {
+            y = 0
+        } else {
+            y = 1
+        }
+        let wa = [6287784397649, 6287784397649]
+        window.open(
+            `https://wa.me/${wa[y]}?text=Halo%2C%20aku%20mau%20bertanya%20tentang%20Layanan%20di%20Resonansi`
+        )
+    })
     </script>
     <script type="text/javascript">
         $('.btn-ask').on('click', function() {
@@ -225,23 +226,23 @@
     @if (Session::has('successMsg'))
         <script>
             console.log('success');
-            Swal.fire(
-                'Success!',
-                'Account executive kami akan menghubungi Anda maksimal satu hari sebelum jadwal diskusi, terima kasih!',
-                'success'
-            );
-        </script>
-        <script>
-            var y = Math.random();
-            if (y < 0.5) {
-                y = 0
-            } else {
-                y = 1
-            }
-            let wa = [6287784397649, 6287784397649]
-            window.open(
-                `https://wa.me/${wa[y]}?text=Halo%2C%20saya%20mau%20bertanya%20tentang%20Paket%20Jasa%20Layanan%20{{Session::get('successMsg')}}%20di%20Resonansi`
-            )
+            Swal.fire({
+              title: 'Success!?',
+              text: 'Account executive kami akan menghubungi Anda maksimal satu hari sebelum jadwal diskusi, terima kasih!',
+
+            }).then((result) => {
+              /* Read more about isConfirmed, isDenied below */
+              var y = Math.random();
+              if (y < 0.5) {
+                  y = 0
+              } else {
+                  y = 1
+              }
+              let wa = [6287784397649, 6287784397649]
+              window.open(
+                  `https://wa.me/${wa[y]}?text=Halo%2C%20saya%20mau%20bertanya%20tentang%20Paket%20Jasa%20Layanan%20{{Session::get('successMsg')}}%20di%20Resonansi`
+              )
+            })
 
         </script>
         <script type="text/javascript">
